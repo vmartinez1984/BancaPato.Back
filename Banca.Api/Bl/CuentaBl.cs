@@ -81,7 +81,8 @@ namespace Banca.BusinessLayer.Bl
             List<CuentaDto> dtos;
             List<Cuentum> entidades;
 
-            entidades = await _repositorio.Cuenta.ToListAsync();
+            entidades = await _repositorio.Cuenta
+                .Include(x=> x.TipoDeCuenta).ToListAsync();
             dtos = _mapper.Map<List<CuentaDto>>(entidades);
 
             return dtos;

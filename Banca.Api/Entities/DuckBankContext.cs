@@ -32,6 +32,7 @@ public partial class DuckBankContext : DbContext
         string connectionString;
 
         connectionString = "Data Source=192.168.1.86;Initial Catalog=DuckBank; Persist Security Info=True;User ID=sa;Password=Macross#2012; TrustServerCertificate=True;";
+        connectionString = "Data Source=wdb4.my-hosting-panel.com;Initial Catalog=vmartinez_DuckBank; Persist Security Info=True;User ID=vmartinez_DuckBank;Password=Macross#2012; TrustServerCertificate=True;";
         
         optionsBuilder.UseSqlServer(connectionString);
     }

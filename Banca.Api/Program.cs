@@ -7,7 +7,6 @@ using Banco.Repositorios.Entities;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddScoped<DuckBankContext>();
 builder.Services.AddScoped<UnitOfWork>();
 builder.Services.AddScoped<CuentaBl>();

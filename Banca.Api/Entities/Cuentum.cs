@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Banca.Api.Entities;
 
 namespace Banco.Repositorios.Entities;
 
@@ -27,4 +26,5 @@ public partial class Cuentum
     public virtual ICollection<Transaccion> Transaccions { get; set; } = new List<Transaccion>();
 
     public int? TipoDeCuentaId { get; set; }
+    public virtual TipoDeCuenta TipoDeCuenta { get; internal set; }
 }

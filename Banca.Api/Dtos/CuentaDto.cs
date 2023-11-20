@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Banca.Api.Dtos;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Banca.Comun.Dtos
@@ -8,6 +9,7 @@ namespace Banca.Comun.Dtos
         public int Id { get; set; }
         public decimal Balance { get; set; }
 
+        public TipoDeCuentaDto  TipoDeCuenta { get; set; }
     }
 
     public class CuentaDtoIn
@@ -29,6 +31,7 @@ namespace Banca.Comun.Dtos
 
         public int TipoDeCuentaId { get; set; }
 
+        public int? CuentaDeReferenciaId { get; set; }
     }
 
 }
