@@ -54,7 +54,7 @@ namespace Banca.Api.Controllers
         {
             int id;
 
-            id = await _unitOfWork.Transaccion.Agregar(deposito, cuentaIdGuid);
+            id = await _unitOfWork.Transaccion.Depositar(cuentaIdGuid, deposito);
 
             return Created("", new { Id = id });
         }
@@ -64,7 +64,7 @@ namespace Banca.Api.Controllers
         {
             int id;
 
-            id =  await _unitOfWork.Transaccion.Retirar(cuentaIdGuid, retiro);
+            id = await _unitOfWork.Transaccion.Retirar(cuentaIdGuid, retiro);
 
             return Created("", new { Id = id });
         }

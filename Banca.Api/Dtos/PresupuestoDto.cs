@@ -10,7 +10,9 @@
 
         public decimal CantidadMeta { get; set; }
 
-        public int VersionId { get; set; }                
+        public int VersionId { get; set; }
+
+        public int? AhorroId { get; set; }
     }
 
     public class PresupuestoDtoIn
@@ -24,5 +26,7 @@
         public int VersionId { get; set; }
                
         public Guid? Guid { get; set; }
+
+        public int? AhorroId { get; set; }
     }
 }

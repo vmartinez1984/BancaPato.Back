@@ -13,13 +13,15 @@ public partial class Periodo
 
     public DateTime FechaFinal { get; set; }
 
-    public DateTime FechaDeRegistro { get; set; }
+    public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
 
-    public bool EstaActivo { get; set; }
+    public bool EstaActivo { get; set; } = true;
 
     public string? Nota { get; set; }
 
     public Guid Guid { get; set; }
 
     public virtual ICollection<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
+
+    public int VersionId { get; set; }
 }

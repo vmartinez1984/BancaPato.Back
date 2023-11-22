@@ -12,9 +12,16 @@ namespace Banca.Api.Bl
         {
         }
 
-        internal Task ActualizarAsync(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
+        internal async Task ActualizarAsync(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
         {
-            throw new NotImplementedException();
+            Presupuesto presupuestoEntity;
+
+            presupuestoEntity = await _repositorio.Presupuesto.FindAsync(ObtenerIdAsync(presupuestoIdGuid));
+            presupuesto.Guid = presupuestoEntity.Guid;
+            presupuestoEntity = _mapper.Map(presupuesto, presupuestoEntity);
+            _repositorio.Presupuesto.Update(presupuestoEntity);
+
+            await _repositorio.SaveChangesAsync();
         }
 
         internal async Task<IdDto> AgregarAsync(string versionIdGuid, PresupuestoDtoIn presupuesto)

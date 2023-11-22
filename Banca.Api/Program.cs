@@ -17,6 +17,8 @@ builder.Services.AddScoped<SubcategoriaBl>();
 builder.Services.AddScoped<VersionBl>();
 builder.Services.AddScoped<TipoDeCuentaBl>();
 builder.Services.AddScoped<PresupuestoBl>();
+builder.Services.AddScoped<PeriodoBl>();
+builder.Services.AddScoped<MovimientoBl>();
 
 var mapperConfig = new MapperConfiguration(mapperConfig =>
 {

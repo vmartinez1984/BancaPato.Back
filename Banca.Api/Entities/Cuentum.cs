@@ -26,5 +26,9 @@ public partial class Cuentum
     public virtual ICollection<Transaccion> Transaccions { get; set; } = new List<Transaccion>();
 
     public int? TipoDeCuentaId { get; set; }
+
     public virtual TipoDeCuenta TipoDeCuenta { get; internal set; }
+
+    public int? CuentaDeReferenciaId { get; set; }
+
 }

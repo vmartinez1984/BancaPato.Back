@@ -17,7 +17,9 @@ namespace Banca.BusinessLayer.Bl
             SubcategoriaBl subcategoriaBl,
             VersionBl versionBl,
             PresupuestoBl presupuestoBl,
-            TipoDeCuentaBl tipoDeCuentaBl
+            TipoDeCuentaBl tipoDeCuentaBl,
+            PeriodoBl periodoBl,
+            MovimientoBl movimientoBl
         )
         {
             Categoria = categoriaBl;
@@ -28,6 +30,8 @@ namespace Banca.BusinessLayer.Bl
             Version = versionBl;
             Presupuesto = presupuestoBl;
             TipoDeCuenta = tipoDeCuentaBl;
+            Periodo = periodoBl;
+            Movimiento = movimientoBl;
         }
 
         public CuentaBl Cuenta { get; }
@@ -37,7 +41,9 @@ namespace Banca.BusinessLayer.Bl
         public CategoriaBl Categoria { get;  set; }
         public VersionBl Version { get; set; }
         public PresupuestoBl Presupuesto { get; internal set; }
-        public TipoDeCuentaBl TipoDeCuenta { get; internal set; }        
+        public TipoDeCuentaBl TipoDeCuenta { get; internal set; }
+        public PeriodoBl Periodo { get; internal set; }
+        public MovimientoBl Movimiento { get; internal set; }
     }    
 
     public class BaseBl

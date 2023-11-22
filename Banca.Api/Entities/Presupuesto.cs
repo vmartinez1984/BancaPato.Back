@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Banco.Repositorios.Entities;
+﻿namespace Banco.Repositorios.Entities;
 
 public partial class Presupuesto
 {
@@ -22,4 +19,6 @@ public partial class Presupuesto
     public virtual Subcategorium Subcategoria { get; set; } = null!;
 
     public virtual VersionDePresupuesto Version { get; set; } = null!;
+
+    public int? AhorroId { get; set; }
 }

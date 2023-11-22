@@ -32,6 +32,8 @@ namespace Banca.BusinessLayer.Mappers
             CreateMap<PresupuestoDtoIn, Presupuesto>();
 
             CreateMap<Transaccion, TransaccionDto>();
+
+            CreateMap<PeriodoDtoIn, Periodo>();
         }
     }
 }
