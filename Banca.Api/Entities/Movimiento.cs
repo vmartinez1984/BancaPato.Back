@@ -13,7 +13,7 @@ public partial class Movimiento
 
     public int PeriodoId { get; set; }
 
-    public int TransaccionId { get; set; }
+    public int? TransaccionId { get; set; }
 
     public int PresupuestoId { get; set; }
 

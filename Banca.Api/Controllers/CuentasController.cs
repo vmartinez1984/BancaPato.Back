@@ -39,8 +39,27 @@ namespace Banca.Api.Controllers
             return Ok(lista);
         }
 
-        [HttpGet("{ahorroId}/Transacciones")]
+        [HttpGet("{ahorroId}")]
         public async Task<IActionResult> Obtener(string ahorroId)
+        {
+            CuentaDto ahorro;
+
+            ahorro = await _unitOfWork.Cuenta.ObtenerAsync(ahorroId);
+
+            return Ok(ahorro);
+        }
+
+        [HttpPut("{ahorroId}")]
+        public async Task<IActionResult> ActualizarAhorro(string ahorroId,CuentaDtoIn ahorro)
+        {
+
+            await _unitOfWork.Cuenta.ActualizarAsync(ahorroId, ahorro);
+
+            return Accepted();
+        }
+
+        [HttpGet("{ahorroId}/Transacciones")]
+        public async Task<IActionResult> ObtenerTransaccionesPorAhorroId(string ahorroId)
         {
             List<TransaccionDto> lista;
 

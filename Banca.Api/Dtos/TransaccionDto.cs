@@ -15,6 +15,8 @@ namespace Banca.Api.Dtos
         public DateTime FechaDeRegistro { get; set; }
 
         public string Tipo { get; set; }
+        public string Concepto { get; set; }
+        public string Nota { get; set; }
     }
 
     public class TransaccionDtoIn

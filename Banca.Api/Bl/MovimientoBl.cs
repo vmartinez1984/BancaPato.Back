@@ -17,9 +17,9 @@ namespace Banca.Api.Bl
 
         internal async Task<IdDto> AgregarAsync(string periodoIdGuid, MovimientoDtoIn movimiento)
         {
-            int concentradoraEntradaId = 1006;
+            int concentradoraEntradaId = 1007;
             int idRetiro;
-            int idDeposito;
+            int? idDeposito = null;
             Presupuesto presupuesto;
             Movimiento movimientoEntity;
 
@@ -30,20 +30,23 @@ namespace Banca.Api.Bl
                 Nota = movimiento.Nota
             });
             presupuesto = await _repositorio.Presupuesto.Include(x => x.Subcategoria).Where(x => x.Id == movimiento.PresupuestoId).FirstOrDefaultAsync();
-            idDeposito = await _transaccionBl.Depositar(presupuesto.AhorroId.ToString(), new DepositoDtoIn
+            if (presupuesto.AhorroId != null)
             {
-                Cantidad = movimiento.Cantidad,
-                Guid = movimiento.Guid,
-                Nota = movimiento.Nota,
-                Concepto = presupuesto.Subcategoria.Nombre
-            });
+                idDeposito = await _transaccionBl.Depositar(presupuesto.AhorroId.ToString(), new DepositoDtoIn
+                {
+                    Cantidad = movimiento.Cantidad,
+                    Guid = movimiento.Guid,
+                    Nota = movimiento.Nota,
+                    Concepto = presupuesto.Subcategoria.Nombre
+                });
+            }
             movimientoEntity = new Movimiento
             {
                 Guid = movimiento.Guid,
                 Nota = movimiento.Nota,
-                PeriodoId = movimiento.PeriodoId,
+                PeriodoId = ObtenerPeriodoId(periodoIdGuid),
                 PresupuestoId = movimiento.PresupuestoId,
-                TransaccionId = idDeposito
+                TransaccionId = idDeposito == null ? idRetiro : idDeposito,
             };
             _repositorio.Movimiento.Add(movimientoEntity);
             await _repositorio.SaveChangesAsync();
@@ -51,9 +54,30 @@ namespace Banca.Api.Bl
             return new IdDto { Guid = movimiento.Guid, Id = movimientoEntity.Id };
         }
 
-        internal Task<List<Dtos.MovimientoDto>> ObtenerTodosAsync(string periodoIdGuid)
+        private int ObtenerPeriodoId(string periodoIdGuid)
         {
-            throw new NotImplementedException();
+            return int.Parse(periodoIdGuid);
+        }
+
+        internal async Task<List<MovimientoDto>> ObtenerTodosAsync(string periodoIdGuid)
+        {
+            List<MovimientoDto> dtos;
+            List<Movimiento> entities;
+
+            entities = await _repositorio.Movimiento
+                .Include(x => x.Presupuesto)
+                .Include(x => x.Transaccion)
+                .Where(x => x.PeriodoId == ObtenerPeriodoId(periodoIdGuid)).ToListAsync();
+            dtos = entities.Select(x => new MovimientoDto
+            {
+                Id = x.Id,
+                Cantidad = x.Transaccion.Cantidad,
+                Guid = x.Guid,
+                Nota = x.Nota,
+                PresupuestoId = x.PresupuestoId
+            }).ToList();
+
+            return dtos;
         }
     }
 }

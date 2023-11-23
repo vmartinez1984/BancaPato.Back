@@ -93,5 +93,27 @@ namespace Banca.BusinessLayer.Bl
 
             return dtos;
         }
+
+        internal async Task ActualizarAsync(string ahorroId, CuentaDtoIn ahorro)
+        {
+            Cuentum ahorroEntity;
+
+            ahorroEntity = await _repositorio.Cuenta.FindAsync(ObtenerAhorroId(ahorroId));
+            ahorro.Guid = ahorroEntity.Guid;
+            ahorroEntity = _mapper.Map(ahorro, ahorroEntity);
+            _repositorio.Cuenta.Update(ahorroEntity);
+
+            await _repositorio.SaveChangesAsync();
+        }
+
+        internal async Task<CuentaDto> ObtenerAsync(string ahorroId)
+        {
+            return _mapper.Map<CuentaDto>(await _repositorio.Cuenta.FindAsync(ObtenerAhorroId(ahorroId)));
+        }
+
+        private int ObtenerAhorroId(string ahorroId)
+        {
+            return int.Parse(ahorroId);
+        }
     }
 }

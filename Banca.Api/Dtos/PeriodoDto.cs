@@ -36,10 +36,7 @@ namespace Banca.Api.Dtos
     {
         public Guid Guid { get; set; }
 
-        public string Nota { get; set; }
-
-        [Required]
-        public int PeriodoId { get; set; }
+        public string Nota { get; set; }               
 
         [Required]
         public int PresupuestoId { get; set; }
