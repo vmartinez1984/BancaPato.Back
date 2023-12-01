@@ -38,13 +38,13 @@ namespace Banca.BusinessLayer.Bl
         public TransaccionBl Transaccion { get; }
         public HistorialBl Historial { get; internal set; }
         public SubcategoriaBl Subcategoria { get; internal set; }
-        public CategoriaBl Categoria { get;  set; }
+        public CategoriaBl Categoria { get; set; }
         public VersionBl Version { get; set; }
         public PresupuestoBl Presupuesto { get; internal set; }
         public TipoDeCuentaBl TipoDeCuenta { get; internal set; }
         public PeriodoBl Periodo { get; internal set; }
         public MovimientoBl Movimiento { get; internal set; }
-    }    
+    }
 
     public class BaseBl
     {
@@ -88,7 +88,9 @@ namespace Banca.BusinessLayer.Bl
             List<Cuentum> entidades;
 
             entidades = await _repositorio.Cuenta
-                .Include(x=> x.TipoDeCuenta).ToListAsync();
+                .Include(x => x.TipoDeCuenta)
+                .Where(x => x.EstaActivo)
+                .ToListAsync();
             dtos = _mapper.Map<List<CuentaDto>>(entidades);
 
             return dtos;
@@ -106,9 +108,28 @@ namespace Banca.BusinessLayer.Bl
             await _repositorio.SaveChangesAsync();
         }
 
+        internal async Task BorrarAsync(string ahorroId)
+        {
+            Cuentum ahorro;
+
+            ahorro = await _repositorio.Cuenta.Where(x => x.Id == ObtenerAhorroId(ahorroId)).FirstOrDefaultAsync();
+            ahorro.EstaActivo = false;
+            _repositorio.Cuenta.Update(ahorro);
+
+            await _repositorio.SaveChangesAsync();
+        }
+
         internal async Task<CuentaDto> ObtenerAsync(string ahorroId)
         {
-            return _mapper.Map<CuentaDto>(await _repositorio.Cuenta.FindAsync(ObtenerAhorroId(ahorroId)));
+            Cuentum ahorro;
+
+            ahorro = await _repositorio
+                .Cuenta
+                .Include(x => x.TipoDeCuenta)
+                .Where(x => x.Id == ObtenerAhorroId(ahorroId))
+                .FirstOrDefaultAsync();
+
+            return _mapper.Map<CuentaDto>(ahorro);
         }
 
         private int ObtenerAhorroId(string ahorroId)

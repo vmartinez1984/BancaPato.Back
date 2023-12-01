@@ -50,10 +50,18 @@ namespace Banca.Api.Controllers
         }
 
         [HttpPut("{ahorroId}")]
-        public async Task<IActionResult> ActualizarAhorro(string ahorroId,CuentaDtoIn ahorro)
+        public async Task<IActionResult> ActualizarAhorro(string ahorroId, CuentaDtoIn ahorro)
         {
 
             await _unitOfWork.Cuenta.ActualizarAsync(ahorroId, ahorro);
+
+            return Accepted();
+        }
+
+        [HttpDelete("{ahorroId}")]
+        public async Task<IActionResult> Borrar(string ahorroId)
+        {
+            await _unitOfWork.Cuenta.BorrarAsync(ahorroId);
 
             return Accepted();
         }

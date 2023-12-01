@@ -31,4 +31,6 @@ public partial class Cuentum
 
     public int? CuentaDeReferenciaId { get; set; }
 
+    public bool EstaActivo { get; set; } = true;
+
 }

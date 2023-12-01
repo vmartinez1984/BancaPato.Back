@@ -29,7 +29,7 @@ namespace Banca.Api.Controllers
 
             lista = await _unitOfWork.Historial.Obtener();
 
-            return Ok(lista);
+            return Ok(lista.OrderBy(x => x.FechaDeRegistro));
         }
     }
 

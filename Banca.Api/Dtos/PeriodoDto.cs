@@ -19,12 +19,13 @@ namespace Banca.Api.Dtos
         [DataType(DataType.Date)]
         [Display(Name = "Fecha final")]
         public DateTime FechaFinal { get; set; }
+
+        public int VersionId { get; set; }
     }
 
     public class PeriodoDto: PeriodoDtoIn
     {
         public int Id { get; set; }
-        public int VersionId { get; set; }
     }
 
     public class MovimientoDto : MovimientoDtoIn
