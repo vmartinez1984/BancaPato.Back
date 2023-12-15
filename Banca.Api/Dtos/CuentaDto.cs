@@ -4,16 +4,30 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Banca.Comun.Dtos
 {
-    public class CuentaDto: CuentaDtoIn
+    public class CuentaDto : CuentaDtoIn
     {
         public int Id { get; set; }
         public decimal Balance { get; set; }
 
-        public TipoDeCuentaDto  TipoDeCuenta { get; set; }
+        public TipoDeCuentaDto TipoDeCuenta { get; set; }
+
+        public List<Calculo> Calculos { get; set; }
+    }
+
+    public class Calculo
+    {
+        public decimal Subtotal { get; set; }
+        public decimal InteresCalculado { get; set; }
+
+        public decimal Total { get; set; }
+
+        public decimal Transaccion { get; set; }
+
+        public DateTime Fecha { get; set; }
     }
 
     public class CuentaDtoIn
-    {        
+    {
         public Guid? Guid { get; set; }
 
         [Required]

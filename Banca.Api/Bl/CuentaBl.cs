@@ -122,14 +122,75 @@ namespace Banca.BusinessLayer.Bl
         internal async Task<CuentaDto> ObtenerAsync(string ahorroId)
         {
             Cuentum ahorro;
+            CuentaDto ahorroDto;
 
             ahorro = await _repositorio
                 .Cuenta
                 .Include(x => x.TipoDeCuenta)
+                .Include(x => x.Transaccions)
                 .Where(x => x.Id == ObtenerAhorroId(ahorroId))
                 .FirstOrDefaultAsync();
 
-            return _mapper.Map<CuentaDto>(ahorro);
+            ahorroDto = _mapper.Map<CuentaDto>(ahorro);
+            ahorroDto.Calculos = ObtenerCalculos(ahorro);
+
+            return ahorroDto;
+        }
+
+        private List<Calculo> ObtenerCalculos(Cuentum ahorro)
+        {
+            List<Calculo> calculos;
+            int numeroDeDias;
+            DateTime fechaInicial;
+            DateTime fechaActual;
+            decimal cantidad;
+
+
+            fechaInicial = ahorro.Transaccions.OrderBy(x => x.FechaDeRegistro).FirstOrDefault().FechaDeRegistro;
+            fechaActual = DateTime.Now;
+            numeroDeDias = (fechaActual - fechaInicial).Days + 2;
+            calculos = new List<Calculo>();
+
+            cantidad = ahorro.Transaccions[0].Cantidad;
+            for (int i = 1; i < numeroDeDias; i++)
+            {
+                decimal interesDelDia;
+                decimal interesCalculado;
+                decimal transaccion;
+
+                interesDelDia = ObtenerInteresDelDia(ahorro);
+                interesCalculado = Math.Round((cantidad * interesDelDia / 100 / 365), 2);
+                transaccion = ObtenerTransaccion(ahorro, fechaInicial.AddDays(i));
+                calculos.Add(new Calculo
+                {
+                    Subtotal = cantidad,
+                    InteresCalculado = interesCalculado,
+                    Total = cantidad + interesCalculado + transaccion,
+                    Transaccion = transaccion,
+                    Fecha = fechaInicial.AddDays(i),
+                });
+                cantidad = calculos[i - 1].Total;
+            }
+
+            return calculos;
+        }
+
+        private decimal ObtenerTransaccion(Cuentum ahorro, DateTime fecha)
+        {
+            decimal movimiento;
+            decimal retiros;
+            decimal depositos;
+
+            retiros = ahorro.Transaccions.Where(x => x.Tipo == Tipo.Retiro && x.FechaDeRegistro.Date == fecha.Date).Sum(x => x.Cantidad);
+            depositos = ahorro.Transaccions.Where(x => x.Tipo == Tipo.Deposito && x.FechaDeRegistro.Date == fecha.Date).Sum(x => x.Cantidad);
+            movimiento = depositos - retiros;
+
+            return movimiento;
+        }
+              
+        private decimal ObtenerInteresDelDia(Cuentum ahorro)
+        {
+            return (decimal)(ahorro.Interes);
         }
 
         private int ObtenerAhorroId(string ahorroId)
@@ -138,3 +199,4 @@ namespace Banca.BusinessLayer.Bl
         }
     }
 }
+;

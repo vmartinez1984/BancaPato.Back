@@ -23,7 +23,7 @@ public partial class Cuentum
 
     public virtual ICollection<HistorialDeApartado> HistorialDeApartados { get; set; } = new List<HistorialDeApartado>();
 
-    public virtual ICollection<Transaccion> Transaccions { get; set; } = new List<Transaccion>();
+    public virtual List<Transaccion> Transaccions { get; set; } = new List<Transaccion>();
 
     public int? TipoDeCuentaId { get; set; }
 
