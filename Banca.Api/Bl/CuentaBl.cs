@@ -145,13 +145,21 @@ namespace Banca.BusinessLayer.Bl
             DateTime fechaActual;
             decimal cantidad;
 
-
-            fechaInicial = ahorro.Transaccions.OrderBy(x => x.FechaDeRegistro).FirstOrDefault().FechaDeRegistro;
-            fechaActual = DateTime.Now;
+            if (ahorro.Transaccions.Count > 0)
+                fechaInicial = ahorro.Transaccions.OrderBy(x => x.FechaDeRegistro).FirstOrDefault().FechaDeRegistro;
+            else
+                fechaInicial = (DateTime)ahorro.FechaInicial;
+            if (ahorro.FechaFinal == null)
+                fechaActual = DateTime.Now;
+            else
+                fechaActual = (DateTime)ahorro.FechaFinal;
             numeroDeDias = (fechaActual - fechaInicial).Days + 2;
             calculos = new List<Calculo>();
 
-            cantidad = ahorro.Transaccions[0].Cantidad;
+            if (ahorro.Transaccions.Count > 0)
+                cantidad = ahorro.Transaccions[0].Cantidad;
+            else
+                cantidad = 0;
             for (int i = 1; i < numeroDeDias; i++)
             {
                 decimal interesDelDia;
@@ -187,7 +195,7 @@ namespace Banca.BusinessLayer.Bl
 
             return movimiento;
         }
-              
+
         private decimal ObtenerInteresDelDia(Cuentum ahorro)
         {
             return (decimal)(ahorro.Interes);

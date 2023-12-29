@@ -29,7 +29,9 @@ namespace Banca.Api.Bl
                 Guid = movimiento.Guid,
                 Nota = movimiento.Nota
             });
-            presupuesto = await _repositorio.Presupuesto.Include(x => x.Subcategoria).Where(x => x.Id == movimiento.PresupuestoId).FirstOrDefaultAsync();
+            presupuesto = await _repositorio.Presupuesto
+                .Include(x => x.Subcategoria)
+                .Where(x => x.Id == movimiento.PresupuestoId).FirstOrDefaultAsync();
             if (presupuesto.AhorroId != null)
             {
                 idDeposito = await _transaccionBl.Depositar(presupuesto.AhorroId.ToString(), new DepositoDtoIn
