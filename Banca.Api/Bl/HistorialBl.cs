@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
+using Banca.Api.Interfaces;
 using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +9,8 @@ namespace Banca.Api.Bl
 {
     public class HistorialBl : BaseBl
     {
-        public HistorialBl(DuckBankContext context, IMapper mapper) : base(context, mapper)
+        public HistorialBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository) 
+        : base(context, mapper, gastosRepository)
         {
         }
 

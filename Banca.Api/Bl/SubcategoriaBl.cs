@@ -1,26 +1,18 @@
-﻿using AutoMapper;
+﻿using System.Text.Json.Serialization;
+using AutoMapper;
 using Banca.Api.Dtos;
+using Banca.Api.Interfaces;
 using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace Banca.Api.Bl
-{
-    public class CategoriaBl : BaseBl
-    {
-        public CategoriaBl(DuckBankContext context, IMapper mapper) : base(context, mapper)
-        {
-        }
-
-        internal async Task<List<CategoriaDto>> ObtenerAsync()
-        {
-            return _mapper.Map<List<CategoriaDto>>(await _repositorio.Categoria.ToListAsync());
-        }
-    }
-
+{   
     public class SubcategoriaBl : BaseBl
     {
-        public SubcategoriaBl(DuckBankContext context, IMapper mapper) : base(context, mapper)
+        public SubcategoriaBl(DuckBankContext context, IMapper mapper, IGastosRepository repository) 
+        : base(context, mapper, repository)
         {
         }
 
@@ -57,10 +49,17 @@ namespace Banca.Api.Bl
         {
             List<Subcategorium> entities;
             List<SubcategoriaDto> subcategorias;
+            List<Categorium> categorias;
 
             entities = await _repositorio.Subcategoria
-                .Include(x=> x.Categoria)
+                //.Include(x=> x.Categoria)
                 .Where(x => x.EstaActivo).ToListAsync();
+            categorias = await _repositorioMongo.Categoria.ObtenerTodosAsync();
+            entities.ForEach(x=>{
+                var categoria = categorias.FirstOrDefault(categoria => categoria.Id == x.CategoriaId);
+                x.Categoria= categoria;
+            });
+            Console.Write(JsonConvert.SerializeObject(entities));
             subcategorias = _mapper.Map<List<SubcategoriaDto>>(entities);
 
             return subcategorias;

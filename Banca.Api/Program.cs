@@ -1,5 +1,7 @@
 using AutoMapper;
 using Banca.Api.Bl;
+using Banca.Api.Interfaces;
+using Banca.Api.Repositories;
 using Banca.BusinessLayer.Bl;
 using Banca.BusinessLayer.Mappers;
 using Banco.Repositorios.Entities;
@@ -19,6 +21,9 @@ builder.Services.AddScoped<TipoDeCuentaBl>();
 builder.Services.AddScoped<PresupuestoBl>();
 builder.Services.AddScoped<PeriodoBl>();
 builder.Services.AddScoped<MovimientoBl>();
+//Repositorio MongoDb
+builder.Services.AddScoped<ICategoryRepository, CategoriaRepository>();
+builder.Services.AddScoped<IGastosRepository, GastoRepository>();
 
 var mapperConfig = new MapperConfiguration(mapperConfig =>
 {

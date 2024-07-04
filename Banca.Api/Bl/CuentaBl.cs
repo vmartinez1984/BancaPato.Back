@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Banca.Api.Bl;
 using Banca.Api.Dtos;
+using Banca.Api.Interfaces;
 using Banca.Comun.Dtos;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -49,12 +50,16 @@ namespace Banca.BusinessLayer.Bl
     public class BaseBl
     {
         public readonly DuckBankContext _repositorio;
+
         public readonly IMapper _mapper;
 
-        public BaseBl(DuckBankContext context, IMapper mapper)
+        public readonly IGastosRepository _repositorioMongo;
+        
+        public BaseBl(DuckBankContext context, IMapper mapper, IGastosRepository repository)
         {
             _repositorio = context;
             _mapper = mapper;
+            _repositorioMongo = repository;
         }
     }
 

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
+using Banca.Api.Interfaces;
 using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +11,8 @@ namespace Banca.Api.Bl
     {
         private readonly TransaccionBl _transaccionBl;
 
-        public MovimientoBl(DuckBankContext context, IMapper mapper, TransaccionBl transaccionBl) : base(context, mapper)
+        public MovimientoBl(DuckBankContext context, IMapper mapper, TransaccionBl transaccionBl, IGastosRepository gastosRepository) 
+        : base(context, mapper, gastosRepository)
         {
             this._transaccionBl = transaccionBl;
         }
