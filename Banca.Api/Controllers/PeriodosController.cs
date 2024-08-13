@@ -1,5 +1,5 @@
-﻿using Banca.Api.Dtos;
-using Banca.BusinessLayer.Bl;
+﻿using Banca.Api.Bl;
+using Banca.Api.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
@@ -15,11 +15,19 @@ namespace Banca.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerTodos()
         {
-            List<PeriodoDto> periodos;
+            try
+            {
+                List<PeriodoDto> periodos;
 
-            periodos = await _unitOfWork.Periodo.ObtenerTodosAsync();
+                periodos = await _unitOfWork.Periodo.ObtenerTodosAsync();
 
-            return Ok(periodos);
+                return Ok(periodos);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, ex.Message);
+            }
         }
         
         [HttpGet("{periodoId}")]

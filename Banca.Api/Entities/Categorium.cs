@@ -15,5 +15,4 @@ public partial class Categorium
 
     public bool EstaActivo { get; set; }
 
-    public virtual ICollection<Subcategorium> Subcategoria { get; set; } = new List<Subcategorium>();
 }

@@ -1,5 +1,5 @@
-﻿using Banca.Api.Dtos;
-using Banca.BusinessLayer.Bl;
+﻿using Banca.Api.Bl;
+using Banca.Api.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers

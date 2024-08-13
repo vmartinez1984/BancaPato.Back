@@ -20,15 +20,15 @@ namespace Banca.Api.Bl
         internal async Task<IdDto> AgregarAsync(string periodoIdGuid, MovimientoDtoIn movimiento)
         {
             int concentradoraEntradaId = 1007;
-            int idRetiro;
-            int? idDeposito = null;
+            string idRetiro;
+            string idDeposito = null;
             Presupuesto presupuesto;
             Movimiento movimientoEntity;
 
             idRetiro = await _transaccionBl.Retirar(concentradoraEntradaId.ToString(), new RetiroDtoIn
             {
                 Cantidad = movimiento.Cantidad,
-                Guid = movimiento.Guid,
+                Guid = movimiento.Guid.ToString(),
                 Nota = movimiento.Nota
             });
             presupuesto = await _repositorio.Presupuesto
@@ -55,7 +55,7 @@ namespace Banca.Api.Bl
             _repositorio.Movimiento.Add(movimientoEntity);
             await _repositorio.SaveChangesAsync();
 
-            return new IdDto { Guid = movimiento.Guid, Id = movimientoEntity.Id };
+            return new IdDto { Guid = movimiento.Guid.ToString(), Id = movimientoEntity.Id };
         }
 
         private int ObtenerPeriodoId(string periodoIdGuid)

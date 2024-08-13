@@ -1,4 +1,3 @@
-using MongoDB.Bson;
 using MongoDB.Driver;
 using Banca.Api.Interfaces;
 using Banco.Repositorios.Entities;
@@ -7,7 +6,7 @@ namespace Banca.Api.Repositories
 {
     public class CategoriaRepository : ICategoryRepository
     {
-         private readonly IMongoCollection<Categorium> _collection;
+        private readonly IMongoCollection<Categorium> _collection;
 
         public CategoriaRepository(IConfiguration configurations)
         {

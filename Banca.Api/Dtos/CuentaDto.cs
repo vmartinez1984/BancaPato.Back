@@ -28,7 +28,7 @@ namespace Banca.Comun.Dtos
 
     public class CuentaDtoIn
     {
-        public Guid? Guid { get; set; }
+        public string Guid { get; set; }
 
         [Required]
         public string Nombre { get; set; } = null!;
@@ -43,7 +43,7 @@ namespace Banca.Comun.Dtos
         public DateTime? FechaInicial { get; set; }
         public DateTime? FechaFinal { get; set; }
 
-        public int TipoDeCuentaId { get; set; }
+        public int? TipoDeCuentaId { get; set; }
 
         public int? CuentaDeReferenciaId { get; set; }
     }

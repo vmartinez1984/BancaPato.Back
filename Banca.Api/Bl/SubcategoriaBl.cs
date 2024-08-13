@@ -1,17 +1,13 @@
-﻿using System.Text.Json.Serialization;
-using AutoMapper;
+﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
-using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 
 namespace Banca.Api.Bl
-{   
+{
     public class SubcategoriaBl : BaseBl
     {
-        public SubcategoriaBl(DuckBankContext context, IMapper mapper, IGastosRepository repository) 
+        public SubcategoriaBl(DuckBankContext context, IMapper mapper, IGastosRepository repository)
         : base(context, mapper, repository)
         {
         }
@@ -20,24 +16,31 @@ namespace Banca.Api.Bl
         {
             Subcategorium subcategorium;
 
-            subcategorium = await _repositorio.Subcategoria.Where(x => x.Id == ObtenerId(idGuid)).FirstOrDefaultAsync();
+            subcategorium = await _repositorioMongo.Subcategoria.ObtenerAsync(idGuid);
             subcategoria.Guid = subcategorium?.Guid;
             subcategorium = _mapper.Map(subcategoria, subcategorium);
-            _repositorio.Subcategoria.Update(subcategorium);
-
-            await _repositorio.SaveChangesAsync();
+            
+            await _repositorioMongo.Subcategoria.ActualizarAsync(subcategorium);
         }
 
         internal async Task<IdDto> AgregarAsync(SubcategoriaDtoIn subcategoria)
         {
             Subcategorium subcategorium;
-            if(subcategoria.Guid == null)
-                subcategoria.Guid = Guid.NewGuid();
+            if (subcategoria.Guid == null)
+                subcategoria.Guid = Guid.NewGuid().ToString();
             subcategorium = _mapper.Map<Subcategorium>(subcategoria);
-            _repositorio.Subcategoria.Add(subcategorium);
-            await _repositorio.SaveChangesAsync();
+            await AgregarAMongoDbAsync(subcategorium);
 
-            return new IdDto { Id =  subcategorium.Id, Guid = subcategorium.Guid };
+            return new IdDto { Id = subcategorium.Id, Guid = subcategorium.Guid };
+        }
+
+        private async Task AgregarAMongoDbAsync(Subcategorium subcategoria)
+        {
+            var categorias = await _repositorioMongo.Categoria.ObtenerTodosAsync();
+            var categoria = categorias.FirstOrDefault(x => x.Id == subcategoria.CategoriaId);
+            subcategoria.Categoria = categoria;
+
+            await _repositorioMongo.Subcategoria.AgregarAsync(subcategoria);
         }
 
         internal Task BorrarAsync(string idGuid)
@@ -49,17 +52,8 @@ namespace Banca.Api.Bl
         {
             List<Subcategorium> entities;
             List<SubcategoriaDto> subcategorias;
-            List<Categorium> categorias;
 
-            entities = await _repositorio.Subcategoria
-                //.Include(x=> x.Categoria)
-                .Where(x => x.EstaActivo).ToListAsync();
-            categorias = await _repositorioMongo.Categoria.ObtenerTodosAsync();
-            entities.ForEach(x=>{
-                var categoria = categorias.FirstOrDefault(categoria => categoria.Id == x.CategoriaId);
-                x.Categoria= categoria;
-            });
-            Console.Write(JsonConvert.SerializeObject(entities));
+            entities = await _repositorioMongo.Subcategoria.ObtenerTodosAsync();
             subcategorias = _mapper.Map<List<SubcategoriaDto>>(entities);
 
             return subcategorias;
@@ -67,7 +61,7 @@ namespace Banca.Api.Bl
 
         internal async Task<SubcategoriaDto> ObtenerAsync(string idGuid)
         {
-            return _mapper.Map<SubcategoriaDto>(await _repositorio.Subcategoria.Where(x => x.Id == ObtenerId(idGuid)).FirstOrDefaultAsync());
+            return _mapper.Map<SubcategoriaDto>(await _repositorioMongo.Subcategoria.ObtenerAsync(idGuid));
         }
 
         private int ObtenerId(string idGuid)

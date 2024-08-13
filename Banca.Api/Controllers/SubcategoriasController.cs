@@ -1,5 +1,5 @@
-﻿using Banca.Api.Dtos;
-using Banca.BusinessLayer.Bl;
+﻿using Banca.Api.Bl;
+using Banca.Api.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
@@ -78,7 +78,7 @@ namespace Banca.Api.Controllers
                 id = new IdDto
                 {
                     Id = subcategoriaDto.Id,
-                    Guid = Guid.Parse(subcategoriaDto.Guid.ToString())
+                    Guid = subcategoriaDto.Guid.ToString()
                 };
 
                 return Ok(id);

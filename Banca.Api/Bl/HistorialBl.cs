@@ -24,7 +24,7 @@ namespace Banca.Api.Bl
             _repositorio.HistorialDeApartados.Add(entity);
             await _repositorio.SaveChangesAsync();
 
-            return new IdDto { Id = entity.Id, Guid = entity.Guid };
+            return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
         }
 
         internal async Task<List<HistorialDto>> Obtener(string ahorroId = null)

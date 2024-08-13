@@ -12,7 +12,7 @@ public partial class Presupuesto
 
     public int VersionId { get; set; }
 
-    public Guid Guid { get; set; }
+    public String Guid { get; set; }
 
     public virtual ICollection<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
 

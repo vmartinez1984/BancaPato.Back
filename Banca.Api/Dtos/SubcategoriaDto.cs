@@ -32,7 +32,7 @@ namespace Banca.Api.Dtos
         [Range(0, int.MaxValue, ErrorMessage = "La cantidad debe estar entre {0} y {1}")]
         public decimal Presupuesto { get; set; }
                 
-        public Guid? Guid { get; set; }
+        public string Guid { get; set; }
 
         public bool EsPrimario { get; set; } = false;
 

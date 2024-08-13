@@ -23,7 +23,14 @@ builder.Services.AddScoped<PeriodoBl>();
 builder.Services.AddScoped<MovimientoBl>();
 //Repositorio MongoDb
 builder.Services.AddScoped<ICategoryRepository, CategoriaRepository>();
+builder.Services.AddScoped<ISubcategoriaRepository, SubcategoriaRepo>();
 builder.Services.AddScoped<IGastosRepository, GastoRepository>();
+builder.Services.AddScoped<IAhorroRepository, AhorrosRepository>();
+builder.Services.AddScoped<ITipoDeCuentaRepository, TipoDeCuentaRepository>();
+builder.Services.AddScoped<IVersionRepository, VersionRepository>();
+//Servicio a DuckbankMs
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<AhorrosRepository>();
 
 var mapperConfig = new MapperConfiguration(mapperConfig =>
 {
@@ -46,7 +53,11 @@ builder.Services.AddCors(options => options.AddPolicy("AllowWebApp",
 var app = builder.Build();
 
 app.UseSwagger();
-app.UseSwaggerUI();
+app.UseSwaggerUI(x =>
+{
+    x.SwaggerEndpoint("/swagger/v1/swagger.json", "/swagger/v1/swagger.json");
+    x.RoutePrefix = "";
+});
 
 app.UseCors("AllowWebApp");
 app.UseHttpsRedirection();

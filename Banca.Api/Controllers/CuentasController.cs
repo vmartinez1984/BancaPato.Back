@@ -1,5 +1,5 @@
-﻿using Banca.Api.Dtos;
-using Banca.BusinessLayer.Bl;
+﻿using Banca.Api.Bl;
+using Banca.Api.Dtos;
 using Banca.Comun.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
@@ -79,7 +79,7 @@ namespace Banca.Api.Controllers
         [HttpPost("{cuentaIdGuid}/depositos")]
         public async Task<IActionResult> Depositar(string cuentaIdGuid, DepositoDtoIn deposito)
         {
-            int id;
+            string id;
 
             id = await _unitOfWork.Transaccion.Depositar(cuentaIdGuid, deposito);
 
@@ -89,7 +89,7 @@ namespace Banca.Api.Controllers
         [HttpPost("{cuentaIdGuid}/retiros")]
         public async Task<IActionResult> Retirar(string cuentaIdGuid, RetiroDtoIn retiro)
         {
-            int id;
+            string id;
 
             id = await _unitOfWork.Transaccion.Retirar(cuentaIdGuid, retiro);
 

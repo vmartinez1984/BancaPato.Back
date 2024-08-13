@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
-using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -57,7 +56,7 @@ namespace Banca.Api.Bl
             await _repositorio.Periodo.AddAsync(entity);
             await _repositorio.SaveChangesAsync();
 
-            return new IdDto { Id = entity.Id, Guid = entity.Guid };
+            return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
         }
     }
 }

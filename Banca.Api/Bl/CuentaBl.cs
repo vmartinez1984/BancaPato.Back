@@ -1,104 +1,123 @@
 ﻿using AutoMapper;
 using Banca.Api.Bl;
 using Banca.Api.Dtos;
+using Banca.Api.Entities;
 using Banca.Api.Interfaces;
 using Banca.Comun.Dtos;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Banca.BusinessLayer.Bl
 {
-    public class UnitOfWork
+    public class CuentaBl : BaseBl
     {
-        public UnitOfWork(
-            CuentaBl cuentaBl,
-            TransaccionBl transaccionBl,
-            HistorialBl historialBl,
-            CategoriaBl categoriaBl,
-            SubcategoriaBl subcategoriaBl,
-            VersionBl versionBl,
-            PresupuestoBl presupuestoBl,
-            TipoDeCuentaBl tipoDeCuentaBl,
-            PeriodoBl periodoBl,
-            MovimientoBl movimientoBl
-        )
-        {
-            Categoria = categoriaBl;
-            Cuenta = cuentaBl;
-            Transaccion = transaccionBl;
-            Historial = historialBl;
-            Subcategoria = subcategoriaBl;
-            Version = versionBl;
-            Presupuesto = presupuestoBl;
-            TipoDeCuenta = tipoDeCuentaBl;
-            Periodo = periodoBl;
-            Movimiento = movimientoBl;
-        }
-
-        public CuentaBl Cuenta { get; }
-        public TransaccionBl Transaccion { get; }
-        public HistorialBl Historial { get; internal set; }
-        public SubcategoriaBl Subcategoria { get; internal set; }
-        public CategoriaBl Categoria { get; set; }
-        public VersionBl Version { get; set; }
-        public PresupuestoBl Presupuesto { get; internal set; }
-        public TipoDeCuentaBl TipoDeCuenta { get; internal set; }
-        public PeriodoBl Periodo { get; internal set; }
-        public MovimientoBl Movimiento { get; internal set; }
-    }
-
-    public class BaseBl
-    {
-        public readonly DuckBankContext _repositorio;
-
-        public readonly IMapper _mapper;
-
-        public readonly IGastosRepository _repositorioMongo;
-        
-        public BaseBl(DuckBankContext context, IMapper mapper, IGastosRepository repository)
-        {
-            _repositorio = context;
-            _mapper = mapper;
-            _repositorioMongo = repository;
-        }
-    }
-
-    public class CuentaBl
-    {
-        private readonly DuckBankContext _repositorio;
-        private readonly IMapper _mapper;
-
-        public CuentaBl(DuckBankContext context, IMapper mapper)
-        {
-            this._repositorio = context;
-            this._mapper = mapper;
-        }
+        public CuentaBl(DuckBankContext context, IMapper mapper, IGastosRepository repository) :
+            base(context, mapper, repository)
+        { }
 
         public async Task<IdDto> AgregarAsync(CuentaDtoIn cuenta)
-        {
-            Cuentum entity;
+        {            
+            int id;
 
             if (cuenta.Guid == null)
-                cuenta.Guid = Guid.NewGuid();
-            entity = _mapper.Map<Cuentum>(cuenta);
-            _repositorio.Cuenta.Add(entity);
-            await _repositorio.SaveChangesAsync();
+                cuenta.Guid = Guid.NewGuid().ToString();                     
+            Ahorro ahorro = await ObtenerAhorroAsync(cuenta);
+            id = await _repositorioMongo.Ahorro.AgregarAsycn(ahorro);            
 
-            return new IdDto { Id = entity.Id, Guid = entity.Guid };
+            return new IdDto { Id = id, Guid = cuenta.Guid };
+        }
+
+        private async Task<Ahorro> ObtenerAhorroAsync(CuentaDtoIn cuenta)
+        {
+            Ahorro ahorro;
+            Dictionary<string, string> otros = new Dictionary<string, string>();
+            List<TipoDeCuenta> tipos;
+            TipoDeCuenta tipoDeCuenta;
+
+            tipos = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
+            tipoDeCuenta = tipos.FirstOrDefault(x => x.Id == cuenta.TipoDeCuentaId);
+            otros.Add("Nota", cuenta.Nota);
+            otros.Add("FechaInicial", cuenta.FechaInicial.ToString());
+            otros.Add("FechaFinal", cuenta.FechaFinal.ToString());
+            otros.Add("TipoDeCuentaId", tipoDeCuenta.Id.ToString());
+            otros.Add("TipoDeCuenta", tipoDeCuenta.Nombre);
+            ahorro = new Ahorro
+            {
+                Id = 0,
+                Guid = cuenta.Guid.ToString(),
+                ClienteId = "148318",
+                Total = 0,
+                Interes = cuenta.Interes,
+                Nombre = cuenta.Nombre,
+                FechaDeRegistro = DateTime.Now,
+                Estado = "Activo",
+                Otros = otros
+            };
+
+            return ahorro;
         }
 
         public async Task<List<CuentaDto>> Obtener()
         {
             List<CuentaDto> dtos;
-            List<Cuentum> entidades;
+            List<Ahorro> entidades;
+            List<TipoDeCuenta> tipoDeCuentas;
 
-            entidades = await _repositorio.Cuenta
-                .Include(x => x.TipoDeCuenta)
-                .Where(x => x.EstaActivo)
-                .ToListAsync();
-            dtos = _mapper.Map<List<CuentaDto>>(entidades);
+            tipoDeCuentas = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
+            entidades = await _repositorioMongo.Ahorro.ObtenerAsync();
+            dtos = entidades.Select(x => new CuentaDto
+            {
+                Balance = x.Total,
+                FechaFinal = ObtenerFecha(x.Otros, "FechaFinal"),
+                FechaInicial = ObtenerFecha(x.Otros, "FechaInicial"),
+                Nombre = x.Nombre,
+                Guid = x.Guid,
+                Id = x.Id,
+                Interes = x.Interes,
+                Nota = ObtnerCadena(x.Otros, "Nota"),
+                TipoDeCuentaId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
+                TipoDeCuenta = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
+            }).ToList();
 
             return dtos;
+        }
+
+        private TipoDeCuentaDto ObtnerTipoDeCuenta(int? v, List<TipoDeCuenta> tipoDeCuentas)
+        {
+            if (v == null) return null;
+
+            TipoDeCuenta tipoDeCuenta;
+
+            tipoDeCuenta = tipoDeCuentas.FirstOrDefault(x => x.Id == v);
+
+            return _mapper.Map<TipoDeCuentaDto>(tipoDeCuenta);
+        }
+
+        private int? ObtnerNumero(Dictionary<string, string> otros, string key)
+        {
+            var data = otros.Where(x => x.Key == key).FirstOrDefault();
+            if (data.Value == null)
+                return null;
+
+            return int.Parse(data.Value);
+        }
+
+        private string ObtnerCadena(Dictionary<string, string> otros, string key)
+        {
+            var data = otros.Where(x => x.Key == key).FirstOrDefault();
+            if (data.Value == null)
+                return null;
+
+            return data.Value;
+        }
+
+        private DateTime? ObtenerFecha(Dictionary<string, string> otros, string key)
+        {
+            var data = otros.Where(x => x.Key == key).FirstOrDefault();
+            if (data.Value == null)
+                return null;
+            return Convert.ToDateTime(data.Value);
         }
 
         internal async Task ActualizarAsync(string ahorroId, CuentaDtoIn ahorro)
@@ -106,7 +125,7 @@ namespace Banca.BusinessLayer.Bl
             Cuentum ahorroEntity;
 
             ahorroEntity = await _repositorio.Cuenta.FindAsync(ObtenerAhorroId(ahorroId));
-            ahorro.Guid = ahorroEntity.Guid;
+            ahorro.Guid = ahorroEntity.Guid.ToString();
             ahorroEntity = _mapper.Map(ahorro, ahorroEntity);
             _repositorio.Cuenta.Update(ahorroEntity);
 
@@ -126,18 +145,26 @@ namespace Banca.BusinessLayer.Bl
 
         internal async Task<CuentaDto> ObtenerAsync(string ahorroId)
         {
-            Cuentum ahorro;
+            Ahorro x;
             CuentaDto ahorroDto;
+            List<TipoDeCuenta> tipoDeCuentas;
 
-            ahorro = await _repositorio
-                .Cuenta
-                .Include(x => x.TipoDeCuenta)
-                .Include(x => x.Transaccions)
-                .Where(x => x.Id == ObtenerAhorroId(ahorroId))
-                .FirstOrDefaultAsync();
-
-            ahorroDto = _mapper.Map<CuentaDto>(ahorro);
-            ahorroDto.Calculos = ObtenerCalculos(ahorro);
+            tipoDeCuentas = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
+            x = await _repositorioMongo.Ahorro.ObtenerAsync(ahorroId);
+            ahorroDto = new CuentaDto
+            {
+                Balance = x.Total,
+                FechaFinal = ObtenerFecha(x.Otros, "FechaFinal"),
+                FechaInicial = ObtenerFecha(x.Otros, "FechaInicial"),
+                Nombre = x.Nombre,
+                Guid = x.Guid,
+                Id = x.Id,
+                Interes = x.Interes,
+                Nota = ObtnerCadena(x.Otros, "Nota"),
+                TipoDeCuentaId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
+                TipoDeCuenta = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
+            };
+            //ahorroDto.Calculos = ObtenerCalculos(ahorro);
 
             return ahorroDto;
         }

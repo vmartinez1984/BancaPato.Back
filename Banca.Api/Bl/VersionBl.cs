@@ -37,17 +37,22 @@ namespace Banca.Api.Bl
             VersionDePresupuesto entity;
 
             if (version.Guid == null)
-                version.Guid = Guid.NewGuid();
+                version.Guid = Guid.NewGuid().ToString();
             entity = _mapper.Map<VersionDePresupuesto>(version);
-            _repositorio.VersionDePresupuesto.Add(entity);
-            await _repositorio.SaveChangesAsync();
+            await _repositorioMongo.Version.AgregarAsync(entity);
 
-            return new IdDto { Guid = entity.Guid, Id = entity.Id };
+            return new IdDto { Guid = entity.Guid.ToString(), Id = entity.Id };
         }
 
         internal async Task<List<VersionDto>> ObtenerAsync()
         {
-            return _mapper.Map<List<VersionDto>>(await _repositorio.VersionDePresupuesto.Where(x => x.EstaActivo).ToListAsync());
+            List<VersionDto> dtos;
+            List<VersionDePresupuesto> entities;
+
+            entities = await _repositorioMongo.Version.ObtenerTodosAsync();
+            dtos = _mapper.Map<List<VersionDto>>(entities);
+
+            return dtos;
         }
 
         internal async Task BorrarAsync(string versionIdGuid)
@@ -58,6 +63,17 @@ namespace Banca.Api.Bl
             entity.EstaActivo = false;
             _repositorio.VersionDePresupuesto.Update(entity);
             await _repositorio.SaveChangesAsync();
+        }
+
+        internal async Task<VersionDto> ObtenerAsync(string versionIdGuid)
+        {
+            VersionDePresupuesto entity;
+            VersionDto dto;
+
+            entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
+            dto = _mapper.Map<VersionDto>(entity);
+
+            return dto;
         }
     }
 }

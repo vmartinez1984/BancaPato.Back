@@ -48,12 +48,13 @@ namespace Banca.Api.Dtos
     public class RetiroDtoIn
     {      
 
-        public Guid? Guid { get; set; }
+        public string Guid { get; set; }
 
         public decimal Cantidad { get; set; }
 
         [StringLength(50)]
         public string Nota { get; set; }
+        public string Concepto { get; set; }
     }
 
     public class Tipo
@@ -67,6 +68,6 @@ namespace Banca.Api.Dtos
     {
         public int Id { get; set; }
 
-        public Guid Guid { get; set; }
+        public string Guid { get; set; }
     }
 }

@@ -1,15 +1,14 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
+using Banca.Api.Entities;
 using Banca.Api.Interfaces;
-using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace Banca.Api.Bl
 {
     public class TipoDeCuentaBl : BaseBl
     {
-        public TipoDeCuentaBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository) 
+        public TipoDeCuentaBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository)
         : base(context, mapper, gastosRepository)
         {
         }
@@ -17,9 +16,10 @@ namespace Banca.Api.Bl
         internal async Task<List<TipoDeCuentaDto>> ObtenerTodosAsync()
         {
             List<TipoDeCuentaDto> dtos;
-            //List<TipoDeCuenta> entitites;
+            List<TipoDeCuenta> entitites;
 
-            dtos = await _repositorio.TipoDeCuenta.Select(x => new TipoDeCuentaDto { Id = x.Id, Nombre = x.Nombre }).ToListAsync();
+            entitites = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
+            dtos = entitites.Select(x => new TipoDeCuentaDto { Id = x.Id, Nombre = x.Nombre }).ToList();
 
             return dtos;
         }

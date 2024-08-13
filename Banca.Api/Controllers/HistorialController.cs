@@ -1,5 +1,5 @@
-﻿using Banca.Api.Dtos;
-using Banca.BusinessLayer.Bl;
+﻿using Banca.Api.Bl;
+using Banca.Api.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
@@ -30,19 +30,6 @@ namespace Banca.Api.Controllers
             lista = await _unitOfWork.Historial.Obtener();
 
             return Ok(lista.OrderBy(x => x.FechaDeRegistro));
-        }
-    }
-
-
-    public class BancaBase : ControllerBase
-    {
-        public readonly UnitOfWork _unitOfWork;
-
-        public BancaBase(
-            UnitOfWork unitOfWork
-        )
-        {
-            this._unitOfWork = unitOfWork;
         }
     }
 }

@@ -1,10 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Banco.Repositorios.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace Banca.Api.Dtos
 {
     public class VersionDto: VersionDtoIn
     {
         public int Id { get; set; }
+
+        public List<Presupuesto> Presupuestos { get; set; } = new List<Presupuesto>();
     }
 
     public class VersionDtoIn
@@ -21,6 +24,6 @@ namespace Banca.Api.Dtos
         [Display(Name = "Fecha inicial")]
         [DataType(DataType.Date)]
         public DateTime FechaFinal { get; set; }
-        public Guid? Guid { get; internal set; }
+        public string Guid { get;  set; }
     }
 }

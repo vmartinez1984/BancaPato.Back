@@ -1,5 +1,5 @@
-﻿using Banca.Api.Dtos;
-using Banca.BusinessLayer.Bl;
+﻿using Banca.Api.Bl;
+using Banca.Api.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
@@ -52,11 +52,11 @@ namespace Banca.Api.Controllers
         [HttpGet("{versionIdGuid}/Presupuestos")]
         public async Task<IActionResult> ObtenerPresupuestos(string versionIdGuid)
         {
-            List<PresupuestoDto> lista;
+            VersionDto version;
 
-            lista = await _unitOfWork.Presupuesto.ObtenerAsync(versionIdGuid);
+            version = await _unitOfWork.Version.ObtenerAsync(versionIdGuid);           
 
-            return Ok(lista);
+            return Ok(version.Presupuestos);
         }
 
         [HttpPost("{versionIdGuid}/Presupuestos")]
