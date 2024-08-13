@@ -6,7 +6,7 @@ namespace Banca.Api.Bl
 {
     public class BaseBl
     {
-        public readonly DuckBankContext _repositorio;
+        //public readonly DuckBankContext _repositorio;
 
         public readonly IMapper _mapper;
 
@@ -14,7 +14,7 @@ namespace Banca.Api.Bl
 
         public BaseBl(DuckBankContext context, IMapper mapper, IGastosRepository repository)
         {
-            _repositorio = context;
+          //  _repositorio = context;
             _mapper = mapper;
             _repositorioMongo = repository;
         }

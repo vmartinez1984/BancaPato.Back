@@ -14,12 +14,15 @@ namespace Banca.Api.Repositories
 
         public IVersionRepository Version { get; }
 
+        public IPeriodoRepository Periodo { get; }
+
         public GastoRepository(
             ICategoryRepository categoryRepository, 
             ISubcategoriaRepository subcategoriaRepository,
             ITipoDeCuentaRepository tipoDeCuentaRepository,
             IAhorroRepository ahorroRepository,
-            IVersionRepository version
+            IVersionRepository version,
+            IPeriodoRepository periodoRepository
             )
         {
             Categoria = categoryRepository;
@@ -27,6 +30,7 @@ namespace Banca.Api.Repositories
             TipoDeCuenta = tipoDeCuentaRepository;
             Ahorro = ahorroRepository;
             Version = version;
+            Periodo = periodoRepository;
         }
     }
 }

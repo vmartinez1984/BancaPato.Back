@@ -21,7 +21,7 @@
 
         public decimal Cantidad { get; set; }
 
-        public decimal CantidadMeta { get; set; }
+        public string AhorroTipo { get; set; }
 
         public int VersionId { get; set; }
                

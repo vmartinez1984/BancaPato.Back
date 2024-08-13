@@ -6,7 +6,6 @@ using Banca.Api.Interfaces;
 using Banca.Comun.Dtos;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Banca.BusinessLayer.Bl
 {
@@ -122,25 +121,12 @@ namespace Banca.BusinessLayer.Bl
 
         internal async Task ActualizarAsync(string ahorroId, CuentaDtoIn ahorro)
         {
-            Cuentum ahorroEntity;
-
-            ahorroEntity = await _repositorio.Cuenta.FindAsync(ObtenerAhorroId(ahorroId));
-            ahorro.Guid = ahorroEntity.Guid.ToString();
-            ahorroEntity = _mapper.Map(ahorro, ahorroEntity);
-            _repositorio.Cuenta.Update(ahorroEntity);
-
-            await _repositorio.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
         internal async Task BorrarAsync(string ahorroId)
         {
-            Cuentum ahorro;
-
-            ahorro = await _repositorio.Cuenta.Where(x => x.Id == ObtenerAhorroId(ahorroId)).FirstOrDefaultAsync();
-            ahorro.EstaActivo = false;
-            _repositorio.Cuenta.Update(ahorro);
-
-            await _repositorio.SaveChangesAsync();
+           throw new NotImplementedException();
         }
 
         internal async Task<CuentaDto> ObtenerAsync(string ahorroId)

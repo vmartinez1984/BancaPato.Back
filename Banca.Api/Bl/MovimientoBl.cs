@@ -11,7 +11,7 @@ namespace Banca.Api.Bl
     {
         private readonly TransaccionBl _transaccionBl;
 
-        public MovimientoBl(DuckBankContext context, IMapper mapper, TransaccionBl transaccionBl, IGastosRepository gastosRepository) 
+        public MovimientoBl(DuckBankContext context, IMapper mapper, TransaccionBl transaccionBl, IGastosRepository gastosRepository)
         : base(context, mapper, gastosRepository)
         {
             this._transaccionBl = transaccionBl;
@@ -19,43 +19,39 @@ namespace Banca.Api.Bl
 
         internal async Task<IdDto> AgregarAsync(string periodoIdGuid, MovimientoDtoIn movimiento)
         {
-            int concentradoraEntradaId = 1007;
-            string idRetiro;
-            string idDeposito = null;
+            string ahorroEntradaId = "39";
+            int movimientoId;
             Presupuesto presupuesto;
-            Movimiento movimientoEntity;
+            Periodo periodo;
 
-            idRetiro = await _transaccionBl.Retirar(concentradoraEntradaId.ToString(), new RetiroDtoIn
+            if (string.IsNullOrEmpty(movimiento.Guid))
+                movimiento.Guid = Guid.NewGuid().ToString();
+            periodo = await _repositorioMongo.Periodo.ObtenerAsync(periodoIdGuid);
+            presupuesto = periodo.Version.Presupuestos.FirstOrDefault(x => x.Id == movimiento.PresupuestoId);
+           await _repositorioMongo.Ahorro.DepositarAsync(presupuesto.AhorroId.ToString(), new Entities.MovimientoDuckBank
             {
                 Cantidad = movimiento.Cantidad,
-                Guid = movimiento.Guid.ToString(),
-                Nota = movimiento.Nota
+                FechaDeRegistro = DateTime.Now,
+                Concepto = periodo.Nombre,
+                Referencia = movimiento.Guid
             });
-            presupuesto = await _repositorio.Presupuesto
-                .Include(x => x.Subcategoria)
-                .Where(x => x.Id == movimiento.PresupuestoId).FirstOrDefaultAsync();
-            if (presupuesto.AhorroId != null)
+            await _repositorioMongo.Ahorro.RetirarAsync(ahorroEntradaId, new Entities.MovimientoDuckBank
             {
-                idDeposito = await _transaccionBl.Depositar(presupuesto.AhorroId.ToString(), new DepositoDtoIn
-                {
-                    Cantidad = movimiento.Cantidad,
-                    Guid = movimiento.Guid,
-                    Nota = movimiento.Nota,
-                    Concepto = presupuesto.Subcategoria.Nombre
-                });
-            }
-            movimientoEntity = new Movimiento
+                Cantidad = movimiento.Cantidad,
+                FechaDeRegistro = DateTime.Now,
+                Concepto = $"{periodo.Nombre} - {presupuesto.Subcategoria.Nombre}",
+                Referencia = movimiento.Guid
+            });
+            movimientoId = presupuesto.Movimientos.Count() + 1;            
+            presupuesto.Movimientos.Add(new Movimiento
             {
+                Id = movimientoId,
                 Guid = movimiento.Guid,
-                Nota = movimiento.Nota,
-                PeriodoId = ObtenerPeriodoId(periodoIdGuid),
-                PresupuestoId = movimiento.PresupuestoId,
-                TransaccionId = idDeposito == null ? idRetiro : idDeposito,
-            };
-            _repositorio.Movimiento.Add(movimientoEntity);
-            await _repositorio.SaveChangesAsync();
+                Cantidad = movimiento.Cantidad
+            });
+            await _repositorioMongo.Periodo.ActualizarAsinc(periodo);
 
-            return new IdDto { Guid = movimiento.Guid.ToString(), Id = movimientoEntity.Id };
+            return new IdDto { Guid = movimiento.Guid.ToString() };
         }
 
         private int ObtenerPeriodoId(string periodoIdGuid)
@@ -65,23 +61,23 @@ namespace Banca.Api.Bl
 
         internal async Task<List<MovimientoDto>> ObtenerTodosAsync(string periodoIdGuid)
         {
-            List<MovimientoDto> dtos;
-            List<Movimiento> entities;
+            //List<MovimientoDto> dtos;
+            //List<Movimiento> entities;
 
-            entities = await _repositorio.Movimiento
-                .Include(x => x.Presupuesto)
-                .Include(x => x.Transaccion)
-                .Where(x => x.PeriodoId == ObtenerPeriodoId(periodoIdGuid)).ToListAsync();
-            dtos = entities.Select(x => new MovimientoDto
-            {
-                Id = x.Id,
-                Cantidad = x.Transaccion.Cantidad,
-                Guid = x.Guid,
-                Nota = x.Nota,
-                PresupuestoId = x.PresupuestoId
-            }).ToList();
+            //entities = await _repositorio.Movimiento
+            //    .Include(x => x.Presupuesto)
+            //    .Include(x => x.Transaccion)
+            //    .Where(x => x.PeriodoId == ObtenerPeriodoId(periodoIdGuid)).ToListAsync();
+            //dtos = entities.Select(x => new MovimientoDto
+            //{
+            //    Id = x.Id,
+            //    Cantidad = x.Transaccion.Cantidad,
+            //    Guid = x.Guid,
+            //    Nota = x.Nota,
+            //    PresupuestoId = x.PresupuestoId
+            //}).ToList();
 
-            return dtos;
+            return null;
         }
     }
 }

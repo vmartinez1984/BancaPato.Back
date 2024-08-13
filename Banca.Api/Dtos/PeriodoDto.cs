@@ -4,7 +4,7 @@ namespace Banca.Api.Dtos
 {
     public class PeriodoDtoIn
     {
-        public Guid? Guid { get; set; }
+        public string Guid { get; set; }
 
         [Required(ErrorMessage = "El nombre es requerido")]
         [StringLength(100)]
@@ -26,6 +26,7 @@ namespace Banca.Api.Dtos
     public class PeriodoDto: PeriodoDtoIn
     {
         public int Id { get; set; }
+        public VersionDto Version { get; set; }
     }
 
     public class MovimientoDto : MovimientoDtoIn
@@ -35,9 +36,7 @@ namespace Banca.Api.Dtos
 
     public class MovimientoDtoIn
     {
-        public Guid Guid { get; set; }
-
-        public string Nota { get; set; }               
+        public string Guid { get; set; }                
 
         [Required]
         public int PresupuestoId { get; set; }

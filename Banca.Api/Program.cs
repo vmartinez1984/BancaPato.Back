@@ -28,6 +28,7 @@ builder.Services.AddScoped<IGastosRepository, GastoRepository>();
 builder.Services.AddScoped<IAhorroRepository, AhorrosRepository>();
 builder.Services.AddScoped<ITipoDeCuentaRepository, TipoDeCuentaRepository>();
 builder.Services.AddScoped<IVersionRepository, VersionRepository>();
+builder.Services.AddScoped<IPeriodoRepository, PeriodoRepo>();
 //Servicio a DuckbankMs
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<AhorrosRepository>();

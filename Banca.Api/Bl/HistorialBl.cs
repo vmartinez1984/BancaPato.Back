@@ -3,7 +3,6 @@ using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
 using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace Banca.Api.Bl
 {
@@ -16,29 +15,12 @@ namespace Banca.Api.Bl
 
         internal async Task<IdDto> AgregarAsync(HistorialDtoIn historial)
         {
-            HistorialDeApartado entity;
-
-            if (historial.Guid == null)
-                historial.Guid = Guid.NewGuid();
-            entity = _mapper.Map<HistorialDeApartado>(historial);
-            _repositorio.HistorialDeApartados.Add(entity);
-            await _repositorio.SaveChangesAsync();
-
-            return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
+            throw new NotImplementedException();
         }
 
         internal async Task<List<HistorialDto>> Obtener(string ahorroId = null)
         {
-            List<HistorialDeApartado> entities;
-            List<HistorialDto> dtos;
-
-            if (string.IsNullOrEmpty(ahorroId))
-                entities = await _repositorio.HistorialDeApartados.Include(x=> x.Cuenta).ToListAsync();
-            else
-                entities = await _repositorio.HistorialDeApartados.Include(x => x.Cuenta).Where(x => x.CuentaId == ObtenerId(ahorroId)).ToListAsync();
-            dtos = _mapper.Map<List<HistorialDto>>(entities);
-
-            return dtos;
+            throw new NotImplementedException();
         }
 
         private int ObtenerId(string ahorroId)

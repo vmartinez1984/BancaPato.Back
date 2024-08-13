@@ -55,16 +55,5 @@ namespace Banca.Api.Bl
         {
             return int.Parse(idGuid);
         }
-
-        internal async Task<List<TransaccionDto>> ObtenerPorAhorroId(string ahorroId)
-        {
-            List<Transaccion> entities;
-            List<TransaccionDto> dtos;
-
-            entities = await _repositorio.Transaccion.Where(x => x.CuentaId == ObtenerAhorroId(ahorroId)).ToListAsync();
-            dtos = _mapper.Map<List<TransaccionDto>>(entities);
-
-            return dtos;
-        }
     }
 }

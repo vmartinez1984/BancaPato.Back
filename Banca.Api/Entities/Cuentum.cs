@@ -10,9 +10,9 @@ public partial class Cuentum
 
     public string Nombre { get; set; } = null!;
 
-    public string? Clabe { get; set; }
+    public string Clabe { get; set; }
 
-    public string? Nota { get; set; }
+    public string Nota { get; set; }
 
     public decimal? Interes { get; set; }
 

@@ -1,25 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Banco.Repositorios.Entities;
+﻿namespace Banco.Repositorios.Entities;
 
 public partial class Movimiento
 {
     public int Id { get; set; }
-
-    public Guid Guid { get; set; }
-
-    public string? Nota { get; set; }
-
-    public int PeriodoId { get; set; }
-
-    public string TransaccionId { get; set; }
-
-    public int PresupuestoId { get; set; }
-
-    public virtual Periodo Periodo { get; set; } = null!;
-
-    public virtual Presupuesto Presupuesto { get; set; } = null!;
-
-    public virtual Transaccion Transaccion { get; set; } = null!;
+    public string Guid { get; set; }
+    public decimal Cantidad { get; set; }    
+    public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
 }

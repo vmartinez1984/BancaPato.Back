@@ -2,13 +2,12 @@
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
 using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace Banca.Api.Bl
 {
     public class PeriodoBl : BaseBl
     {
-        public PeriodoBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository) 
+        public PeriodoBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository)
         : base(context, mapper, gastosRepository)
         {
         }
@@ -17,7 +16,7 @@ namespace Banca.Api.Bl
         {
             List<PeriodoDto> dtos;
 
-            dtos = await _repositorio.Periodo.Where(x => x.EstaActivo)
+            dtos = (await _repositorioMongo.Periodo.ObtenerAsync())
                 .Select(x => new PeriodoDto
                 {
                     Id = x.Id,
@@ -27,34 +26,49 @@ namespace Banca.Api.Bl
                     Nombre = x.Nombre,
                     VersionId = x.VersionId,
                 }
-            ).ToListAsync();
+            ).ToList();
 
             return dtos;
         }
 
-        internal async Task<PeriodoDto> ObtenerAsync(int periodoId)
+        internal async Task<PeriodoDto> ObtenerAsync(string periodoId)
         {
-            return await _repositorio.Periodo.Where(x => x.Id == periodoId)
-                .Select(x => new PeriodoDto
+            Periodo x;
+            PeriodoDto dto;
+
+            x = await _repositorioMongo.Periodo.ObtenerAsync(periodoId);
+
+            dto = new PeriodoDto
+            {
+                Id = x.Id,
+                FechaFinal = x.FechaFinal,
+                FechaInicial = x.FechaInicial,
+                Guid = x.Guid,
+                Nombre = x.Nombre,
+                VersionId = x.VersionId,
+                Version = new VersionDto
                 {
-                    Id = x.Id,
-                    FechaFinal = x.FechaFinal,
-                    FechaInicial = x.FechaInicial,
-                    Guid = x.Guid,
-                    Nombre = x.Nombre
+                    Id = x.VersionId,
+                    FechaFinal = x.Version.FechaFinal,
+                    Guid = x.Version.Guid,
+                    Nombre = x.Version.Nombre,
+                    FechaInicial = x.Version.FechaInicial,                    
+                    Presupuestos = x.Version.Presupuestos                   
                 }
-            ).FirstOrDefaultAsync();
+            };
+
+            return dto;
         }
 
-        internal async Task<IdDto> AgregarAsync(PeriodoDtoIn periodo)
+        public async Task<IdDto> AgregarAsync(PeriodoDtoIn periodo)
         {
             Periodo entity;
 
             if (periodo.Guid == null)
-                periodo.Guid = Guid.NewGuid();
+                periodo.Guid = Guid.NewGuid().ToString();
             entity = _mapper.Map<Periodo>(periodo);
-            await _repositorio.Periodo.AddAsync(entity);
-            await _repositorio.SaveChangesAsync();
+            entity.Version = await _repositorioMongo.Version.ObtenerAsync(entity.VersionId.ToString());
+            await _repositorioMongo.Periodo.AgregarAsync(entity);
 
             return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
         }

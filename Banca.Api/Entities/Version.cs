@@ -23,5 +23,5 @@ public partial class VersionDePresupuesto
 
     public bool EstaActivo { get; set; } = true;
 
-    public virtual ICollection<Presupuesto> Presupuestos { get; set; } = new List<Presupuesto>();
+    public List<Presupuesto> Presupuestos { get; set; } = new List<Presupuesto>();
 }

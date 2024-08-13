@@ -16,15 +16,14 @@ namespace Banca.Api.Bl
 
         internal async Task ActualizarAsync(string versionIdGuid, VersionDtoIn version)
         {
-            int id;
+                        
             VersionDePresupuesto entity;
-
-            id = ObtenerId(versionIdGuid);
-            entity = await _repositorio.VersionDePresupuesto.Where(x => x.Id == id).FirstOrDefaultAsync();
+            
+            entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
             version.Guid = entity.Guid;
             entity = _mapper.Map(version, entity);
-            _repositorio.VersionDePresupuesto.Update(entity);
-            await _repositorio.SaveChangesAsync();
+            
+            throw new NotImplementedException();
         }
 
         private int ObtenerId(string versionIdGuid)
@@ -59,10 +58,10 @@ namespace Banca.Api.Bl
         {
             VersionDePresupuesto entity;
 
-            entity = await _repositorio.VersionDePresupuesto.Where(x => x.Id == ObtenerId(versionIdGuid)).FirstOrDefaultAsync();
+            entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
             entity.EstaActivo = false;
-            _repositorio.VersionDePresupuesto.Update(entity);
-            await _repositorio.SaveChangesAsync();
+
+            await _repositorioMongo.Version.ActualizarAsync(entity);
         }
 
         internal async Task<VersionDto> ObtenerAsync(string versionIdGuid)

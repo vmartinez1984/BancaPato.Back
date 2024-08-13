@@ -1,5 +1,6 @@
 ﻿using Banca.Api.Bl;
 using Banca.Api.Dtos;
+using Banca.Api.Entities;
 using Banca.Comun.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,12 +11,14 @@ namespace Banca.Api.Controllers
     public class CuentasController : ControllerBase
     {
         private readonly UnitOfWork _unitOfWork;
-
+        private readonly string _ahorroFondeador;
         public CuentasController(
-            UnitOfWork unitOfWork
+            UnitOfWork unitOfWork,
+            IConfiguration configuration
         )
         {
             this._unitOfWork = unitOfWork;
+            _ahorroFondeador = configuration.GetSection("AhorroFondeadorGuid").Value;
         }
 
         [HttpPost]
@@ -36,7 +39,17 @@ namespace Banca.Api.Controllers
             lista = await _unitOfWork.Cuenta.Obtener();
             var total = lista.Sum(x => x.Balance);
 
-            return Ok(lista);
+            return Ok(lista.OrderBy(x=>x.Nombre));
+        }
+
+        [HttpGet("Fondeador")]
+        public async Task<IActionResult> ObtenerPrincipal()
+        {
+           CuentaDto ahorro;
+
+            ahorro = await _unitOfWork.Cuenta.ObtenerAsync(_ahorroFondeador);
+
+            return Ok(ahorro);
         }
 
         [HttpGet("{ahorroId}")]
@@ -64,16 +77,6 @@ namespace Banca.Api.Controllers
             await _unitOfWork.Cuenta.BorrarAsync(ahorroId);
 
             return Accepted();
-        }
-
-        [HttpGet("{ahorroId}/Transacciones")]
-        public async Task<IActionResult> ObtenerTransaccionesPorAhorroId(string ahorroId)
-        {
-            List<TransaccionDto> lista;
-
-            lista = await _unitOfWork.Transaccion.ObtenerPorAhorroId(ahorroId);
-
-            return Ok(lista);
         }
 
         [HttpPost("{cuentaIdGuid}/depositos")]

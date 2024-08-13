@@ -31,7 +31,7 @@ namespace Banca.Api.Controllers
         }
         
         [HttpGet("{periodoId}")]
-        public async Task<IActionResult> Obtener(int periodoId)
+        public async Task<IActionResult> Obtener(string periodoId)
         {
             PeriodoDto periodos;
 

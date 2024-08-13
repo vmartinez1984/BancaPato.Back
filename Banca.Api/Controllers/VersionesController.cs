@@ -69,16 +69,6 @@ namespace Banca.Api.Controllers
             return Created("", id);
         }
 
-        [HttpGet("Presupuestos/{presupuestoIdGuid}")]
-        public async Task<IActionResult> ObtenerPresupuesto(string presupuestoIdGuid)
-        {
-            PresupuestoDto presupuesto;
-
-            presupuesto = await _unitOfWork.Presupuesto.ObtenerPorIdAsync(presupuestoIdGuid);
-
-            return Ok(presupuesto);
-        }
-
         [HttpPut("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
         public async Task<IActionResult> ActualizarPresupuesto(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
         {

@@ -4,6 +4,7 @@ using Banca.Api.Interfaces;
 using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
 using Microsoft.EntityFrameworkCore;
+using MongoDB.Bson;
 
 namespace Banca.Api.Bl
 {
@@ -16,14 +17,15 @@ namespace Banca.Api.Bl
 
         internal async Task ActualizarAsync(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
         {
-            Presupuesto presupuestoEntity;
+            throw new NotImplementedException();
+            //Presupuesto presupuestoEntity;
 
-            presupuestoEntity = await _repositorio.Presupuesto.FindAsync(ObtenerIdAsync(presupuestoIdGuid));
-            presupuesto.Guid = presupuestoEntity.Guid;
-            presupuestoEntity = _mapper.Map(presupuesto, presupuestoEntity);
-            _repositorio.Presupuesto.Update(presupuestoEntity);
+            //presupuestoEntity = await _repositorio.Presupuesto.FindAsync(ObtenerIdAsync(presupuestoIdGuid));
+            //presupuesto.Guid = presupuestoEntity.Guid;
+            //presupuestoEntity = _mapper.Map(presupuesto, presupuestoEntity);
+            //_repositorio.Presupuesto.Update(presupuestoEntity);
 
-            await _repositorio.SaveChangesAsync();
+            //await _repositorio.SaveChangesAsync();
         }
 
         internal async Task<IdDto> AgregarAsync(string versionIdGuid, PresupuestoDtoIn presupuesto)
@@ -38,6 +40,8 @@ namespace Banca.Api.Bl
             subcategorias = await _repositorioMongo.Subcategoria.ObtenerTodosAsync();
             entity.Subcategoria = subcategorias.FirstOrDefault(x => x.Id == entity.SubcategoriaId);
             version = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
+            entity.Id = version.Presupuestos.Count() + 1;
+            entity._id = ObjectId.GenerateNewId().ToString();
             version.Presupuestos.Add(entity);
             await _repositorioMongo.Version.ActualizarAsync(version);
 
@@ -47,26 +51,6 @@ namespace Banca.Api.Bl
         internal Task BorrarAsync(string versionIdGuid, string presupuestoIdGuid)
         {
             throw new NotImplementedException();
-        }
-
-        internal async Task<List<PresupuestoDto>> ObtenerAsync(string versionIdGuid)
-        {
-            int id;
-
-            id = ObtenerIdAsync(versionIdGuid);
-            var entities = await _repositorio.Presupuesto.Include(x => x.Subcategoria).Where(x => x.VersionId == id).ToListAsync();
-
-            return _mapper.Map<List<PresupuestoDto>>(entities);
-        }
-
-        internal async Task<PresupuestoDto> ObtenerPorIdAsync(string presupuestoIdGuid)
-        {
-            return _mapper.Map<PresupuestoDto>(
-                await _repositorio.Presupuesto
-                .Include(x=> x.Subcategoria)
-                .ThenInclude(x=> x.Categoria)
-                .Where(x=> x.Id == ObtenerIdAsync(presupuestoIdGuid)).FirstOrDefaultAsync()
-            );
         }
 
         private int ObtenerIdAsync(string versionIdGuid)
