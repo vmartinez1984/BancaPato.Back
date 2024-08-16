@@ -2,16 +2,13 @@
 using Banca.Api.Dtos;
 using Banca.Api.Entities;
 using Banca.Api.Interfaces;
-using Banca.BusinessLayer.Bl;
-using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace Banca.Api.Bl
 {
     public class TransaccionBl : BaseBl
     {
-        public TransaccionBl(DuckBankContext context, IMapper mapper,IGastosRepository gastosRepository) 
-        : base(context, mapper, gastosRepository)
+        public TransaccionBl(IMapper mapper,IGastosRepository gastosRepository) 
+        : base(mapper, gastosRepository)
         {
         }
 

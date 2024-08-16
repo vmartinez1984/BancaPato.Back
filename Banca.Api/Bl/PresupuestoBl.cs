@@ -1,17 +1,15 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
-using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
 using MongoDB.Bson;
 
 namespace Banca.Api.Bl
 {
     public class PresupuestoBl : BaseBl
     {
-        public PresupuestoBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository) 
-        : base(context, mapper, gastosRepository)
+        public PresupuestoBl(IMapper mapper, IGastosRepository gastosRepository) 
+        : base(mapper, gastosRepository)
         {
         }
 
@@ -51,12 +49,6 @@ namespace Banca.Api.Bl
         internal Task BorrarAsync(string versionIdGuid, string presupuestoIdGuid)
         {
             throw new NotImplementedException();
-        }
-
-        private int ObtenerIdAsync(string versionIdGuid)
-        {
-            return int.Parse(versionIdGuid);
-
         }
     }    
 }

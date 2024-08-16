@@ -8,8 +8,8 @@ namespace Banca.Api.Bl
 {
     public class TipoDeCuentaBl : BaseBl
     {
-        public TipoDeCuentaBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository)
-        : base(context, mapper, gastosRepository)
+        public TipoDeCuentaBl(IMapper mapper, IGastosRepository gastosRepository)
+        : base(mapper, gastosRepository)
         {
         }
 

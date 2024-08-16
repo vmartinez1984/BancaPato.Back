@@ -7,8 +7,8 @@ namespace Banca.Api.Bl
 {
     public class PeriodoBl : BaseBl
     {
-        public PeriodoBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository)
-        : base(context, mapper, gastosRepository)
+        public PeriodoBl(IMapper mapper, IGastosRepository gastosRepository)
+        : base(mapper, gastosRepository)
         {
         }
 

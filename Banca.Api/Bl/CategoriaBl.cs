@@ -1,16 +1,13 @@
 using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
-using Banco.Repositorios.Entities;
 
 namespace Banca.Api.Bl
 {
     public class CategoriaBl : BaseBl
     {
-       
-
-        public CategoriaBl(DuckBankContext context, IMapper mapper, IGastosRepository repository) 
-        : base(context, mapper, repository)
+        public CategoriaBl(IMapper mapper, IGastosRepository repository) 
+        : base(mapper, repository)
         {            
         }
 

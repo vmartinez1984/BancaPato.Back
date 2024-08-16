@@ -5,14 +5,13 @@ using Banca.Api.Entities;
 using Banca.Api.Interfaces;
 using Banca.Comun.Dtos;
 using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace Banca.BusinessLayer.Bl
 {
     public class CuentaBl : BaseBl
     {
-        public CuentaBl(DuckBankContext context, IMapper mapper, IGastosRepository repository) :
-            base(context, mapper, repository)
+        public CuentaBl(IMapper mapper, IGastosRepository repository) :
+            base(mapper, repository)
         { }
 
         public async Task<IdDto> AgregarAsync(CuentaDtoIn cuenta)

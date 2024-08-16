@@ -1,16 +1,14 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
-using Banca.BusinessLayer.Bl;
 using Banco.Repositorios.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace Banca.Api.Bl
 {
     public class VersionBl : BaseBl
     {
-        public VersionBl(DuckBankContext context, IMapper mapper, IGastosRepository gastosRepository)
-        : base(context, mapper, gastosRepository)
+        public VersionBl(IMapper mapper, IGastosRepository gastosRepository)
+        : base(mapper, gastosRepository)
         {
         }
 

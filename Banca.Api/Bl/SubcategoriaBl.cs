@@ -7,8 +7,8 @@ namespace Banca.Api.Bl
 {
     public class SubcategoriaBl : BaseBl
     {
-        public SubcategoriaBl(DuckBankContext context, IMapper mapper, IGastosRepository repository)
-        : base(context, mapper, repository)
+        public SubcategoriaBl(IMapper mapper, IGastosRepository repository)
+        : base(mapper, repository)
         {
         }
 
