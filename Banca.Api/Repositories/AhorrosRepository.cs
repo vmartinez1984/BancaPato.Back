@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 namespace Banca.Api.Repositories
 {
-    public class AhorrosRepository:IAhorroRepository
+    public class AhorrosRepository : IAhorroRepository
     {
         private readonly IHttpClientFactory _clientFactory;
         private readonly string _url;
@@ -17,18 +17,27 @@ namespace Banca.Api.Repositories
 
         public async Task<List<Ahorro>> ObtenerAsync()
         {
-            HttpResponseMessage response;
-            List<Ahorro> ahorros;
+            try
+            {
+                HttpResponseMessage response;
+                List<Ahorro> ahorros;
 
-            var client = _clientFactory.CreateClient();
-            var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros/Todos");
-            response = await client.SendAsync(request);
-            if (response.IsSuccessStatusCode)
-                ahorros = JsonConvert.DeserializeObject<List<Ahorro>>(await response.Content.ReadAsStringAsync());
-            else
-                ahorros = new List<Ahorro>();
+                var client = _clientFactory.CreateClient();
+                var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros/Todos");
+                response = await client.SendAsync(request);
+                var data = await response.Content.ReadAsStringAsync();
+                if (response.IsSuccessStatusCode)
+                    ahorros = JsonConvert.DeserializeObject<List<Ahorro>>(await response.Content.ReadAsStringAsync());
+                else
+                    throw new Exception(await response.Content.ReadAsStringAsync());
 
-            return ahorros;
+                return ahorros;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public async Task<int> AgregarAsycn(Ahorro ahorro)
@@ -45,9 +54,7 @@ namespace Banca.Api.Repositories
                 var data = response.Content.ReadAsStringAsync();
             }
             else
-            {
                 throw new Exception(await response.Content.ReadAsStringAsync());
-            }
 
             return 0;
         }

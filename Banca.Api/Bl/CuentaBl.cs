@@ -5,6 +5,7 @@ using Banca.Api.Entities;
 using Banca.Api.Interfaces;
 using Banca.Comun.Dtos;
 using Banco.Repositorios.Entities;
+using System.Globalization;
 
 namespace Banca.BusinessLayer.Bl
 {
@@ -115,7 +116,8 @@ namespace Banca.BusinessLayer.Bl
             var data = otros.Where(x => x.Key == key).FirstOrDefault();
             if (data.Value == null)
                 return null;
-            return Convert.ToDateTime(data.Value);
+
+            return DateTime.Parse(data.Value.Replace(" 12:00:00 a. m.",string.Empty));
         }
 
         internal async Task ActualizarAsync(string ahorroId, CuentaDtoIn ahorro)

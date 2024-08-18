@@ -1,6 +1,5 @@
 ﻿using Banca.Api.Bl;
 using Banca.Api.Dtos;
-using Banca.Api.Entities;
 using Banca.Comun.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,14 +10,15 @@ namespace Banca.Api.Controllers
     public class CuentasController : ControllerBase
     {
         private readonly UnitOfWork _unitOfWork;
-        private readonly string _ahorroFondeador;
+        private readonly string _ahorroFondeador;        
+
         public CuentasController(
             UnitOfWork unitOfWork,
             IConfiguration configuration
         )
         {
             this._unitOfWork = unitOfWork;
-            _ahorroFondeador = configuration.GetSection("AhorroFondeadorGuid").Value;
+            _ahorroFondeador = configuration.GetSection("AhorroFondeadorGuid").Value;           
         }
 
         [HttpPost]
@@ -34,18 +34,24 @@ namespace Banca.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Obtener()
         {
-            List<CuentaDto> lista;
+            try
+            {
+                List<CuentaDto> lista;
 
-            lista = await _unitOfWork.Cuenta.Obtener();
-            var total = lista.Sum(x => x.Balance);
+                lista = await _unitOfWork.Cuenta.Obtener();                
 
-            return Ok(lista.OrderBy(x=>x.Nombre));
+                return Ok(lista.OrderBy(x => x.Nombre));
+            }
+            catch (Exception ex)
+            {              
+                return StatusCode(500, "ocurrio un error");
+            }
         }
 
         [HttpGet("Fondeador")]
         public async Task<IActionResult> ObtenerPrincipal()
         {
-           CuentaDto ahorro;
+            CuentaDto ahorro;
 
             ahorro = await _unitOfWork.Cuenta.ObtenerAsync(_ahorroFondeador);
 
