@@ -23,7 +23,7 @@ namespace Banca.Api.Repositories
                 List<Ahorro> ahorros;
 
                 var client = _clientFactory.CreateClient();
-                var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros/Todos");
+                var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros");
                 response = await client.SendAsync(request);
                 var data = await response.Content.ReadAsStringAsync();
                 if (response.IsSuccessStatusCode)

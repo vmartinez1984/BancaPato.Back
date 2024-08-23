@@ -12,7 +12,7 @@ namespace Banca.BusinessLayer.Mappers
             CreateMap<TipoDeCuenta,TipoDeCuentaDto>(); 
 
             CreateMap<CuentaDtoIn, Cuentum>();
-            CreateMap<Cuentum, CuentaDto>();
+            CreateMap<Cuentum, AhorroDto>();
 
             CreateMap<DepositoDtoIn, Transaccion>();
             CreateMap<RetiroDtoIn, Transaccion>();

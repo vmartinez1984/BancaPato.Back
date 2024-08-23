@@ -36,7 +36,7 @@ namespace Banca.Api.Controllers
         {
             try
             {
-                List<CuentaDto> lista;
+                List<AhorroDto> lista;
 
                 lista = await _unitOfWork.Cuenta.Obtener();                
 
@@ -51,7 +51,7 @@ namespace Banca.Api.Controllers
         [HttpGet("Fondeador")]
         public async Task<IActionResult> ObtenerPrincipal()
         {
-            CuentaDto ahorro;
+            AhorroDto ahorro;
 
             ahorro = await _unitOfWork.Cuenta.ObtenerAsync(_ahorroFondeador);
 
@@ -61,7 +61,7 @@ namespace Banca.Api.Controllers
         [HttpGet("{ahorroId}")]
         public async Task<IActionResult> Obtener(string ahorroId)
         {
-            CuentaDto ahorro;
+            AhorroDto ahorro;
 
             ahorro = await _unitOfWork.Cuenta.ObtenerAsync(ahorroId);
 

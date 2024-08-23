@@ -27,5 +27,9 @@
         public string Concepto { get; set; }
 
         public string Referencia { get; set; }
+
+        public decimal SaldoInicial { get; set; }
+
+        public decimal SaldoFinal { get; set; }
     }
 }

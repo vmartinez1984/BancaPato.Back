@@ -1,17 +1,19 @@
 ﻿using Banca.Api.Dtos;
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Banca.Comun.Dtos
 {
-    public class CuentaDto : CuentaDtoIn
+    public class AhorroDto : CuentaDtoIn
     {
         public int Id { get; set; }
         public decimal Balance { get; set; }
 
         public TipoDeCuentaDto TipoDeCuenta { get; set; }
 
-        public List<Calculo> Calculos { get; set; }
+        //public List<Calculo> Calculos { get; set; }
+
+        public List<MovimientoDeAhorroDto> Depositos { get; set; } = new List<MovimientoDeAhorroDto>();
+        public List<MovimientoDeAhorroDto> Retiros { get; set; } = new List<MovimientoDeAhorroDto>();
     }
 
     public class Calculo
@@ -48,4 +50,18 @@ namespace Banca.Comun.Dtos
         public int? CuentaDeReferenciaId { get; set; }
     }
 
+    public class MovimientoDeAhorroDto
+    {
+        public decimal Cantidad { get; set; }
+
+        public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
+
+        public string Concepto { get; set; }
+
+        public string Referencia { get; set; }
+
+        public decimal SaldoInicial { get; set; }
+
+        public decimal SaldoFin { get; set; }
+    }
 }

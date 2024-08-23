@@ -18,6 +18,6 @@ namespace Banca.Api.Dtos
     {
         public int Id { get; set; }
         public DateTime FechaDeRegistro { get; set; }
-        public CuentaDto    Cuenta { get; set; }
+        public AhorroDto    Cuenta { get; set; }
     }
 }

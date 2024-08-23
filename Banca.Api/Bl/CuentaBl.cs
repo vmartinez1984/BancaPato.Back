@@ -5,7 +5,6 @@ using Banca.Api.Entities;
 using Banca.Api.Interfaces;
 using Banca.Comun.Dtos;
 using Banco.Repositorios.Entities;
-using System.Globalization;
 
 namespace Banca.BusinessLayer.Bl
 {
@@ -57,15 +56,15 @@ namespace Banca.BusinessLayer.Bl
             return ahorro;
         }
 
-        public async Task<List<CuentaDto>> Obtener()
+        public async Task<List<AhorroDto>> Obtener()
         {
-            List<CuentaDto> dtos;
+            List<AhorroDto> dtos;
             List<Ahorro> entidades;
             List<TipoDeCuenta> tipoDeCuentas;
 
             tipoDeCuentas = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
             entidades = await _repositorioMongo.Ahorro.ObtenerAsync();
-            dtos = entidades.Select(x => new CuentaDto
+            dtos = entidades.Select(x => new AhorroDto
             {
                 Balance = x.Total,
                 FechaFinal = ObtenerFecha(x.Otros, "FechaFinal"),
@@ -130,15 +129,15 @@ namespace Banca.BusinessLayer.Bl
            throw new NotImplementedException();
         }
 
-        internal async Task<CuentaDto> ObtenerAsync(string ahorroId)
+        internal async Task<AhorroDto> ObtenerAsync(string ahorroId)
         {
             Ahorro x;
-            CuentaDto ahorroDto;
+            AhorroDto ahorroDto;
             List<TipoDeCuenta> tipoDeCuentas;
 
             tipoDeCuentas = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
             x = await _repositorioMongo.Ahorro.ObtenerAsync(ahorroId);
-            ahorroDto = new CuentaDto
+            ahorroDto = new AhorroDto
             {
                 Balance = x.Total,
                 FechaFinal = ObtenerFecha(x.Otros, "FechaFinal"),
@@ -149,7 +148,20 @@ namespace Banca.BusinessLayer.Bl
                 Interes = x.Interes,
                 Nota = ObtnerCadena(x.Otros, "Nota"),
                 TipoDeCuentaId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
-                TipoDeCuenta = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
+                TipoDeCuenta = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),                
+                Retiros = x.Retiros.Select(x=> new MovimientoDeAhorroDto { 
+                    Cantidad = x.Cantidad,
+                    Concepto = x.Concepto,
+                    FechaDeRegistro = x.FechaDeRegistro,
+                    Referencia = x.Referencia
+                }).OrderByDescending(x=> x.FechaDeRegistro).ToList(),
+                Depositos = x.Depositos.Select(x => new MovimientoDeAhorroDto
+                {
+                    Cantidad = x.Cantidad,
+                    Concepto = x.Concepto,
+                    FechaDeRegistro = x.FechaDeRegistro,
+                    Referencia = x.Referencia
+                }).OrderByDescending(x => x.FechaDeRegistro).ToList(),
             };
             //ahorroDto.Calculos = ObtenerCalculos(ahorro);
 
