@@ -15,21 +15,13 @@ namespace Banca.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerTodos()
         {
-            try
-            {
-                List<PeriodoDto> periodos;
+            List<PeriodoDto> periodos;
 
-                periodos = await _unitOfWork.Periodo.ObtenerTodosAsync();
+            periodos = await _unitOfWork.Periodo.ObtenerTodosAsync();
 
-                return Ok(periodos);
-            }
-            catch (Exception ex)
-            {
-
-                return StatusCode(500, ex.Message);
-            }
+            return Ok(periodos);
         }
-        
+
         [HttpGet("{periodoId}")]
         public async Task<IActionResult> Obtener(string periodoId)
         {

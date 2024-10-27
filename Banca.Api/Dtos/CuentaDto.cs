@@ -35,8 +35,6 @@ namespace Banca.Comun.Dtos
         [Required]
         public string Nombre { get; set; } = null!;
 
-        public string Clabe { get; set; }
-
         public string Nota { get; set; }
 
         [Required]

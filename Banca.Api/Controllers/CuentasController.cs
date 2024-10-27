@@ -10,7 +10,7 @@ namespace Banca.Api.Controllers
     public class CuentasController : ControllerBase
     {
         private readonly UnitOfWork _unitOfWork;
-        private readonly string _ahorroFondeador;        
+        private readonly string _ahorroFondeador;
 
         public CuentasController(
             UnitOfWork unitOfWork,
@@ -18,7 +18,7 @@ namespace Banca.Api.Controllers
         )
         {
             this._unitOfWork = unitOfWork;
-            _ahorroFondeador = configuration.GetSection("AhorroFondeadorGuid").Value;           
+            _ahorroFondeador = configuration.GetSection("AhorroFondeadorGuid").Value;
         }
 
         [HttpPost]
@@ -34,18 +34,12 @@ namespace Banca.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Obtener()
         {
-            try
-            {
-                List<AhorroDto> lista;
 
-                lista = await _unitOfWork.Cuenta.Obtener();                
+            List<AhorroDto> lista;
 
-                return Ok(lista.OrderBy(x => x.Nombre));
-            }
-            catch (Exception ex)
-            {              
-                return StatusCode(500, "ocurrio un error");
-            }
+            lista = await _unitOfWork.Cuenta.Obtener();
+
+            return Ok(lista.OrderBy(x => x.Nombre));
         }
 
         [HttpGet("Fondeador")]

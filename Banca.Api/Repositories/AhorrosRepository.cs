@@ -17,34 +17,26 @@ namespace Banca.Api.Repositories
 
         public async Task<List<Ahorro>> ObtenerAsync()
         {
-            try
-            {
-                HttpResponseMessage response;
-                List<Ahorro> ahorros;
+            HttpResponseMessage response;
+            List<Ahorro> ahorros;
 
-                var client = _clientFactory.CreateClient();
-                var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros");
-                response = await client.SendAsync(request);
-                var data = await response.Content.ReadAsStringAsync();
-                if (response.IsSuccessStatusCode)
-                    ahorros = JsonConvert.DeserializeObject<List<Ahorro>>(await response.Content.ReadAsStringAsync());
-                else
-                    throw new Exception(await response.Content.ReadAsStringAsync());
+            using var client = _clientFactory.CreateClient();
+            var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros");
+            response = await client.SendAsync(request);
+            var data = await response.Content.ReadAsStringAsync();
+            if (response.IsSuccessStatusCode)
+                ahorros = JsonConvert.DeserializeObject<List<Ahorro>>(await response.Content.ReadAsStringAsync());
+            else
+                throw new Exception(await response.Content.ReadAsStringAsync());
 
-                return ahorros;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
+            return ahorros;
         }
 
         public async Task<int> AgregarAsycn(Ahorro ahorro)
         {
             HttpResponseMessage response;
 
-            var client = _clientFactory.CreateClient();
+            using var client = _clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Post, _url + "/Ahorros");
             var content = new StringContent(JsonConvert.SerializeObject(ahorro), null, "application/json");
             request.Content = content;
@@ -64,7 +56,7 @@ namespace Banca.Api.Repositories
             HttpResponseMessage response;
             Ahorro ahorro;
 
-            var client = _clientFactory.CreateClient();
+            using var client = _clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros/" + id);
             response = await client.SendAsync(request);
             if (response.IsSuccessStatusCode)
@@ -79,7 +71,7 @@ namespace Banca.Api.Repositories
         {
             HttpResponseMessage response;
 
-            var client = _clientFactory.CreateClient();
+            using var client = _clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Post, _url + $"/Ahorros/{id}/Depositos");
             var content = new StringContent(JsonConvert.SerializeObject(movimiento), null, "application/json");
             request.Content = content;
@@ -89,13 +81,14 @@ namespace Banca.Api.Repositories
                 var data = await response.Content.ReadAsStringAsync();
             }
             string mensaje = await response.Content.ReadAsStringAsync();
+
         }
 
         public async Task RetirarAsync(string id, MovimientoDuckBank movimiento)
         {
             HttpResponseMessage response;
 
-            var client = _clientFactory.CreateClient();
+            using var client = _clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Post, _url + $"/Ahorros/{id}/Retiros");
             var content = new StringContent(JsonConvert.SerializeObject(movimiento), null, "application/json");
             request.Content = content;

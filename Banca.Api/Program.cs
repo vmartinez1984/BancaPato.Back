@@ -7,20 +7,29 @@ using Banca.BusinessLayer.Bl;
 using Banca.BusinessLayer.Mappers;
 using Banco.Repositorios.Entities;
 using Serilog;
+using Serilog.Debugging;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configuración de archivos de appsettings según el entorno
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables();
+
 
 // Configura Serilog
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(builder.Configuration)  // Lee configuración desde appsettings.json
     .Enrich.FromLogContext()
     .WriteTo.Console()
-    //.WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day) // Guarda logs en un archivo    
-    .WriteTo.MongoDB("mongodb://root:123456@localhost:27017/Logs?authMechanism=DEFAULT") // Configura MongoDB
     .CreateLogger();
 
 // Reemplaza el logger predeterminado por Serilog
 builder.Host.UseSerilog();
+//Muestra el error de serilog
+//SelfLog.Enable(Console.Error);
 
 // Add services to the container.
 builder.Services.AddScoped<DuckBankContext>();
@@ -48,8 +57,14 @@ HttpClientHandler httpClientHandler = new HttpClientHandler()
 {
     ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; }
 };
-builder.Services.AddHttpClient(string.Empty, c => { }).ConfigurePrimaryHttpMessageHandler(h => httpClientHandler);
-
+builder.Services
+    .AddHttpClient(string.Empty)
+   .ConfigurePrimaryHttpMessageHandler(_ =>
+   {
+       var handler = new HttpClientHandler();
+       //handler.ClientCertificates.Add(clientCertificate);
+       return handler;
+   });
 builder.Services.AddScoped<AhorrosRepository>();
 
 var mapperConfig = new MapperConfiguration(mapperConfig =>
