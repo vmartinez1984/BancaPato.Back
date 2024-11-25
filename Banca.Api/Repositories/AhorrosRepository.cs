@@ -1,5 +1,6 @@
 ﻿using Banca.Api.Entities;
 using Banca.Api.Interfaces;
+using Banco.Repositorios.Entities;
 using Newtonsoft.Json;
 
 namespace Banca.Api.Repositories
@@ -91,6 +92,29 @@ namespace Banca.Api.Repositories
             using var client = _clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Post, _url + $"/Ahorros/{id}/Retiros");
             var content = new StringContent(JsonConvert.SerializeObject(movimiento), null, "application/json");
+            request.Content = content;
+            response = await client.SendAsync(request);
+            if (response.IsSuccessStatusCode)
+            {
+                var data = await response.Content.ReadAsStringAsync();
+            }
+            string mensaje = await response.Content.ReadAsStringAsync();
+        }
+
+        public async Task ActualizarAsync(Ahorro ahorro)
+        {
+            HttpResponseMessage response;
+
+            using var client = _clientFactory.CreateClient();
+            var request = new HttpRequestMessage(HttpMethod.Put, _url + $"/Ahorros/{ahorro.Id}");
+            var body = JsonConvert.SerializeObject(new
+            {
+                Nombre = ahorro.Nombre,
+                ClienteId = ahorro.ClienteId,
+                Interes = ahorro.Interes,
+                Estado = ahorro.Estado
+            });
+            var content = new StringContent(body, null, "application/json");
             request.Content = content;
             response = await client.SendAsync(request);
             if (response.IsSuccessStatusCode)

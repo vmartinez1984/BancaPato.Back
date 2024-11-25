@@ -128,7 +128,12 @@ namespace Banca.BusinessLayer.Bl
 
         internal async Task BorrarAsync(string ahorroId)
         {
-            throw new NotImplementedException();
+            Ahorro ahorro;
+
+            ahorro = await _repositorioMongo.Ahorro.ObtenerAsync(ahorroId);
+            ahorro.Estado = "Inactivo";
+
+            await _repositorioMongo.Ahorro.ActualizarAsync(ahorro);
         }
 
         internal async Task<AhorroDto> ObtenerAsync(string ahorroId)

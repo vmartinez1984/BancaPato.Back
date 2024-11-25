@@ -1,13 +1,10 @@
 using AutoMapper;
 using Banca.Api.Bl;
-using Banca.Api.Helpers;
 using Banca.Api.Interfaces;
 using Banca.Api.Repositories;
 using Banca.BusinessLayer.Bl;
 using Banca.BusinessLayer.Mappers;
 using Banco.Repositorios.Entities;
-using Serilog;
-using Serilog.Debugging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,19 +14,6 @@ builder.Configuration
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
     .AddEnvironmentVariables();
-
-
-// Configura Serilog
-Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(builder.Configuration)  // Lee configuración desde appsettings.json
-    .Enrich.FromLogContext()
-    .WriteTo.Console()
-    .CreateLogger();
-
-// Reemplaza el logger predeterminado por Serilog
-builder.Host.UseSerilog();
-//Muestra el error de serilog
-//SelfLog.Enable(Console.Error);
 
 // Add services to the container.
 builder.Services.AddScoped<DuckBankContext>();
@@ -100,7 +84,7 @@ app.UseSwaggerUI(x =>
 
 app.UseCors("AllowWebApp");
 
-app.UseMiddleware<ExceptionMiddleware>();
+//app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 
@@ -111,6 +95,3 @@ app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();
-
-// Asegúrate de cerrar el logger al final del programa
-Log.CloseAndFlush();

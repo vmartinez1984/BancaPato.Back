@@ -3,6 +3,7 @@ using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
 using Banco.Repositorios.Entities;
 using MongoDB.Bson;
+using SharpCompress.Common;
 
 namespace Banca.Api.Bl
 {
@@ -15,15 +16,24 @@ namespace Banca.Api.Bl
 
         internal async Task ActualizarAsync(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
         {
-            throw new NotImplementedException();
-            //Presupuesto presupuestoEntity;
 
-            //presupuestoEntity = await _repositorio.Presupuesto.FindAsync(ObtenerIdAsync(presupuestoIdGuid));
-            //presupuesto.Guid = presupuestoEntity.Guid;
-            //presupuestoEntity = _mapper.Map(presupuesto, presupuestoEntity);
-            //_repositorio.Presupuesto.Update(presupuestoEntity);
-
-            //await _repositorio.SaveChangesAsync();
+            Presupuesto entity;
+            VersionDePresupuesto version;
+            List<Subcategorium> subcategorias;
+            int presupuestoId = 0;
+    
+            version = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
+            if (int.TryParse(presupuestoIdGuid, out presupuestoId))
+                entity = version.Presupuestos.Where(x => x.Id == presupuestoId).FirstOrDefault();
+            else
+                entity = version.Presupuestos.Where(x => x.Guid == presupuestoIdGuid).FirstOrDefault();
+            subcategorias = await _repositorioMongo.Subcategoria.ObtenerTodosAsync();
+            entity.AhorroId = presupuesto.AhorroId;
+            entity.AhorroTipo = presupuesto.AhorroTipo;
+            entity.Cantidad = presupuesto.Cantidad;
+            entity.SubcategoriaId = presupuesto.SubcategoriaId;
+            entity.Subcategoria = subcategorias.FirstOrDefault(x => x.Id == presupuesto.SubcategoriaId);
+            await _repositorioMongo.Version.ActualizarAsync(version);
         }
 
         internal async Task<IdDto> AgregarAsync(string versionIdGuid, PresupuestoDtoIn presupuesto)
@@ -46,9 +56,20 @@ namespace Banca.Api.Bl
             return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
         }
 
-        internal Task BorrarAsync(string versionIdGuid, string presupuestoIdGuid)
+        internal async Task BorrarAsync(string versionIdGuid, string presupuestoIdGuid)
         {
-            throw new NotImplementedException();
+            VersionDePresupuesto version;
+            Presupuesto presupuesto;            
+            int presupuestoId = 0;
+
+            version = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
+            if (int.TryParse(presupuestoIdGuid, out presupuestoId))
+                presupuesto = version.Presupuestos.Where(x => x.Id == presupuestoId).FirstOrDefault();
+            else
+                presupuesto = version.Presupuestos.Where(x => x.Guid == presupuestoIdGuid).FirstOrDefault();
+            version.Presupuestos.Remove(presupuesto);
+
+            await _repositorioMongo.Version.ActualizarAsync(version);
         }
     }    
 }

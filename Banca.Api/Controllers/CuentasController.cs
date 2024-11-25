@@ -39,6 +39,7 @@ namespace Banca.Api.Controllers
 
             lista = await _unitOfWork.Cuenta.Obtener();
 
+            HttpContext.Response.Headers.Add("TotalDeRegistros", lista.Count().ToString());
             return Ok(lista.OrderBy(x => x.Nombre));
         }
 
