@@ -1,13 +1,12 @@
-﻿using Banco.Repositorios.Entities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Banca.Api.Dtos
+namespace Banca.Core.Dtos
 {
-    public class VersionDto: VersionDtoIn
+    public class VersionDto : VersionDtoIn
     {
         public int Id { get; set; }
 
-        public List<Presupuesto> Presupuestos { get; set; } = new List<Presupuesto>();
+        //public List<Presupuesto> Presupuestos { get; set; } = new List<Presupuesto>();
     }
 
     public class VersionDtoIn

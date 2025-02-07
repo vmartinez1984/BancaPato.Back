@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
+using Banca.Core.Dtos;
 
 namespace Banca.Api.Bl
 {
@@ -11,12 +12,12 @@ namespace Banca.Api.Bl
         {
         }
 
-        internal async Task<IdDto> AgregarAsync(HistorialDtoIn historial)
+        internal Task<IdDto> AgregarAsync(HistorialDtoIn historial)
         {
             throw new NotImplementedException();
         }
 
-        internal async Task<List<HistorialDto>> Obtener(string ahorroId = null)
+        internal Task<List<HistorialDto>> Obtener(string ahorroId = null)
         {
             throw new NotImplementedException();
         }

@@ -1,5 +1,6 @@
 ﻿using Banca.Api.Bl;
 using Banca.Api.Dtos;
+using Banca.Core.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers

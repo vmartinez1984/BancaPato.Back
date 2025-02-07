@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
+using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
 using MongoDB.Bson;
 using SharpCompress.Common;

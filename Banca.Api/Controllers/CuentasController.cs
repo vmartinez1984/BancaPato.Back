@@ -1,6 +1,6 @@
 ﻿using Banca.Api.Bl;
 using Banca.Api.Dtos;
-using Banca.Comun.Dtos;
+using Banca.Core.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
@@ -22,7 +22,7 @@ namespace Banca.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Agregar(CuentaDtoIn cuenta)
+        public async Task<IActionResult> Agregar(AhorroDtoIn cuenta)
         {
             IdDto id;
 
@@ -39,7 +39,7 @@ namespace Banca.Api.Controllers
 
             lista = await _unitOfWork.Cuenta.Obtener();
 
-            HttpContext.Response.Headers.Add("TotalDeRegistros", lista.Count().ToString());
+            HttpContext.Response.Headers.Append("TotalDeRegistros", lista.Count().ToString());
             return Ok(lista.OrderBy(x => x.Nombre));
         }
 
@@ -64,7 +64,7 @@ namespace Banca.Api.Controllers
         }
 
         [HttpPut("{ahorroId}")]
-        public async Task<IActionResult> ActualizarAhorro(string ahorroId, CuentaDtoIn ahorro)
+        public async Task<IActionResult> ActualizarAhorro(string ahorroId, AhorroDtoIn ahorro)
         {
 
             await _unitOfWork.Cuenta.ActualizarAsync(ahorroId, ahorro);

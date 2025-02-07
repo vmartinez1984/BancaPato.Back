@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Entities;
-using Banca.Comun.Dtos;
+using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
 
 namespace Banca.BusinessLayer.Mappers
@@ -11,7 +11,7 @@ namespace Banca.BusinessLayer.Mappers
         public BancaMapper() {
             CreateMap<TipoDeCuenta,TipoDeCuentaDto>(); 
 
-            CreateMap<CuentaDtoIn, Cuentum>();
+            CreateMap<AhorroDtoIn, Cuentum>();
             CreateMap<Cuentum, AhorroDto>();
 
             CreateMap<DepositoDtoIn, Transaccion>();

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
+using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
 
 namespace Banca.Api.Bl
@@ -52,7 +53,7 @@ namespace Banca.Api.Bl
             return new IdDto { Guid = movimiento.Guid.ToString() };
         }
 
-        internal async Task<List<MovimientoDto>> ObtenerTodosAsync(string periodoIdGuid)
+        internal  Task<List<MovimientoDto>> ObtenerTodosAsync(string periodoIdGuid)
         {
             //List<MovimientoDto> dtos;
             //List<Movimiento> entities;

@@ -10,8 +10,6 @@
 
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
 		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />		
 		<PackageReference Include="MongoDB.Driver" Version="2.19.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
@@ -20,6 +18,10 @@
 
 	<ItemGroup>
 		<Folder Include="Sql\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Banca.Core\Banca.Core.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -1,9 +1,8 @@
-﻿using Banca.Api.Dtos;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Banca.Comun.Dtos
+namespace Banca.Core.Dtos
 {
-    public class AhorroDto : CuentaDtoIn
+    public class AhorroDto : AhorroDtoIn
     {
         public int Id { get; set; }
         public decimal Balance { get; set; }
@@ -28,7 +27,7 @@ namespace Banca.Comun.Dtos
         public DateTime Fecha { get; set; }
     }
 
-    public class CuentaDtoIn
+    public class AhorroDtoIn
     {
         public string Guid { get; set; }
 

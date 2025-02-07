@@ -60,6 +60,7 @@ namespace Banca.Api.Repositories
             using var client = _clientFactory.CreateClient();
             var request = new HttpRequestMessage(HttpMethod.Get, _url + "/Ahorros/" + id);
             response = await client.SendAsync(request);
+            var data = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
                 ahorro = JsonConvert.DeserializeObject<Ahorro>(await response.Content.ReadAsStringAsync());
             else

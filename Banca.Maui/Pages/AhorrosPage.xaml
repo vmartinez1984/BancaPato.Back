@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Banca.Maui.Pages.AhorrosPage"
+             Title="Ahorros">
+    <ScrollView>
+        <StackLayout>  
+            <SearchBar  TextChanged="SearchBar_TextChanged"/>   
+            
+            <Button Text="Nuevo" WidthRequest="200" Margin="7" Clicked="ButtonNuevo_Clicked"/>
+            
+            <ActivityIndicator x:Name="ActivityIndicator" IsRunning="True"/>
+
+            <CollectionView 
+                x:Name="CollectionView" 
+                SelectionChanged="CollectionView_SelectionChanged" 
+                SelectionMode="Single"
+                ItemsLayout="VerticalGrid"
+                >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="10" BackgroundColor="LightGrey" Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="2*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <!--<Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>-->
+
+                            <Label Text="{Binding Nombre}"/>
+                            <Label Text="{Binding TipoDeCuenta.Nombre}" Grid.Row="1"/>
+                            <Label Text="{Binding Balance, StringFormat='{}{0:C2}'}" Grid.Row="2"/>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

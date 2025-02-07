@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Banca.Api.Dtos
+namespace Banca.Core.Dtos
 {
     public class PeriodoDtoIn
     {
@@ -26,7 +26,7 @@ namespace Banca.Api.Dtos
     public class PeriodoDto: PeriodoDtoIn
     {
         public int Id { get; set; }
-        public VersionDto Version { get; set; }
+        //public VersionDto Version { get; set; }
     }
 
     public class MovimientoDto : MovimientoDtoIn

@@ -4,7 +4,6 @@ using Banca.Api.Interfaces;
 using Banca.Api.Repositories;
 using Banca.BusinessLayer.Bl;
 using Banca.BusinessLayer.Mappers;
-using Banco.Repositorios.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +15,6 @@ builder.Configuration
     .AddEnvironmentVariables();
 
 // Add services to the container.
-builder.Services.AddScoped<DuckBankContext>();
 builder.Services.AddScoped<UnitOfWork>();
 builder.Services.AddScoped<CuentaBl>();
 builder.Services.AddScoped<TransaccionBl>();

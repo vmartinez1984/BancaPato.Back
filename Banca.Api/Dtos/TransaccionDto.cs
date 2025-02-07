@@ -63,11 +63,5 @@ namespace Banca.Api.Dtos
         public const string Retiro = "Retiro";
 
     }
-
-    public class IdDto
-    {
-        public int Id { get; set; }
-
-        public string Guid { get; set; }
-    }
+  
 }

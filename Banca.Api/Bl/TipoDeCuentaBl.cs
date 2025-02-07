@@ -1,8 +1,7 @@
 ﻿using AutoMapper;
-using Banca.Api.Dtos;
 using Banca.Api.Entities;
 using Banca.Api.Interfaces;
-using Banco.Repositorios.Entities;
+using Banca.Core.Dtos;
 
 namespace Banca.Api.Bl
 {

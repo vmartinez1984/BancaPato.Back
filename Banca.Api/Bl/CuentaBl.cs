@@ -3,7 +3,7 @@ using Banca.Api.Bl;
 using Banca.Api.Dtos;
 using Banca.Api.Entities;
 using Banca.Api.Interfaces;
-using Banca.Comun.Dtos;
+using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
 using System.Globalization;
 
@@ -15,7 +15,7 @@ namespace Banca.BusinessLayer.Bl
             base(mapper, repository)
         { }
 
-        public async Task<IdDto> AgregarAsync(CuentaDtoIn cuenta)
+        public async Task<IdDto> AgregarAsync(AhorroDtoIn cuenta)
         {
             int id;
 
@@ -27,7 +27,7 @@ namespace Banca.BusinessLayer.Bl
             return new IdDto { Id = id, Guid = cuenta.Guid };
         }
 
-        private async Task<Ahorro> ObtenerAhorroAsync(CuentaDtoIn cuenta)
+        private async Task<Ahorro> ObtenerAhorroAsync(AhorroDtoIn cuenta)
         {
             Ahorro ahorro;
             Dictionary<string, string> otros = new Dictionary<string, string>();
@@ -121,7 +121,7 @@ namespace Banca.BusinessLayer.Bl
             return fecha;
         }
 
-        internal async Task ActualizarAsync(string ahorroId, CuentaDtoIn ahorro)
+        internal async Task ActualizarAsync(string ahorroId, AhorroDtoIn ahorro)
         {
             throw new NotImplementedException();
         }

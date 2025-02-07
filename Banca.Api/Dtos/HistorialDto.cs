@@ -1,4 +1,4 @@
-﻿using Banca.Comun.Dtos;
+﻿using Banca.Core.Dtos;
 
 namespace Banca.Api.Dtos
 {
