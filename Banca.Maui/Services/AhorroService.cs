@@ -19,7 +19,7 @@ namespace Banca.Maui.Services
 
         internal async Task AgregarAsync(AhorroDtoIn ahorro)
         {
-            var data = await AgregarAsync<IdDto>(ahorro, _url);
+            var data = await Post<IdDto>(ahorro, _url);
 
         }
     }

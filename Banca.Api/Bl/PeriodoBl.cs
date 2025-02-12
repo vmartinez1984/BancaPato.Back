@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
@@ -53,14 +52,25 @@ namespace Banca.Api.Bl
                     FechaFinal = x.Version.FechaFinal,
                     Guid = x.Version.Guid,
                     Nombre = x.Version.Nombre,
-                    FechaInicial = x.Version.FechaInicial,                    
-                    Presupuestos = x.Version.Presupuestos                   
+                    FechaInicial = x.Version.FechaInicial,
+                    Presupuestos = x.Version.Presupuestos.Select(x => new PresupuestoDto
+                    {
+                        Cantidad = x.Cantidad,
+                        Id = x.Id,
+                        AhorroId = x.AhorroId,
+                        AhorroTipo = x.AhorroTipo,                        
+                        Guid = x.Guid,
+                        Movimientos = x.Movimientos.ToDtos(),
+                        Subcategoria = x.Subcategoria.ToDto(),
+                        SubcategoriaId = x.SubcategoriaId,
+                        VersionId = x.VersionId
+                    }).ToList(),
                 }
             };
 
             return dto;
         }
-
+               
         public async Task<IdDto> AgregarAsync(PeriodoDtoIn periodo)
         {
             Periodo entity;
@@ -72,6 +82,39 @@ namespace Banca.Api.Bl
             await _repositorioMongo.Periodo.AgregarAsync(entity);
 
             return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
+        }
+    }
+
+    public static class Mapeador
+    {
+        public static List<MovimientoDto> ToDtos(this List<Movimiento> movimientos) 
+        => movimientos.Select(x => new MovimientoDto
+        {
+             Id = x.Id,
+             Cantidad = x.Cantidad,
+             FechaDeRegistro = x.FechaDeRegistro,
+             Guid = x.Guid             
+        }).ToList();
+        
+
+        public static CategoriaDto ToDto(this Categorium categorium) => new CategoriaDto
+        {
+            Id = categorium.Id,
+            Nombre = categorium.Nombre,
+        };
+
+        public static SubcategoriaDto ToDto(this Subcategorium subcategorium)
+        {
+            return new SubcategoriaDto
+            {
+                Id = subcategorium.Id,
+                EsPrimario = subcategorium.EsPrimario,
+                EstaActivo = subcategorium.EstaActivo,
+                Guid = Guid.Parse(subcategorium?.Guid),
+                Nombre = subcategorium?.Nombre,
+                Presupuesto = subcategorium.Presupuesto,
+                Categoria = subcategorium.Categoria.ToDto()
+            };
         }
     }
 }

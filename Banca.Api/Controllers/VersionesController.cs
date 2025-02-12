@@ -1,7 +1,7 @@
 ﻿using Banca.Api.Bl;
-using Banca.Api.Dtos;
 using Banca.Core.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using static Banca.Core.Dtos.PresupuestoDto;
 
 namespace Banca.Api.Controllers
 {

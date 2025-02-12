@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Banca.Api.Dtos
+namespace Banca.Core.Dtos
 {
     public class SubcategoriaDto
     {
@@ -8,7 +8,7 @@ namespace Banca.Api.Dtos
 
         public CategoriaDto Categoria { get; set; }
         public string Nombre { get; set; }
-                
+
         public decimal Presupuesto { get; set; }
 
         public Guid Guid { get; set; }
@@ -17,6 +17,7 @@ namespace Banca.Api.Dtos
 
         public bool EsPrimario { get; set; } = false;
     }
+
     public class SubcategoriaDtoIn
     {
         [Required(ErrorMessage = "Seleccione una categoria")]
@@ -31,7 +32,7 @@ namespace Banca.Api.Dtos
         [Required(ErrorMessage = "La cantidad es requerida")]
         [Range(0, int.MaxValue, ErrorMessage = "La cantidad debe estar entre {0} y {1}")]
         public decimal Presupuesto { get; set; }
-                
+
         public string Guid { get; set; }
 
         public bool EsPrimario { get; set; } = false;

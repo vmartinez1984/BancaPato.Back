@@ -1,4 +1,4 @@
-﻿namespace Banca.Api.Dtos
+﻿namespace Banca.Core.Dtos
 {
     public class CategoriaDto
     {

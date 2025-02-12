@@ -23,20 +23,53 @@ namespace Banca.Core.Dtos
         public int VersionId { get; set; }
     }
 
-    public class PeriodoDto: PeriodoDtoIn
+    public class PeriodoDto : PeriodoDtoIn
     {
         public int Id { get; set; }
-        //public VersionDto Version { get; set; }
+        public VersionDto Version { get; set; }
+
+        public decimal TotalGastado
+        {
+            get
+            {
+                decimal total = 0;
+                foreach (var item in Version.Presupuestos)
+                    total += item.Movimientos.Sum(x => x.Cantidad);
+
+                return total;
+            }
+        }
+
+        public decimal TotalPresupuesto
+        {
+            get
+            {
+                return Version.Presupuestos.Sum(x => x.Cantidad);
+            }
+        }
+
+        public decimal TotalPendiente
+        {
+            get
+            {
+                return Version.Presupuestos.Where(x => x.Movimientos.Count == 0).Sum(x => x.Cantidad);
+            }
+        }
     }
 
     public class MovimientoDto : MovimientoDtoIn
     {
         public int Id { get; set; }
+
+        public string Guid { get; set; }
+
+        public decimal Cantidad { get; set; }
+        public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
     }
 
     public class MovimientoDtoIn
     {
-        public string Guid { get; set; }                
+        public string Guid { get; set; }
 
         [Required]
         public int PresupuestoId { get; set; }

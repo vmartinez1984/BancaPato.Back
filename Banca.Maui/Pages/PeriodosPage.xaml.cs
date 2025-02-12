@@ -1,3 +1,4 @@
+using Banca.Core.Dtos;
 using Banca.Maui.Services;
 
 namespace Banca.Maui.Pages;
@@ -7,8 +8,8 @@ public partial class PeriodosPage : ContentPage
     private readonly Servicio _servicio;
 
     public PeriodosPage(Servicio servicio)
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         this._servicio = servicio;
     }
 
@@ -22,7 +23,7 @@ public partial class PeriodosPage : ContentPage
         //this.ActivityIndicator.IsVisible = true;
 
         var lista = await _servicio.Periodo.ObtenerTodosAsync();
-        CollectionView.ItemsSource = lista;
+        CollectionView.ItemsSource = lista.OrderByDescending(x => x.Id);
         //this.CollectionView.ItemsSource = Lista;
 
         // Detener la animación del ActivityIndicator        
@@ -31,6 +32,8 @@ public partial class PeriodosPage : ContentPage
 
     private void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        Navigation.PushAsync(new PeriodoDetallePage(_servicio));
+        PeriodoDto periodo = (PeriodoDto)e.CurrentSelection.FirstOrDefault();
+
+        Navigation.PushAsync(new PeriodoDetallePage(_servicio, periodo));
     }
 }

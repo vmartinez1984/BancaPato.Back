@@ -6,7 +6,7 @@ namespace Banca.Core.Dtos
     {
         public int Id { get; set; }
 
-        //public List<Presupuesto> Presupuestos { get; set; } = new List<Presupuesto>();
+        public List<PresupuestoDto> Presupuestos { get; set; } = new List<PresupuestoDto>();      
     }
 
     public class VersionDtoIn
@@ -23,6 +23,6 @@ namespace Banca.Core.Dtos
         [Display(Name = "Fecha inicial")]
         [DataType(DataType.Date)]
         public DateTime FechaFinal { get; set; }
-        public string Guid { get;  set; }
+        public string Guid { get; set; }
     }
 }

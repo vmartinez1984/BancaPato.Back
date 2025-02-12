@@ -39,10 +39,10 @@ namespace Banca.Maui.Services
                 return JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync());
             }
             else
-                return default;
+                throw new Exception($"{response.StatusCode}, {await response.Content.ReadAsStringAsync()}");
         }
 
-        protected async Task<T> AgregarAsync<T>(object data, string url)
+        protected async Task<T> Post<T>(object data, string url)
         {
             HttpRequestMessage request;
             HttpResponseMessage response;
@@ -53,11 +53,11 @@ namespace Banca.Maui.Services
             response = await httpClient.SendAsync(request);
             if (response.IsSuccessStatusCode)
             {
-                string json =await response.Content.ReadAsStringAsync();
+                string json = await response.Content.ReadAsStringAsync();
                 return JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync());
             }
             else
-                return default;
+                throw new Exception($"{response.StatusCode}, {await response.Content.ReadAsStringAsync()}");
         }
     }
 }

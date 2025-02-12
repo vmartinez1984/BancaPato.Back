@@ -1,6 +1,6 @@
 using AutoMapper;
-using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
+using Banca.Core.Dtos;
 
 namespace Banca.Api.Bl
 {

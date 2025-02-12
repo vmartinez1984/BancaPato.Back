@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Banca.Maui.Pages.PeriodoDetallePage"
-             Title="PeriodoDetallePage">
-    <VerticalStackLayout>
-     
-    </VerticalStackLayout>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Banca.Maui.Pages.PeriodoDetallePage"
+    Title="{Binding Nombre}"
+    xmlns:converter="clr-namespace:Banca.Maui.Converters"         
+>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converter:EstadoAColor x:Key="EstadoAColor"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <AbsoluteLayout>
+        <ActivityIndicator
+            x:Name="ActivityIndicator"
+            IsVisible="False"
+            IsRunning="True"
+            AbsoluteLayout.LayoutBounds="0.5,0.5"
+            AbsoluteLayout.LayoutFlags="PositionProportional"           
+        />
+        <Picker SelectedIndexChanged="Picker_SelectedIndexChanged" 
+                Title="Estado" 
+                x:Name="Picker"
+                AbsoluteLayout.LayoutBounds="0.05,0.08"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+        >
+            <Picker.Items>
+                <x:String>Todos</x:String>
+                <x:String>Ok</x:String>
+                <x:String>Warning</x:String>
+                <x:String>Danger</x:String>
+                <x:String>Sin procesar</x:String>
+                <x:String>En proceso</x:String>
+            </Picker.Items>
+        </Picker>
+        <Label 
+            Text="{Binding TotalPresupuesto, StringFormat='Presupuesto {0:c2}'}"
+            AbsoluteLayout.LayoutBounds="0.05, 0"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+        />
+        <Label 
+            Text="{Binding TotalGastado, StringFormat='Gastado {0:c2}'}"
+            AbsoluteLayout.LayoutBounds="0.05, 0.03"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+        />
+        <Label 
+            Text="{Binding TotalPendiente, StringFormat='Pendiente {0:c2}'}"
+            AbsoluteLayout.LayoutBounds="0.05, 0.06"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+        />
+        <CollectionView 
+            x:Name="CollectionView" 
+            SelectionMode="Single"       
+            AbsoluteLayout.LayoutBounds="0.05, 0.8, 1,0.8"
+            AbsoluteLayout.LayoutFlags="All"
+            HorizontalOptions="Center"
+            SelectionChanged="CollectionView_SelectionChanged"            
+        >
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Margin="5">
+                        <Label 
+                            Text="{Binding Subcategoria.Nombre}" 
+                            FontSize="Medium"    
+                            BackgroundColor="{Binding Estado, Converter={StaticResource EstadoAColor}}"
+                        />
+                        <Label Text="{Binding AhorroTipo}"/>
+                        <Label Text="{Binding Cantidad, StringFormat='Presupuesto: {0:c2}'}"/>
+                        <Label Text="{Binding TotalGastado, StringFormat='Gastado: {0:c2}'}"/>
+                        <Label Text="{Binding Disponible, StringFormat='Disponible: {0:c2}'}"/>
+                        <Label Text="{Binding Estado}"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </AbsoluteLayout>
 </ContentPage>
