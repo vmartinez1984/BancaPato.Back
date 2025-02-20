@@ -2,6 +2,7 @@
 using Banca.Api.Interfaces;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
+using DuckBank.Persistence.Entities;
 
 namespace Banca.Api.Bl
 {
@@ -93,7 +94,7 @@ namespace Banca.Api.Bl
              Id = x.Id,
              Cantidad = x.Cantidad,
              FechaDeRegistro = x.FechaDeRegistro,
-             Guid = x.Guid             
+             Guid = x.EncodedKey             
         }).ToList();
         
 

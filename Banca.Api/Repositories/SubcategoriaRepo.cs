@@ -1,19 +1,29 @@
 ﻿using Banca.Api.Interfaces;
 using Banco.Repositorios.Entities;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Banca.Api.Repositories
 {
-    public class SubcategoriaRepo : ISubcategoriaRepository
+    public class BaseRepo
+    {
+        protected readonly IMongoDatabase _mongoDatabase;
+        public BaseRepo(IConfiguration configurations)
+        {
+            var conectionString = configurations.GetConnectionString("MongoDb");
+            var mongoClient = new MongoClient(conectionString);
+            var nombreDeLaDb = conectionString.Split("/").Last().Split("?").First();
+            _mongoDatabase = mongoClient.GetDatabase(nombreDeLaDb);
+        }
+    }
+    public class SubcategoriaRepo : BaseRepo, ISubcategoriaRepository
     {
         private readonly IMongoCollection<Subcategorium> _collection;
 
-        public SubcategoriaRepo(IConfiguration configurations)
+        public SubcategoriaRepo(IConfiguration configurations) : base(configurations)
         {
-            var mongoClient = new MongoClient(configurations.GetConnectionString("mongoDb"));
-            var mongoDatabase = mongoClient.GetDatabase(configurations.GetConnectionString("mongoDbNombre"));
-            _collection = mongoDatabase.GetCollection<Subcategorium>("Subcategorias");
+            _collection = _mongoDatabase.GetCollection<Subcategorium>("Subcategorias");
         }
 
         public async Task ActualizarAsync(Subcategorium subcategorium)

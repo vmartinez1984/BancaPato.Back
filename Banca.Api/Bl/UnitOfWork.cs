@@ -5,7 +5,7 @@ namespace Banca.Api.Bl
     public class UnitOfWork
     {
         public UnitOfWork(
-            CuentaBl cuentaBl,
+            AhorroBl cuentaBl,
             TransaccionBl transaccionBl,
             HistorialBl historialBl,
             CategoriaBl categoriaBl,
@@ -29,7 +29,7 @@ namespace Banca.Api.Bl
             Movimiento = movimientoBl;
         }
 
-        public CuentaBl Cuenta { get; }
+        public AhorroBl Cuenta { get; }
         public TransaccionBl Transaccion { get; }
         public HistorialBl Historial { get; internal set; }
         public SubcategoriaBl Subcategoria { get; internal set; }

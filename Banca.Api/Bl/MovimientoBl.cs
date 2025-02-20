@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
+using DuckBank.Persistence.Entities;
 
 namespace Banca.Api.Bl
 {
@@ -27,25 +27,23 @@ namespace Banca.Api.Bl
                 movimiento.Guid = Guid.NewGuid().ToString();
             periodo = await _repositorioMongo.Periodo.ObtenerAsync(periodoIdGuid);
             presupuesto = periodo.Version.Presupuestos.FirstOrDefault(x => x.Id == movimiento.PresupuestoId);
-           await _repositorioMongo.Ahorro.DepositarAsync(presupuesto.AhorroId.ToString(), new Entities.MovimientoDuckBank
+           await _repositorioMongo.Ahorro.DepositarAsync(presupuesto.AhorroId.ToString(), new Movimiento
             {
-                Cantidad = movimiento.Cantidad,
-                FechaDeRegistro = DateTime.Now,
+                Cantidad = movimiento.Cantidad,                
                 Concepto = periodo.Nombre,
-                Referencia = movimiento.Guid
+                EncodedKey = movimiento.Guid
             });
-            await _repositorioMongo.Ahorro.RetirarAsync(_ahorroFondeador, new Entities.MovimientoDuckBank
+            await _repositorioMongo.Ahorro.RetirarAsync(_ahorroFondeador, new Movimiento
             {
-                Cantidad = movimiento.Cantidad,
-                FechaDeRegistro = DateTime.Now,
+                Cantidad = movimiento.Cantidad,                
                 Concepto = $"{periodo.Nombre} - {presupuesto.Subcategoria.Nombre}",
-                Referencia = movimiento.Guid
+                EncodedKey = movimiento.Guid
             });
             movimientoId = presupuesto.Movimientos.Count() + 1;            
             presupuesto.Movimientos.Add(new Movimiento
             {
                 Id = movimientoId,
-                Guid = movimiento.Guid,
+                EncodedKey = movimiento.Guid,
                 Cantidad = movimiento.Cantidad
             });
             await _repositorioMongo.Periodo.ActualizarAsinc(periodo);

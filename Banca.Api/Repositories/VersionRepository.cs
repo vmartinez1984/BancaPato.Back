@@ -5,15 +5,13 @@ using MongoDB.Bson;
 
 namespace Banca.Api.Repositories
 {
-    public class VersionRepository : IVersionRepository
+    public class VersionRepository :BaseRepo, IVersionRepository
     {
         private readonly IMongoCollection<VersionDePresupuesto> _collection;
 
-        public VersionRepository(IConfiguration configurations)
-        {
-            var mongoClient = new MongoClient(configurations.GetConnectionString("mongoDb"));
-            var mongoDatabase = mongoClient.GetDatabase(configurations.GetConnectionString("mongoDbNombre"));
-            _collection = mongoDatabase.GetCollection<VersionDePresupuesto>("Versiones");
+        public VersionRepository(IConfiguration configurations):base(configurations)
+        {            
+            _collection = _mongoDatabase.GetCollection<VersionDePresupuesto>("Versiones");
         }
 
         public async Task ActualizarAsync(VersionDePresupuesto version)

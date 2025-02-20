@@ -1,4 +1,5 @@
 using Banca.Api.Interfaces;
+using DuckBank.Persistence.Interfaces;
 
 namespace Banca.Api.Repositories
 {
@@ -10,7 +11,7 @@ namespace Banca.Api.Repositories
 
         public ITipoDeCuentaRepository TipoDeCuenta { get; }
 
-        public IAhorroRepository Ahorro { get; }
+        public IAhorroRepositorio Ahorro { get; }
 
         public IVersionRepository Version { get; }
 
@@ -20,7 +21,7 @@ namespace Banca.Api.Repositories
             ICategoryRepository categoryRepository, 
             ISubcategoriaRepository subcategoriaRepository,
             ITipoDeCuentaRepository tipoDeCuentaRepository,
-            IAhorroRepository ahorroRepository,
+            IAhorroRepositorio ahorroRepository,
             IVersionRepository version,
             IPeriodoRepository periodoRepository
             )

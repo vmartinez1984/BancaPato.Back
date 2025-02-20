@@ -2,19 +2,16 @@
 using Banco.Repositorios.Entities;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using System;
 
 namespace Banca.Api.Repositories
 {
-    public class PeriodoRepo : IPeriodoRepository
+    public class PeriodoRepo :BaseRepo, IPeriodoRepository
     {
         private readonly IMongoCollection<Periodo> _collection;
 
-        public PeriodoRepo(IConfiguration configurations)
-        {
-            var mongoClient = new MongoClient(configurations.GetConnectionString("mongoDb"));
-            var mongoDatabase = mongoClient.GetDatabase(configurations.GetConnectionString("mongoDbNombre"));
-            _collection = mongoDatabase.GetCollection<Periodo>("Periodos");
+        public PeriodoRepo(IConfiguration configurations):base(configurations)
+        {           
+            _collection = _mongoDatabase.GetCollection<Periodo>("Periodos");
         }
 
         public async Task<List<Periodo>> ObtenerAsync(bool estaActivo = true)

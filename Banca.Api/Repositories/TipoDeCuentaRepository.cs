@@ -4,15 +4,13 @@ using MongoDB.Driver;
 
 namespace Banca.Api.Repositories
 {
-    public class TipoDeCuentaRepository : ITipoDeCuentaRepository
+    public class TipoDeCuentaRepository : BaseRepo, ITipoDeCuentaRepository
     {
         private readonly IMongoCollection<TipoDeCuenta> _collection;
 
-        public TipoDeCuentaRepository(IConfiguration configurations)
+        public TipoDeCuentaRepository(IConfiguration configurations) : base(configurations)
         {
-            var mongoClient = new MongoClient(configurations.GetConnectionString("mongoDb"));
-            var mongoDatabase = mongoClient.GetDatabase(configurations.GetConnectionString("mongoDbNombre"));
-            _collection = mongoDatabase.GetCollection<TipoDeCuenta>("TipoDeAhorros");
+            _collection = _mongoDatabase.GetCollection<TipoDeCuenta>("TipoDeAhorros");
         }
 
         public async Task AgregarAsync(TipoDeCuenta item)

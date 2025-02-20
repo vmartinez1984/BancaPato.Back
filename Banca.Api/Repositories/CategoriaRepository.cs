@@ -9,9 +9,11 @@ namespace Banca.Api.Repositories
         private readonly IMongoCollection<Categorium> _collection;
 
         public CategoriaRepository(IConfiguration configurations)
-        {
-            var mongoClient = new MongoClient(configurations.GetConnectionString("mongoDb"));
-            var mongoDatabase = mongoClient.GetDatabase(configurations.GetConnectionString("mongoDbNombre"));
+        {                       
+            var conectionString = configurations.GetConnectionString("MongoDb");
+            var mongoClient = new MongoClient(conectionString);
+            var nombreDeLaDb = conectionString.Split("/").Last().Split("?").First();
+            var mongoDatabase = mongoClient.GetDatabase(nombreDeLaDb);
             _collection = mongoDatabase.GetCollection<Categorium>("Categorias");
         }
         public async Task<List<Categorium>> ObtenerTodosAsync()

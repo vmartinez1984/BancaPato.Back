@@ -1,19 +1,23 @@
 ﻿using AutoMapper;
 using Banca.Api.Bl;
-using Banca.Api.Dtos;
 using Banca.Api.Entities;
 using Banca.Api.Interfaces;
 using Banca.Core.Dtos;
-using Banco.Repositorios.Entities;
+using DuckBank.Persistence.Interfaces;
 using System.Globalization;
+using Ahorro = DuckBank.Persistence.Entities.Ahorro;
 
 namespace Banca.BusinessLayer.Bl
 {
-    public class CuentaBl : BaseBl
+    public class AhorroBl : BaseBl
     {
-        public CuentaBl(IMapper mapper, IGastosRepository repository) :
+        private readonly IRepositorio _repositorio;
+
+        public AhorroBl(IMapper mapper, IGastosRepository repository, IRepositorio repositorio) :
             base(mapper, repository)
-        { }
+        {
+            this._repositorio = repositorio;
+        }
 
         public async Task<IdDto> AgregarAsync(AhorroDtoIn cuenta)
         {
@@ -22,7 +26,7 @@ namespace Banca.BusinessLayer.Bl
             if (cuenta.Guid == null)
                 cuenta.Guid = Guid.NewGuid().ToString();
             Ahorro ahorro = await ObtenerAhorroAsync(cuenta);
-            id = await _repositorioMongo.Ahorro.AgregarAsycn(ahorro);
+            id = await _repositorio.Ahorro.AgregarAsync(ahorro);
 
             return new IdDto { Id = id, Guid = cuenta.Guid };
         }
@@ -45,7 +49,7 @@ namespace Banca.BusinessLayer.Bl
             {
                 Id = 0,
                 Guid = cuenta.Guid.ToString(),
-                ClienteId = "148318",
+                ClienteEncodedKey = "148318",
                 Total = 0,
                 Interes = cuenta.Interes,
                 Nombre = cuenta.Nombre,
@@ -64,7 +68,7 @@ namespace Banca.BusinessLayer.Bl
             List<TipoDeCuenta> tipoDeCuentas;
 
             tipoDeCuentas = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
-            entidades = await _repositorioMongo.Ahorro.ObtenerAsync();
+            entidades = await _repositorio.Ahorro.ObtenerAsync();
             dtos = entidades.Select(x => new AhorroDto
             {
                 Balance = x.Total,
@@ -121,7 +125,7 @@ namespace Banca.BusinessLayer.Bl
             return fecha;
         }
 
-        internal async Task ActualizarAsync(string ahorroId, AhorroDtoIn ahorro)
+        internal Task ActualizarAsync(string ahorroId, AhorroDtoIn ahorro)
         {
             throw new NotImplementedException();
         }
@@ -130,10 +134,10 @@ namespace Banca.BusinessLayer.Bl
         {
             Ahorro ahorro;
 
-            ahorro = await _repositorioMongo.Ahorro.ObtenerAsync(ahorroId);
+            ahorro = await _repositorio.Ahorro.ObtenerPorIdAsync(ahorroId);
             ahorro.Estado = "Inactivo";
 
-            await _repositorioMongo.Ahorro.ActualizarAsync(ahorro);
+            await _repositorio.Ahorro.ActualizarAsync(ahorro);
         }
 
         internal async Task<AhorroDto> ObtenerAsync(string ahorroId)
@@ -143,7 +147,7 @@ namespace Banca.BusinessLayer.Bl
             List<TipoDeCuenta> tipoDeCuentas;
 
             tipoDeCuentas = await _repositorioMongo.TipoDeCuenta.ObtenerTodosAsync();
-            x = await _repositorioMongo.Ahorro.ObtenerAsync(ahorroId);
+            x = await _repositorio.Ahorro.ObtenerPorIdAsync(ahorroId);
             ahorroDto = new AhorroDto
             {
                 Balance = x.Total,
@@ -161,89 +165,19 @@ namespace Banca.BusinessLayer.Bl
                     Cantidad = x.Cantidad,
                     Concepto = x.Concepto,
                     FechaDeRegistro = x.FechaDeRegistro,
-                    Referencia = x.Referencia
+                    Referencia = x.EncodedKey
                 }).OrderByDescending(x => x.FechaDeRegistro).ToList(),
                 Depositos = x.Depositos.Select(x => new MovimientoDeAhorroDto
                 {
                     Cantidad = x.Cantidad,
                     Concepto = x.Concepto,
                     FechaDeRegistro = x.FechaDeRegistro,
-                    Referencia = x.Referencia
+                    Referencia = x.EncodedKey
                 }).OrderByDescending(x => x.FechaDeRegistro).ToList(),
             };
             //ahorroDto.Calculos = ObtenerCalculos(ahorro);
 
             return ahorroDto;
         }
-
-        private List<Calculo> ObtenerCalculos(Cuentum ahorro)
-        {
-            List<Calculo> calculos;
-            int numeroDeDias;
-            DateTime fechaInicial;
-            DateTime fechaActual;
-            decimal cantidad;
-
-            if (ahorro.Transaccions.Count > 0)
-                fechaInicial = ahorro.Transaccions.OrderBy(x => x.FechaDeRegistro).FirstOrDefault().FechaDeRegistro;
-            else
-                fechaInicial = (DateTime)ahorro.FechaInicial;
-            if (ahorro.FechaFinal == null)
-                fechaActual = DateTime.Now;
-            else
-                fechaActual = (DateTime)ahorro.FechaFinal;
-            numeroDeDias = (fechaActual - fechaInicial).Days + 2;
-            calculos = new List<Calculo>();
-
-            if (ahorro.Transaccions.Count > 0)
-                cantidad = ahorro.Transaccions[0].Cantidad;
-            else
-                cantidad = 0;
-            for (int i = 1; i < numeroDeDias; i++)
-            {
-                decimal interesDelDia;
-                decimal interesCalculado;
-                decimal transaccion;
-
-                interesDelDia = ObtenerInteresDelDia(ahorro);
-                interesCalculado = Math.Round((cantidad * interesDelDia / 100 / 365), 2);
-                transaccion = ObtenerTransaccion(ahorro, fechaInicial.AddDays(i));
-                calculos.Add(new Calculo
-                {
-                    Subtotal = cantidad,
-                    InteresCalculado = interesCalculado,
-                    Total = cantidad + interesCalculado + transaccion,
-                    Transaccion = transaccion,
-                    Fecha = fechaInicial.AddDays(i),
-                });
-                cantidad = calculos[i - 1].Total;
-            }
-
-            return calculos;
-        }
-
-        private decimal ObtenerTransaccion(Cuentum ahorro, DateTime fecha)
-        {
-            decimal movimiento;
-            decimal retiros;
-            decimal depositos;
-
-            retiros = ahorro.Transaccions.Where(x => x.Tipo == Tipo.Retiro && x.FechaDeRegistro.Date == fecha.Date).Sum(x => x.Cantidad);
-            depositos = ahorro.Transaccions.Where(x => x.Tipo == Tipo.Deposito && x.FechaDeRegistro.Date == fecha.Date).Sum(x => x.Cantidad);
-            movimiento = depositos - retiros;
-
-            return movimiento;
-        }
-
-        private decimal ObtenerInteresDelDia(Cuentum ahorro)
-        {
-            return (decimal)(ahorro.Interes);
-        }
-
-        private int ObtenerAhorroId(string ahorroId)
-        {
-            return int.Parse(ahorroId);
-        }
     }
 }
-;

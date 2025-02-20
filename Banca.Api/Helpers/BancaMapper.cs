@@ -3,6 +3,7 @@ using Banca.Api.Dtos;
 using Banca.Api.Entities;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
+using DuckBank.Persistence.Entities;
 
 namespace Banca.BusinessLayer.Mappers
 {

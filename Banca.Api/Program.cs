@@ -4,6 +4,7 @@ using Banca.Api.Interfaces;
 using Banca.Api.Repositories;
 using Banca.BusinessLayer.Bl;
 using Banca.BusinessLayer.Mappers;
+using DuckBank.Persistence.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,7 @@ builder.Configuration
 
 // Add services to the container.
 builder.Services.AddScoped<UnitOfWork>();
-builder.Services.AddScoped<CuentaBl>();
+builder.Services.AddScoped<AhorroBl>();
 builder.Services.AddScoped<TransaccionBl>();
 builder.Services.AddScoped<HistorialBl>();
 builder.Services.AddScoped<CategoriaBl>();
@@ -30,24 +31,11 @@ builder.Services.AddScoped<MovimientoBl>();
 builder.Services.AddScoped<ICategoryRepository, CategoriaRepository>();
 builder.Services.AddScoped<ISubcategoriaRepository, SubcategoriaRepo>();
 builder.Services.AddScoped<IGastosRepository, GastoRepository>();
-builder.Services.AddScoped<IAhorroRepository, AhorrosRepository>();
 builder.Services.AddScoped<ITipoDeCuentaRepository, TipoDeCuentaRepository>();
 builder.Services.AddScoped<IVersionRepository, VersionRepository>();
 builder.Services.AddScoped<IPeriodoRepository, PeriodoRepo>();
-//Servicio a DuckbankMs
-HttpClientHandler httpClientHandler = new HttpClientHandler()
-{
-    ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; }
-};
-builder.Services
-    .AddHttpClient(string.Empty)
-   .ConfigurePrimaryHttpMessageHandler(_ =>
-   {
-       var handler = new HttpClientHandler();
-       //handler.ClientCertificates.Add(clientCertificate);
-       return handler;
-   });
-builder.Services.AddScoped<AhorrosRepository>();
+
+builder.Services.AgregarRepositorios();
 
 var mapperConfig = new MapperConfiguration(mapperConfig =>
 {

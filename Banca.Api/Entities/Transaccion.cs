@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DuckBank.Persistence.Entities;
 
 namespace Banco.Repositorios.Entities;
 

@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
-using Banca.Api.Entities;
 using Banca.Api.Interfaces;
+using DuckBank.Persistence.Entities;
+using Ahorro = DuckBank.Persistence.Entities.Ahorro;
 
 namespace Banca.Api.Bl
 {
@@ -17,11 +18,11 @@ namespace Banca.Api.Bl
             if(deposito.Referencia == null)
                 deposito.Referencia = Guid.NewGuid();
             
-            await _repositorioMongo.Ahorro.DepositarAsync(idGuid,new Entities.MovimientoDuckBank
+            await _repositorioMongo.Ahorro.DepositarAsync(idGuid,new Movimiento
             {
                 Cantidad = deposito.Cantidad,
                 Concepto = deposito.Concepto,
-                Referencia = deposito.Referencia.ToString(),
+                EncodedKey = deposito.Referencia.ToString(),
                 FechaDeRegistro = DateTime.Now
             });
 
@@ -34,23 +35,18 @@ namespace Banca.Api.Bl
 
             if (retiro.Guid == null)
                 retiro.Guid = Guid.NewGuid().ToString();
-            ahorro = await _repositorioMongo.Ahorro.ObtenerAsync(idGuid);
+            ahorro = await _repositorioMongo.Ahorro.ObtenerPorIdAsync(idGuid);
             if(retiro.Cantidad > ahorro.Total)
                 throw new Exception("No hay suficientes fondos");            
-            await _repositorioMongo.Ahorro.RetirarAsync(idGuid, new Entities.MovimientoDuckBank
+            await _repositorioMongo.Ahorro.RetirarAsync(idGuid, new Movimiento
             {
                 Cantidad = retiro.Cantidad,
                 Concepto = retiro.Concepto,
-                Referencia = retiro.Guid,
+                EncodedKey = retiro.Guid,
                 FechaDeRegistro = DateTime.Now
             });
 
             return retiro.Guid;
-        }
-
-        private int ObtenerAhorroId(string idGuid)
-        {
-            return int.Parse(idGuid);
-        }
+        }        
     }
 }

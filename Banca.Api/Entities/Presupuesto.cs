@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using DuckBank.Persistence.Entities;
 
 namespace Banco.Repositorios.Entities;
 
