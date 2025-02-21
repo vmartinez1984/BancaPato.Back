@@ -40,10 +40,10 @@ namespace Banca.Api.Bl
                 EncodedKey = movimiento.Guid
             });
             movimientoId = presupuesto.Movimientos.Count() + 1;            
-            presupuesto.Movimientos.Add(new Movimiento
+            presupuesto.Movimientos.Add(new MovimientoDePeridodo
             {
                 Id = movimientoId,
-                EncodedKey = movimiento.Guid,
+                Guid = movimiento.Guid,
                 Cantidad = movimiento.Cantidad
             });
             await _repositorioMongo.Periodo.ActualizarAsinc(periodo);

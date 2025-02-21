@@ -88,6 +88,13 @@ namespace Banca.Api.Bl
 
     public static class Mapeador
     {
+        public static List<MovimientoDto> ToDtos(this List<MovimientoDePeridodo> entities) => entities.Select(x => new MovimientoDto
+        {
+            Cantidad = x.Cantidad,
+            FechaDeRegistro= x.FechaDeRegistro,
+            Guid = x.Guid,
+            Id = x.Id            
+        }).ToList();
         public static List<MovimientoDto> ToDtos(this List<Movimiento> movimientos) 
         => movimientos.Select(x => new MovimientoDto
         {

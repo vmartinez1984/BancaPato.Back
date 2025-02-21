@@ -33,6 +33,7 @@ namespace Banca.Core.Dtos
             get
             {
                 decimal total = 0;
+                if(Version is not null)
                 foreach (var item in Version.Presupuestos)
                     total += item.Movimientos.Sum(x => x.Cantidad);
 
@@ -44,7 +45,7 @@ namespace Banca.Core.Dtos
         {
             get
             {
-                return Version.Presupuestos.Sum(x => x.Cantidad);
+                return Version is null ? 0: Version.Presupuestos.Sum(x => x.Cantidad);
             }
         }
 
@@ -52,7 +53,7 @@ namespace Banca.Core.Dtos
         {
             get
             {
-                return Version.Presupuestos.Where(x => x.Movimientos.Count == 0).Sum(x => x.Cantidad);
+                return Version is null ? 0 : Version.Presupuestos.Where(x => x.Movimientos.Count == 0).Sum(x => x.Cantidad);
             }
         }
     }

@@ -23,9 +23,7 @@ public partial class Periodo
 
     public string Nota { get; set; }
 
-    public string Guid { get; set; }
-
-    //public virtual ICollection<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
+    public string Guid { get; set; }    
 
     public int VersionId { get; set; }
 

@@ -1,6 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 using DuckBank.Persistence.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace Banco.Repositorios.Entities;
 
@@ -20,7 +21,7 @@ public partial class Presupuesto
 
     public string Guid { get; set; }
 
-    public List<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
+    public List<MovimientoDePeridodo> Movimientos { get; set; } = new List<MovimientoDePeridodo>();
 
     public Subcategorium Subcategoria { get; set; } = null!;
 
@@ -28,3 +29,17 @@ public partial class Presupuesto
 
     public string AhorroTipo { get; set; }
 }
+
+public class MovimientoDePeridodo
+{
+    [BsonElement("_id")]
+    internal int Id;
+
+    public string Guid { get; set; }
+
+    public decimal Cantidad { get; set; }
+
+    public DateTime FechaDeRegistro { get; set; }
+}
+
+

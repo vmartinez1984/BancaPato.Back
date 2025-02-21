@@ -16,9 +16,9 @@ namespace Banca.Api.Repositories
 
         public async Task<List<Periodo>> ObtenerAsync(bool estaActivo = true)
         {
-            var data=  await _collection.FindAsync(x => x.EstaActivo == estaActivo);
+            var data = await _collection.Find(x => x.EstaActivo == estaActivo).ToListAsync();
 
-            return data.ToList();
+            return data;
         }
 
         private async Task<int> ObtenerId()
