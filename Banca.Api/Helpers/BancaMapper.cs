@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using Banca.Api.Dtos;
-using Banca.Api.Entities;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
 using DuckBank.Persistence.Entities;
+using Gastos.ReglasDeNegocio.Entities;
 
 namespace Banca.BusinessLayer.Mappers
 {
@@ -11,20 +11,17 @@ namespace Banca.BusinessLayer.Mappers
     {
         public BancaMapper() {
             CreateMap<TipoDeCuenta,TipoDeCuentaDto>(); 
-
-            CreateMap<AhorroDtoIn, Cuentum>();
-            CreateMap<Cuentum, AhorroDto>();
-
+            
             CreateMap<DepositoDtoIn, Transaccion>();
             CreateMap<RetiroDtoIn, Transaccion>();
 
             CreateMap<HistorialDtoIn, HistorialDeApartado>();
             CreateMap<HistorialDeApartado, HistorialDto>();
 
-            CreateMap<SubcategoriaDtoIn, Subcategorium>();
-            CreateMap<Subcategorium, SubcategoriaDto>();
+            CreateMap<SubcategoriaDtoIn, Subcategoria>();
+            CreateMap<Subcategoria, SubcategoriaDto>();
 
-            CreateMap<Categorium, CategoriaDto>();
+            CreateMap<Categoria, CategoriaDto>();
 
             CreateMap<VersionDePresupuesto,VersionDto>();
             CreateMap<VersionDtoIn,VersionDePresupuesto>();

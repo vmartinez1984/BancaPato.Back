@@ -2,9 +2,8 @@ using AutoMapper;
 using Banca.Api.Bl;
 using Banca.Api.Interfaces;
 using Banca.Api.Repositories;
-using Banca.BusinessLayer.Bl;
 using Banca.BusinessLayer.Mappers;
-using DuckBank.Persistence.Helpers;
+using Gastos.ReglasDeNegocio.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,25 +16,21 @@ builder.Configuration
 
 // Add services to the container.
 builder.Services.AddScoped<UnitOfWork>();
-builder.Services.AddScoped<AhorroBl>();
 builder.Services.AddScoped<TransaccionBl>();
 builder.Services.AddScoped<HistorialBl>();
-builder.Services.AddScoped<CategoriaBl>();
-builder.Services.AddScoped<SubcategoriaBl>();
 builder.Services.AddScoped<VersionBl>();
-builder.Services.AddScoped<TipoDeCuentaBl>();
 builder.Services.AddScoped<PresupuestoBl>();
 builder.Services.AddScoped<PeriodoBl>();
 builder.Services.AddScoped<MovimientoBl>();
 //Repositorio MongoDb
-builder.Services.AddScoped<ICategoryRepository, CategoriaRepository>();
-builder.Services.AddScoped<ISubcategoriaRepository, SubcategoriaRepo>();
+//builder.Services.AddScoped<ICategoryRepository, CategoriaRepository>();
+//builder.Services.AddScoped<ISubcategoriaRepository, SubcategoriaRepo>();
 builder.Services.AddScoped<IGastosRepository, GastoRepository>();
-builder.Services.AddScoped<ITipoDeCuentaRepository, TipoDeCuentaRepository>();
+//builder.Services.AddScoped<ITipoDeCuentaRepository, TipoDeCuentaRepository>();
 builder.Services.AddScoped<IVersionRepository, VersionRepository>();
 builder.Services.AddScoped<IPeriodoRepository, PeriodoRepo>();
 
-builder.Services.AgregarRepositorios();
+builder.Services.AgregarGastos();
 
 var mapperConfig = new MapperConfiguration(mapperConfig =>
 {

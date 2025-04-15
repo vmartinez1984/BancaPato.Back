@@ -1,15 +1,18 @@
-﻿using Banca.Api.Bl;
-using Banca.Core.Dtos;
+﻿using Banca.Core.Dtos;
+using Gastos.ReglasDeNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriasController : BancaBase
+    public class CategoriasController : ControllerBase //BancaBase
     {
-        public CategoriasController(UnitOfWork unitOfWork) : base(unitOfWork)
+        private readonly UnitOfWork _unitOfWork;
+        
+        public CategoriasController(UnitOfWork unitOfWork) //: base(unitOfWork)
         {
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]

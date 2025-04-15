@@ -15,5 +15,5 @@ public partial class HistorialDeApartado
 
     public int CuentaId { get; set; }
 
-    public virtual Cuentum Cuenta { get; set; } = null!;
+   
 }

@@ -5,17 +5,16 @@ namespace Banca.Core.Dtos
     public class SubcategoriaDto
     {
         public int Id { get; set; }
-
-        public CategoriaDto Categoria { get; set; }
+        
         public string Nombre { get; set; }
 
         public decimal Presupuesto { get; set; }
 
-        public Guid Guid { get; set; }
-
-        public bool EstaActivo { get; set; } = true;
-
+        public string Guid { get; set; }
+              
         public bool EsPrimario { get; set; } = false;
+
+        public int CategoriaId { get; set; }
     }
 
     public class SubcategoriaDtoIn

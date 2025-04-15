@@ -23,6 +23,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\DuckBank.Ahorros.Ms\DuckBank.Persistence\DuckBank.Persistence.csproj" />
 	  <ProjectReference Include="..\Banca.Core\Banca.Core.csproj" />
+	  <ProjectReference Include="..\Gastos.ReglasDeNegocio\Gastos.ReglasDeNegocio.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -1,16 +1,18 @@
-﻿using Banca.Api.Bl;
-using Banca.Api.Dtos;
-using Banca.Core.Dtos;
+﻿using Banca.Core.Dtos;
+using Gastos.ReglasDeNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SubcategoriasController : BancaBase
+    public class SubcategoriasController : ControllerBase// BancaBase
     {
-        public SubcategoriasController(UnitOfWork unitOfWork) : base(unitOfWork)
+        private readonly UnitOfWork _unitOfWork;
+
+        public SubcategoriasController(UnitOfWork unitOfWork) //: base(unitOfWork)
         {
+            _unitOfWork = unitOfWork;
         }
 
         /// <summary>
@@ -26,25 +28,25 @@ namespace Banca.Api.Controllers
             return Ok(lista.OrderBy(x => x.Nombre));
         }
 
-        ///// <summary>
-        ///// Obtiene Subcategoria
-        ///// </summary>
-        ///// <response code="200">Subcategoria</response>
-        //[HttpGet("{idGuid}")]
-        //[ProducesResponseType(typeof(SubcategoriaDto), StatusCodes.Status200OK)]
-        //[Produces("application/json")]
-        //public async Task<IActionResult> Get(string idGuid)
-        //{
-        //    SubcategoriaDto subcategoria;
+        /// <summary>
+        /// Obtiene Subcategoria
+        /// </summary>
+        /// <response code="200">Subcategoria</response>
+        [HttpGet("{idGuid}")]
+        [ProducesResponseType(typeof(SubcategoriaDto), StatusCodes.Status200OK)]
+        [Produces("application/json")]
+        public async Task<IActionResult> Get(string idGuid)
+        {
+            SubcategoriaDto subcategoria;
 
-        //    subcategoria = await _unitOfWork.Subcategoria.ObtenerAsync(idGuid);
-        //    if (subcategoria == null)
-        //    {
-        //        return NotFound(new { Mensaje = "Elemento no encontrado" });
-        //    }
+            subcategoria = await _unitOfWork.Subcategoria.ObtenerAsync(idGuid);
+            if (subcategoria == null)
+            {
+                return NotFound(new { Mensaje = "Elemento no encontrado" });
+            }
 
-        //    return Ok(subcategoria);
-        //}
+            return Ok(subcategoria);
+        }
 
         /// <summary>
         /// Agregar una subcategoria

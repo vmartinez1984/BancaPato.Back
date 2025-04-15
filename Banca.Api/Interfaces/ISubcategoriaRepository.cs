@@ -1,12 +1,13 @@
 ﻿using Banco.Repositorios.Entities;
+using Gastos.ReglasDeNegocio.Entities;
 
 namespace Banca.Api.Interfaces
 {
     public interface ISubcategoriaRepository
     {
-        Task ActualizarAsync(Subcategorium subcategorium);
-        Task AgregarAsync(Subcategorium subcategoria);
-        Task<Subcategorium> ObtenerAsync(string idGuid);
-        Task<List<Subcategorium>> ObtenerTodosAsync();
+        Task ActualizarAsync(Subcategoria subcategorium);
+        Task AgregarAsync(Subcategoria subcategoria);
+        Task<Subcategoria> ObtenerAsync(string idGuid);
+        Task<List<Subcategoria>> ObtenerTodosAsync();
     }
 }

@@ -5,11 +5,11 @@ namespace Banca.Api.Repositories
 {
     public class GastoRepository : IGastosRepository
     {
-        public ICategoryRepository Categoria { get ; }
+        //public ICategoryRepository Categoria { get ; }
 
-        public ISubcategoriaRepository Subcategoria { get; }
+        //public ISubcategoriaRepository Subcategoria { get; }
 
-        public ITipoDeCuentaRepository TipoDeCuenta { get; }
+        //public ITipoDeCuentaRepository TipoDeCuenta { get; }
 
         public IAhorroRepositorio Ahorro { get; }
 
@@ -18,17 +18,17 @@ namespace Banca.Api.Repositories
         public IPeriodoRepository Periodo { get; }
 
         public GastoRepository(
-            ICategoryRepository categoryRepository, 
-            ISubcategoriaRepository subcategoriaRepository,
-            ITipoDeCuentaRepository tipoDeCuentaRepository,
+            //ICategoryRepository categoryRepository, 
+            //ISubcategoriaRepository subcategoriaRepository,
+            //ITipoDeCuentaRepository tipoDeCuentaRepository,
             IAhorroRepositorio ahorroRepository,
             IVersionRepository version,
             IPeriodoRepository periodoRepository
             )
         {
-            Categoria = categoryRepository;
-            Subcategoria = subcategoriaRepository;
-            TipoDeCuenta = tipoDeCuentaRepository;
+            //Categoria = categoryRepository;
+            //Subcategoria = subcategoriaRepository;
+            //TipoDeCuenta = tipoDeCuentaRepository;
             Ahorro = ahorroRepository;
             Version = version;
             Periodo = periodoRepository;

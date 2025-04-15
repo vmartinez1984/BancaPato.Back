@@ -1,18 +1,18 @@
-﻿using Banca.Api.Bl;
-using Banca.Api.Dtos;
+﻿using Banca.Api.Dtos;
 using Banca.Core.Dtos;
+using Gastos.ReglasDeNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CuentasController : ControllerBase
+    public class AhorrosController : ControllerBase
     {
         private readonly UnitOfWork _unitOfWork;
         private readonly string _ahorroFondeador;
 
-        public CuentasController(
+        public AhorrosController(
             UnitOfWork unitOfWork,
             IConfiguration configuration
         )
@@ -26,7 +26,7 @@ namespace Banca.Api.Controllers
         {
             IdDto id;
 
-            id = await _unitOfWork.Cuenta.AgregarAsync(cuenta);
+            id = await _unitOfWork.Ahorro.AgregarAsync(cuenta);
 
             return Created($"Cuentas/{id.Id}", id);
         }
@@ -37,7 +37,7 @@ namespace Banca.Api.Controllers
 
             List<AhorroDto> lista;
 
-            lista = await _unitOfWork.Cuenta.Obtener();
+            lista = await _unitOfWork.Ahorro.ObtenerAsync();
 
             HttpContext.Response.Headers.Append("TotalDeRegistros", lista.Count().ToString());
             return Ok(lista.OrderBy(x => x.Nombre));
@@ -48,7 +48,7 @@ namespace Banca.Api.Controllers
         {
             AhorroDto ahorro;
 
-            ahorro = await _unitOfWork.Cuenta.ObtenerAsync(_ahorroFondeador);
+            ahorro = await _unitOfWork.Ahorro.ObtenerAsync(_ahorroFondeador);
 
             return Ok(ahorro);
         }
@@ -58,7 +58,7 @@ namespace Banca.Api.Controllers
         {
             AhorroDto ahorro;
 
-            ahorro = await _unitOfWork.Cuenta.ObtenerAsync(ahorroId);
+            ahorro = await _unitOfWork.Ahorro.ObtenerAsync(ahorroId);
 
             return Ok(ahorro);
         }
@@ -67,7 +67,7 @@ namespace Banca.Api.Controllers
         public async Task<IActionResult> ActualizarAhorro(string ahorroId, AhorroDtoIn ahorro)
         {
 
-            await _unitOfWork.Cuenta.ActualizarAsync(ahorroId, ahorro);
+            await _unitOfWork.Ahorro.ActualizarAsync(ahorroId, ahorro);
 
             return Accepted();
         }
@@ -75,7 +75,7 @@ namespace Banca.Api.Controllers
         [HttpDelete("{ahorroId}")]
         public async Task<IActionResult> Borrar(string ahorroId)
         {
-            await _unitOfWork.Cuenta.BorrarAsync(ahorroId);
+            await _unitOfWork.Ahorro.BorrarAsync(ahorroId);
 
             return Accepted();
         }
@@ -85,9 +85,9 @@ namespace Banca.Api.Controllers
         {
             string id;
 
-            id = await _unitOfWork.Transaccion.Depositar(cuentaIdGuid, deposito);
+            //id = await _unitOfWork.Ahorro.DepositarAsync(cuentaIdGuid, deposito);
 
-            return Created("", new { Id = id });
+            return Created("", new { Id = 0 });
         }
 
         [HttpPost("{cuentaIdGuid}/retiros")]
@@ -95,9 +95,9 @@ namespace Banca.Api.Controllers
         {
             string id;
 
-            id = await _unitOfWork.Transaccion.Retirar(cuentaIdGuid, retiro);
+            //id = await _unitOfWork.Ahorro.RetirarAsync(cuentaIdGuid, retiro);
 
-            return Created("", new { Id = id });
+            return Created("", new { Id = 0 });
         }
     }
 }

@@ -11,8 +11,8 @@ namespace Banca.Core.Dtos
 
         //public List<Calculo> Calculos { get; set; }
 
-        public List<MovimientoDeAhorroDto> Depositos { get; set; } = new List<MovimientoDeAhorroDto>();
-        public List<MovimientoDeAhorroDto> Retiros { get; set; } = new List<MovimientoDeAhorroDto>();
+        //public List<MovimientoDeAhorroDto> Depositos { get; set; } = new List<MovimientoDeAhorroDto>();
+        //public List<MovimientoDeAhorroDto> Retiros { get; set; } = new List<MovimientoDeAhorroDto>();
     }
 
     public class Calculo
@@ -44,7 +44,7 @@ namespace Banca.Core.Dtos
 
         public int? TipoDeCuentaId { get; set; }
 
-        public int? CuentaDeReferenciaId { get; set; }
+        //public int? CuentaDeReferenciaId { get; set; }
     }
 
     public class MovimientoDeAhorroDto

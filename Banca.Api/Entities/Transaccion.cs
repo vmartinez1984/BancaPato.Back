@@ -18,9 +18,7 @@ public partial class Transaccion
 
     public string Nota { get; set; }
 
-    public string Concepto { get; set; }
-
-    public virtual Cuentum Cuenta { get; set; } = null!;
+    public string Concepto { get; set; }    
 
     public virtual ICollection<Movimiento> Movimientos { get; set; } = new List<Movimiento>();
 }

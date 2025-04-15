@@ -3,6 +3,7 @@ using Banca.Api.Interfaces;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
 using DuckBank.Persistence.Entities;
+using Gastos.ReglasDeNegocio.Entities;
 
 namespace Banca.Api.Bl
 {
@@ -105,23 +106,21 @@ namespace Banca.Api.Bl
         }).ToList();
         
 
-        public static CategoriaDto ToDto(this Categorium categorium) => new CategoriaDto
+        public static CategoriaDto ToDto(this Categoria categorium) => new CategoriaDto
         {
             Id = categorium.Id,
             Nombre = categorium.Nombre,
         };
 
-        public static SubcategoriaDto ToDto(this Subcategorium subcategorium)
+        public static SubcategoriaDto ToDto(this Subcategoria subcategorium)
         {
             return new SubcategoriaDto
             {
                 Id = subcategorium.Id,
-                EsPrimario = subcategorium.EsPrimario,
-                EstaActivo = subcategorium.EstaActivo,
-                Guid = Guid.Parse(subcategorium?.Guid),
-                Nombre = subcategorium?.Nombre,
-                Presupuesto = subcategorium.Presupuesto,
-                Categoria = subcategorium.Categoria.ToDto()
+                EsPrimario = subcategorium.EsPrimario,                
+                Guid = subcategorium.Guid,
+                Nombre = subcategorium.Nombre,
+                Presupuesto = subcategorium.Presupuesto                
             };
         }
     }

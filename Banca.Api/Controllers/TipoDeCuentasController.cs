@@ -1,15 +1,18 @@
-﻿using Banca.Api.Bl;
-using Banca.Core.Dtos;
+﻿using Banca.Core.Dtos;
+using Gastos.ReglasDeNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TipoDeCuentasController : BancaBase
+    public class TipoDeCuentasController : ControllerBase //: BancaBase
     {
-        public TipoDeCuentasController(UnitOfWork unitOfWork) : base(unitOfWork)
+        private readonly UnitOfWork _unitOfWork;
+
+        public TipoDeCuentasController(UnitOfWork unitOfWork) //: base(unitOfWork)
         {
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
@@ -17,7 +20,7 @@ namespace Banca.Api.Controllers
         {
             List<TipoDeCuentaDto> lista;
 
-            lista = await _unitOfWork.TipoDeCuenta.ObtenerTodosAsync();
+            lista = await _unitOfWork.TipoDeAhorro.ObtenerTodosAsync();
 
             return Ok(lista);
         }

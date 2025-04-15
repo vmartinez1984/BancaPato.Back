@@ -2,13 +2,18 @@
 using DuckBank.Persistence.Entities;
 using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Helpers;
+using Gastos.ReglasDeNegocio.Repositories;
 using System.Globalization;
 
 namespace Gastos.ReglasDeNegocio.Bl
 {
     public class AhorroBl : BaseBl
     {
-        public AhorroBl(IRepositorio repositorio) : base(repositorio) { }
+        private readonly Repositorio _repositorio1;
+
+        public AhorroBl(IRepositorio repositorio, Repositorio repositorio1) : base(repositorio) {
+            _repositorio1 = repositorio1;
+        }
 
         public async Task<IdDto> AgregarAsync(AhorroDtoIn cuenta)
         {
@@ -29,7 +34,7 @@ namespace Gastos.ReglasDeNegocio.Bl
             List<TipoDeCuenta> tipos;
             TipoDeCuenta tipoDeCuenta;
 
-            tipos = await _repositorio.TipoDeCuenta.ObtenerTodosAsync();
+            tipos = await _repositorio1.TipoDeAhorro.ObtenerTodosAsync();
             tipoDeCuenta = tipos.FirstOrDefault(x => x.Id == cuenta.TipoDeCuentaId);
             otros.Add("Nota", cuenta.Nota);
             otros.Add("FechaInicial", cuenta.FechaInicial.ToString());
@@ -52,13 +57,13 @@ namespace Gastos.ReglasDeNegocio.Bl
             return ahorro;
         }
 
-        public async Task<List<AhorroDto>> Obtener()
+        public async Task<List<AhorroDto>> ObtenerAsync()
         {
             List<AhorroDto> dtos;
             List<Ahorro> entidades;
             List<TipoDeCuenta> tipoDeCuentas;
 
-            tipoDeCuentas = await _repositorio.TipoDeCuenta.ObtenerTodosAsync();
+            tipoDeCuentas = await _repositorio1.TipoDeAhorro.ObtenerTodosAsync();
             entidades = await _repositorio.Ahorro.ObtenerAsync();
             dtos = entidades.Select(x => new AhorroDto
             {
@@ -116,5 +121,68 @@ namespace Gastos.ReglasDeNegocio.Bl
             return fecha;
         }
 
+        public Task ActualizarAsync(string ahorroId, AhorroDtoIn ahorro)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task BorrarAsync(string ahorroId)
+        {
+            Ahorro ahorro;
+
+            ahorro = await _repositorio.Ahorro.ObtenerPorIdAsync(ahorroId);
+            ahorro.Estado = "Inactivo";
+
+            await _repositorio.Ahorro.ActualizarAsync(ahorro);
+        }
+
+        public async Task<AhorroDto> ObtenerAsync(string ahorroId)
+        {
+            Ahorro x;
+            AhorroDto ahorroDto;
+            List<TipoDeCuenta> tipoDeCuentas;
+
+            tipoDeCuentas = await _repositorio1.TipoDeAhorro.ObtenerTodosAsync();
+            x = await _repositorio.Ahorro.ObtenerPorIdAsync(ahorroId);
+            ahorroDto = new AhorroDto
+            {
+                Balance = x.Total,
+                FechaFinal = ObtenerFecha(x.Otros, "FechaFinal"),
+                FechaInicial = ObtenerFecha(x.Otros, "FechaInicial"),
+                Nombre = x.Nombre,
+                Guid = x.Guid,
+                Id = x.Id,
+                Interes = x.Interes,
+                Nota = ObtnerCadena(x.Otros, "Nota"),
+                TipoDeCuentaId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
+                TipoDeCuenta = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
+                //Retiros = x.Retiros.Select(x => new MovimientoDeAhorroDto
+                //{
+                //    Cantidad = x.Cantidad,
+                //    Concepto = x.Concepto,
+                //    FechaDeRegistro = x.FechaDeRegistro,
+                //    Referencia = x.EncodedKey
+                //}).OrderByDescending(x => x.FechaDeRegistro).ToList(),
+                //Depositos = x.Depositos.Select(x => new MovimientoDeAhorroDto
+                //{
+                //    Cantidad = x.Cantidad,
+                //    Concepto = x.Concepto,
+                //    FechaDeRegistro = x.FechaDeRegistro,
+                //    Referencia = x.EncodedKey
+                //}).OrderByDescending(x => x.FechaDeRegistro).ToList(),
+            };            
+
+            return ahorroDto;
+        }
+
+        public async Task<string> RetirarAsync(string cuentaIdGuid, object retiro)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<string> DepositarAsync(string cuentaIdGuid, object deposito)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

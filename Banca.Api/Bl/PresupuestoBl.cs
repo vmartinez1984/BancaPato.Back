@@ -1,19 +1,21 @@
 ﻿using AutoMapper;
-using Banca.Api.Dtos;
 using Banca.Api.Interfaces;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
+using Gastos.ReglasDeNegocio.Entities;
+using Gastos.ReglasDeNegocio.Repositories;
 using MongoDB.Bson;
-using SharpCompress.Common;
-using static Banca.Core.Dtos.PresupuestoDto;
 
 namespace Banca.Api.Bl
 {
     public class PresupuestoBl : BaseBl
     {
-        public PresupuestoBl(IMapper mapper, IGastosRepository gastosRepository) 
+        private readonly Repositorio _repositorio;
+
+        public PresupuestoBl(IMapper mapper, IGastosRepository gastosRepository, Repositorio repositorio) 
         : base(mapper, gastosRepository)
         {
+            _repositorio = repositorio;
         }
 
         internal async Task ActualizarAsync(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
@@ -21,7 +23,7 @@ namespace Banca.Api.Bl
 
             Presupuesto entity;
             VersionDePresupuesto version;
-            List<Subcategorium> subcategorias;
+            List<Subcategoria> subcategorias;
             int presupuestoId = 0;
     
             version = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
@@ -29,7 +31,7 @@ namespace Banca.Api.Bl
                 entity = version.Presupuestos.Where(x => x.Id == presupuestoId).FirstOrDefault();
             else
                 entity = version.Presupuestos.Where(x => x.Guid == presupuestoIdGuid).FirstOrDefault();
-            subcategorias = await _repositorioMongo.Subcategoria.ObtenerTodosAsync();
+            subcategorias = await _repositorio.Subcategoria.ObtenerTodosAsync();
             entity.AhorroId = presupuesto.AhorroId;
             entity.AhorroTipo = presupuesto.AhorroTipo;
             entity.Cantidad = presupuesto.Cantidad;
@@ -42,12 +44,12 @@ namespace Banca.Api.Bl
         {
             Presupuesto entity;
             VersionDePresupuesto version;
-            List<Subcategorium> subcategorias;
+            List<Subcategoria> subcategorias;
 
             if(presupuesto.Guid == null)
                 presupuesto.Guid = Guid.NewGuid().ToString();
             entity = _mapper.Map<Presupuesto>(presupuesto);
-            subcategorias = await _repositorioMongo.Subcategoria.ObtenerTodosAsync();
+            subcategorias = await _repositorio.Subcategoria.ObtenerTodosAsync();
             entity.Subcategoria = subcategorias.FirstOrDefault(x => x.Id == entity.SubcategoriaId);
             version = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
             entity.Id = version.Presupuestos.Count() + 1;
