@@ -6,11 +6,11 @@ namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class TipoDeCuentasController : ControllerBase //: BancaBase
+    public class TiposDeAhorrosController : ControllerBase //: BancaBase
     {
         private readonly UnitOfWork _unitOfWork;
 
-        public TipoDeCuentasController(UnitOfWork unitOfWork) //: base(unitOfWork)
+        public TiposDeAhorrosController(UnitOfWork unitOfWork) //: base(unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -18,7 +18,7 @@ namespace Banca.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> ObtenerTodos()
         {
-            List<TipoDeCuentaDto> lista;
+            List<TipoDeAhorroDto> lista;
 
             lista = await _unitOfWork.TipoDeAhorro.ObtenerTodosAsync();
 

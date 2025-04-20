@@ -19,7 +19,7 @@ public partial class FormularioDeAhorroPage : ContentPage
         base.OnAppearing();
         //ActivityIndicator.IsVisible = true;
         var lista = await _servicio.TipoDeCuenta.ObtenerTodosAsync();
-        lista.Insert(0, new Core.Dtos.TipoDeCuentaDto { Id = 0, Nombre = "Seleccione" });
+        lista.Insert(0, new Core.Dtos.TipoDeAhorroDto { Id = 0, Nombre = "Seleccione" });
         Picker.ItemsSource = lista;
         Picker.SelectedIndex = 0;
         //ActivityIndicator.IsVisible = false;
@@ -39,7 +39,7 @@ public partial class FormularioDeAhorroPage : ContentPage
             Interes = 0,
             Nombre = EntryNombre.Text,
             Nota = EntryNota.Text,
-            TipoDeCuentaId = (Picker.SelectedItem as TipoDeCuentaDto).Id
+            TipoDeAhorroId = (Picker.SelectedItem as TipoDeAhorroDto).Id
         };
 
         await _servicio.Ahorro.AgregarAsync(ahorro);

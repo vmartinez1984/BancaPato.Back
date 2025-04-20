@@ -32,15 +32,12 @@ namespace Gastos.ReglasDeNegocio.Bl
             Ahorro ahorro;
             Dictionary<string, string> otros = new Dictionary<string, string>();
             List<TipoDeCuenta> tipos;
-            TipoDeCuenta tipoDeCuenta;
 
             tipos = await _repositorio1.TipoDeAhorro.ObtenerTodosAsync();
-            tipoDeCuenta = tipos.FirstOrDefault(x => x.Id == cuenta.TipoDeCuentaId);
             otros.Add("Nota", cuenta.Nota);
             otros.Add("FechaInicial", cuenta.FechaInicial.ToString());
             otros.Add("FechaFinal", cuenta.FechaFinal.ToString());
-            otros.Add("TipoDeCuentaId", tipoDeCuenta.Id.ToString());
-            otros.Add("TipoDeCuenta", tipoDeCuenta.Nombre);
+            otros.Add("TipoDeCuentaId", cuenta.TipoDeAhorroId.ToString());
             ahorro = new Ahorro
             {
                 Id = 0,
@@ -75,14 +72,14 @@ namespace Gastos.ReglasDeNegocio.Bl
                 Id = x.Id,
                 Interes = x.Interes,
                 Nota = ObtnerCadena(x.Otros, "Nota"),
-                TipoDeCuentaId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
-                TipoDeCuenta = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
+                TipoDeAhorroId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
+                TipoDeAhorro = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
             }).ToList();
 
             return dtos;
         }
 
-        private TipoDeCuentaDto ObtnerTipoDeCuenta(int? v, List<TipoDeCuenta> tipoDeCuentas)
+        private TipoDeAhorroDto ObtnerTipoDeCuenta(int? v, List<TipoDeCuenta> tipoDeCuentas)
         {
             if (v == null) return null;
 
@@ -154,8 +151,8 @@ namespace Gastos.ReglasDeNegocio.Bl
                 Id = x.Id,
                 Interes = x.Interes,
                 Nota = ObtnerCadena(x.Otros, "Nota"),
-                TipoDeCuentaId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
-                TipoDeCuenta = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
+                TipoDeAhorroId = ObtnerNumero(x.Otros, "TipoDeCuentaId"),
+                TipoDeAhorro = ObtnerTipoDeCuenta(ObtnerNumero(x.Otros, "TipoDeCuentaId"), tipoDeCuentas),
                 //Retiros = x.Retiros.Select(x => new MovimientoDeAhorroDto
                 //{
                 //    Cantidad = x.Cantidad,

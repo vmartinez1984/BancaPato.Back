@@ -7,12 +7,7 @@ namespace Banca.Core.Dtos
         public int Id { get; set; }
         public decimal Balance { get; set; }
 
-        public TipoDeCuentaDto TipoDeCuenta { get; set; }
-
-        //public List<Calculo> Calculos { get; set; }
-
-        //public List<MovimientoDeAhorroDto> Depositos { get; set; } = new List<MovimientoDeAhorroDto>();
-        //public List<MovimientoDeAhorroDto> Retiros { get; set; } = new List<MovimientoDeAhorroDto>();
+        public TipoDeAhorroDto TipoDeAhorro { get; set; }
     }
 
     public class Calculo
@@ -42,9 +37,7 @@ namespace Banca.Core.Dtos
         public DateTime? FechaInicial { get; set; }
         public DateTime? FechaFinal { get; set; }
 
-        public int? TipoDeCuentaId { get; set; }
-
-        //public int? CuentaDeReferenciaId { get; set; }
+        public int? TipoDeAhorroId { get; set; }
     }
 
     public class MovimientoDeAhorroDto

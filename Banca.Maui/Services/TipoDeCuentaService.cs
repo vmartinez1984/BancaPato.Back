@@ -11,11 +11,11 @@ namespace Banca.Maui.Services
             _url = "TipoDeCuentas/";
         }
 
-        public async Task<List<TipoDeCuentaDto>> ObtenerTodosAsync()
+        public async Task<List<TipoDeAhorroDto>> ObtenerTodosAsync()
         {
-            List<TipoDeCuentaDto> lista;
+            List<TipoDeAhorroDto> lista;
 
-            lista = await Get<List<TipoDeCuentaDto>>(_url);
+            lista = await Get<List<TipoDeAhorroDto>>(_url);
 
             return lista;
         }

@@ -10,7 +10,7 @@ namespace Banca.BusinessLayer.Mappers
     public class BancaMapper: Profile
     {
         public BancaMapper() {
-            CreateMap<TipoDeCuenta,TipoDeCuentaDto>(); 
+            CreateMap<TipoDeCuenta,TipoDeAhorroDto>(); 
             
             CreateMap<DepositoDtoIn, Transaccion>();
             CreateMap<RetiroDtoIn, Transaccion>();

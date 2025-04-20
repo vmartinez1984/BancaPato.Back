@@ -13,13 +13,13 @@ namespace Gastos.ReglasDeNegocio.Bl
             _repositorio = repositorio;
         }
 
-        public async Task<List<TipoDeCuentaDto>> ObtenerTodosAsync()
+        public async Task<List<TipoDeAhorroDto>> ObtenerTodosAsync()
         {
-            List<TipoDeCuentaDto> dtos;
+            List<TipoDeAhorroDto> dtos;
             List<TipoDeCuenta> entitites;
 
             entitites = await _repositorio.TipoDeAhorro.ObtenerTodosAsync();
-            dtos = entitites.Select(x => new TipoDeCuentaDto { Id = x.Id, Nombre = x.Nombre }).ToList();
+            dtos = entitites.Select(x => new TipoDeAhorroDto { Id = x.Id, Nombre = x.Nombre }).ToList();
 
             return dtos;
         }

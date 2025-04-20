@@ -6,13 +6,13 @@ namespace Gastos.ReglasDeNegocio.Helpers
 {
     internal static class Mapeador
     {
-        public static TipoDeCuentaDto ToDto(this TipoDeCuenta entidad) => entidad is null ? null : new TipoDeCuentaDto
+        public static TipoDeAhorroDto ToDto(this TipoDeCuenta entidad) => entidad is null ? null : new TipoDeAhorroDto
         {
             Id = entidad.Id,
             Nombre = entidad.Nombre
         };
 
-        public static List<TipoDeCuentaDto> ToDtos(this List<TipoDeCuenta> entidades) => entidades.Select(x=> x.ToDto()).ToList();
+        public static List<TipoDeAhorroDto> ToDtos(this List<TipoDeCuenta> entidades) => entidades.Select(x=> x.ToDto()).ToList();
 
         public static CategoriaDto ToDto(this Categoria entidad) => entidad is null ? null : new CategoriaDto
         {
@@ -40,7 +40,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
         public static SubcategoriaDto ToDto(this Subcategoria entity) => entity is null ? null : new SubcategoriaDto
         {
             Id = entity.Id,
-            CategoriaId = entity.Categoria.Id,
+            CategoriaId = entity.CategoriaId,
             EsPrimario = entity.EsPrimario,
             Guid = entity.Guid,
             Nombre = entity.Nombre,
