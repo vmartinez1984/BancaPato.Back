@@ -3,6 +3,7 @@ using DuckBank.Persistence.Entities;
 using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
+using System;
 using System.Globalization;
 
 namespace Gastos.ReglasDeNegocio.Bl
@@ -11,7 +12,12 @@ namespace Gastos.ReglasDeNegocio.Bl
     {
         private readonly Repositorio _repositorio1;
 
-        public AhorroBl(IRepositorio repositorio, Repositorio repositorio1) : base(repositorio) {
+
+        const string FechaFinal = "FechaFinal";
+        const string FechaInicial = "FechaInicial";
+
+        public AhorroBl(IRepositorio repositorio, Repositorio repositorio1) : base(repositorio)
+        {
             _repositorio1 = repositorio1;
         }
 
@@ -35,8 +41,8 @@ namespace Gastos.ReglasDeNegocio.Bl
 
             tipos = await _repositorio1.TipoDeAhorro.ObtenerTodosAsync();
             otros.Add("Nota", cuenta.Nota);
-            otros.Add("FechaInicial", cuenta.FechaInicial.ToString());
-            otros.Add("FechaFinal", cuenta.FechaFinal.ToString());
+            otros.Add("FechaInicial", cuenta.FechaInicial is null? null: cuenta.FechaInicial.ToString());
+            otros.Add("FechaFinal", cuenta.FechaFinal is null ? null : cuenta.FechaFinal.ToString());
             otros.Add("TipoDeCuentaId", cuenta.TipoDeAhorroId.ToString());
             ahorro = new Ahorro
             {
@@ -118,9 +124,16 @@ namespace Gastos.ReglasDeNegocio.Bl
             return fecha;
         }
 
-        public Task ActualizarAsync(string ahorroId, AhorroDtoIn ahorro)
+        public async Task ActualizarAsync(string ahorroId, AhorroDtoIn ahorro)
         {
-            throw new NotImplementedException();
+            Ahorro ahorro1 = await _repositorio.Ahorro.ObtenerPorIdAsync(ahorroId);
+            ahorro1.Nombre = ahorro.Nombre;
+            if (ahorro1.Otros.ContainsKey(FechaFinal))
+                ahorro1.Otros[FechaFinal] = ahorro.FechaFinal is null ? null : ahorro.FechaFinal.ToString();
+            if (ahorro1.Otros.ContainsKey(FechaInicial))
+                ahorro1.Otros[FechaInicial] = ahorro.FechaInicial is null ? null : ahorro.FechaInicial.ToString();
+
+            await _repositorio.Ahorro.ActualizarAsync(ahorro1);
         }
 
         public async Task BorrarAsync(string ahorroId)
@@ -167,19 +180,61 @@ namespace Gastos.ReglasDeNegocio.Bl
                 //    FechaDeRegistro = x.FechaDeRegistro,
                 //    Referencia = x.EncodedKey
                 //}).OrderByDescending(x => x.FechaDeRegistro).ToList(),
-            };            
+            };
 
             return ahorroDto;
         }
 
-        public async Task<string> RetirarAsync(string cuentaIdGuid, object retiro)
+        public async Task<IdDto> RetirarAsync(string idGuid, MovimientoDtoIn retiro)
         {
-            throw new NotImplementedException();
+            if (retiro.Referencia == null)
+                retiro.Referencia = Guid.NewGuid().ToString();
+
+            var id = await _repositorio.Ahorro.RetirarAsync(idGuid, new Movimiento
+            {
+                Cantidad = retiro.Cantidad,
+                Concepto = retiro.Concepto,
+                EncodedKey = retiro.Referencia.ToString(),
+                FechaDeRegistro = DateTime.Now
+            });
+
+            return new IdDto
+            {
+                Id = id,
+                Guid = retiro.Referencia
+            };
         }
 
-        public async Task<string> DepositarAsync(string cuentaIdGuid, object deposito)
+        public async Task<IdDto> DepositarAsync(string idGuid, MovimientoDtoIn deposito)
         {
-            throw new NotImplementedException();
+            if (deposito.Referencia == null)
+                deposito.Referencia = Guid.NewGuid().ToString();
+
+            var id = await _repositorio.Ahorro.DepositarAsync(idGuid, new Movimiento
+            {
+                Cantidad = deposito.Cantidad,
+                Concepto = deposito.Concepto,
+                EncodedKey = deposito.Referencia.ToString()
+            });
+
+            return new IdDto
+            {
+                Id = id,
+                Guid = deposito.Referencia
+            };
+        }
+
+        public async Task<List<MovimientoDto>> ObtenerMovimientosAsync(string ahorroId)
+        {
+            Ahorro ahorro;
+            List<MovimientoDto> movimientos;
+
+            ahorro = await _repositorio.Ahorro.ObtenerPorIdAsync(ahorroId);
+            movimientos = new List<MovimientoDto>();
+            movimientos.AddRange(ahorro.Depositos.ToDtos("Deposito"));
+            movimientos.AddRange(ahorro.Retiros.ToDtos("Retiro"));
+
+            return movimientos.OrderByDescending(x => x.FechaDeRegistro).ToList();
         }
     }
 }

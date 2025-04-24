@@ -1,8 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
-using Gastos.ReglasDeNegocio.Entities;
 
-namespace Banco.Repositorios.Entities;
+namespace Gastos.ReglasDeNegocio.Entities;
 
 public partial class Presupuesto
 {
@@ -32,7 +31,7 @@ public partial class Presupuesto
 public class MovimientoDePeridodo
 {
     [BsonElement("_id")]
-    internal int Id;
+    public int Id { get; set; }
 
     public string Guid { get; set; }
 

@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\DuckBank.Ms\DuckBank.Persistence\DuckBank.Persistence.csproj" />
+    <ProjectReference Include="..\..\DuckBank.Ahorros.Ms\DuckBank.Persistence\DuckBank.Persistence.csproj" />
     <ProjectReference Include="..\Banca.Core\Banca.Core.csproj" />
   </ItemGroup>
 

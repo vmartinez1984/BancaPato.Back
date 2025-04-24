@@ -1,11 +1,11 @@
 using MongoDB.Driver;
-using Banca.Api.Interfaces;
 using MongoDB.Bson;
 using Gastos.ReglasDeNegocio.Entities;
+using Microsoft.Extensions.Configuration;
 
-namespace Banca.Api.Repositories
+namespace Gastos.ReglasDeNegocio.Repositories
 {
-    public class VersionRepository :BaseRepo, IVersionRepository
+    public class VersionRepository : BaseRepositorio//:BaseRepo, IVersionRepository
     {
         private readonly IMongoCollection<VersionDePresupuesto> _collection;
 
@@ -19,12 +19,14 @@ namespace Banca.Api.Repositories
             await _collection.ReplaceOneAsync(x => x._id == version._id, version);
         }
 
-        public async Task AgregarAsync(VersionDePresupuesto subcategoria)
+        public async Task<int> AgregarAsync(VersionDePresupuesto subcategoria)
         {
             if (subcategoria.Id == 0)
                 subcategoria.Id = await ObtenerId();
 
             await _collection.InsertOneAsync(subcategoria);
+
+            return subcategoria.Id;
         }
 
         public async Task<VersionDePresupuesto> ObtenerAsync(string idGuid)

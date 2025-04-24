@@ -1,5 +1,6 @@
 ﻿using Gastos.ReglasDeNegocio.Bl;
 
+
 namespace Gastos.ReglasDeNegocio
 {
     public class UnitOfWork
@@ -12,17 +13,21 @@ namespace Gastos.ReglasDeNegocio
 
         public TipoDeAhorroBl TipoDeAhorro { get; }
 
+        public VersionBl Version { get; }
+
         public UnitOfWork(
             AhorroBl   ahorroBl,
             CategoriaBl categoriaBl,
             SubcategoriaBl subcategoriaBl,
-            TipoDeAhorroBl tipoDeAhorroBl
+            TipoDeAhorroBl tipoDeAhorroBl,
+            VersionBl versionBl
         )
         {
             Ahorro = ahorroBl;
             Categoria = categoriaBl;
             Subcategoria = subcategoriaBl;
             TipoDeAhorro = tipoDeAhorroBl;
+            Version = versionBl;
         }
     }
 }

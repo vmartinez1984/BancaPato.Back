@@ -1,16 +1,18 @@
-﻿using Banca.Api.Bl;
-using Banca.Core.Dtos;
+﻿using Banca.Core.Dtos;
 using Microsoft.AspNetCore.Mvc;
-using static Banca.Core.Dtos.PresupuestoDto;
+using Gastos.ReglasDeNegocio;
 
 namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VersionesController : BancaBase
+    public class VersionesController: ControllerBase //: BancaBase
     {
-        public VersionesController(UnitOfWork unitOfWork) : base(unitOfWork)
+        private readonly UnitOfWork _unitOfWork;
+
+        public VersionesController(UnitOfWork unitOfWork) //: base(unitOfWork)
         {
+            _unitOfWork = unitOfWork;
         }
 
         [HttpPost]
@@ -29,6 +31,16 @@ namespace Banca.Api.Controllers
             List<VersionDto> lista;
 
             lista = await _unitOfWork.Version.ObtenerAsync();
+
+            return Ok(lista);
+        }
+
+        [HttpGet("{versionId}")]
+        public async Task<IActionResult> ObtenerPorIdAsync(int versionId)
+        {
+            VersionDto lista;
+
+            lista = await _unitOfWork.Version.ObtenerPorIdAsync(versionId);
 
             return Ok(lista);
         }
@@ -53,11 +65,11 @@ namespace Banca.Api.Controllers
         [HttpGet("{versionIdGuid}/Presupuestos")]
         public async Task<IActionResult> ObtenerPresupuestos(string versionIdGuid)
         {
-            VersionDto version;
+            List<PresupuestoDto> lista;
 
-            version = await _unitOfWork.Version.ObtenerAsync(versionIdGuid);           
+            lista = await _unitOfWork.Version.ObtenerPresupuestosAsync(versionIdGuid);           
 
-            return Ok(version.Presupuestos);
+            return Ok(lista);         
         }
 
         [HttpPost("{versionIdGuid}/Presupuestos")]
@@ -65,26 +77,26 @@ namespace Banca.Api.Controllers
         {
             IdDto id;
 
-            id = await _unitOfWork.Presupuesto.AgregarAsync(versionIdGuid, presupuesto);
+            id = await _unitOfWork.Version.AgregarPresupuestoAsync(versionIdGuid, presupuesto);
 
             return Created("", id);
         }
 
-        [HttpPut("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
-        public async Task<IActionResult> ActualizarPresupuesto(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
-        {
-            await _unitOfWork.Presupuesto.ActualizarAsync(versionIdGuid, presupuestoIdGuid, presupuesto);
+        //[HttpPut("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
+        //public async Task<IActionResult> ActualizarPresupuesto(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
+        //{
+        //    await _unitOfWork.Presupuesto.ActualizarAsync(versionIdGuid, presupuestoIdGuid, presupuesto);
 
-            return Accepted("", new IdDto { });
-        }
+        //    return Accepted("", new IdDto { });
+        //}
 
-        [HttpDelete("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
-        public async Task<IActionResult> BorrarPresupuesto(string versionIdGuid, string presupuestoIdGuid)
-        {
-            await _unitOfWork.Presupuesto.BorrarAsync(versionIdGuid, presupuestoIdGuid);
+        //[HttpDelete("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
+        //public async Task<IActionResult> BorrarPresupuesto(string versionIdGuid, string presupuestoIdGuid)
+        //{
+        //    await _unitOfWork.Presupuesto.BorrarAsync(versionIdGuid, presupuestoIdGuid);
 
-            return Accepted("", new IdDto { });
-        }
+        //    return Accepted("", new IdDto { });
+        //}
     }
 }
 //HL 8361 G

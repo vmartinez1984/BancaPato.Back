@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 
-namespace Banco.Repositorios.Entities;
+namespace Gastos.ReglasDeNegocio.Entities;
 
 public partial class VersionDePresupuesto
 {

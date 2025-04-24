@@ -28,7 +28,7 @@ namespace Banca.Api.Controllers
 
             id = await _unitOfWork.Ahorro.AgregarAsync(cuenta);
 
-            return Created($"Cuentas/{id.Id}", id);
+            return Created($"Ahorros/{id.Id}", id);
         }
 
         [HttpGet]
@@ -63,6 +63,16 @@ namespace Banca.Api.Controllers
             return Ok(ahorro);
         }
 
+        [HttpGet("{ahorroId}/Movimientos")]
+        public async Task<IActionResult> ObtenerMovimientos(string ahorroId)
+        {
+            List<MovimientoDto> lista;
+
+            lista = await _unitOfWork.Ahorro.ObtenerMovimientosAsync(ahorroId);
+
+            return Ok(lista);
+        }
+
         [HttpPut("{ahorroId}")]
         public async Task<IActionResult> ActualizarAhorro(string ahorroId, AhorroDtoIn ahorro)
         {
@@ -81,23 +91,23 @@ namespace Banca.Api.Controllers
         }
 
         [HttpPost("{cuentaIdGuid}/depositos")]
-        public async Task<IActionResult> Depositar(string cuentaIdGuid, DepositoDtoIn deposito)
+        public async Task<IActionResult> Depositar(string cuentaIdGuid, MovimientoDtoIn deposito)
         {
-            string id;
+            IdDto id;
 
-            //id = await _unitOfWork.Ahorro.DepositarAsync(cuentaIdGuid, deposito);
+            id = await _unitOfWork.Ahorro.DepositarAsync(cuentaIdGuid, deposito);
 
-            return Created("", new { Id = 0 });
+            return Created("", id);
         }
 
         [HttpPost("{cuentaIdGuid}/retiros")]
-        public async Task<IActionResult> Retirar(string cuentaIdGuid, RetiroDtoIn retiro)
+        public async Task<IActionResult> Retirar(string cuentaIdGuid, MovimientoDtoIn retiro)
         {
-            string id;
+            IdDto id;
 
-            //id = await _unitOfWork.Ahorro.RetirarAsync(cuentaIdGuid, retiro);
+            id = await _unitOfWork.Ahorro.RetirarAsync(cuentaIdGuid, retiro);
 
-            return Created("", new { Id = 0 });
+            return Created("", id);
         }
     }
 }

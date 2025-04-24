@@ -3,6 +3,7 @@ using Banca.Api.Interfaces;
 using Banca.Core.Dtos;
 using Banco.Repositorios.Entities;
 using DuckBank.Persistence.Entities;
+using Gastos.ReglasDeNegocio.Entities;
 
 namespace Banca.Api.Bl
 {
@@ -23,32 +24,32 @@ namespace Banca.Api.Bl
             Presupuesto presupuesto;
             Periodo periodo;
 
-            if (string.IsNullOrEmpty(movimiento.Guid))
-                movimiento.Guid = Guid.NewGuid().ToString();
+            if (string.IsNullOrEmpty(movimiento.Referencia))
+                movimiento.Referencia = Guid.NewGuid().ToString();
             periodo = await _repositorioMongo.Periodo.ObtenerAsync(periodoIdGuid);
             presupuesto = periodo.Version.Presupuestos.FirstOrDefault(x => x.Id == movimiento.PresupuestoId);
            await _repositorioMongo.Ahorro.DepositarAsync(presupuesto.AhorroId.ToString(), new Movimiento
             {
                 Cantidad = movimiento.Cantidad,                
                 Concepto = periodo.Nombre,
-                EncodedKey = movimiento.Guid
+                EncodedKey = movimiento.Referencia
             });
             await _repositorioMongo.Ahorro.RetirarAsync(_ahorroFondeador, new Movimiento
             {
                 Cantidad = movimiento.Cantidad,                
                 Concepto = $"{periodo.Nombre} - {presupuesto.Subcategoria.Nombre}",
-                EncodedKey = movimiento.Guid
+                EncodedKey = movimiento.Referencia
             });
             movimientoId = presupuesto.Movimientos.Count() + 1;            
             presupuesto.Movimientos.Add(new MovimientoDePeridodo
             {
                 Id = movimientoId,
-                Guid = movimiento.Guid,
+                Guid = movimiento.Referencia,
                 Cantidad = movimiento.Cantidad
             });
             await _repositorioMongo.Periodo.ActualizarAsinc(periodo);
 
-            return new IdDto { Guid = movimiento.Guid.ToString() };
+            return new IdDto { Guid = movimiento.Referencia.ToString() };
         }
 
         internal  Task<List<MovimientoDto>> ObtenerTodosAsync(string periodoIdGuid)

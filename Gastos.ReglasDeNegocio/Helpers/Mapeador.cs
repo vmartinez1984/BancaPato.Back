@@ -48,5 +48,62 @@ namespace Gastos.ReglasDeNegocio.Helpers
         };
 
         public static List<SubcategoriaDto> ToDtos(this List<Subcategoria> entidades)=> entidades.Select(x=> x.ToDto()).ToList();
+
+        internal static MovimientoDto ToDto(this Movimiento entidad, string tipo) => entidad is null ? null : new MovimientoDto
+        {
+            Cantidad = entidad.Cantidad,
+            Concepto = entidad.Concepto,
+            FechaDeRegistro = entidad.FechaDeRegistro,            
+            SaldoFinal = entidad.SaldoFinal,
+            SaldoInicial = entidad.SaldoInicial,
+            Guid = entidad.EncodedKey,
+            Tipo = tipo              
+        };
+
+        internal static List<MovimientoDto> ToDtos(this List<Movimiento> entidades, string tipo) => entidades.Select(x => x.ToDto(tipo)).ToList();
+
+        internal static VersionDto ToDto(this VersionDePresupuesto entidad) => entidad is null ? null : new VersionDto
+        {
+             FechaFinal = entidad.FechaFinal,
+             FechaInicial = entidad.FechaInicial,
+             Guid = entidad.Guid,
+             Id = entidad.Id,
+             Nombre = entidad.Nombre
+        };
+
+        internal static List<VersionDto> ToDtos(this List<VersionDePresupuesto> entidades)
+            => entidades.Select(x => x.ToDto()).ToList();
+
+        internal static VersionDePresupuesto ToEntity(this VersionDtoIn dto) => new VersionDePresupuesto
+        {
+            FechaFinal = dto.FechaFinal,
+            FechaDeRegistro = DateTime.Now,
+            EstaActivo = true,
+            FechaInicial = dto.FechaInicial,
+            Guid = dto.Guid,
+            Nombre = dto.Nombre
+        };
+
+        internal static PresupuestoDto ToDto(this Presupuesto entity) => entity is null ? null : new PresupuestoDto
+        {
+            AhorroId = entity.AhorroId,
+            AhorroTipo = entity.AhorroTipo,
+            Cantidad = entity.Cantidad,
+            Guid = entity.Guid,
+            Id = entity.Id,
+            SubcategoriaId = entity.SubcategoriaId,
+            Subcategoria = entity.Subcategoria.ToDto()
+        };
+
+        internal static List<PresupuestoDto> ToDtos(this List<Presupuesto> entities) => entities.Select(x => x.ToDto()).ToList();
+
+        internal static Presupuesto ToEntity(this PresupuestoDtoIn dtos) => new Presupuesto
+        {
+             AhorroId = dtos.AhorroId,
+             Cantidad = dtos.Cantidad,
+             VersionId = dtos.VersionId,
+             SubcategoriaId = dtos.SubcategoriaId,
+             AhorroTipo = dtos.AhorroTipo             
+        };
     }
 }

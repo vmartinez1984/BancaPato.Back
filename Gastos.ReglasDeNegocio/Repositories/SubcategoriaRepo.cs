@@ -41,6 +41,9 @@ namespace Gastos.ReglasDeNegocio.Repositories
             return (await _collection.FindAsync(x => x.EstaActivo == true)).ToList();
         }
 
+        internal async Task<Subcategoria> ObtenerPorIdAsync(int subcategoriaId)
+        => await _collection.Find(x => x.Id == subcategoriaId).FirstOrDefaultAsync();
+
         private async Task<int> ObtenerId()
         {
             var item = await

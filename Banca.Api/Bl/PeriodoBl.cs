@@ -55,18 +55,18 @@ namespace Banca.Api.Bl
                     Guid = x.Version.Guid,
                     Nombre = x.Version.Nombre,
                     FechaInicial = x.Version.FechaInicial,
-                    Presupuestos = x.Version.Presupuestos.Select(x => new PresupuestoDto
-                    {
-                        Cantidad = x.Cantidad,
-                        Id = x.Id,
-                        AhorroId = x.AhorroId,
-                        AhorroTipo = x.AhorroTipo,                        
-                        Guid = x.Guid,
-                        Movimientos = x.Movimientos.ToDtos(),
-                        Subcategoria = x.Subcategoria.ToDto(),
-                        SubcategoriaId = x.SubcategoriaId,
-                        VersionId = x.VersionId
-                    }).ToList(),
+                    //Presupuestos = x.Version.Presupuestos.Select(x => new PresupuestoDto
+                    //{
+                    //    Cantidad = x.Cantidad,
+                    //    Id = x.Id,
+                    //    AhorroId = x.AhorroId,
+                    //    AhorroTipo = x.AhorroTipo,                        
+                    //    Guid = x.Guid,
+                    //    Movimientos = x.Movimientos.ToDtos(),
+                    //    Subcategoria = x.Subcategoria.ToDto(),
+                    //    SubcategoriaId = x.SubcategoriaId,
+                    //    VersionId = x.VersionId
+                    //}).ToList(),
                 }
             };
 
@@ -89,17 +89,15 @@ namespace Banca.Api.Bl
 
     public static class Mapeador
     {
-        public static List<MovimientoDto> ToDtos(this List<MovimientoDePeridodo> entities) => entities.Select(x => new MovimientoDto
-        {
-            Cantidad = x.Cantidad,
-            FechaDeRegistro= x.FechaDeRegistro,
-            Guid = x.Guid,
-            Id = x.Id            
-        }).ToList();
+        //public static List<MovimientoDto> ToDtos(this List<MovimientoDePeridodo> entities) => entities.Select(x => new MovimientoDto
+        //{
+        //    Cantidad = x.Cantidad,
+        //    FechaDeRegistro= x.FechaDeRegistro,
+        //    Guid = x.Guid,            
+        //}).ToList();
         public static List<MovimientoDto> ToDtos(this List<Movimiento> movimientos) 
         => movimientos.Select(x => new MovimientoDto
-        {
-             Id = x.Id,
+        {             
              Cantidad = x.Cantidad,
              FechaDeRegistro = x.FechaDeRegistro,
              Guid = x.EncodedKey             

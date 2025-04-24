@@ -40,26 +40,7 @@ namespace Banca.Api.Bl
             await _repositorioMongo.Version.ActualizarAsync(version);
         }
 
-        internal async Task<IdDto> AgregarAsync(string versionIdGuid, PresupuestoDtoIn presupuesto)
-        {
-            Presupuesto entity;
-            VersionDePresupuesto version;
-            List<Subcategoria> subcategorias;
-
-            if(presupuesto.Guid == null)
-                presupuesto.Guid = Guid.NewGuid().ToString();
-            entity = _mapper.Map<Presupuesto>(presupuesto);
-            subcategorias = await _repositorio.Subcategoria.ObtenerTodosAsync();
-            entity.Subcategoria = subcategorias.FirstOrDefault(x => x.Id == entity.SubcategoriaId);
-            version = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
-            entity.Id = version.Presupuestos.Count() + 1;
-            entity._id = ObjectId.GenerateNewId().ToString();
-            version.Presupuestos.Add(entity);
-            await _repositorioMongo.Version.ActualizarAsync(version);
-
-            return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
-        }
-
+       
         internal async Task BorrarAsync(string versionIdGuid, string presupuestoIdGuid)
         {
             VersionDePresupuesto version;

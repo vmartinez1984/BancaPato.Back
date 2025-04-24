@@ -13,12 +13,14 @@ namespace Gastos.ReglasDeNegocio.Helpers
             services.AddScoped<CategoriaBl>();
             services.AddScoped<SubcategoriaBl>();
             services.AddScoped<TipoDeAhorroBl>();
+            services.AddScoped<VersionBl>();
 
             services.AgregarDuckBank();
             services.AddScoped<CategoriaRepositorio>();
             services.AddScoped<SubcategoriaRepo>();
             services.AddScoped<TipoDeCuentaRepository>();            
-            
+            services.AddScoped<VersionRepository>();
+
             services.AddScoped<Repositorio>();
 
             services.AddScoped<UnitOfWork>();

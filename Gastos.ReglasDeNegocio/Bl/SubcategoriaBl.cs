@@ -16,14 +16,14 @@ namespace Gastos.ReglasDeNegocio.Bl
 
         public async Task ActualizarAsync(SubcategoriaDtoIn subcategoria, string idGuid)
         {
-            Subcategoria subcategorium;
+            Subcategoria subcategoria1;
 
-            subcategorium = await _repositorioMongo.Subcategoria.ObtenerAsync(idGuid);
-            subcategorium.Nombre = subcategoria.Nombre;
-            subcategorium.Presupuesto = subcategoria.Presupuesto;
-            subcategorium.CategoriaId = subcategoria.CategoriaId;            
+            subcategoria1 = await _repositorioMongo.Subcategoria.ObtenerAsync(idGuid);
+            subcategoria1.Nombre = subcategoria.Nombre;
+            subcategoria1.Presupuesto = subcategoria.Presupuesto;
+            subcategoria1.CategoriaId = subcategoria.CategoriaId;            
             
-            await _repositorioMongo.Subcategoria.ActualizarAsync(subcategorium);
+            await _repositorioMongo.Subcategoria.ActualizarAsync(subcategoria1);
         }
 
         public async Task<IdDto> AgregarAsync(SubcategoriaDtoIn subcategoria)

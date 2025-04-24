@@ -28,54 +28,60 @@ namespace Banca.Core.Dtos
         public int Id { get; set; }
         public VersionDto Version { get; set; }
 
-        public decimal TotalGastado
-        {
-            get
-            {
-                decimal total = 0;
-                if(Version is not null)
-                foreach (var item in Version.Presupuestos)
-                    total += item.Movimientos.Sum(x => x.Cantidad);
+        //public decimal TotalGastado
+        //{
+        //    get
+        //    {
+        //        decimal total = 0;
+        //        if(Version is not null)
+        //        foreach (var item in Version.Presupuestos)
+        //            total += item.Movimientos.Sum(x => x.Cantidad);
 
-                return total;
-            }
-        }
+        //        return total;
+        //    }
+        //}
 
-        public decimal TotalPresupuesto
-        {
-            get
-            {
-                return Version is null ? 0: Version.Presupuestos.Sum(x => x.Cantidad);
-            }
-        }
+        //public decimal TotalPresupuesto
+        //{
+        //    get
+        //    {
+        //        return Version is null ? 0: Version.Presupuestos.Sum(x => x.Cantidad);
+        //    }
+        //}
 
-        public decimal TotalPendiente
-        {
-            get
-            {
-                return Version is null ? 0 : Version.Presupuestos.Where(x => x.Movimientos.Count == 0).Sum(x => x.Cantidad);
-            }
-        }
+        //public decimal TotalPendiente
+        //{
+        //    get
+        //    {
+        //        return Version is null ? 0 : Version.Presupuestos.Where(x => x.Movimientos.Count == 0).Sum(x => x.Cantidad);
+        //    }
+        //}
     }
 
     public class MovimientoDto : MovimientoDtoIn
-    {
-        public int Id { get; set; }
-
+    {        
         public string Guid { get; set; }
 
         public decimal Cantidad { get; set; }
         public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
+        public string Concepto { get; set; }
+        public decimal SaldoFinal { get; set; }
+        public decimal SaldoInicial { get; set; }
+        public string Tipo { get; set; }
     }
 
     public class MovimientoDtoIn
     {
-        public string Guid { get; set; }
+        //public string Guid { get; set; }
 
-        [Required]
+        //[Required]
         public int PresupuestoId { get; set; }
 
         [Required]
         public decimal Cantidad { get; set; }
+
+        [Required]
+        public string Referencia { get; set; }
+        public string Concepto { get; set; }
     }
 }

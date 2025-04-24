@@ -18,7 +18,6 @@ builder.Configuration
 builder.Services.AddScoped<UnitOfWork>();
 builder.Services.AddScoped<TransaccionBl>();
 builder.Services.AddScoped<HistorialBl>();
-builder.Services.AddScoped<VersionBl>();
 builder.Services.AddScoped<PresupuestoBl>();
 builder.Services.AddScoped<PeriodoBl>();
 builder.Services.AddScoped<MovimientoBl>();

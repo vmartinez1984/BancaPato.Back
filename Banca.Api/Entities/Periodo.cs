@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using Gastos.ReglasDeNegocio.Entities;
 
 namespace Banco.Repositorios.Entities;
 

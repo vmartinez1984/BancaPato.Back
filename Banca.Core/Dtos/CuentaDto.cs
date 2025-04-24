@@ -31,8 +31,7 @@ namespace Banca.Core.Dtos
 
         public string Nota { get; set; }
 
-        [Required]
-        public decimal Interes { get; set; }
+        public decimal Interes { get; set; } = 0;
 
         public DateTime? FechaInicial { get; set; }
         public DateTime? FechaFinal { get; set; }

@@ -5,23 +5,21 @@
         public UnitOfWork(
             TransaccionBl transaccionBl,
             HistorialBl historialBl,
-            VersionBl versionBl,
+            
             PresupuestoBl presupuestoBl,
             PeriodoBl periodoBl,
             MovimientoBl movimientoBl
         )
         {
             Transaccion = transaccionBl;
-            Historial = historialBl;
-            Version = versionBl;
+            Historial = historialBl;            
             Presupuesto = presupuestoBl;
             Periodo = periodoBl;
             Movimiento = movimientoBl;
         }
 
         public TransaccionBl Transaccion { get; }
-        public HistorialBl Historial { get; }
-        public VersionBl Version { get; }
+        public HistorialBl Historial { get; }        
         public PresupuestoBl Presupuesto { get; }
         public PeriodoBl Periodo { get; }
         public MovimientoBl Movimiento { get; }
