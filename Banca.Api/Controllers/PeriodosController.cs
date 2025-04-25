@@ -1,16 +1,18 @@
-﻿using Banca.Api.Bl;
-using Banca.Api.Dtos;
-using Banca.Core.Dtos;
+﻿using Banca.Core.Dtos;
+using Gastos.ReglasDeNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PeriodosController : BancaBase
+    public class PeriodosController: ControllerBase //: BancaBase
     {
-        public PeriodosController(UnitOfWork unitOfWork) : base(unitOfWork)
+        private readonly UnitOfWork _unitOfWork;
+
+        public PeriodosController(UnitOfWork unitOfWork) //: base(unitOfWork)
         {
+            _unitOfWork = unitOfWork;
         }
 
         [HttpGet]
@@ -43,24 +45,24 @@ namespace Banca.Api.Controllers
             return Created(string.Empty, id);
         }
 
-        [HttpPost("{periodoIdGuid}/Movimientos")]
-        public async Task<IActionResult> AgregarMovimiento(string periodoIdGuid, MovimientoDtoIn movimiento)
+        [HttpPost("{periodoIdGuid}/Transacciones")]
+        public async Task<IActionResult> AgregarTransaccion(string periodoIdGuid, TransaccionDtoIn movimiento)
         {
             IdDto id;
 
-            id = await _unitOfWork.Movimiento.AgregarAsync(periodoIdGuid, movimiento);
+            id = await _unitOfWork.Transaccion.AgregarAsync(periodoIdGuid, movimiento);
 
             return Created("", id);
         }
 
-        [HttpGet("{periodoIdGuid}/Movimientos")]
-        public async Task<IActionResult> ObtenerMovimiento(string periodoIdGuid)
-        {
-            List<MovimientoDto> lista;
+        //[HttpGet("{periodoIdGuid}/Movimientos")]
+        //public async Task<IActionResult> ObtenerMovimiento(string periodoIdGuid)
+        //{
+        //    List<MovimientoDto> lista;
 
-            lista = await _unitOfWork.Movimiento.ObtenerTodosAsync(periodoIdGuid);
+        //    lista = await _unitOfWork.Movimiento.ObtenerTodosAsync(periodoIdGuid);
 
-            return Ok(lista);
-        }
+        //    return Ok(lista);
+        //}
     }
 }

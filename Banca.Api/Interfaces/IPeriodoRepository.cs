@@ -1,4 +1,4 @@
-﻿using Banco.Repositorios.Entities;
+﻿using Gastos.ReglasDeNegocio.Entities;
 
 namespace Banca.Api.Interfaces
 {

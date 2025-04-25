@@ -1,25 +1,22 @@
-﻿using Banca.Api.Interfaces;
-using Banco.Repositorios.Entities;
+﻿using Gastos.ReglasDeNegocio.Entities;
+using Gastos.ReglasDeNegocio.Repositories;
+using Microsoft.Extensions.Configuration;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Banca.Api.Repositories
 {
-    public class PeriodoRepo :BaseRepo, IPeriodoRepository
+    public class PeriodoRepo : BaseRepositorio
     {
         private readonly IMongoCollection<Periodo> _collection;
 
-        public PeriodoRepo(IConfiguration configurations):base(configurations)
-        {           
+        public PeriodoRepo(IConfiguration configurations) : base(configurations)
+        {
             _collection = _mongoDatabase.GetCollection<Periodo>("Periodos");
         }
 
-        public async Task<List<Periodo>> ObtenerAsync(bool estaActivo = true)
-        {
-            var data = await _collection.Find(x => x.EstaActivo == estaActivo).ToListAsync();
+        public async Task<List<Periodo>> ObtenerAsync(bool estaActivo = true) => await _collection.Find(x => x.EstaActivo == estaActivo).ToListAsync();
 
-            return data;
-        }
 
         private async Task<int> ObtenerId()
         {
@@ -49,15 +46,13 @@ namespace Banca.Api.Repositories
         {
             int id;
 
-            if(int.TryParse(idGuid, out id))
-                return (await _collection.FindAsync(x=> x.Id == id)).FirstOrDefault();
+            if (int.TryParse(idGuid, out id))
+                return (await _collection.FindAsync(x => x.Id == id)).FirstOrDefault();
             else
                 return (await _collection.FindAsync(x => x.Guid == idGuid)).FirstOrDefault();
         }
 
-        public async Task ActualizarAsinc(Periodo periodo)
-        {
-            await _collection.ReplaceOneAsync(x => x._id == periodo._id, periodo);
-        }
+        public async Task ActualizarAsinc(Periodo periodo) => await _collection.ReplaceOneAsync(x => x._id == periodo._id, periodo);
+
     }
 }

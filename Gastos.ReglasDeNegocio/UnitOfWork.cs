@@ -15,12 +15,21 @@ namespace Gastos.ReglasDeNegocio
 
         public VersionBl Version { get; }
 
+        public PeriodoBl Periodo { get; }
+
+        public TransaccionBl Transaccion { get; }
+
+        public PresupuestoBl Presupuesto { get; }
+
         public UnitOfWork(
             AhorroBl   ahorroBl,
             CategoriaBl categoriaBl,
             SubcategoriaBl subcategoriaBl,
             TipoDeAhorroBl tipoDeAhorroBl,
-            VersionBl versionBl
+            VersionBl versionBl,
+            PeriodoBl periodoBl,
+            TransaccionBl transaccionBl,        
+            PresupuestoBl presupuesto
         )
         {
             Ahorro = ahorroBl;
@@ -28,6 +37,9 @@ namespace Gastos.ReglasDeNegocio
             Subcategoria = subcategoriaBl;
             TipoDeAhorro = tipoDeAhorroBl;
             Version = versionBl;
+            Periodo = periodoBl;
+            Transaccion = transaccionBl;
+            Presupuesto = presupuesto;
         }
     }
 }

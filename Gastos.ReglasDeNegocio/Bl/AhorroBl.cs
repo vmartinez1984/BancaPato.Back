@@ -3,7 +3,6 @@ using DuckBank.Persistence.Entities;
 using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
-using System;
 using System.Globalization;
 
 namespace Gastos.ReglasDeNegocio.Bl
@@ -11,7 +10,6 @@ namespace Gastos.ReglasDeNegocio.Bl
     public class AhorroBl : BaseBl
     {
         private readonly Repositorio _repositorio1;
-
 
         const string FechaFinal = "FechaFinal";
         const string FechaInicial = "FechaInicial";

@@ -6,14 +6,9 @@ namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoriasController : ControllerBase //BancaBase
+    public class CategoriasController : BancaBase 
     {
-        private readonly UnitOfWork _unitOfWork;
-        
-        public CategoriasController(UnitOfWork unitOfWork) //: base(unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
+        public CategoriasController(UnitOfWork unitOfWork) : base(unitOfWork) { }
 
         [HttpGet]
         public async Task<IActionResult> Obtener()

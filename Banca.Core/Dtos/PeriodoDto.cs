@@ -20,6 +20,7 @@ namespace Banca.Core.Dtos
         [Display(Name = "Fecha final")]
         public DateTime FechaFinal { get; set; }
 
+        [Required(ErrorMessage = "La version es requerida")]
         public int VersionId { get; set; }
     }
 

@@ -2,107 +2,112 @@
 using Gastos.ReglasDeNegocio.Entities;
 using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
-using MongoDB.Bson;
 
-namespace Gastos.ReglasDeNegocio.Bl
+namespace Gastos.ReglasDeNegocio.Bl;
+
+public class VersionBl //: BaseBl
 {
-    public class VersionBl //: BaseBl
+    private readonly Repositorio _repositorioMongo;
+
+    public VersionBl(Repositorio repositorio)
     {
-        private readonly Repositorio _repositorioMongo;
+        _repositorioMongo = repositorio;
+    }
 
-        public VersionBl(Repositorio repositorio)
-        {
-            _repositorioMongo = repositorio;
-        }
+    public async Task ActualizarAsync(string versionIdGuid, VersionDtoIn version)
+    {
+        VersionDePresupuesto entity;
 
-        public async Task ActualizarAsync(string versionIdGuid, VersionDtoIn version)
-        {
-            VersionDePresupuesto entity;
+        entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
+        entity.FechaInicial = version.FechaInicial;
+        entity.FechaFinal = version.FechaFinal;
+        entity.Nombre = version.Nombre;
 
-            entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);            
-            entity.FechaInicial = version.FechaInicial;
-            entity.FechaFinal = version.FechaFinal;
-            entity.Nombre = version.Nombre;
+        await _repositorioMongo.Version.ActualizarAsync(entity);
+    }
 
-            await _repositorioMongo.Version.ActualizarAsync(entity);
-        }
+    public async Task<IdDto> AgregarAsync(VersionDtoIn version)
+    {
+        int id;
 
-        public async Task<IdDto> AgregarAsync(VersionDtoIn version)
-        {
-            int id;
+        if (version.Guid == null)
+            version.Guid = Guid.NewGuid().ToString();
+        id = await _repositorioMongo.Version.AgregarAsync(version.ToEntity());
 
-            if (version.Guid == null)
-                version.Guid = Guid.NewGuid().ToString();            
-           id = await _repositorioMongo.Version.AgregarAsync(version.ToEntity());
+        return new IdDto { Guid = version.Guid.ToString(), Id = id };
+    }
 
-            return new IdDto { Guid = version.Guid.ToString(), Id = id };
-        }
+    public async Task<List<VersionDto>> ObtenerAsync() => (await _repositorioMongo.Version.ObtenerTodosAsync()).ToDtos();
 
-        public async Task<List<VersionDto>> ObtenerAsync()
-        {            
-            List<VersionDePresupuesto> entities;
+    public async Task BorrarAsync(string versionIdGuid)
+    {
+        VersionDePresupuesto entity;
 
-            entities = await _repositorioMongo.Version.ObtenerTodosAsync();            
+        entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
+        entity.EstaActivo = false;
 
-            return entities.ToDtos();
-        }
+        await _repositorioMongo.Version.ActualizarAsync(entity);
+    }
 
-        public async Task BorrarAsync(string versionIdGuid)
-        {
-            VersionDePresupuesto entity;
+    internal async Task<VersionDto> ObtenerAsync(string versionIdGuid)
+    {
+        VersionDePresupuesto entity;
 
-            entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
-            entity.EstaActivo = false;
+        entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
 
-            await _repositorioMongo.Version.ActualizarAsync(entity);
-        }
+        return entity.ToDto();
+    }
 
-        internal async Task<VersionDto> ObtenerAsync(string versionIdGuid)
-        {
-            VersionDePresupuesto entity;         
+    public async Task<VersionDto> ObtenerAsync(int versionId) => (await _repositorioMongo.Version.ObtenerAsync(versionId.ToString())).ToDto();
 
-            entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
+}
 
-            return entity.ToDto();
-        }
+public class PresupuestoBl
+{
+    private readonly Repositorio _repositorioMongo;
 
-        public async Task<List<PresupuestoDto>> ObtenerPresupuestosAsync(string versionIdGuid)
-        {
-            VersionDePresupuesto entity;
-            List<PresupuestoDto> lista;
-            
-            entity = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
-            lista = entity.Presupuestos.ToDtos();
+    public PresupuestoBl(Repositorio repositorio)
+    {
+        _repositorioMongo = repositorio;
+    }
 
-            return lista;
-        }
+    public async Task<IdDto> AgregarAsync(PresupuestoDtoIn presupuesto)
+    {
+        Presupuesto entity;
 
-        public async Task<VersionDto> ObtenerPorIdAsync(int versionId)
-        {
-            VersionDePresupuesto entity;
+        if (presupuesto.Guid == null)
+            presupuesto.Guid = Guid.NewGuid().ToString();
+        entity = presupuesto.ToEntity();
+        await _repositorioMongo.Presupuesto.AgregarAsync(entity);
 
-            entity = await _repositorioMongo.Version.ObtenerAsync(versionId.ToString());
+        return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
+    }
 
-            return entity.ToDto();
-        }
+    public async Task<List<PresupuestoDto>> ObtenerTodosAsync(int versionId) 
+        => (await _repositorioMongo.Presupuesto.ObtenerPorVersionIdAsync(versionId)).ToDtos();
 
-        public async Task<IdDto> AgregarPresupuestoAsync(string versionIdGuid, PresupuestoDtoIn presupuesto)
-        {
-            Presupuesto entity;
-            VersionDePresupuesto version;            
+    public async Task<PresupuestoDto> ObtenerAsync(int presupuestoId) => (await _repositorioMongo.Presupuesto.ObtenerAsync(presupuestoId)).ToDto();
 
-            if (presupuesto.Guid == null)
-                presupuesto.Guid = Guid.NewGuid().ToString();
-            entity = presupuesto.ToEntity();
+    public async Task ActualizarAsync(int presupuestoId, PresupuestoDtoIn presupuesto)
+    {
+        Presupuesto presupuesto1;
 
-            entity.Subcategoria = await _repositorioMongo.Subcategoria.ObtenerPorIdAsync(entity.SubcategoriaId);             
-            version = await _repositorioMongo.Version.ObtenerAsync(versionIdGuid);
-            entity.Id = version.Presupuestos.Count() + 1;
-            entity._id = ObjectId.GenerateNewId().ToString();
-            version.Presupuestos.Add(entity);
-            await _repositorioMongo.Version.ActualizarAsync(version);
+        presupuesto1 = await _repositorioMongo.Presupuesto.ObtenerAsync(presupuestoId);
+        presupuesto1.AhorroId = presupuesto.AhorroId;
+        presupuesto1.Cantidad = presupuesto.Cantidad;
+        presupuesto1.VersionId = presupuesto.VersionId;
+        presupuesto1.SubcategoriaId = presupuesto.SubcategoriaId;
 
-            return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
-        }
+        await _repositorioMongo.Presupuesto.ActualizarAsync(presupuesto1);
+    }
+
+    public async Task BorrarPresupuestoAsync(int presupuestoId)
+    {
+        Presupuesto presupuesto1;
+
+        presupuesto1 = await _repositorioMongo.Presupuesto.ObtenerAsync(presupuestoId);
+        presupuesto1.EstaActivo = false;
+
+        await _repositorioMongo.Presupuesto.ActualizarAsync(presupuesto1);
     }
 }

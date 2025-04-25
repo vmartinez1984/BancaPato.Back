@@ -1,5 +1,4 @@
-﻿using Banca.Api.Dtos;
-using Banca.Core.Dtos;
+﻿using Banca.Core.Dtos;
 using Gastos.ReglasDeNegocio;
 using Microsoft.AspNetCore.Mvc;
 

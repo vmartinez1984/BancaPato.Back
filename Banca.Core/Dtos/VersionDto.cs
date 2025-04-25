@@ -4,9 +4,7 @@ namespace Banca.Core.Dtos
 {
     public class VersionDto : VersionDtoIn
     {
-        public int Id { get; set; }
-
-        //public List<PresupuestoDto> Presupuestos { get; set; } = new List<PresupuestoDto>();      
+        public int Id { get; set; }            
     }
 
     public class VersionDtoIn

@@ -1,4 +1,6 @@
-﻿namespace Gastos.ReglasDeNegocio.Repositories;
+﻿using Banca.Api.Repositories;
+
+namespace Gastos.ReglasDeNegocio.Repositories;
 
 public class Repositorio
 {
@@ -10,16 +12,24 @@ public class Repositorio
 
     public VersionRepository Version { get; }
 
+    public PeriodoRepo Periodo { get; }
+
+    public PresupuestoRepositorio Presupuesto { get;  }
+
     public Repositorio(
         CategoriaRepositorio categoriaRepositorio,
         SubcategoriaRepo subcategoriaRepo,
         TipoDeCuentaRepository tipoDeAhorro,
-        VersionRepository versionRepository
+        VersionRepository versionRepository,
+        PeriodoRepo periodoRepo,
+        PresupuestoRepositorio presupuestoRepositorio
     )
     {
         Categoria = categoriaRepositorio;
         Subcategoria = subcategoriaRepo;
         TipoDeAhorro = tipoDeAhorro;
         Version = versionRepository;
+        Periodo = periodoRepo;
+        Presupuesto = presupuestoRepositorio;
     }
 }

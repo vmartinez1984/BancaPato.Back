@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using Banca.Core.Dtos;
 
 namespace Gastos.ReglasDeNegocio.Entities;
 
@@ -26,6 +27,14 @@ public partial class Presupuesto
     public int? AhorroId { get; set; }
 
     public string AhorroTipo { get; set; }
+
+    public decimal Gastado { get; set; }
+    public bool EstaActivo { get; set; } = true;
+
+    public static implicit operator Presupuesto(PresupuestoDto v)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 public class MovimientoDePeridodo

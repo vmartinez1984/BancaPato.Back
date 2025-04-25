@@ -6,7 +6,7 @@ namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VersionesController: ControllerBase //: BancaBase
+    public class VersionesController : ControllerBase //: BancaBase
     {
         private readonly UnitOfWork _unitOfWork;
 
@@ -40,7 +40,7 @@ namespace Banca.Api.Controllers
         {
             VersionDto lista;
 
-            lista = await _unitOfWork.Version.ObtenerPorIdAsync(versionId);
+            lista = await _unitOfWork.Version.ObtenerAsync(versionId);
 
             return Ok(lista);
         }
@@ -60,43 +60,58 @@ namespace Banca.Api.Controllers
 
             return Accepted();
         }
-
+    }
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PresupuestosController : BancaBase
+    {
+        public PresupuestosController(UnitOfWork unitOfWork) : base(unitOfWork) { }
 
         [HttpGet("{versionIdGuid}/Presupuestos")]
-        public async Task<IActionResult> ObtenerPresupuestos(string versionIdGuid)
+        public async Task<IActionResult> ObtenerPresupuestos(int versionIdGuid)
         {
             List<PresupuestoDto> lista;
 
-            lista = await _unitOfWork.Version.ObtenerPresupuestosAsync(versionIdGuid);           
+            lista = await _unitOfWork.Presupuesto.ObtenerTodosAsync(versionIdGuid);
 
-            return Ok(lista);         
+            return Ok(lista);
+        }
+
+        [HttpGet("{versionIdGuid}/Presupuestos/{presupuestoId}")]
+        public async Task<IActionResult> ObtenerPresupuestos(string versionIdGuid, int presupuestoId)
+        {
+            PresupuestoDto lista;
+
+            lista = await _unitOfWork.Presupuesto.ObtenerAsync(presupuestoId);
+
+            return Ok(lista);
         }
 
         [HttpPost("{versionIdGuid}/Presupuestos")]
-        public async Task<IActionResult> AgregarPresupuesto(string versionIdGuid, PresupuestoDtoIn presupuesto)
+        public async Task<IActionResult> AgregarPresupuesto(PresupuestoDtoIn presupuesto)
         {
             IdDto id;
 
-            id = await _unitOfWork.Version.AgregarPresupuestoAsync(versionIdGuid, presupuesto);
+            id = await _unitOfWork.Presupuesto.AgregarAsync(presupuesto);
 
             return Created("", id);
         }
 
-        //[HttpPut("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
-        //public async Task<IActionResult> ActualizarPresupuesto(string versionIdGuid, string presupuestoIdGuid, PresupuestoDtoIn presupuesto)
-        //{
-        //    await _unitOfWork.Presupuesto.ActualizarAsync(versionIdGuid, presupuestoIdGuid, presupuesto);
+        [HttpPut("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
+        public async Task<IActionResult> ActualizarPresupuesto(string versionIdGuid, int presupuestoIdGuid, PresupuestoDtoIn presupuesto)
+        {
+            await _unitOfWork.Presupuesto.ActualizarAsync(presupuestoIdGuid, presupuesto);
 
-        //    return Accepted("", new IdDto { });
-        //}
+            return Accepted("", new IdDto { });
+        }
 
-        //[HttpDelete("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
-        //public async Task<IActionResult> BorrarPresupuesto(string versionIdGuid, string presupuestoIdGuid)
-        //{
-        //    await _unitOfWork.Presupuesto.BorrarAsync(versionIdGuid, presupuestoIdGuid);
+        [HttpDelete("{versionIdGuid}/Presupuestos/{presupuestoIdGuid}")]
+        public async Task<IActionResult> BorrarPresupuesto(string versionIdGuid, string presupuestoIdGuid)
+        {
+            await _unitOfWork.Version.BorrarAsync(presupuestoIdGuid);
 
-        //    return Accepted("", new IdDto { });
-        //}
+            return Accepted("", new IdDto { });
+        }
     }
 }
 //HL 8361 G

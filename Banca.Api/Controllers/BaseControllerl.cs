@@ -1,4 +1,4 @@
-﻿using Banca.Api.Bl;
+﻿using Gastos.ReglasDeNegocio;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Banca.Api.Controllers
