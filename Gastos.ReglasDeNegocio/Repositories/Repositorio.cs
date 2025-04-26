@@ -16,13 +16,18 @@ public class Repositorio
 
     public PresupuestoRepositorio Presupuesto { get;  }
 
+    public PresupuestoDelPeriodoRepositorio PresupuestoDelPeriodo { get;  }
+
+    public TransaccionRepositorio Transaccion { get; }
     public Repositorio(
         CategoriaRepositorio categoriaRepositorio,
         SubcategoriaRepo subcategoriaRepo,
         TipoDeCuentaRepository tipoDeAhorro,
         VersionRepository versionRepository,
         PeriodoRepo periodoRepo,
-        PresupuestoRepositorio presupuestoRepositorio
+        PresupuestoRepositorio presupuestoRepositorio,
+        PresupuestoDelPeriodoRepositorio presupuestoDelPeriodoRepositorio,
+        TransaccionRepositorio transaccionRepositorio
     )
     {
         Categoria = categoriaRepositorio;
@@ -31,5 +36,7 @@ public class Repositorio
         Version = versionRepository;
         Periodo = periodoRepo;
         Presupuesto = presupuestoRepositorio;
+        PresupuestoDelPeriodo = presupuestoDelPeriodoRepositorio;
+        Transaccion = transaccionRepositorio;
     }
 }

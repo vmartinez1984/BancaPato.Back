@@ -4,8 +4,7 @@ namespace Banca.Core.Dtos
 {
     public class TransaccionDtoIn
     {
-        //[Required]
-        //public int PeriodoId { get; set; }
+        public string EncodedKey { get; set; } = Guid.NewGuid().ToString();
 
         [Required]
         public int PresupuestoId { get; set; }

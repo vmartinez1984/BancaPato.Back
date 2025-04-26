@@ -6,13 +6,12 @@ namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PeriodosController: ControllerBase //: BancaBase
+    public class PeriodosController : BancaBase
     {
-        private readonly UnitOfWork _unitOfWork;
-
-        public PeriodosController(UnitOfWork unitOfWork) //: base(unitOfWork)
+        private readonly string ahorroEje;
+        public PeriodosController(UnitOfWork unitOfWork, IConfiguration configuration) : base(unitOfWork)
         {
-            _unitOfWork = unitOfWork;
+            ahorroEje = configuration.GetSection("AhorroFondeadorGuid").Value;
         }
 
         [HttpGet]
@@ -35,6 +34,14 @@ namespace Banca.Api.Controllers
             return Ok(periodos);
         }
 
+        [HttpDelete("{periodoId}")]
+        public async Task<IActionResult> BorrarAsync(string periodoId)
+        {
+            await _unitOfWork.Periodo.BorrarAsync(periodoId);
+
+            return Accepted();
+        }
+
         [HttpPost]
         public async Task<IActionResult> AgregarPeriodo(PeriodoDtoIn periodo)
         {
@@ -45,24 +52,32 @@ namespace Banca.Api.Controllers
             return Created(string.Empty, id);
         }
 
-        [HttpPost("{periodoIdGuid}/Transacciones")]
-        public async Task<IActionResult> AgregarTransaccion(string periodoIdGuid, TransaccionDtoIn movimiento)
-        {
+        [HttpPost("{periodoId}/Transacciones")]
+        public async Task<IActionResult> AgregarTransaccion(int periodoId, TransaccionDtoIn movimiento)
+        {            
+            AhorroDto ahorro;
+                     
+            ahorro = await _unitOfWork.Ahorro.ObtenerAsync(ahorroEje);
+            if (ahorro.Balance < movimiento.Cantidad)
+            {
+                return StatusCode(400, new { Mensaje = "No has sufuciente camarón" });
+            }
+
             IdDto id;
 
-            id = await _unitOfWork.Transaccion.AgregarAsync(periodoIdGuid, movimiento);
+            id = await _unitOfWork.Transaccion.AgregarAsync(periodoId, movimiento);
 
             return Created("", id);
         }
 
-        //[HttpGet("{periodoIdGuid}/Movimientos")]
-        //public async Task<IActionResult> ObtenerMovimiento(string periodoIdGuid)
-        //{
-        //    List<MovimientoDto> lista;
+        [HttpGet("{periodoId}/Presupuestos")]
+        public async Task<IActionResult> ObtenerMovimiento(int periodoId)
+        {
+            List<PresupuestoDelPeriodoDto> lista;
 
-        //    lista = await _unitOfWork.Movimiento.ObtenerTodosAsync(periodoIdGuid);
+            lista = await _unitOfWork.Periodo.ObtenerPresupestosDelPeriodoAsync(periodoId);
 
-        //    return Ok(lista);
-        //}
+            return Ok(lista);
+        }
     }
 }

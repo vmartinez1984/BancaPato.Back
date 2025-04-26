@@ -26,6 +26,8 @@ namespace Gastos.ReglasDeNegocio.Helpers
             services.AddScoped<VersionRepository>();
             services.AddScoped<PeriodoRepo>();
             services.AddScoped<PresupuestoRepositorio>();
+            services.AddScoped<PresupuestoDelPeriodoRepositorio>();
+            services.AddScoped<TransaccionRepositorio>();
 
             services.AddScoped<Repositorio>();
 
