@@ -1,19 +1,21 @@
 ﻿using Banca.Core.Dtos;
+using DuckBank.Persistence.Entities;
 using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Entities;
 using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
-using Microsoft.Extensions.Configuration;
 
 namespace Gastos.ReglasDeNegocio.Bl
 {
     public class PresupuestoBl
     {
-        private readonly Repositorio _repositorioMongo;        
+        private readonly Repositorio _repositorioMongo;
+        private readonly IRepositorio _repositorio1;
 
-        public PresupuestoBl(Repositorio repositorio)
+        public PresupuestoBl(Repositorio repositorio, IRepositorio repositorio1)
         {
-            _repositorioMongo = repositorio;            
+            _repositorioMongo = repositorio;
+            _repositorio1 = repositorio1;
         }
 
         public async Task<IdDto> AgregarAsync(PresupuestoDtoIn presupuesto)
@@ -23,13 +25,34 @@ namespace Gastos.ReglasDeNegocio.Bl
             if (presupuesto.Guid == null)
                 presupuesto.Guid = Guid.NewGuid().ToString();
             entity = presupuesto.ToEntity();
+            if (presupuesto.AhorroId != null)
+            {
+                Ahorro ahorro;
+
+                ahorro = await _repositorio1.Ahorro.ObtenerPorIdAsync(presupuesto.AhorroId.ToString());
+
+                entity.AhorroTipo = ahorro.Otros["TipoDeCuenta"];
+            }
             await _repositorioMongo.Presupuesto.AgregarAsync(entity);
-            
+
             return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
         }
 
         public async Task<List<PresupuestoDto>> ObtenerTodosAsync(int versionId)
-            => (await _repositorioMongo.Presupuesto.ObtenerPorVersionIdAsync(versionId)).ToDtos();
+        //=> (await _repositorioMongo.Presupuesto.ObtenerPorVersionIdAsync(versionId)).ToDtos();
+        {
+            List<Presupuesto> lista;
+            List<Subcategoria> subcategorias;
+
+            lista = await _repositorioMongo.Presupuesto.ObtenerPorVersionIdAsync(versionId);
+            subcategorias = await _repositorioMongo.Subcategoria.ObtenerTodosAsync();
+            lista.ForEach(item =>
+            {
+                item.Subcategoria = subcategorias.FirstOrDefault(x => x.Id == item.SubcategoriaId);
+            });
+
+            return lista.ToDtos();
+        }
 
         public async Task<PresupuestoDto> ObtenerAsync(int presupuestoId) => (await _repositorioMongo.Presupuesto.ObtenerAsync(presupuestoId)).ToDto();
 

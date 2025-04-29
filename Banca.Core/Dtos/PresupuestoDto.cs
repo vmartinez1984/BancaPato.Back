@@ -14,6 +14,8 @@
 
         public string Guid { get; set; }
 
+        public int VersionId { get; set; }
+
         //public List<MovimientoDto> Movimientos { get; set; } = new List<MovimientoDto>();
 
         //public string AhorroTipo { get; set; }

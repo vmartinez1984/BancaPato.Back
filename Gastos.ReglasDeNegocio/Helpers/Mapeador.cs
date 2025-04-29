@@ -1,7 +1,6 @@
 ﻿using Banca.Core.Dtos;
 using DuckBank.Persistence.Entities;
 using Gastos.ReglasDeNegocio.Entities;
-using System.Runtime.CompilerServices;
 
 namespace Gastos.ReglasDeNegocio.Helpers
 {
@@ -93,7 +92,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
             Guid = entity.Guid,
             Id = entity.Id,
             SubcategoriaId = entity.SubcategoriaId,
-            Subcategoria = entity.Subcategoria.ToDto()
+            Subcategoria = entity.Subcategoria.ToDto(), VersionId = entity.VersionId
         };
 
         internal static List<PresupuestoDto> ToDtos(this List<Presupuesto> entities) => entities.Select(x => x.ToDto()).ToList();
@@ -104,7 +103,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
             Cantidad = dtos.Cantidad,
             SubcategoriaId = dtos.SubcategoriaId,
             Guid = dtos.Guid,
-            VersionId = dtos.VersionId
+            VersionId = dtos.VersionId            
         };
 
         internal static PeriodoDto ToDto(this Periodo entity) => entity is null ? null : new PeriodoDto

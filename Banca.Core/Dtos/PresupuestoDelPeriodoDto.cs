@@ -15,5 +15,7 @@
         public string SubcategoriaNombre { get; set; }
 
         public decimal Gastado { get; set; }
+
+        public string TipoDeAhorro { get; set; }
     }
 }

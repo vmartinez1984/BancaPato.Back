@@ -31,9 +31,9 @@ public class PresupuestosController : BancaBase
     }
 
     [HttpPut("{presupuestoId}")]
-    public async Task<IActionResult> ActualizarPresupuesto(int presupuestoIdGuid, PresupuestoDtoIn presupuesto)
+    public async Task<IActionResult> ActualizarPresupuesto(int presupuestoId, PresupuestoDtoIn presupuesto)
     {
-        await _unitOfWork.Presupuesto.ActualizarAsync(presupuestoIdGuid, presupuesto);
+        await _unitOfWork.Presupuesto.ActualizarAsync(presupuestoId, presupuesto);
 
         return Accepted("", new IdDto { });
     }

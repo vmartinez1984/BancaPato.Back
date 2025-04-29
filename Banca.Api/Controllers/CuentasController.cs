@@ -33,7 +33,6 @@ namespace Banca.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> Obtener()
         {
-
             List<AhorroDto> lista;
 
             lista = await _unitOfWork.Ahorro.ObtenerAsync();

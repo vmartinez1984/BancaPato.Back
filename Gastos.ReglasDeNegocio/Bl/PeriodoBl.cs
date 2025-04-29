@@ -1,4 +1,6 @@
 ﻿using Banca.Core.Dtos;
+using DuckBank.Persistence.Entities;
+using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Entities;
 using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
@@ -8,10 +10,12 @@ namespace Gastos.ReglasDeNegocio.Bl
     public class PeriodoBl
     {
         private readonly Repositorio _repositorioMongo;
+        private readonly IRepositorio _repositorio;
 
-        public PeriodoBl(Repositorio gastosRepository)
+        public PeriodoBl(Repositorio gastosRepository, IRepositorio repositorio)
         {
             _repositorioMongo = gastosRepository;
+            _repositorio = repositorio;
         }
 
         public async Task<List<PeriodoDto>> ObtenerTodosAsync()
@@ -96,8 +100,26 @@ namespace Gastos.ReglasDeNegocio.Bl
                 Presupuesto presupuesto;
 
                 presupuesto = presupestos.Where(x => x.Id == item.PresupuestoId).FirstOrDefault();
+                if (presupuesto.Subcategoria is null)
+                    presupuesto.Subcategoria = await _repositorioMongo.Subcategoria.ObtenerPorIdAsync(presupuesto.SubcategoriaId);
+                if (presupuesto.AhorroId is not null && string.IsNullOrEmpty(presupuesto.AhorroTipo))
+                {
+                    Ahorro ahorro;
+                    string key = "TipoDeCuenta";
 
-                item.SubcategoriaNombre = presupuesto is null? string.Empty: presupuesto.Subcategoria.Nombre;
+                    ahorro = await _repositorio.Ahorro.ObtenerPorIdAsync(presupuesto.AhorroId.ToString());
+
+                    if (ahorro is not null)
+                    {
+                        var data = (ahorro.Otros.Where(x => x.Key == key).FirstOrDefault());
+                        if (data.Value != null)
+                        {
+                            item.TipoDeAhorro = ahorro.Otros[key];
+                            await _repositorioMongo.Presupuesto.ActualizarAsync(presupuesto);
+                        }
+                    }
+                }
+                item.SubcategoriaNombre = presupuesto is null ? string.Empty : presupuesto.Subcategoria.Nombre;
             }
             return dtos;
         }
