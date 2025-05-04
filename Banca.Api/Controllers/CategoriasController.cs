@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
+    [ApiController]    
     public class CategoriasController : BancaBase 
     {
         public CategoriasController(UnitOfWork unitOfWork) : base(unitOfWork) { }

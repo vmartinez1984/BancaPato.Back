@@ -6,17 +6,15 @@ namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AhorrosController : ControllerBase
-    {
-        private readonly UnitOfWork _unitOfWork;
+    public class AhorrosController : BancaBase
+    {        
         private readonly string _ahorroFondeador;
 
         public AhorrosController(
             UnitOfWork unitOfWork,
             IConfiguration configuration
-        )
-        {
-            this._unitOfWork = unitOfWork;
+        ):base(unitOfWork)
+        {            
             _ahorroFondeador = configuration.GetSection("AhorroFondeadorGuid").Value;
         }
 

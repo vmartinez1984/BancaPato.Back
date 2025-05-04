@@ -6,14 +6,9 @@ namespace Banca.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SubcategoriasController : ControllerBase// BancaBase
+    public class SubcategoriasController : BancaBase
     {
-        private readonly UnitOfWork _unitOfWork;
-
-        public SubcategoriasController(UnitOfWork unitOfWork) //: base(unitOfWork)
-        {
-            _unitOfWork = unitOfWork;
-        }
+        public SubcategoriasController(UnitOfWork unitOfWork) : base(unitOfWork) { }
 
         /// <summary>
         /// Obtiene la lista de subcategorias
