@@ -40,15 +40,9 @@ namespace Gastos.ReglasDeNegocio.Repositories
             return entidad.Id;
         }
 
-        public async Task<PresupuestoDelPeriodo> ObtenerPorPresupuestoIdAsync(int presupuestoId)
-        {
-            //int id;
-                        
-            //if (int.TryParse(idGuid, out id))
-                return (await _collection.FindAsync(x => x.PresupuestoId == presupuestoId)).FirstOrDefault();
-            //else
-            //    return (await _collection.FindAsync(x => x.Guid == idGuid)).FirstOrDefault();
-        }
+        public async Task<PresupuestoDelPeriodo> ObtenerPorPresupuestoIdAsync(int presupuestoId, int periodoId)
+        => (await _collection.FindAsync(x => x.PresupuestoId == presupuestoId && x.PeriodoId == periodoId)).FirstOrDefault();
+         
 
         public async Task ActualizarAsync(PresupuestoDelPeriodo periodo) => await _collection.ReplaceOneAsync(x => x._id == periodo._id, periodo);
 

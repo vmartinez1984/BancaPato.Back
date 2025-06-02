@@ -34,7 +34,7 @@ namespace Gastos.ReglasDeNegocio.Bl
                 }
             ).ToList();
 
-            return dtos;
+            return dtos.OrderByDescending(x => x.Id).ToList();
         }
 
         public async Task<PeriodoDto> ObtenerAsync(string periodoId)
@@ -121,7 +121,8 @@ namespace Gastos.ReglasDeNegocio.Bl
                 }
                 item.SubcategoriaNombre = presupuesto is null ? string.Empty : presupuesto.Subcategoria.Nombre;
             }
-            return dtos;
+
+            return dtos.ToList();
         }
 
         public async Task BorrarAsync(string periodoId)

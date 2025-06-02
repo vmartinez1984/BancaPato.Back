@@ -31,7 +31,7 @@ namespace Gastos.ReglasDeNegocio.Bl
             presupuesto = await _repositorio.Presupuesto.ObtenerAsync(movimiento.PresupuestoId);
             if (presupuesto.Subcategoria is null)
                 presupuesto.Subcategoria = await _repositorio.Subcategoria.ObtenerAsync(presupuesto.SubcategoriaId.ToString());
-            presupuestoDelPeriodo = await _repositorio.PresupuestoDelPeriodo.ObtenerPorPresupuestoIdAsync(movimiento.PresupuestoId);
+            presupuestoDelPeriodo = await _repositorio.PresupuestoDelPeriodo.ObtenerPorPresupuestoIdAsync(movimiento.PresupuestoId, periodoId);
             //Retiro del ahorro eje
             await _duckBanck.Ahorro.RetirarAsync(ahorroEje, new DuckBank.Persistence.Entities.Movimiento
             {

@@ -39,8 +39,8 @@ namespace Gastos.ReglasDeNegocio.Bl
 
             tipos = await _repositorio1.TipoDeAhorro.ObtenerTodosAsync();
             otros.Add("Nota", cuenta.Nota);
-            otros.Add("FechaInicial", cuenta.FechaInicial is null? null: cuenta.FechaInicial.ToString());
-            otros.Add("FechaFinal", cuenta.FechaFinal is null ? null : cuenta.FechaFinal.ToString());
+            otros.Add("FechaInicial",cuenta.FechaInicial is null? null: ((DateTime)cuenta.FechaInicial).ToString("d"));
+            otros.Add("FechaFinal", cuenta.FechaFinal is null ? null : ((DateTime)cuenta.FechaFinal).ToString("d"));
             otros.Add("TipoDeCuentaId", cuenta.TipoDeAhorroId.ToString());
             ahorro = new Ahorro
             {
