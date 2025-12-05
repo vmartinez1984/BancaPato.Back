@@ -77,7 +77,8 @@ namespace Gastos.ReglasDeNegocio.Bl
                     EstaActivo = true,
                     Gastado = 0,
                     PeriodoId = periodoId,
-                    PresupuestoId = presupuesto.Id
+                    PresupuestoId = presupuesto.Id,
+
                 });
             }
 
@@ -89,23 +90,29 @@ namespace Gastos.ReglasDeNegocio.Bl
             List<PresupuestoDelPeriodo> lista;
             List<PresupuestoDelPeriodoDto> dtos;
             List<Presupuesto> presupestos;
+            List<TipoDeCuenta> tipoDeAhorros;
             Periodo peridodo;
+
 
             lista = await _repositorioMongo.PresupuestoDelPeriodo.ObtenerPorPeriodoIdAsync(periodoId);
             dtos = lista.ToDtos();
             peridodo = await _repositorioMongo.Periodo.ObtenerAsync(periodoId.ToString());
             presupestos = await _repositorioMongo.Presupuesto.ObtenerPorVersionIdAsync(peridodo.VersionId);
+            tipoDeAhorros = await _repositorioMongo.TipoDeAhorro.ObtenerTodosAsync();
             foreach (var item in dtos)
             {
                 Presupuesto presupuesto;
 
                 presupuesto = presupestos.Where(x => x.Id == item.PresupuestoId).FirstOrDefault();
                 if (presupuesto.Subcategoria is null)
+                {
                     presupuesto.Subcategoria = await _repositorioMongo.Subcategoria.ObtenerPorIdAsync(presupuesto.SubcategoriaId);
-                if (presupuesto.AhorroId is not null && string.IsNullOrEmpty(presupuesto.AhorroTipo))
+                    await _repositorioMongo.Presupuesto.ActualizarAsync(presupuesto);
+                }
+                if (presupuesto.AhorroId is not null || string.IsNullOrEmpty(presupuesto.AhorroTipo))
                 {
                     Ahorro ahorro;
-                    string key = "TipoDeCuenta";
+                    string key = "TipoDeCuentaId";
 
                     ahorro = await _repositorio.Ahorro.ObtenerPorIdAsync(presupuesto.AhorroId.ToString());
 
@@ -115,9 +122,14 @@ namespace Gastos.ReglasDeNegocio.Bl
                         if (data.Value != null)
                         {
                             item.TipoDeAhorro = ahorro.Otros[key];
-                            await _repositorioMongo.Presupuesto.ActualizarAsync(presupuesto);
+                            var tipoDeCuenta = tipoDeAhorros.Where(x => x.Id == int.Parse(item.TipoDeAhorro)).FirstOrDefault();
+                            item.TipoDeAhorro = tipoDeCuenta.Nombre;
                         }
                     }
+                }
+                else
+                {
+                    item.TipoDeAhorro = presupuesto.AhorroTipo;
                 }
                 item.SubcategoriaNombre = presupuesto is null ? string.Empty : presupuesto.Subcategoria.Nombre;
             }

@@ -92,7 +92,8 @@ namespace Gastos.ReglasDeNegocio.Helpers
             Guid = entity.Guid,
             Id = entity.Id,
             SubcategoriaId = entity.SubcategoriaId,
-            Subcategoria = entity.Subcategoria.ToDto(), VersionId = entity.VersionId
+            Subcategoria = entity.Subcategoria.ToDto(),
+            VersionId = entity.VersionId
         };
 
         internal static List<PresupuestoDto> ToDtos(this List<Presupuesto> entities) => entities.Select(x => x.ToDto()).ToList();
@@ -103,7 +104,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
             Cantidad = dtos.Cantidad,
             SubcategoriaId = dtos.SubcategoriaId,
             Guid = dtos.Guid,
-            VersionId = dtos.VersionId            
+            VersionId = dtos.VersionId
         };
 
         internal static PeriodoDto ToDto(this Periodo entity) => entity is null ? null : new PeriodoDto
@@ -138,5 +139,34 @@ namespace Gastos.ReglasDeNegocio.Helpers
         };
 
         internal static List<PresupuestoDelPeriodoDto> ToDtos(this List<PresupuestoDelPeriodo> entities) => entities.Select(x => x.ToDto()).ToList();
+
+
+        internal static CompraTarjetaDeCredito ToEntity(this CompraTdcDtoIn dto) => new CompraTarjetaDeCredito
+        {
+            Encodedkey = dto.Encodedkey,
+            EstaActivo = true,
+            FechaDeRegsitro = DateTime.Now,
+            MesesSinIntereses = dto.MesesSinIntereses,
+            Monto = dto.Monto,
+            Nombre = dto.Nombre,
+            Nota = dto.Nota,
+            Saldo = dto.Monto,
+            FechaDeCompra = dto.FechaDeCompra
+        };
+
+        internal static CompraTdcDto ToDto(this CompraTarjetaDeCredito entity) => entity is null ? null : new CompraTdcDto
+        {
+            Encodedkey = entity.Encodedkey,
+            MesesSinIntereses = entity.MesesSinIntereses,
+            Monto = entity.Monto,
+            Nombre = entity.Nombre,
+            Nota = entity.Nota,
+            Saldo = entity.Saldo,
+            FechaDeCompra = entity.FechaDeCompra,
+            FechaDeRegsitro = entity.FechaDeRegsitro,
+            Id = entity.Id
+        };
+
+        internal static List<CompraTdcDto> ToDtos(this List<CompraTarjetaDeCredito> entities) => entities.Select(x => x.ToDto()).ToList();
     }
 }

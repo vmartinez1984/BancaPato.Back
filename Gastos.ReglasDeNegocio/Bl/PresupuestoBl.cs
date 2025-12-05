@@ -45,7 +45,7 @@ namespace Gastos.ReglasDeNegocio.Bl
             List<Subcategoria> subcategorias;
 
             lista = await _repositorioMongo.Presupuesto.ObtenerPorVersionIdAsync(versionId);
-            subcategorias = await _repositorioMongo.Subcategoria.ObtenerTodosAsync();
+            subcategorias = await _repositorioMongo.Subcategoria.ObtenerTodosAsync(null);            
             lista.ForEach(item =>
             {
                 item.Subcategoria = subcategorias.FirstOrDefault(x => x.Id == item.SubcategoriaId);

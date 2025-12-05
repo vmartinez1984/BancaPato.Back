@@ -18,6 +18,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
             services.AddScoped<PeriodoBl>();
             services.AddScoped<TransaccionBl>();
             services.AddScoped<PresupuestoBl>();
+            services.AddScoped<CompraTarjetaDeCreditoBl>();
 
             services.AgregarDuckBank();
             services.AddScoped<CategoriaRepositorio>();
@@ -28,6 +29,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
             services.AddScoped<PresupuestoRepositorio>();
             services.AddScoped<PresupuestoDelPeriodoRepositorio>();
             services.AddScoped<TransaccionRepositorio>();
+            services.AddScoped<CompraTarjetaDeCreditoRepositorio>();
 
             services.AddScoped<Repositorio>();
 

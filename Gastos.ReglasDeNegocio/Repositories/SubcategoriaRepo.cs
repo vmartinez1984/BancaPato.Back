@@ -36,9 +36,13 @@ namespace Gastos.ReglasDeNegocio.Repositories
                 return (await _collection.FindAsync(x => x.Guid == idGuid)).FirstOrDefault();
         }
 
-        public async Task<List<Subcategoria>> ObtenerTodosAsync()
+        public async Task<List<Subcategoria>> ObtenerTodosAsync(bool? estaActivo = true)
         {
-            return (await _collection.FindAsync(x => x.EstaActivo == true)).ToList();
+            if(estaActivo == null)
+                return (await _collection.FindAsync(_=>true)).ToList();
+            else
+                return (await _collection.FindAsync(x => x.EstaActivo == estaActivo)).ToList();
+        
         }
 
         internal async Task<Subcategoria> ObtenerPorIdAsync(int subcategoriaId)

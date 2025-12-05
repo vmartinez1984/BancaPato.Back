@@ -4,7 +4,7 @@ namespace Banca.Core.Dtos
 {
     public class PeriodoDtoIn
     {
-        public string Guid { get; set; }
+        public string Guid { get; set; }// = Guid.NewGuid().ToString();
 
         [Required(ErrorMessage = "El nombre es requerido")]
         [StringLength(100)]
