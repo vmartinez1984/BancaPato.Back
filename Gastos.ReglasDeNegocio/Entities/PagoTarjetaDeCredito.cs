@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Gastos.ReglasDeNegocio.Entities
 {
-    public class PagaTarjetaDeCredito
+    public class PagoTarjetaDeCredito
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
@@ -14,10 +14,12 @@ namespace Gastos.ReglasDeNegocio.Entities
         public string Encodekey { get; set; }
 
         public string CompraTarjetaDeCreditoEncodedkey { get; set; }
+
         public int CompraTarjetaDeCreditoId { get; set; }
 
         public decimal Monto { get; set; }
 
-        public DateTime FechaDeRegsitro { get; set; } = DateTime.Now;
+        public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
+        public string Nota { get; internal set; }
     }
 }

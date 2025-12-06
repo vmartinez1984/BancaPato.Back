@@ -5,17 +5,17 @@ using MongoDB.Driver;
 
 namespace Gastos.ReglasDeNegocio.Repositories
 {
-    public class CompraTarjetaDeCreditoRepositorio
+    public class PagoDeTarjetaDeCreditoRepositorio
     {
-        private readonly IMongoCollection<CompraTarjetaDeCredito> _collection;
+        private readonly IMongoCollection<PagoTarjetaDeCredito> _collection;
 
-        public CompraTarjetaDeCreditoRepositorio(IConfiguration configurations)
+        public PagoDeTarjetaDeCreditoRepositorio(IConfiguration configurations)
         {
             var conectionString = configurations.GetConnectionString("MongoDb");
             var mongoClient = new MongoClient(conectionString);
             var nombreDeLaDb = conectionString.Split("/").Last().Split("?").First();
             var mongoDatabase = mongoClient.GetDatabase(nombreDeLaDb);
-            _collection = mongoDatabase.GetCollection<CompraTarjetaDeCredito>("ComprasTarjetaDeCredito");
+            _collection = mongoDatabase.GetCollection<PagoTarjetaDeCredito>("PagosTarjetaDeCredito");
         }
 
         private async Task<int> ObtenerId()
@@ -32,7 +32,7 @@ namespace Gastos.ReglasDeNegocio.Repositories
             return item.Id + 1;
         }
 
-        internal async Task<int> AgregarAsync(CompraTarjetaDeCredito entidad)
+        internal async Task<int> AgregarAsync(PagoTarjetaDeCredito entidad)
         {
             if (entidad.Id == 0)
                 entidad.Id = await ObtenerId();
@@ -42,20 +42,16 @@ namespace Gastos.ReglasDeNegocio.Repositories
             return entidad.Id;
         }
 
-        internal async Task<List<CompraTarjetaDeCredito>> ObtenerTodosAsync() => await _collection.Find(_ => true).ToListAsync();
-
-        internal async Task<CompraTarjetaDeCredito> ObtenerPorIdEncodedkeyAsync(string compraTdcIdEndodedkey)
+        internal async Task<List<PagoTarjetaDeCredito>> ObtenerTodosPorCompraIdEncodedkeyAsync(string idEncodedkey)
         {
-            if (int.TryParse(compraTdcIdEndodedkey, out int compraId))
+            if (int.TryParse(idEncodedkey, out int compraId))
             {
-                return await _collection.Find(x => x.Id == compraId).FirstOrDefaultAsync();
+                return await _collection.Find(x => x.CompraTarjetaDeCreditoId == compraId).ToListAsync();
             }
             else
             {
-                return await _collection.Find(x => x.Encodedkey == compraTdcIdEndodedkey).FirstOrDefaultAsync();
+                return await _collection.Find(x => x.CompraTarjetaDeCreditoEncodedkey == idEncodedkey).ToListAsync();
             }
         }
-
-        internal async Task ActualizarAsync(CompraTarjetaDeCredito entidad) => await _collection.ReplaceOneAsync(x => x._id == entidad._id, entidad);
     }
 }

@@ -32,6 +32,7 @@
 
         public DateOnly FechaDeCompra { get; set; }
 
-        public DateTime FechaDeRegsitro { get; set; }
+        public DateTime FechaDeRegistro { get; set; }
+        public DateOnly FechaDePago { get; set; }
     }
 }

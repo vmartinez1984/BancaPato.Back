@@ -26,8 +26,10 @@ namespace Gastos.ReglasDeNegocio.Entities
 
         public bool EstaActivo { get; set; } = true;
 
-        public DateTime FechaDeRegsitro { get; set; } = DateTime.Now;
+        public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
 
         public DateOnly FechaDeCompra { get; set; }
+
+        public DateOnly FechaDePago { get;  set; }
     }
 }
