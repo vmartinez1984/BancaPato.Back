@@ -1,4 +1,4 @@
-﻿using DuckBank.Persistence.Entities;
+﻿using Gastos.ReglasDeNegocio.Entities;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Bson;
 using MongoDB.Driver;

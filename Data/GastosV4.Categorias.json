@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "661c4ddd1460df8291e62222"
+  },
+  "Nombre": "Entradas",
+  "EstaActivo": true,
+  "Id": 1
+},
+{
+  "_id": {
+    "$oid": "661c4e301460df8291e62223"
+  },
+  "Nombre": "Apartados",
+  "EstaActivo": true,
+  "Id": 2
+},
+{
+  "_id": {
+    "$oid": "661c4e531460df8291e62224"
+  },
+  "Nombre": "Gastos",
+  "EstaActivo": true,
+  "Id": 3
+}]

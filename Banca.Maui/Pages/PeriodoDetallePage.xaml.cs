@@ -56,7 +56,7 @@ public partial class PeriodoDetallePage : ContentPage
                 _ = Toast.Make("Un momento por favor").Show();
                 await _servicio.Periodo.AgregarMovimientoAsync(_periodo.Id, new MovimientoDto
                 {
-                    Cantidad = Convert.ToDecimal(cantidad),
+                    Monto = Convert.ToDecimal(cantidad),
                     Guid = EncodedKey,
                     PresupuestoId = presupuesto.Id
                 });

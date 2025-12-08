@@ -1,0 +1,468 @@
+[{
+  "_id": {
+    "$oid": "69332b28101df992bd3e4bd4"
+  },
+  "Id": 2,
+  "Encodedkey": "6dd248f1-f2ed-44cd-9fe0-6544001b5e45",
+  "Nombre": "Libro Navidades",
+  "Nota": "Mono",
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "208"
+  },
+  "Saldo": {
+    "$numberDecimal": "208"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-10-22T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T18:57:08.848Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-11-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69332c25101df992bd3e4bd5"
+  },
+  "Id": 1,
+  "Encodedkey": "fea45d8a-51db-4146-89d7-6b87e598609f",
+  "Nombre": "Saldo anterior",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "3126.41"
+  },
+  "Saldo": {
+    "$numberDecimal": "3126.41"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-10-01T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T19:01:55.065Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333b60357d4105320c3a41"
+  },
+  "Id": 3,
+  "Encodedkey": "8f659927-ca78-4f04-8259-9a4316059600",
+  "Nombre": "Vaso y delineador mono",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "511"
+  },
+  "Saldo": {
+    "$numberDecimal": "511"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-06T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:06:56.386Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333b81357d4105320c3a42"
+  },
+  "Id": 4,
+  "Encodedkey": "b8a48f21-79c4-4eff-8279-7fe28e30b435",
+  "Nombre": "Old navy",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "5636.70"
+  },
+  "Saldo": {
+    "$numberDecimal": "5636.70"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-08T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:07:29.819Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333ba2357d4105320c3a43"
+  },
+  "Id": 5,
+  "Encodedkey": "2e60aeb7-c60b-43e5-b8f2-f7b794728a4a",
+  "Nombre": "Delineador",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "207"
+  },
+  "Saldo": {
+    "$numberDecimal": "207"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-09T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:08:01.916Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333bd1357d4105320c3a44"
+  },
+  "Id": 6,
+  "Encodedkey": "6a8c88b2-05a3-44f8-9bca-983588b8204c",
+  "Nombre": "Mercado libre videojuego, otros",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "1651"
+  },
+  "Saldo": {
+    "$numberDecimal": "1651"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-12-09T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:08:49.680Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333bf5357d4105320c3a45"
+  },
+  "Id": 7,
+  "Encodedkey": "2b43354c-9427-41f7-9143-b2c49bd44250",
+  "Nombre": "Mercado libre tenis pirma y juguete de gatos",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "747"
+  },
+  "Saldo": {
+    "$numberDecimal": "247"
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:09:25.449Z"
+  },
+  "FechaDeCompra": {
+    "$date": "2025-11-09T00:00:00.000Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333c25357d4105320c3a46"
+  },
+  "Id": 8,
+  "Encodedkey": "24da28da-97d9-4e4c-9bde-624fd421a5a1",
+  "Nombre": "Tenis flexi",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "879"
+  },
+  "Saldo": {
+    "$numberDecimal": "879"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-23T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:10:13.111Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333c7a357d4105320c3a47"
+  },
+  "Id": 9,
+  "Encodedkey": "276d68ed-07e1-4f70-b500-629407fa787a",
+  "Nombre": "Uber, se cayo la mono, bici",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "500"
+  },
+  "Saldo": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-25T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:11:38.059Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333c91357d4105320c3a48"
+  },
+  "Id": 10,
+  "Encodedkey": "ed1554d5-9ab6-4747-94ac-2872525fc553",
+  "Nombre": "Hospital, se cayo la mono",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "2203.97"
+  },
+  "Saldo": {
+    "$numberDecimal": "2203.97"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-25T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:12:01.183Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333cb3357d4105320c3a49"
+  },
+  "Id": 11,
+  "Encodedkey": "ecda898c-6b86-4617-ba14-32edb7f56b93",
+  "Nombre": "Mercado libre, tiras para tatoo",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "197"
+  },
+  "Saldo": {
+    "$numberDecimal": "197"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-28T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:12:35.072Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69333cd1357d4105320c3a4a"
+  },
+  "Id": 12,
+  "Encodedkey": "72720b1d-f4bd-48cb-9fe5-870ce49476ba",
+  "Nombre": "Depilacion laser",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "2000"
+  },
+  "Saldo": {
+    "$numberDecimal": "2000"
+  },
+  "EstaActivo": true,
+  "FechaDeCompra": {
+    "$date": "2025-11-29T00:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T20:13:05.775Z"
+  },
+  "FechaDePago": {
+    "$date": "2025-12-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69346db8a00a8295765c3d3e"
+  },
+  "Id": 14,
+  "Encodedkey": "7b648aa6-39ea-41a5-bb90-ae978cd70d5c",
+  "Nombre": "Clean Cat, arena para los michis",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "900"
+  },
+  "Saldo": {
+    "$numberDecimal": "900"
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-12-06T17:53:29.581Z"
+  },
+  "FechaDeCompra": {
+    "$date": "2025-12-06T00:00:00.000Z"
+  },
+  "FechaDePago": {
+    "$date": "2026-01-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69346e17a00a8295765c3d3f"
+  },
+  "Id": 15,
+  "Encodedkey": "750617b1-048e-48b1-8ddd-fa8dac00557e",
+  "Nombre": "Mercado libre, Nupec Indoor 5Kg",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "732"
+  },
+  "Saldo": {
+    "$numberDecimal": "732"
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-12-06T17:55:14.871Z"
+  },
+  "FechaDeCompra": {
+    "$date": "2025-12-06T00:00:00.000Z"
+  },
+  "FechaDePago": {
+    "$date": "2026-01-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69348403eb14e1e09ac3e9d4"
+  },
+  "Id": 16,
+  "Encodedkey": "d1eac87c-21d2-49ef-a800-302da5de6563",
+  "Nombre": "Innovate Sport, tenis",
+  "Nota": null,
+  "MesesSinIntereses": 3,
+  "Monto": {
+    "$numberDecimal": "3737"
+  },
+  "Saldo": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-12-06T19:28:31.779Z"
+  },
+  "FechaDeCompra": {
+    "$date": "2025-11-08T00:00:00.000Z"
+  },
+  "FechaDePago": {
+    "$date": "2026-04-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69348412eb14e1e09ac3e9d5"
+  },
+  "Id": 16,
+  "Encodedkey": "d1eac87c-21d2-49ef-a800-302da5de6563",
+  "Nombre": "Innovate Sport, tenis",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "1245.67"
+  },
+  "Saldo": {
+    "$numberDecimal": "1245.67"
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-12-06T19:28:31.779Z"
+  },
+  "FechaDeCompra": {
+    "$date": "2026-01-03T00:00:00.000Z"
+  },
+  "FechaDePago": {
+    "$date": "2026-01-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69348412eb14e1e09ac3e9d6"
+  },
+  "Id": 16,
+  "Encodedkey": "d1eac87c-21d2-49ef-a800-302da5de6563",
+  "Nombre": "Innovate Sport, tenis",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "1245.67"
+  },
+  "Saldo": {
+    "$numberDecimal": "1245.67"
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-12-06T19:28:31.779Z"
+  },
+  "FechaDeCompra": {
+    "$date": "2026-02-03T00:00:00.000Z"
+  },
+  "FechaDePago": {
+    "$date": "2026-02-23T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69348412eb14e1e09ac3e9d7"
+  },
+  "Id": 16,
+  "Encodedkey": "d1eac87c-21d2-49ef-a800-302da5de6563",
+  "Nombre": "Innovate Sport, tenis",
+  "Nota": null,
+  "MesesSinIntereses": 0,
+  "Monto": {
+    "$numberDecimal": "1245.67"
+  },
+  "Saldo": {
+    "$numberDecimal": "1245.67"
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-12-06T19:28:31.779Z"
+  },
+  "FechaDeCompra": {
+    "$date": "2026-03-03T00:00:00.000Z"
+  },
+  "FechaDePago": {
+    "$date": "2026-03-23T00:00:00.000Z"
+  }
+}]

@@ -19,7 +19,10 @@ public class Repositorio
     public PresupuestoDelPeriodoRepositorio PresupuestoDelPeriodo { get;  }
 
     public TransaccionRepositorio Transaccion { get; }
+
+    public AhorroRepositorio    Ahorro { get; set; }
     public Repositorio(
+        AhorroRepositorio ahorroRepositorio,
         CategoriaRepositorio categoriaRepositorio,
         SubcategoriaRepo subcategoriaRepo,
         TipoDeCuentaRepository tipoDeAhorro,
@@ -30,6 +33,7 @@ public class Repositorio
         TransaccionRepositorio transaccionRepositorio
     )
     {
+        Ahorro = ahorroRepositorio;
         Categoria = categoriaRepositorio;
         Subcategoria = subcategoriaRepo;
         TipoDeAhorro = tipoDeAhorro;

@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "680fa0a40a3b79c99b9e8d49"
+  },
+  "Id": 1,
+  "Nombre": "2 trimestre 2025",
+  "Guid": "8be2664d-82e4-4336-be4c-1ff5803cd8fe",
+  "FechaInicial": {
+    "$date": "2025-04-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-06-30T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-04-28T15:37:07.990Z"
+  },
+  "EstaActivo": true,
+  "Presupuestos": []
+},
+{
+  "_id": {
+    "$oid": "683bcf65d003c08c84388f1e"
+  },
+  "Id": 2,
+  "Nombre": "Basico",
+  "Guid": "58acc8d4-ecd9-4a46-8671-4112a7cb35a6",
+  "FechaInicial": {
+    "$date": "2025-06-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-08-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-06-01T03:56:21.778Z"
+  },
+  "EstaActivo": true,
+  "Presupuestos": []
+},
+{
+  "_id": {
+    "$oid": "683ca72a767a97b3036f3f2e"
+  },
+  "Id": 3,
+  "Nombre": "Basico",
+  "Guid": "e5733533-0d4e-4019-af38-7f15a248e1dc",
+  "FechaInicial": {
+    "$date": "2025-06-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-08-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-06-01T19:16:57.931Z"
+  },
+  "EstaActivo": false,
+  "Presupuestos": []
+},
+{
+  "_id": {
+    "$oid": "6861e2b42940669bf55edcfe"
+  },
+  "Id": 4,
+  "Nombre": "Salario nivel 1",
+  "Guid": "44f82780-b5d9-4dec-b49b-2a83a0c764ac",
+  "FechaInicial": {
+    "$date": "2025-07-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-07-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-06-30T01:04:52.108Z"
+  },
+  "EstaActivo": true,
+  "Presupuestos": []
+},
+{
+  "_id": {
+    "$oid": "6862024bd4eebe613b38fbcb"
+  },
+  "Id": 5,
+  "Nombre": "Salario nivel 0",
+  "Guid": "44f82780-b5d9-4dec-b49b-2a83a0c764ac",
+  "FechaInicial": {
+    "$date": "2025-07-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-07-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-06-30T01:04:52.108Z"
+  },
+  "EstaActivo": true,
+  "Presupuestos": []
+},
+{
+  "_id": {
+    "$oid": "68a4b3c86771c49d1163074f"
+  },
+  "Id": 6,
+  "Nombre": "2inno basic",
+  "Guid": "dd288354-92db-4363-8980-85560cde1884",
+  "FechaInicial": {
+    "$date": "2025-08-31T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-10-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-08-19T17:26:32.164Z"
+  },
+  "EstaActivo": true,
+  "Presupuestos": []
+},
+{
+  "_id": {
+    "$oid": "68b518c75a608e8e57f1eb17"
+  },
+  "Id": 7,
+  "Nombre": "5 semanas 28 K",
+  "Guid": "fadcbadd-d725-4eed-a2af-bcf9bdaadfa4",
+  "FechaInicial": {
+    "$date": "2025-09-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-09-30T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:53:43.549Z"
+  },
+  "EstaActivo": true,
+  "Presupuestos": []
+}]

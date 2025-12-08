@@ -1,0 +1,5922 @@
+[{
+  "_id": {
+    "$oid": "680fa5a90a3b79c99b9e958e"
+  },
+  "Id": 1,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "SubcategoriaId": 1,
+  "VersionId": 1,
+  "Guid": "3e34a7c5-fce3-4a0e-89b1-d6a87af6fa6d",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff6eae5d6771031ad149"
+    },
+    "EstaActivo": true,
+    "Id": 1,
+    "Guid": "18fe131f-fe8b-4c91-af58-358b25aabb98",
+    "Nombre": "Afore",
+    "Presupuesto": {
+      "$numberDecimal": "1000"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.533Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 1,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fa832312502a206023ae7"
+  },
+  "Id": 2,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 22,
+  "VersionId": 1,
+  "Guid": "845560aa-66ce-48a1-ad21-428fc229239f",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fb4be8964d7fdf474f58f"
+  },
+  "Id": 3,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 2,
+  "VersionId": 1,
+  "Guid": "f007e7ea-6c27-437c-8afe-2123d319f4c3",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff7aae5d6771031ad14a"
+    },
+    "EstaActivo": true,
+    "Id": 2,
+    "Guid": "d8f78850-abc6-41b6-924f-0a649a4027e8",
+    "Nombre": "Ahorro N",
+    "Presupuesto": {
+      "$numberDecimal": "100.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 5,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fb7c88964d7fdf474fd62"
+  },
+  "Id": 4,
+  "Cantidad": {
+    "$numberDecimal": "1350"
+  },
+  "SubcategoriaId": 8,
+  "VersionId": 1,
+  "Guid": "825a4095-97b6-4436-b86b-908c983f0418",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff80ae5d6771031ad14c"
+    },
+    "EstaActivo": true,
+    "Id": 8,
+    "Guid": "169ac9ea-527d-48ea-9d33-e404fcacac03",
+    "Nombre": "Apartado Medico",
+    "Presupuesto": {
+      "$numberDecimal": "400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 20,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fb8fd8964d7fdf475031b"
+  },
+  "Id": 5,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "SubcategoriaId": 21,
+  "VersionId": 1,
+  "Guid": "3ebe6720-cdf5-481c-b4ee-0e4f9dd69e6b",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fbb588964d7fdf4750502"
+  },
+  "Id": 6,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "SubcategoriaId": 38,
+  "VersionId": 1,
+  "Guid": "20b1c020-24d6-4a68-8f3b-2ff50f523647",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fbce18964d7fdf4750756"
+  },
+  "Id": 7,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 10,
+  "VersionId": 1,
+  "Guid": "aa3b7c26-3c2a-49d3-9ed9-dedfcf833285",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad14e"
+    },
+    "EstaActivo": true,
+    "Id": 10,
+    "Guid": "b82c5ced-1a1c-4297-be33-9cd93f13db30",
+    "Nombre": "Camioneta",
+    "Presupuesto": {
+      "$numberDecimal": "400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 8,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fbdb18964d7fdf475093e"
+  },
+  "Id": 8,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "SubcategoriaId": 43,
+  "VersionId": 1,
+  "Guid": "4daa039d-3da0-4029-8c82-543ea7825360",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16f"
+    },
+    "EstaActivo": true,
+    "Id": 43,
+    "Guid": "d3c42fb4-900b-4ec7-b3b3-331c8d801245",
+    "Nombre": "Chante",
+    "Presupuesto": {
+      "$numberDecimal": "1000.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.580Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 13,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fbdc68964d7fdf4750b26"
+  },
+  "Id": 9,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 24,
+  "VersionId": 1,
+  "Guid": "8702b7de-eb1a-4bd0-afb4-ef10995419ab",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fbdd68964d7fdf4750d0e"
+  },
+  "Id": 10,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 28,
+  "VersionId": 1,
+  "Guid": "5a78a362-6e91-4b9c-bb4b-aa3f0123d5f4",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fbe358964d7fdf4750ef6"
+  },
+  "Id": 11,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  },
+  "SubcategoriaId": 25,
+  "VersionId": 1,
+  "Guid": "1a7fe9cf-7240-4245-b93f-78d638f4a130",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fbe808964d7fdf47510de"
+  },
+  "Id": 12,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 26,
+  "VersionId": 1,
+  "Guid": "0f6e000c-df06-4a33-b8c6-5b0d1f4a2f9f",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad15e"
+    },
+    "EstaActivo": true,
+    "Id": 26,
+    "Guid": "cb331b30-5275-44b3-bbfc-ffcfd545a08c",
+    "Nombre": "Entretenimineto",
+    "Presupuesto": {
+      "$numberDecimal": "200.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 15,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc1028964d7fdf47516cf"
+  },
+  "Id": 13,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 27,
+  "VersionId": 1,
+  "Guid": "189f93a3-accc-4b72-b912-81ee73a6e436",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc1158964d7fdf475189d"
+  },
+  "Id": 14,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 12,
+  "VersionId": 1,
+  "Guid": "04f23330-eab2-4c9d-ab01-bd65b3bb7b64",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc1348964d7fdf4751a6b"
+  },
+  "Id": 15,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "SubcategoriaId": 39,
+  "VersionId": 1,
+  "Guid": "1a9adfb0-8ade-423b-b90c-d7bbdb35f7b8",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc1438964d7fdf4751c39"
+  },
+  "Id": 16,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 29,
+  "VersionId": 1,
+  "Guid": "ecaa3275-b242-493c-a054-bd5271b36b29",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc1668964d7fdf4751e07"
+  },
+  "Id": 17,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 41,
+  "VersionId": 1,
+  "Guid": "8025a318-bfdf-4803-bd6d-e2a22f160db6",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16d"
+    },
+    "EstaActivo": true,
+    "Id": 41,
+    "Guid": "ff4143b0-cca9-4b2a-bca2-2a7cf0d89e17",
+    "Nombre": "Pa cuando nos corran",
+    "Presupuesto": {
+      "$numberDecimal": "250.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 21,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc1738964d7fdf4751fd5"
+  },
+  "Id": 18,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 42,
+  "VersionId": 1,
+  "Guid": "32793c33-8455-47d4-bbfb-0749c1f589d7",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16e"
+    },
+    "EstaActivo": true,
+    "Id": 42,
+    "Guid": "e6f1906c-ff31-47d0-8b39-a301cf01b862",
+    "Nombre": "Pa cuando nos corran Nancy",
+    "Presupuesto": {
+      "$numberDecimal": "250.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 37,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc2c18964d7fdf47521a3"
+  },
+  "Id": 19,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 40,
+  "VersionId": 1,
+  "Guid": "a5942f52-6882-4c64-aec5-1295bbbafa85",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16c"
+    },
+    "EstaActivo": true,
+    "Id": 40,
+    "Guid": "23044c1f-901d-46b9-bb72-2b1e010130a8",
+    "Nombre": "Pc",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 23,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc3db8964d7fdf4752703"
+  },
+  "Id": 20,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "SubcategoriaId": 30,
+  "VersionId": 1,
+  "Guid": "b62ec816-d264-4216-b79a-9599296ce90d",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad162"
+    },
+    "EstaActivo": true,
+    "Id": 30,
+    "Guid": "210a68b6-a9cf-45c9-968b-a0ee27413690",
+    "Nombre": "Renta",
+    "Presupuesto": {
+      "$numberDecimal": "3100"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 24,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc5aa8964d7fdf47528ac"
+  },
+  "Id": 21,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 13,
+  "VersionId": 1,
+  "Guid": "b5c05798-46f4-4be6-ad71-582bb209b009",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad151"
+    },
+    "EstaActivo": true,
+    "Id": 13,
+    "Guid": "f1b09119-e65b-4a0d-88a9-1b0a23e4be54",
+    "Nombre": "Ropa",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 25,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc5d08964d7fdf4752a55"
+  },
+  "Id": 22,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 23,
+  "VersionId": 1,
+  "Guid": "567519fa-a546-4a39-a2a5-c62743779f15",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15b"
+    },
+    "EstaActivo": true,
+    "Id": 23,
+    "Guid": "37ecd9d4-8a5d-48f2-86e7-aa4f45605ed1",
+    "Nombre": "Saldo cel",
+    "Presupuesto": {
+      "$numberDecimal": "150.00"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 11,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc6168964d7fdf4752dab"
+  },
+  "Id": 23,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  },
+  "SubcategoriaId": 31,
+  "VersionId": 1,
+  "Guid": "3f344c66-bba5-48ee-927d-b04e2f494a33",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc6258964d7fdf4752f3d"
+  },
+  "Id": 24,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "SubcategoriaId": 32,
+  "VersionId": 1,
+  "Guid": "2f099e58-1127-4a1d-974e-02d738a751bc",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc62f8964d7fdf47530cf"
+  },
+  "Id": 25,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "SubcategoriaId": 33,
+  "VersionId": 1,
+  "Guid": "f442f3d6-6a14-492a-bf39-82598fa4cc12",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fc6568964d7fdf4753261"
+  },
+  "Id": 26,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 15,
+  "VersionId": 1,
+  "Guid": "680aa53b-f067-478b-b4e5-63a55783de98",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad153"
+    },
+    "EstaActivo": true,
+    "Id": 15,
+    "Guid": "d08d89fa-ee19-4ccd-9483-e95695d3a373",
+    "Nombre": "TDC Anualidad",
+    "Presupuesto": {
+      "$numberDecimal": "105.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 7,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fcd3d8964d7fdf4753715"
+  },
+  "Id": 27,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 34,
+  "VersionId": 1,
+  "Guid": "0efa024d-d082-480e-9606-aab180e340cb",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fcd4d8964d7fdf47538a8"
+  },
+  "Id": 28,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 35,
+  "VersionId": 1,
+  "Guid": "731681a2-e1fa-415a-b1e8-aba0170115a3",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fcd578964d7fdf4753a3b"
+  },
+  "Id": 29,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 36,
+  "VersionId": 1,
+  "Guid": "17edfca6-4b47-453a-ad84-97dcdc4c7108",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fcfca8964d7fdf4754809"
+  },
+  "Id": 30,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 18,
+  "VersionId": 1,
+  "Guid": "b0e2a289-3845-4bfd-b2db-7bef0c5436bb",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad156"
+    },
+    "EstaActivo": true,
+    "Id": 18,
+    "Guid": "a5bb39e0-03e6-47d4-a264-87d125bd7e89",
+    "Nombre": "Tlax Internet y LUZ",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 30,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fd0628964d7fdf4754afa"
+  },
+  "Id": 31,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 9,
+  "VersionId": 1,
+  "Guid": "83bd963a-83c6-4c3c-8d14-27bd44e43c40",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fd0718964d7fdf4754c51"
+  },
+  "Id": 32,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 37,
+  "VersionId": 1,
+  "Guid": "7c4dec76-8d44-4590-87e5-ac6eeda94400",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fd0868964d7fdf4754da8"
+  },
+  "Id": 33,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 11,
+  "VersionId": 1,
+  "Guid": "56c63af7-7b87-4821-a66c-c3e6cf7cc4f4",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad14f"
+    },
+    "EstaActivo": true,
+    "Id": 11,
+    "Guid": "fafe0f5b-b2ad-4b4b-af37-09ec78d5040b",
+    "Nombre": "Cdmx internet y luz",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 40,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680fd40d8964d7fdf4755b3a"
+  },
+  "Id": 34,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 44,
+  "VersionId": 1,
+  "Guid": "73359a1a-c707-4a0c-ad69-75a1f37618ed",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 41,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caa48443d0aea9ec3eb0a"
+  },
+  "Id": 35,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 11,
+  "VersionId": 2,
+  "Guid": "29fcd4d6-74c3-4e29-8e93-561baa5f23ae",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad14f"
+    },
+    "EstaActivo": true,
+    "Id": 11,
+    "Guid": "fafe0f5b-b2ad-4b4b-af37-09ec78d5040b",
+    "Nombre": "Cdmx internet y luz",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 40,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caeb6593b1634dbce81c3"
+  },
+  "Id": 36,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 22,
+  "VersionId": 2,
+  "Guid": "8ce546c6-4a66-4d16-ba30-441dba03a4c7",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15a"
+    },
+    "EstaActivo": true,
+    "Id": 22,
+    "Guid": "2d007b0a-e998-4ee2-ab55-93fbb7327ce3",
+    "Nombre": "CdmxAgua",
+    "Presupuesto": {
+      "$numberDecimal": "150"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caec9593b1634dbce8325"
+  },
+  "Id": 37,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 28,
+  "VersionId": 2,
+  "Guid": "0ccc136a-01dc-4e31-9fb2-af348206a3df",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad160"
+    },
+    "EstaActivo": true,
+    "Id": 28,
+    "Guid": "6352b971-867e-44ba-a30f-1b708072fbfc",
+    "Nombre": "Deportes",
+    "Presupuesto": {
+      "$numberDecimal": "300.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caed9593b1634dbce8487"
+  },
+  "Id": 38,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "SubcategoriaId": 25,
+  "VersionId": 2,
+  "Guid": "f1ae0414-b487-42d3-a472-6aa0794d90da",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15d"
+    },
+    "EstaActivo": true,
+    "Id": 25,
+    "Guid": "286c5191-4253-4de3-a5cb-888857ace4a3",
+    "Nombre": "Doña",
+    "Presupuesto": {
+      "$numberDecimal": "1650.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caeeb593b1634dbce85e9"
+  },
+  "Id": 39,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 39,
+  "VersionId": 2,
+  "Guid": "c2742858-6db9-48f4-a6f3-8e6c45a1c997",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16b"
+    },
+    "EstaActivo": true,
+    "Id": 39,
+    "Guid": "d4aac4ad-b738-4dc5-a661-334d554e32c1",
+    "Nombre": "Educación",
+    "Presupuesto": {
+      "$numberDecimal": "600"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caefb593b1634dbce874b"
+  },
+  "Id": 40,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 26,
+  "VersionId": 2,
+  "Guid": "9bb699db-cc44-43ad-aef9-52a1346a18c6",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad15e"
+    },
+    "EstaActivo": true,
+    "Id": 26,
+    "Guid": "cb331b30-5275-44b3-bbfc-ffcfd545a08c",
+    "Nombre": "Entretenimineto",
+    "Presupuesto": {
+      "$numberDecimal": "200.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caf08593b1634dbce88ad"
+  },
+  "Id": 41,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 27,
+  "VersionId": 2,
+  "Guid": "2bc97748-971b-4448-9cc4-1c23166e237c",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad15f"
+    },
+    "EstaActivo": true,
+    "Id": 27,
+    "Guid": "5b26970d-fbeb-4fe2-aa83-d0f907ce4622",
+    "Nombre": "Gas",
+    "Presupuesto": {
+      "$numberDecimal": "250.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caf16593b1634dbce8a0f"
+  },
+  "Id": 42,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 12,
+  "VersionId": 2,
+  "Guid": "71da6b25-a4d8-49f6-8d0c-49e98c8226c8",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad150"
+    },
+    "EstaActivo": true,
+    "Id": 12,
+    "Guid": "86cd89e6-57f0-4340-a75b-eaf1b61f2363",
+    "Nombre": "Gatos",
+    "Presupuesto": {
+      "$numberDecimal": "600"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caf25593b1634dbce8b71"
+  },
+  "Id": 43,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 29,
+  "VersionId": 2,
+  "Guid": "698405e9-bbc6-4be9-b248-d2d84288dcc1",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad161"
+    },
+    "EstaActivo": true,
+    "Id": 29,
+    "Guid": "f8f97a6f-f525-43ca-85b7-c77ebbea4df1",
+    "Nombre": "Natacion",
+    "Presupuesto": {
+      "$numberDecimal": "250"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caf36593b1634dbce8cd3"
+  },
+  "Id": 44,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 45,
+  "VersionId": 2,
+  "Guid": "23460e8d-94a7-4411-ae34-01ffad5f7e4b",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66f8bd2c17568b0a11f8e143"
+    },
+    "EstaActivo": true,
+    "Id": 45,
+    "Guid": "2afa266e-e057-409c-bf53-fd72e9642869",
+    "Nombre": "Pago Tdc",
+    "Presupuesto": {
+      "$numberDecimal": "2100"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-09-29T02:36:28.455Z"
+    },
+    "Categoria": {
+      "Id": 0,
+      "Nombre": "Entradas",
+      "_id": {
+        "$oid": "661c4ddd1460df8291e62222"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683caffd593b1634dbce8e35"
+  },
+  "Id": 45,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  },
+  "SubcategoriaId": 30,
+  "VersionId": 2,
+  "Guid": "13df7a6b-ce28-45d4-85b7-9bcaa677e29f",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad162"
+    },
+    "EstaActivo": true,
+    "Id": 30,
+    "Guid": "210a68b6-a9cf-45c9-968b-a0ee27413690",
+    "Nombre": "Renta",
+    "Presupuesto": {
+      "$numberDecimal": "3100"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 24,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683cb044593b1634dbce9104"
+  },
+  "Id": 46,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 44,
+  "VersionId": 2,
+  "Guid": "1389e2ae-1c77-4931-a788-ac44214cf839",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66e3373c2c14e44995e62cab"
+    },
+    "EstaActivo": true,
+    "Id": 44,
+    "Guid": "41956d33-68e1-4a1c-9ca0-a12fe37bfbdc",
+    "Nombre": "Seguro Doña",
+    "Presupuesto": {
+      "$numberDecimal": "150"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-09-12T18:47:24.433Z"
+    },
+    "Categoria": {
+      "Id": 0,
+      "Nombre": "Entradas",
+      "_id": {
+        "$oid": "661c4ddd1460df8291e62222"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 41,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683cb055593b1634dbce9266"
+  },
+  "Id": 47,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 32,
+  "VersionId": 2,
+  "Guid": "b82d3dc3-c938-4b88-b1ad-ef5ec0bf5a60",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad164"
+    },
+    "EstaActivo": true,
+    "Id": 32,
+    "Guid": "b70825e9-1b2b-455d-aa91-4d8b7857e18a",
+    "Nombre": "Semana 1",
+    "Presupuesto": {
+      "$numberDecimal": "1000"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683cb061593b1634dbce93c8"
+  },
+  "Id": 48,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 33,
+  "VersionId": 2,
+  "Guid": "6afd717b-c01d-412b-9a06-fc191a69ccca",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad165"
+    },
+    "EstaActivo": true,
+    "Id": 33,
+    "Guid": "76a7a166-e82e-4b3a-bfcf-937153ed4bd0",
+    "Nombre": "Semana 2",
+    "Presupuesto": {
+      "$numberDecimal": "1000"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683cb07a593b1634dbce952a"
+  },
+  "Id": 49,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 35,
+  "VersionId": 2,
+  "Guid": "889b7820-265a-4f87-8c10-a83860ab66fe",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad167"
+    },
+    "EstaActivo": true,
+    "Id": 35,
+    "Guid": "cd5725b5-5fd6-44de-8e9c-fed66f12bcb5",
+    "Nombre": "Tianguis 1",
+    "Presupuesto": {
+      "$numberDecimal": "700"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683cb091593b1634dbce968c"
+  },
+  "Id": 50,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 36,
+  "VersionId": 2,
+  "Guid": "157a1cc6-e668-49fe-8993-1dc2830e1299",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad168"
+    },
+    "EstaActivo": true,
+    "Id": 36,
+    "Guid": "7ba1b0fa-5a52-4084-85bb-164a178aef32",
+    "Nombre": "Tianguis 2",
+    "Presupuesto": {
+      "$numberDecimal": "700"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683cbeaf2132e250bef1673e"
+  },
+  "Id": 51,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 18,
+  "VersionId": 2,
+  "Guid": "878352a4-062a-49ac-8bf4-649538934016",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad156"
+    },
+    "EstaActivo": true,
+    "Id": 18,
+    "Guid": "a5bb39e0-03e6-47d4-a264-87d125bd7e89",
+    "Nombre": "Tlax Internet y LUZ",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 30,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "683cbee72132e250bef16a01"
+  },
+  "Id": 52,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 37,
+  "VersionId": 2,
+  "Guid": "5d73a14a-2316-40e0-8acf-275baedf1073",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad169"
+    },
+    "EstaActivo": true,
+    "Id": 37,
+    "Guid": "e9137e29-69b0-4afa-962f-d608c930b842",
+    "Nombre": "Transporte",
+    "Presupuesto": {
+      "$numberDecimal": "200.00"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684223fed5228e9eb19dd208"
+  },
+  "Id": 53,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 21,
+  "VersionId": 2,
+  "Guid": "b392133a-3112-47ad-aa54-69d8ad6bc2d6",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad159"
+    },
+    "EstaActivo": true,
+    "Id": 21,
+    "Guid": "d80f074c-24d2-4071-9984-504af21acc52",
+    "Nombre": "Alimentacion 1",
+    "Presupuesto": {
+      "$numberDecimal": "700"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68422407d5228e9eb19dd37a"
+  },
+  "Id": 54,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 38,
+  "VersionId": 2,
+  "Guid": "b9e5ca88-9284-435f-985a-d26e80cbf2ee",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16a"
+    },
+    "EstaActivo": true,
+    "Id": 38,
+    "Guid": "16af04f4-d146-4cf2-acd3-8dacdf4dd626",
+    "Nombre": "Alimentación 2",
+    "Presupuesto": {
+      "$numberDecimal": "700"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68502f44520c4fffd166effa"
+  },
+  "Id": 55,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 23,
+  "VersionId": 2,
+  "Guid": "6c9b63a8-95f8-4d0a-9b9d-da98b4accb94",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15b"
+    },
+    "EstaActivo": true,
+    "Id": 23,
+    "Guid": "37ecd9d4-8a5d-48f2-86e7-aa4f45605ed1",
+    "Nombre": "Saldo cel",
+    "Presupuesto": {
+      "$numberDecimal": "150.00"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 11,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e3e52940669bf55edea7"
+  },
+  "Id": 56,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  },
+  "SubcategoriaId": 1,
+  "VersionId": 4,
+  "Guid": "3c465eca-4334-48d2-a8aa-d0d860388e44",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 2,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e4192940669bf55ee1ee"
+  },
+  "Id": 57,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 21,
+  "VersionId": 4,
+  "Guid": "1ed137de-6199-4cbe-b06f-bb8beaec6cda",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e4252940669bf55ee392"
+  },
+  "Id": 58,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 38,
+  "VersionId": 4,
+  "Guid": "db9d5fd9-2d8f-481a-9918-77147ac637e5",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e4912940669bf55ee536"
+  },
+  "Id": 59,
+  "Cantidad": {
+    "$numberDecimal": "350"
+  },
+  "SubcategoriaId": 8,
+  "VersionId": 4,
+  "Guid": "ca0c5943-dafd-45d4-8547-cffd0252b6b8",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 20,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e4ef2940669bf55ee896"
+  },
+  "Id": 60,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 10,
+  "VersionId": 4,
+  "Guid": "2d0ed340-97f4-4f03-a9b3-3e331d376154",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 8,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e5122940669bf55eea41"
+  },
+  "Id": 61,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 11,
+  "VersionId": 4,
+  "Guid": "98bd0b81-ddae-4ca8-8cdd-035042b65b82",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 40,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e52d2940669bf55eebe5"
+  },
+  "Id": 62,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 22,
+  "VersionId": 4,
+  "Guid": "9d0e3ef9-bd07-4e52-95a5-80c998356ee9",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e5752940669bf55eed9d"
+  },
+  "Id": 63,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 43,
+  "VersionId": 4,
+  "Guid": "d6a8020a-8f5f-46ba-ba7e-b0a4fdfe54e9",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 13,
+  "AhorroTipo": "Apartados Cetes",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e68a2940669bf55ef287"
+  },
+  "Id": 64,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 28,
+  "VersionId": 4,
+  "Guid": "86c41b44-e5fe-4150-afe4-0a59bb213e10",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e76a2940669bf55ef5ce"
+  },
+  "Id": 65,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "SubcategoriaId": 25,
+  "VersionId": 4,
+  "Guid": "96859274-a672-40da-b483-842814407d45",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e79b2940669bf55ef772"
+  },
+  "Id": 66,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "SubcategoriaId": 39,
+  "VersionId": 4,
+  "Guid": "2d8adb25-6cfa-4388-817a-ed968c574be1",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e8012940669bf55ef916"
+  },
+  "Id": 67,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 26,
+  "VersionId": 4,
+  "Guid": "1a128beb-eddd-42d5-ad63-2b9162d8ec3d",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 15,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e8592940669bf55efc5d"
+  },
+  "Id": 68,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 27,
+  "VersionId": 4,
+  "Guid": "748c88d0-c0d9-4d0d-aa32-dcb54d9b8291",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e86b2940669bf55efe01"
+  },
+  "Id": 69,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 12,
+  "VersionId": 4,
+  "Guid": "4e9f834c-a7ee-4c54-b7f3-867d14aa5af8",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e8942940669bf55effa5"
+  },
+  "Id": 70,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 29,
+  "VersionId": 4,
+  "Guid": "de3b340b-d36e-4ce9-a94f-d797a0b6ff56",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e9802940669bf55f015e"
+  },
+  "Id": 71,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 41,
+  "VersionId": 4,
+  "Guid": "7092c8ee-903b-4049-b6b8-2001efd7947a",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 21,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861e9fa2940669bf55f0317"
+  },
+  "Id": 72,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 42,
+  "VersionId": 4,
+  "Guid": "52fe3a82-99bd-40ee-8955-95cd01c67d64",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 37,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ea0e2940669bf55f04bb"
+  },
+  "Id": 73,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 45,
+  "VersionId": 4,
+  "Guid": "a908d3c8-7d64-44ad-af1e-3451c472e87d",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ea272940669bf55f066d"
+  },
+  "Id": 74,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 40,
+  "VersionId": 4,
+  "Guid": "a538be05-229d-46b2-8d33-4f255aedcd09",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 23,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ea4a2940669bf55f0811"
+  },
+  "Id": 75,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "SubcategoriaId": 30,
+  "VersionId": 4,
+  "Guid": "0a4f492d-5594-44ad-a07e-683afecc288b",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ea5e2940669bf55f09d1"
+  },
+  "Id": 76,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 13,
+  "VersionId": 4,
+  "Guid": "2aca29bd-72e2-4210-9beb-a6b800e70102",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 25,
+  "AhorroTipo": "Apartados Cetes",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ea732940669bf55f0b81"
+  },
+  "Id": 77,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 14,
+  "VersionId": 4,
+  "Guid": "c22c7e10-f9fb-442d-af00-1942b768d488",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 26,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861eaf02940669bf55f0d2b"
+  },
+  "Id": 78,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 23,
+  "VersionId": 4,
+  "Guid": "e576ddaf-9068-47c3-ae46-81020ed17332",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 11,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861eb112940669bf55f0ecf"
+  },
+  "Id": 79,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  },
+  "SubcategoriaId": 31,
+  "VersionId": 4,
+  "Guid": "2a753541-ef80-4d1f-81c7-cfd7d4ef676e",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861eb5e2940669bf55f121b"
+  },
+  "Id": 80,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 44,
+  "VersionId": 4,
+  "Guid": "d06eb8fe-113d-4a8b-8e20-f1c3eb920b14",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861eb882940669bf55f13bf"
+  },
+  "Id": 81,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "SubcategoriaId": 32,
+  "VersionId": 4,
+  "Guid": "c268c67d-3edd-4ad2-951e-a25bd8a093f6",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861eb972940669bf55f1563"
+  },
+  "Id": 82,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "SubcategoriaId": 33,
+  "VersionId": 4,
+  "Guid": "41b5f159-d552-4cd3-9d67-44d044a81372",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ece82940669bf55f1a63"
+  },
+  "Id": 83,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 15,
+  "VersionId": 4,
+  "Guid": "d0909348-a983-4a62-a9c3-6db1f1442c33",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 7,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ee2a2940669bf55f1f4e"
+  },
+  "Id": 85,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 35,
+  "VersionId": 4,
+  "Guid": "2bd7dd16-4a70-4857-989b-93e40e8b0950",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ee4b2940669bf55f20f2"
+  },
+  "Id": 86,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 36,
+  "VersionId": 4,
+  "Guid": "a4736176-dc42-4608-974f-47ae39a57a2f",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ee6c2940669bf55f2296"
+  },
+  "Id": 87,
+  "Cantidad": {
+    "$numberDecimal": "350"
+  },
+  "SubcategoriaId": 18,
+  "VersionId": 4,
+  "Guid": "0a0359f3-11bf-4f31-a727-130ab0a0f64d",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861eefd2940669bf55f25de"
+  },
+  "Id": 89,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 37,
+  "VersionId": 4,
+  "Guid": "00b35418-812d-4268-8fde-938578c6e9f1",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861eee42940669bf55f243a"
+  },
+  "Id": 88,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 9,
+  "VersionId": 4,
+  "Guid": "5dbdf3cf-a5de-4446-af3c-3a3267926593",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6861ef182940669bf55f278c"
+  },
+  "Id": 90,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 7,
+  "VersionId": 4,
+  "Guid": "07b7e166-6f3f-4ff3-96e2-e901b08a422c",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 33,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbab"
+  },
+  "Id": 94,
+  "Cantidad": {
+    "$numberDecimal": "350"
+  },
+  "SubcategoriaId": 8,
+  "VersionId": 5,
+  "Guid": "ca0c5943-dafd-45d4-8547-cffd0252b6b8",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 20,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb0"
+  },
+  "Id": 98,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 28,
+  "VersionId": 5,
+  "Guid": "86c41b44-e5fe-4150-afe4-0a59bb213e10",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb4"
+  },
+  "Id": 102,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 27,
+  "VersionId": 5,
+  "Guid": "748c88d0-c0d9-4d0d-aa32-dcb54d9b8291",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc3"
+  },
+  "Id": 83,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 15,
+  "VersionId": 5,
+  "Guid": "d0909348-a983-4a62-a9c3-6db1f1442c33",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 7,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fba8"
+  },
+  "Id": 91,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "SubcategoriaId": 1,
+  "VersionId": 5,
+  "Guid": "3c465eca-4334-48d2-a8aa-d0d860388e44",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 2,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc0"
+  },
+  "Id": 114,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 44,
+  "VersionId": 5,
+  "Guid": "d06eb8fe-113d-4a8b-8e20-f1c3eb920b14",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc5"
+  },
+  "Id": 86,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 36,
+  "VersionId": 5,
+  "Guid": "a4736176-dc42-4608-974f-47ae39a57a2f",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb2"
+  },
+  "Id": 100,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "SubcategoriaId": 39,
+  "VersionId": 5,
+  "Guid": "2d8adb25-6cfa-4388-817a-ed968c574be1",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbbf"
+  },
+  "Id": 113,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  },
+  "SubcategoriaId": 31,
+  "VersionId": 5,
+  "Guid": "2a753541-ef80-4d1f-81c7-cfd7d4ef676e",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc4"
+  },
+  "Id": 85,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 35,
+  "VersionId": 5,
+  "Guid": "2bd7dd16-4a70-4857-989b-93e40e8b0950",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb9"
+  },
+  "Id": 107,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 45,
+  "VersionId": 5,
+  "Guid": "a908d3c8-7d64-44ad-af1e-3451c472e87d",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbad"
+  },
+  "Id": 96,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 11,
+  "VersionId": 5,
+  "Guid": "98bd0b81-ddae-4ca8-8cdd-035042b65b82",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 40,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc6"
+  },
+  "Id": 87,
+  "Cantidad": {
+    "$numberDecimal": "350"
+  },
+  "SubcategoriaId": 18,
+  "VersionId": 5,
+  "Guid": "0a0359f3-11bf-4f31-a727-130ab0a0f64d",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb3"
+  },
+  "Id": 101,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 26,
+  "VersionId": 5,
+  "Guid": "1a128beb-eddd-42d5-ad63-2b9162d8ec3d",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 15,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb6"
+  },
+  "Id": 104,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 29,
+  "VersionId": 5,
+  "Guid": "de3b340b-d36e-4ce9-a94f-d797a0b6ff56",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb8"
+  },
+  "Id": 106,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 42,
+  "VersionId": 5,
+  "Guid": "52fe3a82-99bd-40ee-8955-95cd01c67d64",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 37,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbbc"
+  },
+  "Id": 110,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 13,
+  "VersionId": 5,
+  "Guid": "2aca29bd-72e2-4210-9beb-a6b800e70102",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 25,
+  "AhorroTipo": "Apartados Cetes",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc8"
+  },
+  "Id": 89,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 37,
+  "VersionId": 5,
+  "Guid": "00b35418-812d-4268-8fde-938578c6e9f1",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbba"
+  },
+  "Id": 108,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 40,
+  "VersionId": 5,
+  "Guid": "a538be05-229d-46b2-8d33-4f255aedcd09",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 23,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc2"
+  },
+  "Id": 82,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "SubcategoriaId": 33,
+  "VersionId": 5,
+  "Guid": "41b5f159-d552-4cd3-9d67-44d044a81372",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbaa"
+  },
+  "Id": 93,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "SubcategoriaId": 38,
+  "VersionId": 5,
+  "Guid": "db9d5fd9-2d8f-481a-9918-77147ac637e5",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc7"
+  },
+  "Id": 188,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 9,
+  "VersionId": 5,
+  "Guid": "5dbdf3cf-a5de-4446-af3c-3a3267926593",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb5"
+  },
+  "Id": 103,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 12,
+  "VersionId": 5,
+  "Guid": "4e9f834c-a7ee-4c54-b7f3-867d14aa5af8",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbbb"
+  },
+  "Id": 109,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "SubcategoriaId": 30,
+  "VersionId": 5,
+  "Guid": "0a4f492d-5594-44ad-a07e-683afecc288b",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fba9"
+  },
+  "Id": 92,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "SubcategoriaId": 21,
+  "VersionId": 5,
+  "Guid": "1ed137de-6199-4cbe-b06f-bb8beaec6cda",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb1"
+  },
+  "Id": 99,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "SubcategoriaId": 25,
+  "VersionId": 5,
+  "Guid": "96859274-a672-40da-b483-842814407d45",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbac"
+  },
+  "Id": 95,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 10,
+  "VersionId": 5,
+  "Guid": "2d0ed340-97f4-4f03-a9b3-3e331d376154",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 8,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbae"
+  },
+  "Id": 97,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "SubcategoriaId": 22,
+  "VersionId": 5,
+  "Guid": "9d0e3ef9-bd07-4e52-95a5-80c998356ee9",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbb7"
+  },
+  "Id": 105,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "SubcategoriaId": 41,
+  "VersionId": 5,
+  "Guid": "7092c8ee-903b-4049-b6b8-2001efd7947a",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 21,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbc1"
+  },
+  "Id": 115,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "SubcategoriaId": 32,
+  "VersionId": 5,
+  "Guid": "c268c67d-3edd-4ad2-951e-a25bd8a093f6",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6862021cd4eebe613b38fbbe"
+  },
+  "Id": 112,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 23,
+  "VersionId": 5,
+  "Guid": "e576ddaf-9068-47c3-ae46-81020ed17332",
+  "Movimientos": [],
+  "Subcategoria": null,
+  "AhorroId": 11,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b4d46771c49d11630bc9"
+  },
+  "Id": 189,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  },
+  "SubcategoriaId": 1,
+  "VersionId": 6,
+  "Guid": "3f7c4ffd-76f2-41cd-abec-6ad3d50efa4a",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff6eae5d6771031ad149"
+    },
+    "EstaActivo": true,
+    "Id": 1,
+    "Guid": "18fe131f-fe8b-4c91-af58-358b25aabb98",
+    "Nombre": "Afore",
+    "Presupuesto": {
+      "$numberDecimal": "1000"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.533Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 1,
+  "AhorroTipo": "Apartados Cetes",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b5106771c49d11630dfb"
+  },
+  "Id": 190,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 2,
+  "VersionId": 6,
+  "Guid": "720fd532-09cf-44ae-a517-df4fb3b547ca",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff7aae5d6771031ad14a"
+    },
+    "EstaActivo": true,
+    "Id": 2,
+    "Guid": "d8f78850-abc6-41b6-924f-0a649a4027e8",
+    "Nombre": "Ahorro N",
+    "Presupuesto": {
+      "$numberDecimal": "100.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b7e377652c6923845bdf"
+  },
+  "Id": 191,
+  "Cantidad": {
+    "$numberDecimal": "2500"
+  },
+  "SubcategoriaId": 49,
+  "VersionId": 6,
+  "Guid": "1f722cf8-94df-40ee-9b6f-ebf6a6eb35cf",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68a4b72277652c69238459ab"
+    },
+    "EstaActivo": true,
+    "Id": 49,
+    "Guid": "fb6fbebd-972a-4a92-ac94-2657ec9b2ee6",
+    "Nombre": "Alimentación 3",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-08-19T17:40:50.741Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b80777652c6923845e1c"
+  },
+  "Id": 192,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "SubcategoriaId": 8,
+  "VersionId": 6,
+  "Guid": "e1b0a923-f24e-4cfe-bba5-26bb4b453b1f",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff80ae5d6771031ad14c"
+    },
+    "EstaActivo": true,
+    "Id": 8,
+    "Guid": "169ac9ea-527d-48ea-9d33-e404fcacac03",
+    "Nombre": "Apartado Medico",
+    "Presupuesto": {
+      "$numberDecimal": "400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 20,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b81d77652c6923846068"
+  },
+  "Id": 193,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 10,
+  "VersionId": 6,
+  "Guid": "c36909f0-55aa-4a6e-9153-6c979990f2b6",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad14e"
+    },
+    "EstaActivo": true,
+    "Id": 10,
+    "Guid": "b82c5ced-1a1c-4297-be33-9cd93f13db30",
+    "Nombre": "Camioneta",
+    "Presupuesto": {
+      "$numberDecimal": "400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 8,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b83177652c69238462aa"
+  },
+  "Id": 194,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "SubcategoriaId": 11,
+  "VersionId": 6,
+  "Guid": "b8904e19-3573-4a2b-8a72-28b41a454e85",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad14f"
+    },
+    "EstaActivo": true,
+    "Id": 11,
+    "Guid": "fafe0f5b-b2ad-4b4b-af37-09ec78d5040b",
+    "Nombre": "Servicios cdmx",
+    "Presupuesto": {
+      "$numberDecimal": "550"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 40,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b84177652c69238464dc"
+  },
+  "Id": 195,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 22,
+  "VersionId": 6,
+  "Guid": "70c1b70c-c46d-452d-abf4-2183cfcb9845",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15a"
+    },
+    "EstaActivo": true,
+    "Id": 22,
+    "Guid": "2d007b0a-e998-4ee2-ab55-93fbb7327ce3",
+    "Nombre": "CdmxAgua",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b86377652c6923846722"
+  },
+  "Id": 196,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 43,
+  "VersionId": 6,
+  "Guid": "0917b61b-d4f6-4801-b2fe-0953bfadb5cb",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16f"
+    },
+    "EstaActivo": true,
+    "Id": 43,
+    "Guid": "d3c42fb4-900b-4ec7-b3b3-331c8d801245",
+    "Nombre": "Chante",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.580Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 13,
+  "AhorroTipo": "Apartados Cetes",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b88b77652c6923846954"
+  },
+  "Id": 197,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "SubcategoriaId": 24,
+  "VersionId": 6,
+  "Guid": "7103abff-d546-47cc-a9f5-ecdfe3be3426",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15c"
+    },
+    "EstaActivo": true,
+    "Id": 24,
+    "Guid": "15683d18-7a6c-4de6-a67e-e1737d59d3a1",
+    "Nombre": "Comodin",
+    "Presupuesto": {
+      "$numberDecimal": "300.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b8c577652c6923846dc3"
+  },
+  "Id": 199,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 28,
+  "VersionId": 6,
+  "Guid": "0d8f6bc5-6bc1-48d3-9263-dc667fe7a71b",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad160"
+    },
+    "EstaActivo": true,
+    "Id": 28,
+    "Guid": "6352b971-867e-44ba-a30f-1b708072fbfc",
+    "Nombre": "Deportes",
+    "Presupuesto": {
+      "$numberDecimal": "400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4b8d877652c6923846ff5"
+  },
+  "Id": 200,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  },
+  "SubcategoriaId": 25,
+  "VersionId": 6,
+  "Guid": "46172a01-85fc-4a77-85e8-0f9ad700f812",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15d"
+    },
+    "EstaActivo": true,
+    "Id": 25,
+    "Guid": "286c5191-4253-4de3-a5cb-888857ace4a3",
+    "Nombre": "Doña",
+    "Presupuesto": {
+      "$numberDecimal": "3400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d0c49550a3e5c1711e21"
+  },
+  "Id": 201,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "SubcategoriaId": 39,
+  "VersionId": 6,
+  "Guid": "c0a421c1-ddda-4eec-b4da-6c0d9fa58977",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16b"
+    },
+    "EstaActivo": true,
+    "Id": 39,
+    "Guid": "d4aac4ad-b738-4dc5-a661-334d554e32c1",
+    "Nombre": "Educación",
+    "Presupuesto": {
+      "$numberDecimal": "1200"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d0e09550a3e5c1712058"
+  },
+  "Id": 202,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 26,
+  "VersionId": 6,
+  "Guid": "5fef0839-c234-4071-bdf0-5b76c733cfee",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad15e"
+    },
+    "EstaActivo": true,
+    "Id": 26,
+    "Guid": "cb331b30-5275-44b3-bbfc-ffcfd545a08c",
+    "Nombre": "Entretenimineto",
+    "Presupuesto": {
+      "$numberDecimal": "200.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 15,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d0f99550a3e5c171228a"
+  },
+  "Id": 203,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  },
+  "SubcategoriaId": 27,
+  "VersionId": 6,
+  "Guid": "d5af4ca3-07c7-4cb0-b89c-2880fd8694d1",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad15f"
+    },
+    "EstaActivo": true,
+    "Id": 27,
+    "Guid": "5b26970d-fbeb-4fe2-aa83-d0f907ce4622",
+    "Nombre": "Gas",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d10c9550a3e5c17124bc"
+  },
+  "Id": 204,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "SubcategoriaId": 12,
+  "VersionId": 6,
+  "Guid": "65f250f5-8523-4413-b73f-325d628303b2",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad150"
+    },
+    "EstaActivo": true,
+    "Id": 12,
+    "Guid": "86cd89e6-57f0-4340-a75b-eaf1b61f2363",
+    "Nombre": "Gatos",
+    "Presupuesto": {
+      "$numberDecimal": "1200"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d11c9550a3e5c17126ee"
+  },
+  "Id": 205,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 29,
+  "VersionId": 6,
+  "Guid": "20be8963-261a-48bb-a5db-33f09a6b81e9",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad161"
+    },
+    "EstaActivo": true,
+    "Id": 29,
+    "Guid": "f8f97a6f-f525-43ca-85b7-c77ebbea4df1",
+    "Nombre": "Natacion",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d1739550a3e5c1712b66"
+  },
+  "Id": 206,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 42,
+  "VersionId": 6,
+  "Guid": "79f6b25b-f7e9-414c-8ed4-faba30941334",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16e"
+    },
+    "EstaActivo": true,
+    "Id": 42,
+    "Guid": "e6f1906c-ff31-47d0-8b39-a301cf01b862",
+    "Nombre": "Pa cuando nos corran Nancy",
+    "Presupuesto": {
+      "$numberDecimal": "250.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 37,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d1819550a3e5c1712dad"
+  },
+  "Id": 207,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 41,
+  "VersionId": 6,
+  "Guid": "7671ddb9-2191-4ee1-a691-4d94fa414ecc",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16d"
+    },
+    "EstaActivo": true,
+    "Id": 41,
+    "Guid": "ff4143b0-cca9-4b2a-bca2-2a7cf0d89e17",
+    "Nombre": "Pa cuando nos corran vik",
+    "Presupuesto": {
+      "$numberDecimal": "250"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 21,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d1ad9550a3e5c1713229"
+  },
+  "Id": 209,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  },
+  "SubcategoriaId": 40,
+  "VersionId": 6,
+  "Guid": "a4890fa7-38c6-499a-8324-d9d9a4c61ceb",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16c"
+    },
+    "EstaActivo": true,
+    "Id": 40,
+    "Guid": "23044c1f-901d-46b9-bb72-2b1e010130a8",
+    "Nombre": "Pc",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 23,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d1c29550a3e5c1713466"
+  },
+  "Id": 210,
+  "Cantidad": {
+    "$numberDecimal": "6600"
+  },
+  "SubcategoriaId": 30,
+  "VersionId": 6,
+  "Guid": "377d9ae4-3c55-4da3-9a82-60284596bf29",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad162"
+    },
+    "EstaActivo": true,
+    "Id": 30,
+    "Guid": "210a68b6-a9cf-45c9-968b-a0ee27413690",
+    "Nombre": "Renta",
+    "Presupuesto": {
+      "$numberDecimal": "3100"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 24,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d1d69550a3e5c17136b4"
+  },
+  "Id": 211,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 13,
+  "VersionId": 6,
+  "Guid": "96834298-fd5b-4c63-86ca-5438bb77ca42",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad151"
+    },
+    "EstaActivo": true,
+    "Id": 13,
+    "Guid": "f1b09119-e65b-4a0d-88a9-1b0a23e4be54",
+    "Nombre": "Ropa",
+    "Presupuesto": {
+      "$numberDecimal": "400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 25,
+  "AhorroTipo": "Apartados Cetes",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d1ef9550a3e5c17138f2"
+  },
+  "Id": 212,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 14,
+  "VersionId": 6,
+  "Guid": "0488e25e-93b6-4f45-88eb-11220e98b4b8",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad152"
+    },
+    "EstaActivo": true,
+    "Id": 14,
+    "Guid": "e0f255d4-3c89-474e-bd51-8d82f1f2fc13",
+    "Nombre": "Sabatico",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 26,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d2069550a3e5c1713b30"
+  },
+  "Id": 213,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 23,
+  "VersionId": 6,
+  "Guid": "0b96a09b-ffe6-4120-9b6d-2b050e968a54",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15b"
+    },
+    "EstaActivo": true,
+    "Id": 23,
+    "Guid": "37ecd9d4-8a5d-48f2-86e7-aa4f45605ed1",
+    "Nombre": "Cel",
+    "Presupuesto": {
+      "$numberDecimal": "350"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 11,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d2159550a3e5c1713d62"
+  },
+  "Id": 214,
+  "Cantidad": {
+    "$numberDecimal": "75"
+  },
+  "SubcategoriaId": 31,
+  "VersionId": 6,
+  "Guid": "b7fc0a36-8d8c-4cc4-bb54-1a26501a827e",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad163"
+    },
+    "EstaActivo": true,
+    "Id": 31,
+    "Guid": "1d8b403c-4080-4a8a-b215-7d62fed252c1",
+    "Nombre": "Seguro bbva",
+    "Presupuesto": {
+      "$numberDecimal": "85"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d2589550a3e5c17141cf"
+  },
+  "Id": 215,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  },
+  "SubcategoriaId": 32,
+  "VersionId": 6,
+  "Guid": "faabeb12-ba7d-4bd3-8823-bee3f3aa8cde",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad164"
+    },
+    "EstaActivo": true,
+    "Id": 32,
+    "Guid": "b70825e9-1b2b-455d-aa91-4d8b7857e18a",
+    "Nombre": "Semana 1",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d27b9550a3e5c1714418"
+  },
+  "Id": 216,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 15,
+  "VersionId": 6,
+  "Guid": "e55488a0-c327-4667-abf5-297b22267fca",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad153"
+    },
+    "EstaActivo": true,
+    "Id": 15,
+    "Guid": "d08d89fa-ee19-4ccd-9483-e95695d3a373",
+    "Nombre": "TDC Anualidad",
+    "Presupuesto": {
+      "$numberDecimal": "200"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 7,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d28b9550a3e5c171464a"
+  },
+  "Id": 217,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "SubcategoriaId": 34,
+  "VersionId": 6,
+  "Guid": "51df8c5d-b500-4166-a326-b881e4c1db67",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad166"
+    },
+    "EstaActivo": true,
+    "Id": 34,
+    "Guid": "b1d6fdea-0e73-4ef6-b2df-2d6118dbd0b0",
+    "Nombre": "Tdc pago",
+    "Presupuesto": {
+      "$numberDecimal": "750.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d2b89550a3e5c171487c"
+  },
+  "Id": 218,
+  "Cantidad": {
+    "$numberDecimal": "4000"
+  },
+  "SubcategoriaId": 35,
+  "VersionId": 6,
+  "Guid": "d7572989-5cfa-430c-8684-120fe58e073c",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad167"
+    },
+    "EstaActivo": true,
+    "Id": 35,
+    "Guid": "cd5725b5-5fd6-44de-8e9c-fed66f12bcb5",
+    "Nombre": "Tianguis 1",
+    "Presupuesto": {
+      "$numberDecimal": "800"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d2d29550a3e5c1714abd"
+  },
+  "Id": 219,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "SubcategoriaId": 18,
+  "VersionId": 6,
+  "Guid": "d8e0a6f9-7be0-41b2-bf40-36efbca352f9",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad156"
+    },
+    "EstaActivo": true,
+    "Id": 18,
+    "Guid": "a5bb39e0-03e6-47d4-a264-87d125bd7e89",
+    "Nombre": "Servicios Tlax",
+    "Presupuesto": {
+      "$numberDecimal": "550"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 30,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d2f19550a3e5c1714cef"
+  },
+  "Id": 220,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 9,
+  "VersionId": 6,
+  "Guid": "af47b02b-1066-4f81-a6b0-2944dc317eca",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff81ae5d6771031ad14d"
+    },
+    "EstaActivo": true,
+    "Id": 9,
+    "Guid": "b1f422ee-d408-474c-984d-c0784174a220",
+    "Nombre": "Tlaxcoapan",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d3069550a3e5c1714f21"
+  },
+  "Id": 221,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 37,
+  "VersionId": 6,
+  "Guid": "e074fe05-3cdd-4881-925d-3c89f9005a9b",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad169"
+    },
+    "EstaActivo": true,
+    "Id": 37,
+    "Guid": "e9137e29-69b0-4afa-962f-d608c930b842",
+    "Nombre": "Transporte",
+    "Presupuesto": {
+      "$numberDecimal": "200.00"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68a4d3199550a3e5c171515d"
+  },
+  "Id": 222,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 7,
+  "VersionId": 6,
+  "Guid": "27a820c3-61eb-4730-b09d-47658442ffe3",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff7fae5d6771031ad14b"
+    },
+    "EstaActivo": true,
+    "Id": 7,
+    "Guid": "0ded2f56-c15b-4345-8bc0-67a67a20dd98",
+    "Nombre": "Vacaciones",
+    "Presupuesto": {
+      "$numberDecimal": "100.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 33,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519385a608e8e57f1ed49"
+  },
+  "Id": 223,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "SubcategoriaId": 22,
+  "VersionId": 7,
+  "Guid": "6bf732eb-6f01-4783-a965-dbf4b25a3f9a",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15a"
+    },
+    "EstaActivo": true,
+    "Id": 22,
+    "Guid": "2d007b0a-e998-4ee2-ab55-93fbb7327ce3",
+    "Nombre": "CdmxAgua",
+    "Presupuesto": {
+      "$numberDecimal": "300"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519455a608e8e57f1ef7b"
+  },
+  "Id": 224,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 21,
+  "VersionId": 7,
+  "Guid": "bb324148-8cdc-444b-ade7-502ab4d3241e",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad159"
+    },
+    "EstaActivo": true,
+    "Id": 21,
+    "Guid": "d80f074c-24d2-4071-9984-504af21acc52",
+    "Nombre": "Alimentacion 1",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b5194e5a608e8e57f1f1ad"
+  },
+  "Id": 225,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 38,
+  "VersionId": 7,
+  "Guid": "3e0b24e1-46ec-4f9f-b82d-2028f7d7d55b",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16a"
+    },
+    "EstaActivo": true,
+    "Id": 38,
+    "Guid": "16af04f4-d146-4cf2-acd3-8dacdf4dd626",
+    "Nombre": "Alimentación 2",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519555a608e8e57f1f3df"
+  },
+  "Id": 226,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 49,
+  "VersionId": 7,
+  "Guid": "41e5ea4f-ec89-4e15-9ca8-8d91589ebccd",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68a4b72277652c69238459ab"
+    },
+    "EstaActivo": true,
+    "Id": 49,
+    "Guid": "fb6fbebd-972a-4a92-ac94-2657ec9b2ee6",
+    "Nombre": "Alimentación 3",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-08-19T17:40:50.741Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b5195f5a608e8e57f1f611"
+  },
+  "Id": 227,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 51,
+  "VersionId": 7,
+  "Guid": "e4fa7cbd-54a5-43fd-9796-875dacd6846d",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68a4b74477652c69238459ad"
+    },
+    "EstaActivo": true,
+    "Id": 51,
+    "Guid": "106d74d5-b127-4ac3-a5a0-2726ab27a9d5",
+    "Nombre": "Alimentación 4",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-08-19T17:41:24.538Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519675a608e8e57f1f843"
+  },
+  "Id": 228,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 53,
+  "VersionId": 7,
+  "Guid": "ab08929b-a9fc-4359-bc47-f726ad8f5eff",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68b5159c5a608e8e57f1eb11"
+    },
+    "EstaActivo": true,
+    "Id": 53,
+    "Guid": "2c0760af-51bd-4b68-969e-06fa335db410",
+    "Nombre": "Alimentacion 5",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-09-01T03:40:12.711Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519785a608e8e57f1fa81"
+  },
+  "Id": 229,
+  "Cantidad": {
+    "$numberDecimal": "350"
+  },
+  "SubcategoriaId": 23,
+  "VersionId": 7,
+  "Guid": "9d7fe423-5204-422a-a6cc-ff7ed5a13d83",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15b"
+    },
+    "EstaActivo": true,
+    "Id": 23,
+    "Guid": "37ecd9d4-8a5d-48f2-86e7-aa4f45605ed1",
+    "Nombre": "Cel",
+    "Presupuesto": {
+      "$numberDecimal": "350"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 11,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b5198b5a608e8e57f1fcb3"
+  },
+  "Id": 230,
+  "Cantidad": {
+    "$numberDecimal": "2100"
+  },
+  "SubcategoriaId": 46,
+  "VersionId": 7,
+  "Guid": "e2c35cb5-cd90-4e66-bec5-845982e995d7",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "6743dbcbeb1ca138be928093"
+    },
+    "EstaActivo": true,
+    "Id": 46,
+    "Guid": "6ad9cb75-68a2-4e6a-bee8-fd144599054f",
+    "Nombre": "Dentista",
+    "Presupuesto": {
+      "$numberDecimal": "2100"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-11-25T02:07:07.053Z"
+    },
+    "Categoria": {
+      "Id": 0,
+      "Nombre": "Entradas",
+      "_id": {
+        "$oid": "661c4ddd1460df8291e62222"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b5199b5a608e8e57f1fee5"
+  },
+  "Id": 231,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "SubcategoriaId": 28,
+  "VersionId": 7,
+  "Guid": "33f0937e-47e6-48b4-aa4b-b5213dfc4b82",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad160"
+    },
+    "EstaActivo": true,
+    "Id": 28,
+    "Guid": "6352b971-867e-44ba-a30f-1b708072fbfc",
+    "Nombre": "Deportes",
+    "Presupuesto": {
+      "$numberDecimal": "400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519b05a608e8e57f20117"
+  },
+  "Id": 232,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "SubcategoriaId": 25,
+  "VersionId": 7,
+  "Guid": "dcc4646d-2c8f-475a-8ba6-6a2f0485a109",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad15d"
+    },
+    "EstaActivo": true,
+    "Id": 25,
+    "Guid": "286c5191-4253-4de3-a5cb-888857ace4a3",
+    "Nombre": "Doña",
+    "Presupuesto": {
+      "$numberDecimal": "3400"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519c05a608e8e57f20349"
+  },
+  "Id": 233,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "SubcategoriaId": 39,
+  "VersionId": 7,
+  "Guid": "6f7726a6-1994-483c-9147-7e1f1c5f2b29",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16b"
+    },
+    "EstaActivo": true,
+    "Id": 39,
+    "Guid": "d4aac4ad-b738-4dc5-a661-334d554e32c1",
+    "Nombre": "Educación",
+    "Presupuesto": {
+      "$numberDecimal": "1200"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519d25a608e8e57f20580"
+  },
+  "Id": 234,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "SubcategoriaId": 26,
+  "VersionId": 7,
+  "Guid": "0b33c465-f865-4c44-a1f9-3adfb858f4f7",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad15e"
+    },
+    "EstaActivo": true,
+    "Id": 26,
+    "Guid": "cb331b30-5275-44b3-bbfc-ffcfd545a08c",
+    "Nombre": "Entretenimineto",
+    "Presupuesto": {
+      "$numberDecimal": "200.00"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 2,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 15,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519e35a608e8e57f207b2"
+  },
+  "Id": 235,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 27,
+  "VersionId": 7,
+  "Guid": "9cbc7d9a-e5e4-4c08-a26c-c0554fc04d40",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad15f"
+    },
+    "EstaActivo": true,
+    "Id": 27,
+    "Guid": "5b26970d-fbeb-4fe2-aa83-d0f907ce4622",
+    "Nombre": "Gas",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b519ef5a608e8e57f209e4"
+  },
+  "Id": 236,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "SubcategoriaId": 12,
+  "VersionId": 7,
+  "Guid": "4a886874-c388-43a5-a02a-aeece3af580d",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad150"
+    },
+    "EstaActivo": true,
+    "Id": 12,
+    "Guid": "86cd89e6-57f0-4340-a75b-eaf1b61f2363",
+    "Nombre": "Gatos",
+    "Presupuesto": {
+      "$numberDecimal": "1200"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51a255a608e8e57f20c26"
+  },
+  "Id": 237,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "SubcategoriaId": 11,
+  "VersionId": 7,
+  "Guid": "cb9e095a-af20-4d0d-9023-d37d6eefab80",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff85ae5d6771031ad14f"
+    },
+    "EstaActivo": true,
+    "Id": 11,
+    "Guid": "fafe0f5b-b2ad-4b4b-af37-09ec78d5040b",
+    "Nombre": "Servicios cdmx",
+    "Presupuesto": {
+      "$numberDecimal": "550"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 40,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51a325a608e8e57f20e67"
+  },
+  "Id": 238,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "SubcategoriaId": 18,
+  "VersionId": 7,
+  "Guid": "a551a93b-60d7-4e35-949a-1ccd0ecb2dd9",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff86ae5d6771031ad156"
+    },
+    "EstaActivo": true,
+    "Id": 18,
+    "Guid": "a5bb39e0-03e6-47d4-a264-87d125bd7e89",
+    "Nombre": "Servicios Tlax",
+    "Presupuesto": {
+      "$numberDecimal": "550"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 30,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51a635a608e8e57f21099"
+  },
+  "Id": 239,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 29,
+  "VersionId": 7,
+  "Guid": "c39b0bde-14e0-4341-a402-56d332509bd2",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad161"
+    },
+    "EstaActivo": true,
+    "Id": 29,
+    "Guid": "f8f97a6f-f525-43ca-85b7-c77ebbea4df1",
+    "Nombre": "Natacion",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51a6f5a608e8e57f212cb"
+  },
+  "Id": 240,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 45,
+  "VersionId": 7,
+  "Guid": "363b8b11-b904-48d9-9fc2-1a13526f55e7",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66f8bd2c17568b0a11f8e143"
+    },
+    "EstaActivo": true,
+    "Id": 45,
+    "Guid": "2afa266e-e057-409c-bf53-fd72e9642869",
+    "Nombre": "Pago Tdc",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-09-29T02:36:28.455Z"
+    },
+    "Categoria": {
+      "Id": 0,
+      "Nombre": "Entradas",
+      "_id": {
+        "$oid": "661c4ddd1460df8291e62222"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51a815a608e8e57f21515"
+  },
+  "Id": 241,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 40,
+  "VersionId": 7,
+  "Guid": "ddeb7432-181a-4f47-a7ff-1143a919935f",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff88ae5d6771031ad16c"
+    },
+    "EstaActivo": true,
+    "Id": 40,
+    "Guid": "23044c1f-901d-46b9-bb72-2b1e010130a8",
+    "Nombre": "Pc",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 23,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51a945a608e8e57f21752"
+  },
+  "Id": 242,
+  "Cantidad": {
+    "$numberDecimal": "6500"
+  },
+  "SubcategoriaId": 30,
+  "VersionId": 7,
+  "Guid": "ea48616c-23f5-436d-9903-74137673c907",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad162"
+    },
+    "EstaActivo": true,
+    "Id": 30,
+    "Guid": "210a68b6-a9cf-45c9-968b-a0ee27413690",
+    "Nombre": "Renta",
+    "Presupuesto": {
+      "$numberDecimal": "3100"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": 24,
+  "AhorroTipo": "Apartados Inv",
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51ae35a608e8e57f21bc9"
+  },
+  "Id": 243,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 32,
+  "VersionId": 7,
+  "Guid": "3f9c3ac9-ca2f-459e-917d-b6e5fe01fd3a",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad164"
+    },
+    "EstaActivo": true,
+    "Id": 32,
+    "Guid": "b70825e9-1b2b-455d-aa91-4d8b7857e18a",
+    "Nombre": "Semana 1",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 2,
+      "Nombre": "Apartados",
+      "_id": {
+        "$oid": "661c4e301460df8291e62223"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51aee5a608e8e57f21dfb"
+  },
+  "Id": 244,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 33,
+  "VersionId": 7,
+  "Guid": "e6d673e7-1312-41c5-bacd-cfd40c73b203",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad165"
+    },
+    "EstaActivo": true,
+    "Id": 33,
+    "Guid": "76a7a166-e82e-4b3a-bfcf-937153ed4bd0",
+    "Nombre": "Semana 2",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 0,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51afb5a608e8e57f2202d"
+  },
+  "Id": 245,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 54,
+  "VersionId": 7,
+  "Guid": "ccd31aa7-9ee7-471a-8df3-2251710845f8",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68b516b55a608e8e57f1eb12"
+    },
+    "EstaActivo": true,
+    "Id": 54,
+    "Guid": "313dca38-3f89-4129-b84d-3f9c1d9e293a",
+    "Nombre": "semana 3",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-09-01T03:44:53.278Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51b075a608e8e57f2225f"
+  },
+  "Id": 246,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 55,
+  "VersionId": 7,
+  "Guid": "b0a5178e-9517-4369-80fa-f3d34cf4b711",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68b516c75a608e8e57f1eb13"
+    },
+    "EstaActivo": true,
+    "Id": 55,
+    "Guid": "eb65162a-6311-47c8-9fe3-a3fe12ac2bce",
+    "Nombre": "semana 4",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-09-01T03:45:11.316Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51b105a608e8e57f22491"
+  },
+  "Id": 247,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "SubcategoriaId": 56,
+  "VersionId": 7,
+  "Guid": "64b43dbc-acb5-485e-a09b-3ec3e3e85f2a",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68b516db5a608e8e57f1eb14"
+    },
+    "EstaActivo": true,
+    "Id": 56,
+    "Guid": "2f940ceb-9c83-4386-9389-06b073cfd3d3",
+    "Nombre": "semana 5",
+    "Presupuesto": {
+      "$numberDecimal": "500"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-09-01T03:45:31.728Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51b285a608e8e57f226c3"
+  },
+  "Id": 248,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 35,
+  "VersionId": 7,
+  "Guid": "218cf823-ecc2-40ac-85d2-b32184d4cbc1",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad167"
+    },
+    "EstaActivo": true,
+    "Id": 35,
+    "Guid": "cd5725b5-5fd6-44de-8e9c-fed66f12bcb5",
+    "Nombre": "Tianguis 1",
+    "Presupuesto": {
+      "$numberDecimal": "800"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51b305a608e8e57f228f5"
+  },
+  "Id": 249,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 36,
+  "VersionId": 7,
+  "Guid": "f541917f-453b-44c3-ba3f-8f52fbd4c5c6",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "66b6ff87ae5d6771031ad168"
+    },
+    "EstaActivo": true,
+    "Id": 36,
+    "Guid": "7ba1b0fa-5a52-4084-85bb-164a178aef32",
+    "Nombre": "Tianguis 2",
+    "Presupuesto": {
+      "$numberDecimal": "800"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2024-08-10T05:49:02.576Z"
+    },
+    "Categoria": {
+      "Id": 3,
+      "Nombre": "Gastos",
+      "_id": {
+        "$oid": "661c4e531460df8291e62224"
+      },
+      "EstaActivo": true
+    }
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51b385a608e8e57f22b27"
+  },
+  "Id": 250,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 52,
+  "VersionId": 7,
+  "Guid": "f5fb0e6b-9533-4b24-9846-5bca7ceb8d4a",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68b5109b842f8a04feec10e2"
+    },
+    "EstaActivo": true,
+    "Id": 52,
+    "Guid": "7873d705-b391-41c5-8208-3bd317becf63",
+    "Nombre": "Tianguis 3",
+    "Presupuesto": {
+      "$numberDecimal": "800"
+    },
+    "EsPrimario": false,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-09-01T03:18:51.157Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51b555a608e8e57f22d59"
+  },
+  "Id": 251,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 57,
+  "VersionId": 7,
+  "Guid": "0023d0c2-00a7-4c2c-8cc9-a514452ff4d2",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68b517a45a608e8e57f1eb15"
+    },
+    "EstaActivo": true,
+    "Id": 57,
+    "Guid": "3973aea1-e04f-46e2-8c5b-88a77d916ed2",
+    "Nombre": "Tianguis 4",
+    "Presupuesto": {
+      "$numberDecimal": "800"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-09-01T03:48:52.882Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51b635a608e8e57f22f8b"
+  },
+  "Id": 252,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "SubcategoriaId": 58,
+  "VersionId": 7,
+  "Guid": "544a8a79-d306-4bfb-9ec3-f4870b7816c9",
+  "Movimientos": [],
+  "Subcategoria": {
+    "_id": {
+      "$oid": "68b517ea5a608e8e57f1eb16"
+    },
+    "EstaActivo": true,
+    "Id": 58,
+    "Guid": "342a3c34-1535-49d9-8540-c7d3cfb1eb69",
+    "Nombre": "Tianguis 5",
+    "Presupuesto": {
+      "$numberDecimal": "800"
+    },
+    "EsPrimario": true,
+    "CategoriaId": 3,
+    "FechaDeRegistro": {
+      "$date": "2025-09-01T03:50:02.759Z"
+    },
+    "Categoria": null
+  },
+  "AhorroId": null,
+  "AhorroTipo": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+}]

@@ -1,5 +1,5 @@
 ﻿using Banca.Core.Dtos;
-using DuckBank.Persistence.Entities;
+using Gastos.ReglasDeNegocio.Entities;
 using Gastos.ReglasDeNegocio.Repositories;
 
 namespace Gastos.ReglasDeNegocio.Bl

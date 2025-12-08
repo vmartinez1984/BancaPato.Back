@@ -25,5 +25,5 @@ public class Subcategoria//: EntidadBase
        
     public DateTime FechaDeRegistro { get; set; } = DateTime.Now;
 
-    public Categoria Categoria { get; set; }
+    public object Categoria { get; set; }
 }

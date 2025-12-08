@@ -1,5 +1,4 @@
 ﻿using Banca.Api.Repositories;
-using DuckBank.Persistence.Helpers;
 using Gastos.ReglasDeNegocio.Bl;
 using Gastos.ReglasDeNegocio.Repositories;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,8 +19,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
             services.AddScoped<PresupuestoBl>();
             services.AddScoped<CompraTarjetaDeCreditoBl>();
             services.AddScoped<PagoDeTarjetaDeCreditoBl>();
-
-            services.AgregarDuckBank();
+                        
             services.AddScoped<CategoriaRepositorio>();
             services.AddScoped<SubcategoriaRepo>();
             services.AddScoped<TipoDeCuentaRepository>();            
@@ -32,6 +30,8 @@ namespace Gastos.ReglasDeNegocio.Helpers
             services.AddScoped<TransaccionRepositorio>();
             services.AddScoped<CompraTarjetaDeCreditoRepositorio>();
             services.AddScoped<PagoDeTarjetaDeCreditoRepositorio>();
+            services.AddScoped<MovimientoRepositorio>();
+            services.AddScoped<AhorroRepositorio>();
 
             services.AddScoped<Repositorio>();
 

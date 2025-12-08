@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "66b7c8d23a5fcef78876b20d"
+  },
+  "Id": 1,
+  "Guid": "10c58264-8017-4c3e-9add-61351bbb4488",
+  "Nombre": "Entradas",
+  "Descripción": "Donde se manejan las nóminas",
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "66b7c8d23a5fcef78876b20e"
+  },
+  "Id": 2,
+  "Guid": "f8b4f4ac-801c-47e8-834d-77c6e052b494",
+  "Nombre": "Apartados Inv",
+  "Descripción": "Apartado para inversiones",
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "66b7c8d23a5fcef78876b211"
+  },
+  "Id": 1004,
+  "Guid": "20ae26f3-6d6a-4adc-8193-efa412955c56",
+  "Nombre": "Apartados Bbva",
+  "Descripción": "Ahorro 0 interes",
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "66b7c8d23a5fcef78876b212"
+  },
+  "Id": 1005,
+  "Guid": "877743fc-2233-4402-b0f5-d8b06411b072",
+  "Nombre": "Apartados Cetes",
+  "Descripción": "Cetes",
+  "EstaActivo": true
+}]

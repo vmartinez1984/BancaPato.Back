@@ -22,19 +22,16 @@ public partial class Presupuesto
 
     public List<MovimientoDePeridodo> Movimientos { get; set; } = new List<MovimientoDePeridodo>();
 
-    public Subcategoria Subcategoria { get; set; } = null!;
+    public object Subcategoria { get; set; } = null!;
 
     public int? AhorroId { get; set; }
 
     public string AhorroTipo { get; set; }
 
     public decimal Gastado { get; set; }
-    public bool EstaActivo { get; set; } = true;
 
-    public static implicit operator Presupuesto(PresupuestoDto v)
-    {
-        throw new NotImplementedException();
-    }
+    public bool EstaActivo { get; set; } = true;
+    
 }
 
 public class MovimientoDePeridodo

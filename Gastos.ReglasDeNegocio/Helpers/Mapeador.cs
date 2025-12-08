@@ -1,5 +1,4 @@
 ﻿using Banca.Core.Dtos;
-using DuckBank.Persistence.Entities;
 using Gastos.ReglasDeNegocio.Entities;
 
 namespace Gastos.ReglasDeNegocio.Helpers
@@ -49,18 +48,26 @@ namespace Gastos.ReglasDeNegocio.Helpers
 
         public static List<SubcategoriaDto> ToDtos(this List<Subcategoria> entidades) => entidades.Select(x => x.ToDto()).ToList();
 
-        internal static MovimientoDto ToDto(this DuckBank.Persistence.Entities.Movimiento entidad, string tipo) => entidad is null ? null : new MovimientoDto
+        internal static MovimientoDto ToDto(this Movimiento entidad) => entidad is null ? null : new MovimientoDto
         {
-            Cantidad = entidad.Cantidad,
+            Monto = entidad.Cantidad,
             Concepto = entidad.Concepto,
             FechaDeRegistro = entidad.FechaDeRegistro,
             SaldoFinal = entidad.SaldoFinal,
             SaldoInicial = entidad.SaldoInicial,
             Guid = entidad.EncodedKey,
-            Tipo = tipo
+            Tipo = entidad.Tipo,
         };
 
-        internal static List<MovimientoDto> ToDtos(this List<DuckBank.Persistence.Entities.Movimiento> entidades, string tipo) => entidades.Select(x => x.ToDto(tipo)).ToList();
+        internal static List<MovimientoDto> ToDtos(this List<Movimiento> entidades) => entidades.Select(x => x.ToDto()).ToList();
+
+        internal static Movimiento ToEntity(this MovimientoDtoIn movimiento) => new Movimiento
+        {
+            Cantidad = movimiento.Monto,
+            Concepto = movimiento.Concepto,
+            EncodedKey = movimiento.Encodedkey,
+            FechaDeRegistro = DateTime.Now,            
+        };
 
         internal static VersionDto ToDto(this VersionDePresupuesto entidad) => entidad is null ? null : new VersionDto
         {
@@ -92,7 +99,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
             Guid = entity.Guid,
             Id = entity.Id,
             SubcategoriaId = entity.SubcategoriaId,
-            Subcategoria = entity.Subcategoria.ToDto(),
+            //Subcategoria = entity.Subcategoria.ToDto(),
             VersionId = entity.VersionId
         };
 

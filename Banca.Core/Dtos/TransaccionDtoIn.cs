@@ -11,5 +11,7 @@ namespace Banca.Core.Dtos
 
         [Required]
         public decimal Cantidad { get; set; }
+
+        public string Nota { get; set; }
     }
 }

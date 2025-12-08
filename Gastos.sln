@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34031.279
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11222.16 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banca.Api", "Banca.Api\Banca.Api.csproj", "{F8EBEC0C-15F0-47FF-A2CA-B1150866E3EF}"
 EndProject
@@ -12,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastos.Mvc", "Gastos.Mvc\Gastos.Mvc.csproj", "{C04AD6E9-F32F-4B4C-82C8-FCE7F6E703A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gastos.ReglasDeNegocio", "Gastos.ReglasDeNegocio\Gastos.ReglasDeNegocio.csproj", "{3D5A33BC-93CF-45DA-9E5B-71E7E9C63726}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckBank.Persistence", "..\DuckBank.Ahorros.Ms\DuckBank.Persistence\DuckBank.Persistence.csproj", "{1B190565-BEB4-CBF2-A9B5-8888B20FD922}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtTokenService", "JwtTokenService\JwtTokenService.csproj", "{CC4E310F-92BF-6816-A495-F226FD370232}"
 EndProject
@@ -45,10 +43,6 @@ Global
 		{3D5A33BC-93CF-45DA-9E5B-71E7E9C63726}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D5A33BC-93CF-45DA-9E5B-71E7E9C63726}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D5A33BC-93CF-45DA-9E5B-71E7E9C63726}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B190565-BEB4-CBF2-A9B5-8888B20FD922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B190565-BEB4-CBF2-A9B5-8888B20FD922}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B190565-BEB4-CBF2-A9B5-8888B20FD922}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B190565-BEB4-CBF2-A9B5-8888B20FD922}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CC4E310F-92BF-6816-A495-F226FD370232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CC4E310F-92BF-6816-A495-F226FD370232}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC4E310F-92BF-6816-A495-F226FD370232}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,5 +1,4 @@
 ﻿using Banca.Core.Dtos;
-using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Entities;
 using Gastos.ReglasDeNegocio.Repositories;
 using Microsoft.Extensions.Configuration;
@@ -8,14 +7,14 @@ namespace Gastos.ReglasDeNegocio.Bl
 {
     public class TransaccionBl
     {
-        private readonly IRepositorio _duckBanck;
         private readonly string ahorroEje;
         private readonly Repositorio _repositorio;
+        private readonly AhorroBl _ahorroBl;
 
-        public TransaccionBl(Repositorio repositorio, IRepositorio duckBanck, IConfiguration configuration)
+        public TransaccionBl(Repositorio repositorio, IConfiguration configuration, AhorroBl ahorroBl)
         {
             _repositorio = repositorio;
-            _duckBanck = duckBanck;
+            _ahorroBl = ahorroBl;
             ahorroEje = configuration.GetSection("AhorroFondeadorGuid").Value;
         }
 
@@ -24,46 +23,50 @@ namespace Gastos.ReglasDeNegocio.Bl
             Periodo periodo;
             Presupuesto presupuesto;
             Transaccion transaccion;
-            PresupuestoDelPeriodo presupuestoDelPeriodo;
             List<Transaccion> transaccions;
+            Subcategoria subcategoria;
+            IdDto retiroId;
+            IdDto depositoId = null;
 
-            periodo = await _repositorio.Periodo.ObtenerAsync(periodoId.ToString());
             presupuesto = await _repositorio.Presupuesto.ObtenerAsync(movimiento.PresupuestoId);
-            if (presupuesto.Subcategoria is null)
-                presupuesto.Subcategoria = await _repositorio.Subcategoria.ObtenerAsync(presupuesto.SubcategoriaId.ToString());
-            presupuestoDelPeriodo = await _repositorio.PresupuestoDelPeriodo.ObtenerPorPresupuestoIdAsync(movimiento.PresupuestoId, periodoId);
+            subcategoria = await _repositorio.Subcategoria.ObtenerAsync(presupuesto.SubcategoriaId.ToString());
+            periodo = await _repositorio.Periodo.ObtenerAsync(periodoId.ToString());
             //Retiro del ahorro eje
-            await _duckBanck.Ahorro.RetirarAsync(ahorroEje, new DuckBank.Persistence.Entities.Movimiento
+            retiroId = await _ahorroBl.RetirarAsync(ahorroEje, new MovimientoDtoIn
             {
-                Cantidad = movimiento.Cantidad,
-                Concepto = $"{periodo.Nombre} {presupuesto.Subcategoria.Nombre}",
-                EncodedKey = movimiento.EncodedKey,
-                FechaDeRegistro = DateTime.Now
+                Monto = movimiento.Cantidad,
+                Concepto = $"{periodo.Nombre} {subcategoria.Nombre}",
+                Encodedkey = movimiento.EncodedKey,
+                PresupuestoId = presupuesto.Id
             });
             //Deposito en el ahorro destino en caso de que haya
             if (presupuesto.AhorroId is not null)
             {
-                await _duckBanck.Ahorro.DepositarAsync(presupuesto.AhorroId.ToString(), new DuckBank.Persistence.Entities.Movimiento
+                depositoId = await _ahorroBl.DepositarAsync(presupuesto.AhorroId.ToString(), new MovimientoDtoIn
                 {
-                    Cantidad = movimiento.Cantidad,
-                    Concepto = $"Periodo {periodo.Id} {periodo.Nombre}",
-                    EncodedKey = movimiento.EncodedKey,
-                    FechaDeRegistro = DateTime.Now
+                    Monto = movimiento.Cantidad,
+                    Concepto = $"{periodo.Nombre} {subcategoria.Nombre}",
+                    Encodedkey = movimiento.EncodedKey,
+                    PresupuestoId = presupuesto.Id
                 });
             }
+            transaccions = await _repositorio.Transaccion.ObtenerAsync(periodo.Id, presupuesto.Id);
             transaccion = new Transaccion
             {
-                Cantidad = movimiento.Cantidad,
+                Monto = movimiento.Cantidad,
+                PresupuestoId = movimiento.PresupuestoId,
                 PeriodoId = periodo.Id,
-                PresupuestoId = movimiento.PresupuestoId
+                SaldoInicial = transaccions.Sum(x => x.Monto),
+                SaldoFinal = presupuesto.Cantidad - movimiento.Cantidad,
+                RetiroEncodedKey = retiroId.Guid,
+                DepositoEncodedKey = depositoId is null ? null : depositoId.Guid
             };
-            await _repositorio.Transaccion.AgregarAsync(transaccion);
-            transaccions = await _repositorio.Transaccion.ObtenerAsync(periodo.Id, presupuesto.Id);
-            presupuestoDelPeriodo.Gastado = transaccions.Sum(x => x.Cantidad);
-            await _repositorio.PresupuestoDelPeriodo.ActualizarAsync(presupuestoDelPeriodo);
+            transaccion.Id = await _repositorio.Transaccion.AgregarAsync(transaccion);
+
 
             return new IdDto
             {
+                Id = transaccion.Id,
                 FechaDeRegistro = DateTime.Now,
                 Guid = movimiento.EncodedKey,
             };

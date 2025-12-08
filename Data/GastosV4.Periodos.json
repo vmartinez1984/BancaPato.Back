@@ -1,0 +1,336 @@
+[{
+  "_id": {
+    "$oid": "680ff1f5423a087ae09f0e30"
+  },
+  "Id": 1,
+  "Nombre": "25 Abril",
+  "FechaInicial": {
+    "$date": "2025-04-25T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-05-10T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-04-28T21:24:04.929Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "db220628-f9c4-439a-ba3f-a5b01285af46",
+  "VersionId": 1,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "681e38fb2a53567e960a57b1"
+  },
+  "Id": 2,
+  "Nombre": "Mayo 10",
+  "FechaInicial": {
+    "$date": "2025-05-09T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-05-26T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-05-09T17:18:51.756Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "1bcedf2b-a397-4a16-b5b1-3cac94b1b37b",
+  "VersionId": 1,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab463"
+  },
+  "Id": 3,
+  "Nombre": "25 Mayo",
+  "FechaInicial": {
+    "$date": "2025-05-25T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-06-10T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-05-25T23:07:04.050Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "8338b302-24f0-4154-b718-f5b5487f0651",
+  "VersionId": 1,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb396"
+  },
+  "Id": 4,
+  "Nombre": "Junio 10",
+  "FechaInicial": {
+    "$date": "2025-06-10T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-06-25T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-06-13T18:56:28.253Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "e01fcea3-9eca-4c06-8ad8-10f02f3c31d0",
+  "VersionId": 2,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b729"
+  },
+  "Id": 5,
+  "Nombre": "Julio 1",
+  "FechaInicial": {
+    "$date": "2025-06-27T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-07-15T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-06-27T16:11:34.135Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "925f246e-53b0-4d59-86f7-223b4d34fb2f",
+  "VersionId": 2,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e5fb"
+  },
+  "Id": 6,
+  "Nombre": "Julio 15",
+  "FechaInicial": {
+    "$date": "2025-07-14T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-07-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-07-14T19:02:14.230Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "da8b35b5-8f18-454a-82b7-61f3852c6823",
+  "VersionId": 2,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "688ad9dc6b0dea0ba726ed20"
+  },
+  "Id": 7,
+  "Nombre": "Julio 30",
+  "FechaInicial": {
+    "$date": "2025-07-30T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-08-15T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-07-31T02:50:04.834Z"
+  },
+  "EstaActivo": false,
+  "Nota": null,
+  "Guid": "eeaa895e-3efd-4014-8e95-c1f242f7c6e9",
+  "VersionId": 2,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726edfb"
+  },
+  "Id": 8,
+  "Nombre": "Julio 30",
+  "FechaInicial": {
+    "$date": "2025-07-30T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-07-30T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-07-31T02:50:57.281Z"
+  },
+  "EstaActivo": false,
+  "Nota": null,
+  "Guid": "09809b0a-c6df-444e-a4f3-42589253710f",
+  "VersionId": 1,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "688bb8de093f9d94cbc2ce2c"
+  },
+  "Id": 9,
+  "Nombre": "Agosto 1",
+  "FechaInicial": {
+    "$date": "2025-08-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-07-15T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-07-31T18:40:36.181Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "7db186fa-eb2e-46f6-bb9a-b0bbab96f429",
+  "VersionId": 2,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "689f814a421f8114442a0e96"
+  },
+  "Id": 10,
+  "Nombre": "Agosto",
+  "FechaInicial": {
+    "$date": "2025-08-15T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-08-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-08-15T18:49:46.653Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "ef575274-057c-44d4-9bf7-246d15193328",
+  "VersionId": 2,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f8c"
+  },
+  "Id": 11,
+  "Nombre": "Septiembre",
+  "FechaInicial": {
+    "$date": "2025-09-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-09-30T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T04:06:10.320Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "b6322c06-83e0-4a3a-9281-8f4108937674",
+  "VersionId": 7,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "68dd820db1195e0c89f8b4c5"
+  },
+  "Id": 12,
+  "Nombre": "Octubre",
+  "FechaInicial": {
+    "$date": "2025-10-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-10-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-10-01T19:33:33.008Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "6048b3ac-6b3c-42e3-add2-602200458ef0",
+  "VersionId": 6,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "690500ede82fd7627167c876"
+  },
+  "Id": 13,
+  "Nombre": "Noviembre",
+  "FechaInicial": {
+    "$date": "2025-11-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-11-30T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-10-31T18:33:17.492Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "27f8b660-1f83-4034-a603-748e2084edc2",
+  "VersionId": 6,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "693226192f3974002d0dcc99"
+  },
+  "Id": 14,
+  "Nombre": "Diciembre 2025",
+  "FechaInicial": {
+    "$date": "2025-12-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-12-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T00:23:53.772Z"
+  },
+  "EstaActivo": false,
+  "Nota": null,
+  "Guid": "91f49dfa-42da-4a8a-b90e-6106c357cdfc",
+  "VersionId": 6,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "69330752855b481814f222ad"
+  },
+  "Id": 15,
+  "Nombre": "Diciembre",
+  "FechaInicial": {
+    "$date": "2025-12-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-12-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T16:24:50.721Z"
+  },
+  "EstaActivo": false,
+  "Nota": null,
+  "Guid": "47bbda0d-1372-4880-bf54-fb02f20e5a7e",
+  "VersionId": 6,
+  "Version": null
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf7e"
+  },
+  "Id": 16,
+  "Nombre": "Diciembre 2025",
+  "FechaInicial": {
+    "$date": "2025-12-01T06:00:00.000Z"
+  },
+  "FechaFinal": {
+    "$date": "2025-12-31T06:00:00.000Z"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-05T17:15:44.236Z"
+  },
+  "EstaActivo": true,
+  "Nota": null,
+  "Guid": "c2e2de30-bd71-4890-a87d-28b39aeab1a1",
+  "VersionId": 6,
+  "Version": null
+}]

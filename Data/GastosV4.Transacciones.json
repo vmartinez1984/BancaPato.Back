@@ -1,0 +1,2824 @@
+[{
+  "_id": 1,
+  "PeriodoId": 1,
+  "PresupuestoId": 28,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 2,
+  "PeriodoId": 1,
+  "PresupuestoId": 1,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  }
+},
+{
+  "_id": 3,
+  "PeriodoId": 1,
+  "PresupuestoId": 2,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 4,
+  "PeriodoId": 1,
+  "PresupuestoId": 5,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  }
+},
+{
+  "_id": 5,
+  "PeriodoId": 1,
+  "PresupuestoId": 6,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  }
+},
+{
+  "_id": 6,
+  "PeriodoId": 1,
+  "PresupuestoId": 10,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 7,
+  "PeriodoId": 1,
+  "PresupuestoId": 24,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 8,
+  "PeriodoId": 1,
+  "PresupuestoId": 30,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 9,
+  "PeriodoId": 1,
+  "PresupuestoId": 33,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 10,
+  "PeriodoId": 1,
+  "PresupuestoId": 13,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 11,
+  "PeriodoId": 1,
+  "PresupuestoId": 11,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  }
+},
+{
+  "_id": 12,
+  "PeriodoId": 1,
+  "PresupuestoId": 16,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 13,
+  "PeriodoId": 1,
+  "PresupuestoId": 3,
+  "Cantidad": {
+    "$numberDecimal": "98"
+  }
+},
+{
+  "_id": 14,
+  "PeriodoId": 1,
+  "PresupuestoId": 4,
+  "Cantidad": {
+    "$numberDecimal": "1332"
+  }
+},
+{
+  "_id": 15,
+  "PeriodoId": 1,
+  "PresupuestoId": 7,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 16,
+  "PeriodoId": 1,
+  "PresupuestoId": 8,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  }
+},
+{
+  "_id": 17,
+  "PeriodoId": 1,
+  "PresupuestoId": 14,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 18,
+  "PeriodoId": 1,
+  "PresupuestoId": 15,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 19,
+  "PeriodoId": 1,
+  "PresupuestoId": 34,
+  "Cantidad": {
+    "$numberDecimal": "143"
+  }
+},
+{
+  "_id": 20,
+  "PeriodoId": 1,
+  "PresupuestoId": 31,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 21,
+  "PeriodoId": 1,
+  "PresupuestoId": 26,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 22,
+  "PeriodoId": 1,
+  "PresupuestoId": 22,
+  "Cantidad": {
+    "$numberDecimal": "191"
+  }
+},
+{
+  "_id": 23,
+  "PeriodoId": 1,
+  "PresupuestoId": 21,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 24,
+  "PeriodoId": 1,
+  "PresupuestoId": 20,
+  "Cantidad": {
+    "$numberDecimal": "3387"
+  }
+},
+{
+  "_id": 25,
+  "PeriodoId": 1,
+  "PresupuestoId": 18,
+  "Cantidad": {
+    "$numberDecimal": "245"
+  }
+},
+{
+  "_id": 26,
+  "PeriodoId": 1,
+  "PresupuestoId": 17,
+  "Cantidad": {
+    "$numberDecimal": "245"
+  }
+},
+{
+  "_id": 27,
+  "PeriodoId": 1,
+  "PresupuestoId": 15,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 28,
+  "PeriodoId": 1,
+  "PresupuestoId": 24,
+  "Cantidad": {
+    "$numberDecimal": "650"
+  }
+},
+{
+  "_id": 29,
+  "PeriodoId": 1,
+  "PresupuestoId": 32,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 30,
+  "PeriodoId": 1,
+  "PresupuestoId": 25,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 31,
+  "PeriodoId": 1,
+  "PresupuestoId": 25,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  }
+},
+{
+  "_id": 32,
+  "PeriodoId": 1,
+  "PresupuestoId": 29,
+  "Cantidad": {
+    "$numberDecimal": "650"
+  }
+},
+{
+  "_id": 33,
+  "PeriodoId": 1,
+  "PresupuestoId": 19,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 34,
+  "PeriodoId": 1,
+  "PresupuestoId": 27,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 35,
+  "PeriodoId": 1,
+  "PresupuestoId": 9,
+  "Cantidad": {
+    "$numberDecimal": "559"
+  }
+},
+{
+  "_id": 36,
+  "PeriodoId": 2,
+  "PresupuestoId": 1,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  }
+},
+{
+  "_id": 37,
+  "PeriodoId": 2,
+  "PresupuestoId": 4,
+  "Cantidad": {
+    "$numberDecimal": "1335"
+  }
+},
+{
+  "_id": 38,
+  "PeriodoId": 2,
+  "PresupuestoId": 7,
+  "Cantidad": {
+    "$numberDecimal": "381"
+  }
+},
+{
+  "_id": 39,
+  "PeriodoId": 2,
+  "PresupuestoId": 8,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  }
+},
+{
+  "_id": 40,
+  "PeriodoId": 2,
+  "PresupuestoId": 17,
+  "Cantidad": {
+    "$numberDecimal": "245"
+  }
+},
+{
+  "_id": 41,
+  "PeriodoId": 2,
+  "PresupuestoId": 18,
+  "Cantidad": {
+    "$numberDecimal": "245"
+  }
+},
+{
+  "_id": 42,
+  "PeriodoId": 2,
+  "PresupuestoId": 20,
+  "Cantidad": {
+    "$numberDecimal": "3393"
+  }
+},
+{
+  "_id": 43,
+  "PeriodoId": 2,
+  "PresupuestoId": 26,
+  "Cantidad": {
+    "$numberDecimal": "95"
+  }
+},
+{
+  "_id": 44,
+  "PeriodoId": 2,
+  "PresupuestoId": 33,
+  "Cantidad": {
+    "$numberDecimal": "286"
+  }
+},
+{
+  "_id": 45,
+  "PeriodoId": 2,
+  "PresupuestoId": 31,
+  "Cantidad": {
+    "$numberDecimal": "286"
+  }
+},
+{
+  "_id": 46,
+  "PeriodoId": 2,
+  "PresupuestoId": 30,
+  "Cantidad": {
+    "$numberDecimal": "286"
+  }
+},
+{
+  "_id": 47,
+  "PeriodoId": 2,
+  "PresupuestoId": 31,
+  "Cantidad": {
+    "$numberDecimal": "214"
+  }
+},
+{
+  "_id": 48,
+  "PeriodoId": 2,
+  "PresupuestoId": 24,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 49,
+  "PeriodoId": 2,
+  "PresupuestoId": 25,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 50,
+  "PeriodoId": 2,
+  "PresupuestoId": 11,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  }
+},
+{
+  "_id": 51,
+  "PeriodoId": 2,
+  "PresupuestoId": 16,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 52,
+  "PeriodoId": 2,
+  "PresupuestoId": 5,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 53,
+  "PeriodoId": 2,
+  "PresupuestoId": 28,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 54,
+  "PeriodoId": 2,
+  "PresupuestoId": 12,
+  "Cantidad": {
+    "$numberDecimal": "160"
+  }
+},
+{
+  "_id": 55,
+  "PeriodoId": 2,
+  "PresupuestoId": 5,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 56,
+  "PeriodoId": 2,
+  "PresupuestoId": 15,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 57,
+  "PeriodoId": 2,
+  "PresupuestoId": 5,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 58,
+  "PeriodoId": 2,
+  "PresupuestoId": 6,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 59,
+  "PeriodoId": 2,
+  "PresupuestoId": 2,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 60,
+  "PeriodoId": 2,
+  "PresupuestoId": 5,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 61,
+  "PeriodoId": 2,
+  "PresupuestoId": 10,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 62,
+  "PeriodoId": 2,
+  "PresupuestoId": 13,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 63,
+  "PeriodoId": 2,
+  "PresupuestoId": 29,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 64,
+  "PeriodoId": 2,
+  "PresupuestoId": 24,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 65,
+  "PeriodoId": 2,
+  "PresupuestoId": 14,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 66,
+  "PeriodoId": 2,
+  "PresupuestoId": 21,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 67,
+  "PeriodoId": 2,
+  "PresupuestoId": 12,
+  "Cantidad": {
+    "$numberDecimal": "40"
+  }
+},
+{
+  "_id": 68,
+  "PeriodoId": 2,
+  "PresupuestoId": 6,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 69,
+  "PeriodoId": 2,
+  "PresupuestoId": 19,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 70,
+  "PeriodoId": 2,
+  "PresupuestoId": 27,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 71,
+  "PeriodoId": 2,
+  "PresupuestoId": 24,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 72,
+  "PeriodoId": 2,
+  "PresupuestoId": 22,
+  "Cantidad": {
+    "$numberDecimal": "248.52"
+  }
+},
+{
+  "_id": 73,
+  "PeriodoId": 2,
+  "PresupuestoId": 3,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  }
+},
+{
+  "_id": 74,
+  "PeriodoId": 2,
+  "PresupuestoId": 3,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  }
+},
+{
+  "_id": 75,
+  "PeriodoId": 2,
+  "PresupuestoId": 34,
+  "Cantidad": {
+    "$numberDecimal": "143.43"
+  }
+},
+{
+  "_id": 76,
+  "PeriodoId": 2,
+  "PresupuestoId": 28,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 77,
+  "PeriodoId": 2,
+  "PresupuestoId": 29,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 78,
+  "PeriodoId": 2,
+  "PresupuestoId": 24,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 79,
+  "PeriodoId": 2,
+  "PresupuestoId": 25,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  }
+},
+{
+  "_id": 80,
+  "PeriodoId": 2,
+  "PresupuestoId": 25,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 81,
+  "PeriodoId": 3,
+  "PresupuestoId": 11,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  }
+},
+{
+  "_id": 82,
+  "PeriodoId": 3,
+  "PresupuestoId": 16,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 83,
+  "PeriodoId": 3,
+  "PresupuestoId": 3,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 84,
+  "PeriodoId": 3,
+  "PresupuestoId": 31,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 85,
+  "PeriodoId": 3,
+  "PresupuestoId": 4,
+  "Cantidad": {
+    "$numberDecimal": "1358"
+  }
+},
+{
+  "_id": 86,
+  "PeriodoId": 3,
+  "PresupuestoId": 7,
+  "Cantidad": {
+    "$numberDecimal": "382.61"
+  }
+},
+{
+  "_id": 87,
+  "PeriodoId": 3,
+  "PresupuestoId": 1,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  }
+},
+{
+  "_id": 88,
+  "PeriodoId": 3,
+  "PresupuestoId": 8,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  }
+},
+{
+  "_id": 89,
+  "PeriodoId": 3,
+  "PresupuestoId": 17,
+  "Cantidad": {
+    "$numberDecimal": "246"
+  }
+},
+{
+  "_id": 90,
+  "PeriodoId": 3,
+  "PresupuestoId": 18,
+  "Cantidad": {
+    "$numberDecimal": "246"
+  }
+},
+{
+  "_id": 91,
+  "PeriodoId": 3,
+  "PresupuestoId": 20,
+  "Cantidad": {
+    "$numberDecimal": "3403"
+  }
+},
+{
+  "_id": 92,
+  "PeriodoId": 3,
+  "PresupuestoId": 22,
+  "Cantidad": {
+    "$numberDecimal": "248.7"
+  }
+},
+{
+  "_id": 93,
+  "PeriodoId": 3,
+  "PresupuestoId": 26,
+  "Cantidad": {
+    "$numberDecimal": "114.78"
+  }
+},
+{
+  "_id": 94,
+  "PeriodoId": 3,
+  "PresupuestoId": 30,
+  "Cantidad": {
+    "$numberDecimal": "349"
+  }
+},
+{
+  "_id": 95,
+  "PeriodoId": 3,
+  "PresupuestoId": 33,
+  "Cantidad": {
+    "$numberDecimal": "349"
+  }
+},
+{
+  "_id": 96,
+  "PeriodoId": 3,
+  "PresupuestoId": 34,
+  "Cantidad": {
+    "$numberDecimal": "143.53"
+  }
+},
+{
+  "_id": 97,
+  "PeriodoId": 2,
+  "PresupuestoId": 15,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 98,
+  "PeriodoId": 2,
+  "PresupuestoId": 32,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 99,
+  "PeriodoId": 2,
+  "PresupuestoId": 29,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  }
+},
+{
+  "_id": 100,
+  "PeriodoId": 3,
+  "PresupuestoId": 2,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 101,
+  "PeriodoId": 3,
+  "PresupuestoId": 5,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  }
+},
+{
+  "_id": 102,
+  "PeriodoId": 3,
+  "PresupuestoId": 6,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  }
+},
+{
+  "_id": 103,
+  "PeriodoId": 3,
+  "PresupuestoId": 10,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 104,
+  "PeriodoId": 3,
+  "PresupuestoId": 13,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 105,
+  "PeriodoId": 3,
+  "PresupuestoId": 28,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 106,
+  "PeriodoId": 3,
+  "PresupuestoId": 14,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 107,
+  "PeriodoId": 3,
+  "PresupuestoId": 15,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  }
+},
+{
+  "_id": 108,
+  "PeriodoId": 3,
+  "PresupuestoId": 29,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 109,
+  "PeriodoId": 3,
+  "PresupuestoId": 24,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  }
+},
+{
+  "_id": 110,
+  "PeriodoId": 3,
+  "PresupuestoId": 12,
+  "Cantidad": {
+    "$numberDecimal": "191.54"
+  }
+},
+{
+  "_id": 111,
+  "PeriodoId": 3,
+  "PresupuestoId": 25,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  }
+},
+{
+  "_id": 112,
+  "PeriodoId": 3,
+  "PresupuestoId": 32,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 113,
+  "PeriodoId": 3,
+  "PresupuestoId": 19,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 114,
+  "PeriodoId": 3,
+  "PresupuestoId": 27,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 115,
+  "PeriodoId": 4,
+  "PresupuestoId": 35,
+  "Cantidad": {
+    "$numberDecimal": "246.84"
+  }
+},
+{
+  "_id": 116,
+  "PeriodoId": 4,
+  "PresupuestoId": 38,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  }
+},
+{
+  "_id": 117,
+  "PeriodoId": 4,
+  "PresupuestoId": 51,
+  "Cantidad": {
+    "$numberDecimal": "249.49"
+  }
+},
+{
+  "_id": 118,
+  "PeriodoId": 4,
+  "PresupuestoId": 36,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 119,
+  "PeriodoId": 4,
+  "PresupuestoId": 37,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 120,
+  "PeriodoId": 4,
+  "PresupuestoId": 39,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 121,
+  "PeriodoId": 4,
+  "PresupuestoId": 41,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 122,
+  "PeriodoId": 4,
+  "PresupuestoId": 42,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 123,
+  "PeriodoId": 4,
+  "PresupuestoId": 47,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 124,
+  "PeriodoId": 4,
+  "PresupuestoId": 48,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 125,
+  "PeriodoId": 4,
+  "PresupuestoId": 49,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 126,
+  "PeriodoId": 4,
+  "PresupuestoId": 50,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 127,
+  "PeriodoId": 4,
+  "PresupuestoId": 52,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 128,
+  "PeriodoId": 4,
+  "PresupuestoId": 54,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 129,
+  "PeriodoId": 4,
+  "PresupuestoId": 45,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  }
+},
+{
+  "_id": 130,
+  "PeriodoId": 4,
+  "PresupuestoId": 53,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 131,
+  "PeriodoId": 4,
+  "PresupuestoId": 53,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  }
+},
+{
+  "_id": 132,
+  "PeriodoId": 4,
+  "PresupuestoId": 44,
+  "Cantidad": {
+    "$numberDecimal": "520"
+  }
+},
+{
+  "_id": 133,
+  "PeriodoId": 4,
+  "PresupuestoId": 43,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 134,
+  "PeriodoId": 4,
+  "PresupuestoId": 40,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 135,
+  "PeriodoId": 4,
+  "PresupuestoId": 46,
+  "Cantidad": {
+    "$numberDecimal": "144.35"
+  }
+},
+{
+  "_id": 136,
+  "PeriodoId": 5,
+  "PresupuestoId": 38,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  }
+},
+{
+  "_id": 137,
+  "PeriodoId": 5,
+  "PresupuestoId": 36,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 138,
+  "PeriodoId": 5,
+  "PresupuestoId": 37,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 139,
+  "PeriodoId": 5,
+  "PresupuestoId": 39,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 140,
+  "PeriodoId": 5,
+  "PresupuestoId": 42,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 141,
+  "PeriodoId": 5,
+  "PresupuestoId": 47,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 142,
+  "PeriodoId": 5,
+  "PresupuestoId": 48,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 143,
+  "PeriodoId": 5,
+  "PresupuestoId": 50,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 144,
+  "PeriodoId": 5,
+  "PresupuestoId": 52,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 145,
+  "PeriodoId": 5,
+  "PresupuestoId": 41,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 146,
+  "PeriodoId": 5,
+  "PresupuestoId": 49,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 147,
+  "PeriodoId": 5,
+  "PresupuestoId": 53,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 148,
+  "PeriodoId": 5,
+  "PresupuestoId": 54,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 149,
+  "PeriodoId": 5,
+  "PresupuestoId": 41,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 150,
+  "PeriodoId": 5,
+  "PresupuestoId": 45,
+  "Cantidad": {
+    "$numberDecimal": "3384"
+  }
+},
+{
+  "_id": 151,
+  "PeriodoId": 5,
+  "PresupuestoId": 35,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 152,
+  "PeriodoId": 5,
+  "PresupuestoId": 40,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 153,
+  "PeriodoId": 5,
+  "PresupuestoId": 46,
+  "Cantidad": {
+    "$numberDecimal": "144.59"
+  }
+},
+{
+  "_id": 154,
+  "PeriodoId": 5,
+  "PresupuestoId": 51,
+  "Cantidad": {
+    "$numberDecimal": "247.87"
+  }
+},
+{
+  "_id": 155,
+  "PeriodoId": 5,
+  "PresupuestoId": 55,
+  "Cantidad": {
+    "$numberDecimal": "231"
+  }
+},
+{
+  "_id": 156,
+  "PeriodoId": 5,
+  "PresupuestoId": 43,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 157,
+  "PeriodoId": 5,
+  "PresupuestoId": 44,
+  "Cantidad": {
+    "$numberDecimal": "293"
+  }
+},
+{
+  "_id": 158,
+  "PeriodoId": 6,
+  "PresupuestoId": 35,
+  "Cantidad": {
+    "$numberDecimal": "248.15"
+  }
+},
+{
+  "_id": 159,
+  "PeriodoId": 6,
+  "PresupuestoId": 36,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 160,
+  "PeriodoId": 6,
+  "PresupuestoId": 37,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 161,
+  "PeriodoId": 6,
+  "PresupuestoId": 38,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  }
+},
+{
+  "_id": 162,
+  "PeriodoId": 6,
+  "PresupuestoId": 39,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 163,
+  "PeriodoId": 6,
+  "PresupuestoId": 40,
+  "Cantidad": {
+    "$numberDecimal": "96.46"
+  }
+},
+{
+  "_id": 164,
+  "PeriodoId": 6,
+  "PresupuestoId": 41,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 165,
+  "PeriodoId": 6,
+  "PresupuestoId": 42,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 166,
+  "PeriodoId": 6,
+  "PresupuestoId": 44,
+  "Cantidad": {
+    "$numberDecimal": "496.3"
+  }
+},
+{
+  "_id": 167,
+  "PeriodoId": 6,
+  "PresupuestoId": 47,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 168,
+  "PeriodoId": 6,
+  "PresupuestoId": 48,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 169,
+  "PeriodoId": 6,
+  "PresupuestoId": 49,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 170,
+  "PeriodoId": 6,
+  "PresupuestoId": 46,
+  "Cantidad": {
+    "$numberDecimal": "144.75"
+  }
+},
+{
+  "_id": 171,
+  "PeriodoId": 6,
+  "PresupuestoId": 51,
+  "Cantidad": {
+    "$numberDecimal": "231.51"
+  }
+},
+{
+  "_id": 172,
+  "PeriodoId": 6,
+  "PresupuestoId": 55,
+  "Cantidad": {
+    "$numberDecimal": "231.51"
+  }
+},
+{
+  "_id": 173,
+  "PeriodoId": 6,
+  "PresupuestoId": 52,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 174,
+  "PeriodoId": 6,
+  "PresupuestoId": 50,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 175,
+  "PeriodoId": 6,
+  "PresupuestoId": 53,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 176,
+  "PeriodoId": 6,
+  "PresupuestoId": 54,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 177,
+  "PeriodoId": 6,
+  "PresupuestoId": 45,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  }
+},
+{
+  "_id": 178,
+  "PeriodoId": 6,
+  "PresupuestoId": 49,
+  "Cantidad": {
+    "$numberDecimal": "397"
+  }
+},
+{
+  "_id": 179,
+  "PeriodoId": 9,
+  "PresupuestoId": 35,
+  "Cantidad": {
+    "$numberDecimal": "248.84"
+  }
+},
+{
+  "_id": 180,
+  "PeriodoId": 9,
+  "PresupuestoId": 46,
+  "Cantidad": {
+    "$numberDecimal": "145.15"
+  }
+},
+{
+  "_id": 181,
+  "PeriodoId": 9,
+  "PresupuestoId": 51,
+  "Cantidad": {
+    "$numberDecimal": "232.14"
+  }
+},
+{
+  "_id": 182,
+  "PeriodoId": 9,
+  "PresupuestoId": 45,
+  "Cantidad": {
+    "$numberDecimal": "3235.49"
+  }
+},
+{
+  "_id": 183,
+  "PeriodoId": 9,
+  "PresupuestoId": 52,
+  "Cantidad": {
+    "$numberDecimal": "170"
+  }
+},
+{
+  "_id": 184,
+  "PeriodoId": 9,
+  "PresupuestoId": 38,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  }
+},
+{
+  "_id": 185,
+  "PeriodoId": 9,
+  "PresupuestoId": 55,
+  "Cantidad": {
+    "$numberDecimal": "232"
+  }
+},
+{
+  "_id": 186,
+  "PeriodoId": 9,
+  "PresupuestoId": 36,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 187,
+  "PeriodoId": 9,
+  "PresupuestoId": 37,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 188,
+  "PeriodoId": 9,
+  "PresupuestoId": 39,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 189,
+  "PeriodoId": 9,
+  "PresupuestoId": 41,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 190,
+  "PeriodoId": 9,
+  "PresupuestoId": 42,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 191,
+  "PeriodoId": 9,
+  "PresupuestoId": 47,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 192,
+  "PeriodoId": 9,
+  "PresupuestoId": 48,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 193,
+  "PeriodoId": 9,
+  "PresupuestoId": 49,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 194,
+  "PeriodoId": 9,
+  "PresupuestoId": 43,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 195,
+  "PeriodoId": 9,
+  "PresupuestoId": 53,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 196,
+  "PeriodoId": 9,
+  "PresupuestoId": 40,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 197,
+  "PeriodoId": 9,
+  "PresupuestoId": 53,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 198,
+  "PeriodoId": 9,
+  "PresupuestoId": 54,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 199,
+  "PeriodoId": 9,
+  "PresupuestoId": 50,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 200,
+  "PeriodoId": 9,
+  "PresupuestoId": 44,
+  "Cantidad": {
+    "$numberDecimal": "436"
+  }
+},
+{
+  "_id": 201,
+  "PeriodoId": 9,
+  "PresupuestoId": 52,
+  "Cantidad": {
+    "$numberDecimal": "30"
+  }
+},
+{
+  "_id": 202,
+  "PeriodoId": 9,
+  "PresupuestoId": 44,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 203,
+  "PeriodoId": 10,
+  "PresupuestoId": 45,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  }
+},
+{
+  "_id": 204,
+  "PeriodoId": 10,
+  "PresupuestoId": 37,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 205,
+  "PeriodoId": 10,
+  "PresupuestoId": 39,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 206,
+  "PeriodoId": 10,
+  "PresupuestoId": 41,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 207,
+  "PeriodoId": 10,
+  "PresupuestoId": 47,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 208,
+  "PeriodoId": 10,
+  "PresupuestoId": 42,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  }
+},
+{
+  "_id": 209,
+  "PeriodoId": 10,
+  "PresupuestoId": 36,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  }
+},
+{
+  "_id": 210,
+  "PeriodoId": 10,
+  "PresupuestoId": 42,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 211,
+  "PeriodoId": 10,
+  "PresupuestoId": 43,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 212,
+  "PeriodoId": 10,
+  "PresupuestoId": 38,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  }
+},
+{
+  "_id": 213,
+  "PeriodoId": 10,
+  "PresupuestoId": 48,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 214,
+  "PeriodoId": 10,
+  "PresupuestoId": 49,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 215,
+  "PeriodoId": 10,
+  "PresupuestoId": 50,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 216,
+  "PeriodoId": 10,
+  "PresupuestoId": 52,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 217,
+  "PeriodoId": 10,
+  "PresupuestoId": 53,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 218,
+  "PeriodoId": 10,
+  "PresupuestoId": 35,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 219,
+  "PeriodoId": 10,
+  "PresupuestoId": 40,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 220,
+  "PeriodoId": 10,
+  "PresupuestoId": 44,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 221,
+  "PeriodoId": 10,
+  "PresupuestoId": 46,
+  "Cantidad": {
+    "$numberDecimal": "145"
+  }
+},
+{
+  "_id": 222,
+  "PeriodoId": 10,
+  "PresupuestoId": 51,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  }
+},
+{
+  "_id": 223,
+  "PeriodoId": 10,
+  "PresupuestoId": 55,
+  "Cantidad": {
+    "$numberDecimal": "232"
+  }
+},
+{
+  "_id": 224,
+  "PeriodoId": 10,
+  "PresupuestoId": 54,
+  "Cantidad": {
+    "$numberDecimal": "542"
+  }
+},
+{
+  "_id": 225,
+  "PeriodoId": 11,
+  "PresupuestoId": 229,
+  "Cantidad": {
+    "$numberDecimal": "345"
+  }
+},
+{
+  "_id": 226,
+  "PeriodoId": 11,
+  "PresupuestoId": 234,
+  "Cantidad": {
+    "$numberDecimal": "194"
+  }
+},
+{
+  "_id": 227,
+  "PeriodoId": 11,
+  "PresupuestoId": 237,
+  "Cantidad": {
+    "$numberDecimal": "544.4"
+  }
+},
+{
+  "_id": 228,
+  "PeriodoId": 11,
+  "PresupuestoId": 238,
+  "Cantidad": {
+    "$numberDecimal": "541.92"
+  }
+},
+{
+  "_id": 229,
+  "PeriodoId": 11,
+  "PresupuestoId": 241,
+  "Cantidad": {
+    "$numberDecimal": "479"
+  }
+},
+{
+  "_id": 230,
+  "PeriodoId": 11,
+  "PresupuestoId": 242,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  }
+},
+{
+  "_id": 231,
+  "PeriodoId": 11,
+  "PresupuestoId": 242,
+  "Cantidad": {
+    "$numberDecimal": "3586"
+  }
+},
+{
+  "_id": 232,
+  "PeriodoId": 11,
+  "PresupuestoId": 248,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 233,
+  "PeriodoId": 11,
+  "PresupuestoId": 232,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  }
+},
+{
+  "_id": 234,
+  "PeriodoId": 11,
+  "PresupuestoId": 224,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 235,
+  "PeriodoId": 11,
+  "PresupuestoId": 249,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 236,
+  "PeriodoId": 11,
+  "PresupuestoId": 223,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 237,
+  "PeriodoId": 11,
+  "PresupuestoId": 243,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 238,
+  "PeriodoId": 11,
+  "PresupuestoId": 244,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 239,
+  "PeriodoId": 11,
+  "PresupuestoId": 225,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 240,
+  "PeriodoId": 11,
+  "PresupuestoId": 231,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 241,
+  "PeriodoId": 11,
+  "PresupuestoId": 235,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 242,
+  "PeriodoId": 11,
+  "PresupuestoId": 236,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  }
+},
+{
+  "_id": 243,
+  "PeriodoId": 11,
+  "PresupuestoId": 239,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 244,
+  "PeriodoId": 11,
+  "PresupuestoId": 244,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 245,
+  "PeriodoId": 11,
+  "PresupuestoId": 250,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 246,
+  "PeriodoId": 11,
+  "PresupuestoId": 226,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 247,
+  "PeriodoId": 11,
+  "PresupuestoId": 230,
+  "Cantidad": {
+    "$numberDecimal": "2084"
+  }
+},
+{
+  "_id": 248,
+  "PeriodoId": 11,
+  "PresupuestoId": 245,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 249,
+  "PeriodoId": 11,
+  "PresupuestoId": 240,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 250,
+  "PeriodoId": 11,
+  "PresupuestoId": 244,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 251,
+  "PeriodoId": 11,
+  "PresupuestoId": 227,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 252,
+  "PeriodoId": 11,
+  "PresupuestoId": 246,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 253,
+  "PeriodoId": 11,
+  "PresupuestoId": 251,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 254,
+  "PeriodoId": 11,
+  "PresupuestoId": 228,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 255,
+  "PeriodoId": 11,
+  "PresupuestoId": 252,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 256,
+  "PeriodoId": 11,
+  "PresupuestoId": 228,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 257,
+  "PeriodoId": 11,
+  "PresupuestoId": 233,
+  "Cantidad": {
+    "$numberDecimal": "926"
+  }
+},
+{
+  "_id": 258,
+  "PeriodoId": 12,
+  "PresupuestoId": 200,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  }
+},
+{
+  "_id": 259,
+  "PeriodoId": 12,
+  "PresupuestoId": 220,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 260,
+  "PeriodoId": 12,
+  "PresupuestoId": 202,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+},
+{
+  "_id": 261,
+  "PeriodoId": 12,
+  "PresupuestoId": 204,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  }
+},
+{
+  "_id": 262,
+  "PeriodoId": 12,
+  "PresupuestoId": 205,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 263,
+  "PeriodoId": 12,
+  "PresupuestoId": 189,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  }
+},
+{
+  "_id": 264,
+  "PeriodoId": 12,
+  "PresupuestoId": 192,
+  "Cantidad": {
+    "$numberDecimal": "586.15"
+  }
+},
+{
+  "_id": 265,
+  "PeriodoId": 12,
+  "PresupuestoId": 193,
+  "Cantidad": {
+    "$numberDecimal": "488.46"
+  }
+},
+{
+  "_id": 266,
+  "PeriodoId": 12,
+  "PresupuestoId": 194,
+  "Cantidad": {
+    "$numberDecimal": "586.43"
+  }
+},
+{
+  "_id": 267,
+  "PeriodoId": 12,
+  "PresupuestoId": 196,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 268,
+  "PeriodoId": 12,
+  "PresupuestoId": 206,
+  "Cantidad": {
+    "$numberDecimal": "408"
+  }
+},
+{
+  "_id": 269,
+  "PeriodoId": 12,
+  "PresupuestoId": 207,
+  "Cantidad": {
+    "$numberDecimal": "408"
+  }
+},
+{
+  "_id": 270,
+  "PeriodoId": 12,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  }
+},
+{
+  "_id": 271,
+  "PeriodoId": 12,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "3149.28"
+  }
+},
+{
+  "_id": 272,
+  "PeriodoId": 12,
+  "PresupuestoId": 213,
+  "Cantidad": {
+    "$numberDecimal": "156"
+  }
+},
+{
+  "_id": 273,
+  "PeriodoId": 12,
+  "PresupuestoId": 216,
+  "Cantidad": {
+    "$numberDecimal": "195.38"
+  }
+},
+{
+  "_id": 274,
+  "PeriodoId": 12,
+  "PresupuestoId": 219,
+  "Cantidad": {
+    "$numberDecimal": "547"
+  }
+},
+{
+  "_id": 275,
+  "PeriodoId": 12,
+  "PresupuestoId": 201,
+  "Cantidad": {
+    "$numberDecimal": "1191.84"
+  }
+},
+{
+  "_id": 276,
+  "PeriodoId": 12,
+  "PresupuestoId": 195,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 277,
+  "PeriodoId": 12,
+  "PresupuestoId": 199,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 278,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 279,
+  "PeriodoId": 12,
+  "PresupuestoId": 221,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 280,
+  "PeriodoId": 12,
+  "PresupuestoId": 215,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 281,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  }
+},
+{
+  "_id": 282,
+  "PeriodoId": 12,
+  "PresupuestoId": 203,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  }
+},
+{
+  "_id": 283,
+  "PeriodoId": 12,
+  "PresupuestoId": 191,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 284,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "350"
+  }
+},
+{
+  "_id": 285,
+  "PeriodoId": 12,
+  "PresupuestoId": 191,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 286,
+  "PeriodoId": 12,
+  "PresupuestoId": 215,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 287,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 288,
+  "PeriodoId": 12,
+  "PresupuestoId": 191,
+  "Cantidad": {
+    "$numberDecimal": "1500"
+  }
+},
+{
+  "_id": 289,
+  "PeriodoId": 12,
+  "PresupuestoId": 215,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  }
+},
+{
+  "_id": 290,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  }
+},
+{
+  "_id": 291,
+  "PeriodoId": 12,
+  "PresupuestoId": 198,
+  "Cantidad": {
+    "$numberDecimal": "2100"
+  }
+},
+{
+  "_id": 292,
+  "PeriodoId": 12,
+  "PresupuestoId": 209,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  }
+},
+{
+  "_id": 293,
+  "PeriodoId": 12,
+  "PresupuestoId": 211,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 294,
+  "PeriodoId": 12,
+  "PresupuestoId": 217,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  }
+},
+{
+  "_id": 295,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 296,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  }
+},
+{
+  "_id": 297,
+  "PeriodoId": 12,
+  "PresupuestoId": 197,
+  "Cantidad": {
+    "$numberDecimal": "3800"
+  }
+},
+{
+  "_id": 298,
+  "PeriodoId": 13,
+  "PresupuestoId": 189,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  }
+},
+{
+  "_id": 299,
+  "PeriodoId": 13,
+  "PresupuestoId": 192,
+  "Cantidad": {
+    "$numberDecimal": "588.69"
+  }
+},
+{
+  "_id": 300,
+  "PeriodoId": 13,
+  "PresupuestoId": 193,
+  "Cantidad": {
+    "$numberDecimal": "490.57"
+  }
+},
+{
+  "_id": 301,
+  "PeriodoId": 13,
+  "PresupuestoId": 194,
+  "Cantidad": {
+    "$numberDecimal": "588.99"
+  }
+},
+{
+  "_id": 302,
+  "PeriodoId": 13,
+  "PresupuestoId": 196,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 303,
+  "PeriodoId": 13,
+  "PresupuestoId": 200,
+  "Cantidad": {
+    "$numberDecimal": "4000"
+  }
+},
+{
+  "_id": 304,
+  "PeriodoId": 13,
+  "PresupuestoId": 201,
+  "Cantidad": {
+    "$numberDecimal": "1997"
+  }
+},
+{
+  "_id": 305,
+  "PeriodoId": 13,
+  "PresupuestoId": 205,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 306,
+  "PeriodoId": 13,
+  "PresupuestoId": 206,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 307,
+  "PeriodoId": 13,
+  "PresupuestoId": 207,
+  "Cantidad": {
+    "$numberDecimal": "399"
+  }
+},
+{
+  "_id": 308,
+  "PeriodoId": 13,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  }
+},
+{
+  "_id": 309,
+  "PeriodoId": 13,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  }
+},
+{
+  "_id": 310,
+  "PeriodoId": 13,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "294"
+  }
+},
+{
+  "_id": 311,
+  "PeriodoId": 13,
+  "PresupuestoId": 212,
+  "Cantidad": {
+    "$numberDecimal": "490"
+  }
+},
+{
+  "_id": 312,
+  "PeriodoId": 13,
+  "PresupuestoId": 213,
+  "Cantidad": {
+    "$numberDecimal": "392.46"
+  }
+},
+{
+  "_id": 313,
+  "PeriodoId": 13,
+  "PresupuestoId": 216,
+  "Cantidad": {
+    "$numberDecimal": "196.23"
+  }
+},
+{
+  "_id": 314,
+  "PeriodoId": 13,
+  "PresupuestoId": 219,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  }
+},
+{
+  "_id": 315,
+  "PeriodoId": 13,
+  "PresupuestoId": 220,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 316,
+  "PeriodoId": 13,
+  "PresupuestoId": 222,
+  "Cantidad": {
+    "$numberDecimal": "196.23"
+  }
+},
+{
+  "_id": 317,
+  "PeriodoId": 13,
+  "PresupuestoId": 191,
+  "Cantidad": {
+    "$numberDecimal": "2500"
+  }
+},
+{
+  "_id": 318,
+  "PeriodoId": 13,
+  "PresupuestoId": 195,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 319,
+  "PeriodoId": 13,
+  "PresupuestoId": 215,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 320,
+  "PeriodoId": 13,
+  "PresupuestoId": 199,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 321,
+  "PeriodoId": 13,
+  "PresupuestoId": 203,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  }
+},
+{
+  "_id": 322,
+  "PeriodoId": 13,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 323,
+  "PeriodoId": 13,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 324,
+  "PeriodoId": 13,
+  "PresupuestoId": 215,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 325,
+  "PeriodoId": 13,
+  "PresupuestoId": 204,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  }
+},
+{
+  "_id": 326,
+  "PeriodoId": 13,
+  "PresupuestoId": 198,
+  "Cantidad": {
+    "$numberDecimal": "2100"
+  }
+},
+{
+  "_id": 327,
+  "PeriodoId": 13,
+  "PresupuestoId": 202,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 328,
+  "PeriodoId": 13,
+  "PresupuestoId": 209,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  }
+},
+{
+  "_id": 329,
+  "PeriodoId": 13,
+  "PresupuestoId": 211,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 330,
+  "PeriodoId": 13,
+  "PresupuestoId": 217,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  }
+},
+{
+  "_id": 331,
+  "PeriodoId": 13,
+  "PresupuestoId": 218,
+  "Cantidad": {
+    "$numberDecimal": "950"
+  }
+},
+{
+  "_id": 332,
+  "PeriodoId": 16,
+  "PresupuestoId": 191,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  }
+},
+{
+  "_id": 333,
+  "PeriodoId": 16,
+  "PresupuestoId": 192,
+  "Cantidad": {
+    "$numberDecimal": "986.11"
+  }
+},
+{
+  "_id": 334,
+  "PeriodoId": 16,
+  "PresupuestoId": 193,
+  "Cantidad": {
+    "$numberDecimal": "493"
+  }
+},
+{
+  "_id": 335,
+  "PeriodoId": 16,
+  "PresupuestoId": 194,
+  "Cantidad": {
+    "$numberDecimal": "591"
+  }
+},
+{
+  "_id": 336,
+  "PeriodoId": 16,
+  "PresupuestoId": 202,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 337,
+  "PeriodoId": 16,
+  "PresupuestoId": 206,
+  "Cantidad": {
+    "$numberDecimal": "401"
+  }
+},
+{
+  "_id": 338,
+  "PeriodoId": 16,
+  "PresupuestoId": 207,
+  "Cantidad": {
+    "$numberDecimal": "401"
+  }
+},
+{
+  "_id": 339,
+  "PeriodoId": 16,
+  "PresupuestoId": 209,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  }
+},
+{
+  "_id": 340,
+  "PeriodoId": 16,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "617"
+  }
+},
+{
+  "_id": 341,
+  "PeriodoId": 16,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  }
+},
+{
+  "_id": 342,
+  "PeriodoId": 16,
+  "PresupuestoId": 210,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  }
+},
+{
+  "_id": 343,
+  "PeriodoId": 16,
+  "PresupuestoId": 211,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 344,
+  "PeriodoId": 16,
+  "PresupuestoId": 212,
+  "Cantidad": {
+    "$numberDecimal": "493"
+  }
+},
+{
+  "_id": 345,
+  "PeriodoId": 16,
+  "PresupuestoId": 213,
+  "Cantidad": {
+    "$numberDecimal": "394"
+  }
+},
+{
+  "_id": 346,
+  "PeriodoId": 16,
+  "PresupuestoId": 216,
+  "Cantidad": {
+    "$numberDecimal": "197"
+  }
+},
+{
+  "_id": 347,
+  "PeriodoId": 16,
+  "PresupuestoId": 219,
+  "Cantidad": {
+    "$numberDecimal": "493"
+  }
+},
+{
+  "_id": 348,
+  "PeriodoId": 16,
+  "PresupuestoId": 219,
+  "Cantidad": {
+    "$numberDecimal": "39"
+  }
+},
+{
+  "_id": 349,
+  "PeriodoId": 16,
+  "PresupuestoId": 220,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  }
+},
+{
+  "_id": 350,
+  "PeriodoId": 16,
+  "PresupuestoId": 191,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  }
+},
+{
+  "_id": 351,
+  "PeriodoId": 16,
+  "PresupuestoId": 195,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  }
+},
+{
+  "_id": 352,
+  "PeriodoId": 16,
+  "PresupuestoId": 199,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  }
+},
+{
+  "_id": 353,
+  "PeriodoId": 16,
+  "PresupuestoId": 203,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  }
+}]

@@ -1,6 +1,4 @@
 ﻿using Banca.Core.Dtos;
-using DuckBank.Persistence.Entities;
-using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Entities;
 using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
@@ -9,13 +7,11 @@ namespace Gastos.ReglasDeNegocio.Bl
 {
     public class PresupuestoBl
     {
-        private readonly Repositorio _repositorioMongo;
-        private readonly IRepositorio _repositorio1;
+        private readonly Repositorio _repositorioMongo;        
 
-        public PresupuestoBl(Repositorio repositorio, IRepositorio repositorio1)
+        public PresupuestoBl(Repositorio repositorio)
         {
-            _repositorioMongo = repositorio;
-            _repositorio1 = repositorio1;
+            _repositorioMongo = repositorio;            
         }
 
         public async Task<IdDto> AgregarAsync(PresupuestoDtoIn presupuesto)
@@ -29,7 +25,7 @@ namespace Gastos.ReglasDeNegocio.Bl
             {
                 Ahorro ahorro;
 
-                ahorro = await _repositorio1.Ahorro.ObtenerPorIdAsync(presupuesto.AhorroId.ToString());
+                ahorro = await _repositorioMongo.Ahorro.ObtenerPorIdAsync(presupuesto.AhorroId.ToString());
 
                 entity.AhorroTipo = ahorro.Otros["TipoDeCuenta"];
             }

@@ -1,6 +1,4 @@
 ﻿using Banca.Core.Dtos;
-using DuckBank.Persistence.Entities;
-using DuckBank.Persistence.Interfaces;
 using Gastos.ReglasDeNegocio.Entities;
 using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
@@ -9,13 +7,11 @@ namespace Gastos.ReglasDeNegocio.Bl
 {
     public class PeriodoBl
     {
-        private readonly Repositorio _repositorioMongo;
-        private readonly IRepositorio _repositorio;
+        private readonly Repositorio _repositorioMongo;        
 
-        public PeriodoBl(Repositorio gastosRepository, IRepositorio repositorio)
+        public PeriodoBl(Repositorio gastosRepository)
         {
-            _repositorioMongo = gastosRepository;
-            _repositorio = repositorio;
+            _repositorioMongo = gastosRepository;            
         }
 
         public async Task<List<PeriodoDto>> ObtenerTodosAsync()
@@ -85,56 +81,15 @@ namespace Gastos.ReglasDeNegocio.Bl
             return new IdDto { Id = entity.Id, Guid = entity.Guid.ToString() };
         }
 
-        public async Task<List<PresupuestoDelPeriodoDto>> ObtenerPresupestosDelPeriodoAsync(int periodoId)
-        {
-            List<PresupuestoDelPeriodo> lista;
-            List<PresupuestoDelPeriodoDto> dtos;
-            List<Presupuesto> presupestos;
-            List<TipoDeCuenta> tipoDeAhorros;
+        public async Task<List<PresupuestoDto>> ObtenerPresupestosDelPeriodoAsync(int periodoId)
+        {            
+            List<Presupuesto> presupestos;            
             Periodo peridodo;
 
-
-            lista = await _repositorioMongo.PresupuestoDelPeriodo.ObtenerPorPeriodoIdAsync(periodoId);
-            dtos = lista.ToDtos();
             peridodo = await _repositorioMongo.Periodo.ObtenerAsync(periodoId.ToString());
             presupestos = await _repositorioMongo.Presupuesto.ObtenerPorVersionIdAsync(peridodo.VersionId);
-            tipoDeAhorros = await _repositorioMongo.TipoDeAhorro.ObtenerTodosAsync();
-            foreach (var item in dtos)
-            {
-                Presupuesto presupuesto;
 
-                presupuesto = presupestos.Where(x => x.Id == item.PresupuestoId).FirstOrDefault();
-                if (presupuesto.Subcategoria is null)
-                {
-                    presupuesto.Subcategoria = await _repositorioMongo.Subcategoria.ObtenerPorIdAsync(presupuesto.SubcategoriaId);
-                    await _repositorioMongo.Presupuesto.ActualizarAsync(presupuesto);
-                }
-                if (presupuesto.AhorroId is not null || string.IsNullOrEmpty(presupuesto.AhorroTipo))
-                {
-                    Ahorro ahorro;
-                    string key = "TipoDeCuentaId";
-
-                    ahorro = await _repositorio.Ahorro.ObtenerPorIdAsync(presupuesto.AhorroId.ToString());
-
-                    if (ahorro is not null)
-                    {
-                        var data = (ahorro.Otros.Where(x => x.Key == key).FirstOrDefault());
-                        if (data.Value != null)
-                        {
-                            item.TipoDeAhorro = ahorro.Otros[key];
-                            var tipoDeCuenta = tipoDeAhorros.Where(x => x.Id == int.Parse(item.TipoDeAhorro)).FirstOrDefault();
-                            item.TipoDeAhorro = tipoDeCuenta.Nombre;
-                        }
-                    }
-                }
-                else
-                {
-                    item.TipoDeAhorro = presupuesto.AhorroTipo;
-                }
-                item.SubcategoriaNombre = presupuesto is null ? string.Empty : presupuesto.Subcategoria.Nombre;
-            }
-
-            return dtos.ToList();
+            return presupestos.ToDtos();                       
         }
 
         public async Task BorrarAsync(string periodoId)

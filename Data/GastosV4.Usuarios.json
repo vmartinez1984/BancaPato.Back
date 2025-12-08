@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "680c24068f0ed0493028f71e"
+  },
+  "Id": 1,
+  "EncodedKey": "MABV841205",
+  "Nombre": "Víctor",
+  "PrimerApellido": "Martinez",
+  "SegundoApellido": "Bravo",
+  "Contraseña": "123456",
+  "Role": {
+    "_id": null,
+    "Id": 0,
+    "Nombre": "Operador",
+    "Descripcion": "Resolver incidentes",
+    "FechaDeRegistro": {
+      "$date": "2025-04-26T00:08:38.130Z"
+    },
+    "EstaActivo": true
+  },
+  "EstaActivo": true,
+  "FechaDeRegistro": {
+    "$date": "2025-04-26T00:08:38.130Z"
+  },
+  "Correo": "ahal_tocob@hotmail.com"
+}]

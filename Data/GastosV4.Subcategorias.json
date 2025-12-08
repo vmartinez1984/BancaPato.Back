@@ -1,0 +1,1253 @@
+[{
+  "_id": {
+    "$oid": "66b6ff6eae5d6771031ad149"
+  },
+  "Id": 1,
+  "Guid": "18fe131f-fe8b-4c91-af58-358b25aabb98",
+  "Nombre": "Afore",
+  "Presupuesto": "1000",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "Id": 2,
+    "Nombre": "Apartados",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.533Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff7aae5d6771031ad14a"
+  },
+  "EstaActivo": true,
+  "Id": 2,
+  "Guid": "d8f78850-abc6-41b6-924f-0a649a4027e8",
+  "Nombre": "Ahorro N",
+  "Presupuesto": {
+    "$numberDecimal": "100.00"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff7fae5d6771031ad14b"
+  },
+  "Id": 7,
+  "Nombre": "Vacaciones",
+  "Presupuesto": "100.00",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "Id": 2,
+    "Nombre": "Apartados",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Guid": "0ded2f56-c15b-4345-8bc0-67a67a20dd98"
+},
+{
+  "_id": {
+    "$oid": "66b6ff80ae5d6771031ad14c"
+  },
+  "EstaActivo": true,
+  "Id": 8,
+  "Guid": "169ac9ea-527d-48ea-9d33-e404fcacac03",
+  "Nombre": "Apartado Medico",
+  "Presupuesto": {
+    "$numberDecimal": "400"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff81ae5d6771031ad14d"
+  },
+  "Id": 9,
+  "Guid": "b1f422ee-d408-474c-984d-c0784174a220",
+  "Nombre": "Tlaxcoapan",
+  "Presupuesto": "500",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "Id": 2,
+    "Nombre": "Apartados",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff85ae5d6771031ad14e"
+  },
+  "Id": 10,
+  "Guid": "b82c5ced-1a1c-4297-be33-9cd93f13db30",
+  "Nombre": "Camioneta",
+  "Presupuesto": "400",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "Id": 2,
+    "Nombre": "Apartados",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff85ae5d6771031ad14f"
+  },
+  "EstaActivo": true,
+  "Id": 11,
+  "Guid": "fafe0f5b-b2ad-4b4b-af37-09ec78d5040b",
+  "Nombre": "Servicios cdmx",
+  "Presupuesto": {
+    "$numberDecimal": "550"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff85ae5d6771031ad150"
+  },
+  "EstaActivo": true,
+  "Id": 12,
+  "Guid": "86cd89e6-57f0-4340-a75b-eaf1b61f2363",
+  "Nombre": "Gatos",
+  "Presupuesto": {
+    "$numberDecimal": "1200"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff85ae5d6771031ad151"
+  },
+  "EstaActivo": true,
+  "Id": 13,
+  "Guid": "f1b09119-e65b-4a0d-88a9-1b0a23e4be54",
+  "Nombre": "Ropa",
+  "Presupuesto": {
+    "$numberDecimal": "400"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff85ae5d6771031ad152"
+  },
+  "EstaActivo": true,
+  "Id": 14,
+  "Guid": "e0f255d4-3c89-474e-bd51-8d82f1f2fc13",
+  "Nombre": "Sabatico",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad153"
+  },
+  "EstaActivo": true,
+  "Id": 15,
+  "Guid": "d08d89fa-ee19-4ccd-9483-e95695d3a373",
+  "Nombre": "TDC Anualidad",
+  "Presupuesto": {
+    "$numberDecimal": "200"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad154"
+  },
+  "EstaActivo": true,
+  "Id": 16,
+  "Guid": "7db7d22a-9708-4c2d-b570-ab6ba5267002",
+  "Nombre": "Tech",
+  "Presupuesto": {
+    "$numberDecimal": "300"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad155"
+  },
+  "EstaActivo": true,
+  "Id": 17,
+  "Guid": "b48a9d7c-93db-4b71-9a8c-ee8117146535",
+  "Nombre": "Titulacion",
+  "Presupuesto": {
+    "$numberDecimal": "600"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad156"
+  },
+  "EstaActivo": true,
+  "Id": 18,
+  "Guid": "a5bb39e0-03e6-47d4-a264-87d125bd7e89",
+  "Nombre": "Servicios Tlax",
+  "Presupuesto": {
+    "$numberDecimal": "550"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad157"
+  },
+  "EstaActivo": true,
+  "Id": 19,
+  "Guid": "8267e0df-3322-4ee4-8370-5f39f9a8de3b",
+  "Nombre": "Vacaciones Cuba Nancy",
+  "Presupuesto": {
+    "$numberDecimal": "500.00"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad158"
+  },
+  "EstaActivo": true,
+  "Id": 20,
+  "Guid": "746a7733-377b-465b-b650-597824650f7b",
+  "Nombre": "Vacaciones Cuba Yop",
+  "Presupuesto": {
+    "$numberDecimal": "500.00"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad159"
+  },
+  "EstaActivo": true,
+  "Id": 21,
+  "Guid": "d80f074c-24d2-4071-9984-504af21acc52",
+  "Nombre": "Alimentacion 1",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad15a"
+  },
+  "EstaActivo": true,
+  "Id": 22,
+  "Guid": "2d007b0a-e998-4ee2-ab55-93fbb7327ce3",
+  "Nombre": "CdmxAgua",
+  "Presupuesto": {
+    "$numberDecimal": "300"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad15b"
+  },
+  "EstaActivo": true,
+  "Id": 23,
+  "Guid": "37ecd9d4-8a5d-48f2-86e7-aa4f45605ed1",
+  "Nombre": "Cel",
+  "Presupuesto": {
+    "$numberDecimal": "350"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad15c"
+  },
+  "Id": 24,
+  "Nombre": "Comodin",
+  "Presupuesto": "300.00",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "Id": 3,
+    "Nombre": "Gastos",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Guid": "15683d18-7a6c-4de6-a67e-e1737d59d3a1"
+},
+{
+  "_id": {
+    "$oid": "66b6ff86ae5d6771031ad15d"
+  },
+  "EstaActivo": true,
+  "Id": 25,
+  "Guid": "286c5191-4253-4de3-a5cb-888857ace4a3",
+  "Nombre": "Doña",
+  "Presupuesto": {
+    "$numberDecimal": "3400"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad15e"
+  },
+  "Id": 26,
+  "Nombre": "Entretenimineto",
+  "Presupuesto": "200.00",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "Id": 2,
+    "Nombre": "Apartados",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Guid": "cb331b30-5275-44b3-bbfc-ffcfd545a08c"
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad15f"
+  },
+  "EstaActivo": true,
+  "Id": 27,
+  "Guid": "5b26970d-fbeb-4fe2-aa83-d0f907ce4622",
+  "Nombre": "Gas",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad160"
+  },
+  "EstaActivo": true,
+  "Id": 28,
+  "Guid": "6352b971-867e-44ba-a30f-1b708072fbfc",
+  "Nombre": "Deportes",
+  "Presupuesto": {
+    "$numberDecimal": "400"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad161"
+  },
+  "EstaActivo": true,
+  "Id": 29,
+  "Guid": "f8f97a6f-f525-43ca-85b7-c77ebbea4df1",
+  "Nombre": "Natacion",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad162"
+  },
+  "Id": 30,
+  "Guid": "210a68b6-a9cf-45c9-968b-a0ee27413690",
+  "Nombre": "Renta",
+  "Presupuesto": "3100",
+  "EstaActivo": true,
+  "EsPrimario": true,
+  "CategoriaId": 0,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "Id": 3,
+    "Nombre": "Gastos",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad163"
+  },
+  "EstaActivo": true,
+  "Id": 31,
+  "Guid": "1d8b403c-4080-4a8a-b215-7d62fed252c1",
+  "Nombre": "Seguro bbva",
+  "Presupuesto": {
+    "$numberDecimal": "85"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad164"
+  },
+  "EstaActivo": true,
+  "Id": 32,
+  "Guid": "b70825e9-1b2b-455d-aa91-4d8b7857e18a",
+  "Nombre": "Semana 1",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad165"
+  },
+  "EstaActivo": true,
+  "Id": 33,
+  "Guid": "76a7a166-e82e-4b3a-bfcf-937153ed4bd0",
+  "Nombre": "Semana 2",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad166"
+  },
+  "Id": 34,
+  "Nombre": "Tdc pago",
+  "Presupuesto": "750.00",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "Id": 3,
+    "Nombre": "Gastos",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Guid": "b1d6fdea-0e73-4ef6-b2df-2d6118dbd0b0"
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad167"
+  },
+  "EstaActivo": true,
+  "Id": 35,
+  "Guid": "cd5725b5-5fd6-44de-8e9c-fed66f12bcb5",
+  "Nombre": "Tianguis 1",
+  "Presupuesto": {
+    "$numberDecimal": "800"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff87ae5d6771031ad168"
+  },
+  "EstaActivo": true,
+  "Id": 36,
+  "Guid": "7ba1b0fa-5a52-4084-85bb-164a178aef32",
+  "Nombre": "Tianguis 2",
+  "Presupuesto": {
+    "$numberDecimal": "800"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff88ae5d6771031ad169"
+  },
+  "Id": 37,
+  "Nombre": "Transporte",
+  "Presupuesto": "200.00",
+  "EstaActivo": true,
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "Id": 3,
+    "Nombre": "Gastos",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Guid": "e9137e29-69b0-4afa-962f-d608c930b842"
+},
+{
+  "_id": {
+    "$oid": "66b6ff88ae5d6771031ad16a"
+  },
+  "EstaActivo": true,
+  "Id": 38,
+  "Guid": "16af04f4-d146-4cf2-acd3-8dacdf4dd626",
+  "Nombre": "Alimentación 2",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff88ae5d6771031ad16b"
+  },
+  "EstaActivo": true,
+  "Id": 39,
+  "Guid": "d4aac4ad-b738-4dc5-a661-334d554e32c1",
+  "Nombre": "Educación",
+  "Presupuesto": {
+    "$numberDecimal": "1200"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 3,
+    "Nombre": "Gastos",
+    "_id": {
+      "$oid": "661c4e531460df8291e62224"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff88ae5d6771031ad16c"
+  },
+  "EstaActivo": true,
+  "Id": 40,
+  "Guid": "23044c1f-901d-46b9-bb72-2b1e010130a8",
+  "Nombre": "Pc",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff88ae5d6771031ad16d"
+  },
+  "EstaActivo": true,
+  "Id": 41,
+  "Guid": "ff4143b0-cca9-4b2a-bca2-2a7cf0d89e17",
+  "Nombre": "Pa cuando nos corran vik",
+  "Presupuesto": {
+    "$numberDecimal": "250"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66b6ff88ae5d6771031ad16e"
+  },
+  "Id": 42,
+  "Nombre": "Pa cuando nos corran Nancy",
+  "Presupuesto": "250.00",
+  "EstaActivo": true,
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "Categoria": {
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "Id": 2,
+    "Nombre": "Apartados",
+    "EstaActivo": true
+  },
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.576Z"
+  },
+  "Guid": "e6f1906c-ff31-47d0-8b39-a301cf01b862"
+},
+{
+  "_id": {
+    "$oid": "66b6ff88ae5d6771031ad16f"
+  },
+  "EstaActivo": true,
+  "Id": 43,
+  "Guid": "d3c42fb4-900b-4ec7-b3b3-331c8d801245",
+  "Nombre": "Chante",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-08-10T05:49:02.580Z"
+  },
+  "Categoria": {
+    "Id": 2,
+    "Nombre": "Apartados",
+    "_id": {
+      "$oid": "661c4e301460df8291e62223"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66e3373c2c14e44995e62cab"
+  },
+  "EstaActivo": true,
+  "Id": 44,
+  "Guid": "41956d33-68e1-4a1c-9ca0-a12fe37bfbdc",
+  "Nombre": "Seguro Doña",
+  "Presupuesto": {
+    "$numberDecimal": "200"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-09-12T18:47:24.433Z"
+  },
+  "Categoria": {
+    "Id": 0,
+    "Nombre": "Entradas",
+    "_id": {
+      "$oid": "661c4ddd1460df8291e62222"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "66f8bd2c17568b0a11f8e143"
+  },
+  "EstaActivo": true,
+  "Id": 45,
+  "Guid": "2afa266e-e057-409c-bf53-fd72e9642869",
+  "Nombre": "Pago Tdc",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-09-29T02:36:28.455Z"
+  },
+  "Categoria": {
+    "Id": 0,
+    "Nombre": "Entradas",
+    "_id": {
+      "$oid": "661c4ddd1460df8291e62222"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "6743dbcbeb1ca138be928093"
+  },
+  "EstaActivo": true,
+  "Id": 46,
+  "Guid": "6ad9cb75-68a2-4e6a-bee8-fd144599054f",
+  "Nombre": "Dentista",
+  "Presupuesto": {
+    "$numberDecimal": "2100"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 2,
+  "FechaDeRegistro": {
+    "$date": "2024-11-25T02:07:07.053Z"
+  },
+  "Categoria": {
+    "Id": 0,
+    "Nombre": "Entradas",
+    "_id": {
+      "$oid": "661c4ddd1460df8291e62222"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "6743e17db8377cfffa33ddd5"
+  },
+  "EstaActivo": false,
+  "Id": 47,
+  "Guid": "39ed8e6a-3b84-4688-b412-b1142e47ffe5",
+  "Nombre": "Tv",
+  "Presupuesto": {
+    "$numberDecimal": "250"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 0,
+  "FechaDeRegistro": {
+    "$date": "2024-11-25T02:31:25.617Z"
+  },
+  "Categoria": {
+    "Id": 0,
+    "Nombre": "Entradas",
+    "_id": {
+      "$oid": "661c4ddd1460df8291e62222"
+    },
+    "EstaActivo": true
+  }
+},
+{
+  "_id": {
+    "$oid": "68a4b6cb77652c69238459aa"
+  },
+  "EstaActivo": false,
+  "Id": 48,
+  "Guid": "5c804517-c3cc-4a43-b6ad-8921f11389da",
+  "Nombre": "Alimentación 3",
+  "Presupuesto": {
+    "$numberDecimal": "700"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-08-19T17:39:23.363Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68a4b72277652c69238459ab"
+  },
+  "EstaActivo": true,
+  "Id": 49,
+  "Guid": "fb6fbebd-972a-4a92-ac94-2657ec9b2ee6",
+  "Nombre": "Alimentación 3",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-08-19T17:40:50.741Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68a4b73177652c69238459ac"
+  },
+  "EstaActivo": false,
+  "Id": 50,
+  "Guid": "e3760c47-04a5-4c85-8036-6bb2f1032e6c",
+  "Nombre": "Alimentación 4",
+  "Presupuesto": {
+    "$numberDecimal": "700"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-08-19T17:41:05.594Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68a4b74477652c69238459ad"
+  },
+  "EstaActivo": true,
+  "Id": 51,
+  "Guid": "106d74d5-b127-4ac3-a5a0-2726ab27a9d5",
+  "Nombre": "Alimentación 4",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-08-19T17:41:24.538Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68b5109b842f8a04feec10e2"
+  },
+  "EstaActivo": true,
+  "Id": 52,
+  "Guid": "7873d705-b391-41c5-8208-3bd317becf63",
+  "Nombre": "Tianguis 3",
+  "Presupuesto": {
+    "$numberDecimal": "800"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:18:51.157Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68b5159c5a608e8e57f1eb11"
+  },
+  "EstaActivo": true,
+  "Id": 53,
+  "Guid": "2c0760af-51bd-4b68-969e-06fa335db410",
+  "Nombre": "Alimentacion 5",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": false,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:40:12.711Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68b516b55a608e8e57f1eb12"
+  },
+  "EstaActivo": true,
+  "Id": 54,
+  "Guid": "313dca38-3f89-4129-b84d-3f9c1d9e293a",
+  "Nombre": "semana 3",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:44:53.278Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68b516c75a608e8e57f1eb13"
+  },
+  "EstaActivo": true,
+  "Id": 55,
+  "Guid": "eb65162a-6311-47c8-9fe3-a3fe12ac2bce",
+  "Nombre": "semana 4",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:45:11.316Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68b516db5a608e8e57f1eb14"
+  },
+  "EstaActivo": true,
+  "Id": 56,
+  "Guid": "2f940ceb-9c83-4386-9389-06b073cfd3d3",
+  "Nombre": "semana 5",
+  "Presupuesto": {
+    "$numberDecimal": "500"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:45:31.728Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68b517a45a608e8e57f1eb15"
+  },
+  "EstaActivo": true,
+  "Id": 57,
+  "Guid": "3973aea1-e04f-46e2-8c5b-88a77d916ed2",
+  "Nombre": "Tianguis 4",
+  "Presupuesto": {
+    "$numberDecimal": "800"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:48:52.882Z"
+  },
+  "Categoria": null
+},
+{
+  "_id": {
+    "$oid": "68b517ea5a608e8e57f1eb16"
+  },
+  "EstaActivo": true,
+  "Id": 58,
+  "Guid": "342a3c34-1535-49d9-8540-c7d3cfb1eb69",
+  "Nombre": "Tianguis 5",
+  "Presupuesto": {
+    "$numberDecimal": "800"
+  },
+  "EsPrimario": true,
+  "CategoriaId": 3,
+  "FechaDeRegistro": {
+    "$date": "2025-09-01T03:50:02.759Z"
+  },
+  "Categoria": null
+}]

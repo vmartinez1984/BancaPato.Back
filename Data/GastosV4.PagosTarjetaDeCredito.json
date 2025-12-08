@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "6934795eeb14e1e09ac3e9d3"
+  },
+  "Id": 1,
+  "Encodekey": "2327293b-1b80-4e63-bdb3-7041f3be430e",
+  "CompraTarjetaDeCreditoEncodedkey": "2b43354c-9427-41f7-9143-b2c49bd44250",
+  "CompraTarjetaDeCreditoId": 7,
+  "Monto": {
+    "$numberDecimal": "500"
+  },
+  "FechaDeRegistro": {
+    "$date": "2025-12-06T18:42:45.741Z"
+  },
+  "Nota": null
+}]

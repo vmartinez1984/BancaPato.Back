@@ -73,7 +73,7 @@ namespace Banca.Api.Controllers
         [HttpGet("{periodoId}/Presupuestos")]
         public async Task<IActionResult> ObtenerMovimiento(int periodoId)
         {
-            List<PresupuestoDelPeriodoDto> lista;
+            List<PresupuestoDto> lista;
 
             lista = await _unitOfWork.Periodo.ObtenerPresupestosDelPeriodoAsync(periodoId);
 

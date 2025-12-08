@@ -1,0 +1,7735 @@
+[{
+  "_id": {
+    "$oid": "680ff1f5423a087ae09f0e31"
+  },
+  "Id": 1,
+  "PeriodoId": 1,
+  "PresupuestoId": 1,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f5423a087ae09f0e32"
+  },
+  "Id": 2,
+  "PeriodoId": 1,
+  "PresupuestoId": 2,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f5423a087ae09f0e33"
+  },
+  "Id": 3,
+  "PeriodoId": 1,
+  "PresupuestoId": 3,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 5,
+  "Gastado": {
+    "$numberDecimal": "98"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f6423a087ae09f0e34"
+  },
+  "Id": 4,
+  "PeriodoId": 1,
+  "PresupuestoId": 4,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1350"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "1335"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f6423a087ae09f0e35"
+  },
+  "Id": 5,
+  "PeriodoId": 1,
+  "PresupuestoId": 5,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f6423a087ae09f0e36"
+  },
+  "Id": 6,
+  "PeriodoId": 1,
+  "PresupuestoId": 6,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f6423a087ae09f0e37"
+  },
+  "Id": 7,
+  "PeriodoId": 1,
+  "PresupuestoId": 7,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "381"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f6423a087ae09f0e38"
+  },
+  "Id": 8,
+  "PeriodoId": 1,
+  "PresupuestoId": 8,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "750"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f6423a087ae09f0e39"
+  },
+  "Id": 9,
+  "PeriodoId": 1,
+  "PresupuestoId": 9,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "559"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f7423a087ae09f0e3a"
+  },
+  "Id": 10,
+  "PeriodoId": 1,
+  "PresupuestoId": 10,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f7423a087ae09f0e3b"
+  },
+  "Id": 11,
+  "PeriodoId": 1,
+  "PresupuestoId": 11,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1650"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f7423a087ae09f0e3c"
+  },
+  "Id": 12,
+  "PeriodoId": 1,
+  "PresupuestoId": 12,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f7423a087ae09f0e3d"
+  },
+  "Id": 13,
+  "PeriodoId": 1,
+  "PresupuestoId": 13,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f7423a087ae09f0e3e"
+  },
+  "Id": 14,
+  "PeriodoId": 1,
+  "PresupuestoId": 14,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f8423a087ae09f0e3f"
+  },
+  "Id": 15,
+  "PeriodoId": 1,
+  "PresupuestoId": 15,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "600"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f8423a087ae09f0e40"
+  },
+  "Id": 16,
+  "PeriodoId": 1,
+  "PresupuestoId": 16,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f8423a087ae09f0e41"
+  },
+  "Id": 17,
+  "PeriodoId": 1,
+  "PresupuestoId": 17,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "245"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f8423a087ae09f0e42"
+  },
+  "Id": 18,
+  "PeriodoId": 1,
+  "PresupuestoId": 18,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "245"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f8423a087ae09f0e43"
+  },
+  "Id": 19,
+  "PeriodoId": 1,
+  "PresupuestoId": 19,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f9423a087ae09f0e44"
+  },
+  "Id": 20,
+  "PeriodoId": 1,
+  "PresupuestoId": 20,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "3387"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f9423a087ae09f0e45"
+  },
+  "Id": 21,
+  "PeriodoId": 1,
+  "PresupuestoId": 21,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f9423a087ae09f0e46"
+  },
+  "Id": 22,
+  "PeriodoId": 1,
+  "PresupuestoId": 22,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "191"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f9423a087ae09f0e47"
+  },
+  "Id": 23,
+  "PeriodoId": 1,
+  "PresupuestoId": 23,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1f9423a087ae09f0e48"
+  },
+  "Id": 24,
+  "PeriodoId": 1,
+  "PresupuestoId": 24,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "900"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fa423a087ae09f0e49"
+  },
+  "Id": 25,
+  "PeriodoId": 1,
+  "PresupuestoId": 25,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "900"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fa423a087ae09f0e4a"
+  },
+  "Id": 26,
+  "PeriodoId": 1,
+  "PresupuestoId": 26,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fa423a087ae09f0e4b"
+  },
+  "Id": 27,
+  "PeriodoId": 1,
+  "PresupuestoId": 27,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fa423a087ae09f0e4c"
+  },
+  "Id": 28,
+  "PeriodoId": 1,
+  "PresupuestoId": 28,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fa423a087ae09f0e4d"
+  },
+  "Id": 29,
+  "PeriodoId": 1,
+  "PresupuestoId": 29,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "650"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fb423a087ae09f0e4e"
+  },
+  "Id": 30,
+  "PeriodoId": 1,
+  "PresupuestoId": 30,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fb423a087ae09f0e4f"
+  },
+  "Id": 31,
+  "PeriodoId": 1,
+  "PresupuestoId": 31,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fb423a087ae09f0e50"
+  },
+  "Id": 32,
+  "PeriodoId": 1,
+  "PresupuestoId": 32,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fb423a087ae09f0e51"
+  },
+  "Id": 33,
+  "PeriodoId": 1,
+  "PresupuestoId": 33,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "680ff1fb423a087ae09f0e52"
+  },
+  "Id": 34,
+  "PeriodoId": 1,
+  "PresupuestoId": 34,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "143"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fb2a53567e960a57b2"
+  },
+  "Id": 35,
+  "PeriodoId": 2,
+  "PresupuestoId": 1,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fb2a53567e960a57b3"
+  },
+  "Id": 36,
+  "PeriodoId": 2,
+  "PresupuestoId": 2,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "150"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57b4"
+  },
+  "Id": 37,
+  "PeriodoId": 2,
+  "PresupuestoId": 3,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 5,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57b5"
+  },
+  "Id": 38,
+  "PeriodoId": 2,
+  "PresupuestoId": 4,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1350"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "1335"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57b6"
+  },
+  "Id": 39,
+  "PeriodoId": 2,
+  "PresupuestoId": 5,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57b7"
+  },
+  "Id": 40,
+  "PeriodoId": 2,
+  "PresupuestoId": 6,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57b8"
+  },
+  "Id": 41,
+  "PeriodoId": 2,
+  "PresupuestoId": 7,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "381"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57b9"
+  },
+  "Id": 42,
+  "PeriodoId": 2,
+  "PresupuestoId": 8,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57ba"
+  },
+  "Id": 43,
+  "PeriodoId": 2,
+  "PresupuestoId": 9,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57bb"
+  },
+  "Id": 44,
+  "PeriodoId": 2,
+  "PresupuestoId": 10,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57bc"
+  },
+  "Id": 45,
+  "PeriodoId": 2,
+  "PresupuestoId": 11,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1650"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57bd"
+  },
+  "Id": 46,
+  "PeriodoId": 2,
+  "PresupuestoId": 12,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57be"
+  },
+  "Id": 47,
+  "PeriodoId": 2,
+  "PresupuestoId": 13,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57bf"
+  },
+  "Id": 48,
+  "PeriodoId": 2,
+  "PresupuestoId": 14,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57c0"
+  },
+  "Id": 49,
+  "PeriodoId": 2,
+  "PresupuestoId": 15,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "600"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57c1"
+  },
+  "Id": 50,
+  "PeriodoId": 2,
+  "PresupuestoId": 16,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57c2"
+  },
+  "Id": 51,
+  "PeriodoId": 2,
+  "PresupuestoId": 17,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "245"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57c3"
+  },
+  "Id": 52,
+  "PeriodoId": 2,
+  "PresupuestoId": 18,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "245"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57c4"
+  },
+  "Id": 53,
+  "PeriodoId": 2,
+  "PresupuestoId": 19,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fc2a53567e960a57c5"
+  },
+  "Id": 54,
+  "PeriodoId": 2,
+  "PresupuestoId": 20,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "3393"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57c6"
+  },
+  "Id": 55,
+  "PeriodoId": 2,
+  "PresupuestoId": 21,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57c7"
+  },
+  "Id": 56,
+  "PeriodoId": 2,
+  "PresupuestoId": 22,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "248.52"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57c8"
+  },
+  "Id": 57,
+  "PeriodoId": 2,
+  "PresupuestoId": 23,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57c9"
+  },
+  "Id": 58,
+  "PeriodoId": 2,
+  "PresupuestoId": 24,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "900"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57ca"
+  },
+  "Id": 59,
+  "PeriodoId": 2,
+  "PresupuestoId": 25,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "900"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57cb"
+  },
+  "Id": 60,
+  "PeriodoId": 2,
+  "PresupuestoId": 26,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "95"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57cc"
+  },
+  "Id": 61,
+  "PeriodoId": 2,
+  "PresupuestoId": 27,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57cd"
+  },
+  "Id": 62,
+  "PeriodoId": 2,
+  "PresupuestoId": 28,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57ce"
+  },
+  "Id": 63,
+  "PeriodoId": 2,
+  "PresupuestoId": 29,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57cf"
+  },
+  "Id": 64,
+  "PeriodoId": 2,
+  "PresupuestoId": 30,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "286"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57d0"
+  },
+  "Id": 65,
+  "PeriodoId": 2,
+  "PresupuestoId": 31,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57d1"
+  },
+  "Id": 66,
+  "PeriodoId": 2,
+  "PresupuestoId": 32,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57d2"
+  },
+  "Id": 67,
+  "PeriodoId": 2,
+  "PresupuestoId": 33,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "286"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "681e38fd2a53567e960a57d3"
+  },
+  "Id": 68,
+  "PeriodoId": 2,
+  "PresupuestoId": 34,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "143.43"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab464"
+  },
+  "Id": 69,
+  "PeriodoId": 3,
+  "PresupuestoId": 1,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab465"
+  },
+  "Id": 70,
+  "PeriodoId": 3,
+  "PresupuestoId": 2,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "150"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab466"
+  },
+  "Id": 71,
+  "PeriodoId": 3,
+  "PresupuestoId": 3,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 5,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab467"
+  },
+  "Id": 72,
+  "PeriodoId": 3,
+  "PresupuestoId": 4,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1350"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "1358"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab468"
+  },
+  "Id": 73,
+  "PeriodoId": 3,
+  "PresupuestoId": 5,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab469"
+  },
+  "Id": 74,
+  "PeriodoId": 3,
+  "PresupuestoId": 6,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab46a"
+  },
+  "Id": 75,
+  "PeriodoId": 3,
+  "PresupuestoId": 7,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "382.61"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab46b"
+  },
+  "Id": 76,
+  "PeriodoId": 3,
+  "PresupuestoId": 8,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "750"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab46c"
+  },
+  "Id": 77,
+  "PeriodoId": 3,
+  "PresupuestoId": 9,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab46d"
+  },
+  "Id": 78,
+  "PeriodoId": 3,
+  "PresupuestoId": 10,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab46e"
+  },
+  "Id": 79,
+  "PeriodoId": 3,
+  "PresupuestoId": 11,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1650"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab46f"
+  },
+  "Id": 80,
+  "PeriodoId": 3,
+  "PresupuestoId": 12,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "191.54"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab470"
+  },
+  "Id": 81,
+  "PeriodoId": 3,
+  "PresupuestoId": 13,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab471"
+  },
+  "Id": 82,
+  "PeriodoId": 3,
+  "PresupuestoId": 14,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab472"
+  },
+  "Id": 83,
+  "PeriodoId": 3,
+  "PresupuestoId": 15,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "600"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a298723f05b1591ab473"
+  },
+  "Id": 84,
+  "PeriodoId": 3,
+  "PresupuestoId": 16,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab474"
+  },
+  "Id": 85,
+  "PeriodoId": 3,
+  "PresupuestoId": 17,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "246"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab475"
+  },
+  "Id": 86,
+  "PeriodoId": 3,
+  "PresupuestoId": 18,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "246"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab476"
+  },
+  "Id": 87,
+  "PeriodoId": 3,
+  "PresupuestoId": 19,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab477"
+  },
+  "Id": 88,
+  "PeriodoId": 3,
+  "PresupuestoId": 20,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "3403"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab478"
+  },
+  "Id": 89,
+  "PeriodoId": 3,
+  "PresupuestoId": 21,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab479"
+  },
+  "Id": 90,
+  "PeriodoId": 3,
+  "PresupuestoId": 22,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "248.7"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab47a"
+  },
+  "Id": 91,
+  "PeriodoId": 3,
+  "PresupuestoId": 23,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab47b"
+  },
+  "Id": 92,
+  "PeriodoId": 3,
+  "PresupuestoId": 24,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "900"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab47c"
+  },
+  "Id": 93,
+  "PeriodoId": 3,
+  "PresupuestoId": 25,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "900"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab47d"
+  },
+  "Id": 94,
+  "PeriodoId": 3,
+  "PresupuestoId": 26,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "114.78"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab47e"
+  },
+  "Id": 95,
+  "PeriodoId": 3,
+  "PresupuestoId": 27,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab47f"
+  },
+  "Id": 96,
+  "PeriodoId": 3,
+  "PresupuestoId": 28,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab480"
+  },
+  "Id": 97,
+  "PeriodoId": 3,
+  "PresupuestoId": 29,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab481"
+  },
+  "Id": 98,
+  "PeriodoId": 3,
+  "PresupuestoId": 30,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "349"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab482"
+  },
+  "Id": 99,
+  "PeriodoId": 3,
+  "PresupuestoId": 31,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab483"
+  },
+  "Id": 100,
+  "PeriodoId": 3,
+  "PresupuestoId": 32,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab484"
+  },
+  "Id": 101,
+  "PeriodoId": 3,
+  "PresupuestoId": 33,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "349"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6833a299723f05b1591ab485"
+  },
+  "Id": 102,
+  "PeriodoId": 3,
+  "PresupuestoId": 34,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "143.53"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb397"
+  },
+  "Id": 103,
+  "PeriodoId": 4,
+  "PresupuestoId": 35,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "246.84"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb398"
+  },
+  "Id": 104,
+  "PeriodoId": 4,
+  "PresupuestoId": 36,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "150"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb399"
+  },
+  "Id": 105,
+  "PeriodoId": 4,
+  "PresupuestoId": 37,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb39a"
+  },
+  "Id": 106,
+  "PeriodoId": 4,
+  "PresupuestoId": 38,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb39b"
+  },
+  "Id": 107,
+  "PeriodoId": 4,
+  "PresupuestoId": 39,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb39c"
+  },
+  "Id": 108,
+  "PeriodoId": 4,
+  "PresupuestoId": 40,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745c50502dda69afb39d"
+  },
+  "Id": 109,
+  "PeriodoId": 4,
+  "PresupuestoId": 41,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb39e"
+  },
+  "Id": 110,
+  "PeriodoId": 4,
+  "PresupuestoId": 42,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb39f"
+  },
+  "Id": 111,
+  "PeriodoId": 4,
+  "PresupuestoId": 43,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a0"
+  },
+  "Id": 112,
+  "PeriodoId": 4,
+  "PresupuestoId": 44,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "520"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a1"
+  },
+  "Id": 113,
+  "PeriodoId": 4,
+  "PresupuestoId": 45,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "3250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a2"
+  },
+  "Id": 114,
+  "PeriodoId": 4,
+  "PresupuestoId": 46,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "144.35"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a3"
+  },
+  "Id": 115,
+  "PeriodoId": 4,
+  "PresupuestoId": 47,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a4"
+  },
+  "Id": 116,
+  "PeriodoId": 4,
+  "PresupuestoId": 48,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a5"
+  },
+  "Id": 117,
+  "PeriodoId": 4,
+  "PresupuestoId": 49,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a6"
+  },
+  "Id": 118,
+  "PeriodoId": 4,
+  "PresupuestoId": 50,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a7"
+  },
+  "Id": 119,
+  "PeriodoId": 4,
+  "PresupuestoId": 51,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "249.49"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a8"
+  },
+  "Id": 120,
+  "PeriodoId": 4,
+  "PresupuestoId": 52,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3a9"
+  },
+  "Id": 121,
+  "PeriodoId": 4,
+  "PresupuestoId": 53,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "450"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "684c745d50502dda69afb3aa"
+  },
+  "Id": 122,
+  "PeriodoId": 4,
+  "PresupuestoId": 54,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b72a"
+  },
+  "Id": 123,
+  "PeriodoId": 5,
+  "PresupuestoId": 35,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b72b"
+  },
+  "Id": 124,
+  "PeriodoId": 5,
+  "PresupuestoId": 36,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "150"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b72c"
+  },
+  "Id": 125,
+  "PeriodoId": 5,
+  "PresupuestoId": 37,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b72d"
+  },
+  "Id": 126,
+  "PeriodoId": 5,
+  "PresupuestoId": 38,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b72e"
+  },
+  "Id": 127,
+  "PeriodoId": 5,
+  "PresupuestoId": 39,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b72f"
+  },
+  "Id": 128,
+  "PeriodoId": 5,
+  "PresupuestoId": 40,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b730"
+  },
+  "Id": 129,
+  "PeriodoId": 5,
+  "PresupuestoId": 41,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b731"
+  },
+  "Id": 130,
+  "PeriodoId": 5,
+  "PresupuestoId": 42,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b732"
+  },
+  "Id": 131,
+  "PeriodoId": 5,
+  "PresupuestoId": 43,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b733"
+  },
+  "Id": 132,
+  "PeriodoId": 5,
+  "PresupuestoId": 44,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "293"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b6e604f2cf41e1b734"
+  },
+  "Id": 133,
+  "PeriodoId": 5,
+  "PresupuestoId": 45,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "3384"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b735"
+  },
+  "Id": 134,
+  "PeriodoId": 5,
+  "PresupuestoId": 46,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "144.59"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b736"
+  },
+  "Id": 135,
+  "PeriodoId": 5,
+  "PresupuestoId": 47,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b737"
+  },
+  "Id": 136,
+  "PeriodoId": 5,
+  "PresupuestoId": 48,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b738"
+  },
+  "Id": 137,
+  "PeriodoId": 5,
+  "PresupuestoId": 49,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b739"
+  },
+  "Id": 138,
+  "PeriodoId": 5,
+  "PresupuestoId": 50,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b73a"
+  },
+  "Id": 139,
+  "PeriodoId": 5,
+  "PresupuestoId": 51,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "247.87"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b73b"
+  },
+  "Id": 140,
+  "PeriodoId": 5,
+  "PresupuestoId": 52,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b73c"
+  },
+  "Id": 141,
+  "PeriodoId": 5,
+  "PresupuestoId": 53,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b73d"
+  },
+  "Id": 142,
+  "PeriodoId": 5,
+  "PresupuestoId": 54,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "685ec2b7e604f2cf41e1b73e"
+  },
+  "Id": 143,
+  "PeriodoId": 5,
+  "PresupuestoId": 55,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "231"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e5fc"
+  },
+  "Id": 144,
+  "PeriodoId": 6,
+  "PresupuestoId": 35,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "248.15"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e5fd"
+  },
+  "Id": 145,
+  "PeriodoId": 6,
+  "PresupuestoId": 36,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "150"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e5fe"
+  },
+  "Id": 146,
+  "PeriodoId": 6,
+  "PresupuestoId": 37,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e5ff"
+  },
+  "Id": 147,
+  "PeriodoId": 6,
+  "PresupuestoId": 38,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e600"
+  },
+  "Id": 148,
+  "PeriodoId": 6,
+  "PresupuestoId": 39,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e601"
+  },
+  "Id": 149,
+  "PeriodoId": 6,
+  "PresupuestoId": 40,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "96.46"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e602"
+  },
+  "Id": 150,
+  "PeriodoId": 6,
+  "PresupuestoId": 41,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e603"
+  },
+  "Id": 151,
+  "PeriodoId": 6,
+  "PresupuestoId": 42,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e604"
+  },
+  "Id": 152,
+  "PeriodoId": 6,
+  "PresupuestoId": 43,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755436df024a52b078e605"
+  },
+  "Id": 153,
+  "PeriodoId": 6,
+  "PresupuestoId": 44,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "496.3"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e606"
+  },
+  "Id": 154,
+  "PeriodoId": 6,
+  "PresupuestoId": 45,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "3250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e607"
+  },
+  "Id": 155,
+  "PeriodoId": 6,
+  "PresupuestoId": 46,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "144.75"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e608"
+  },
+  "Id": 156,
+  "PeriodoId": 6,
+  "PresupuestoId": 47,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e609"
+  },
+  "Id": 157,
+  "PeriodoId": 6,
+  "PresupuestoId": 48,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e60a"
+  },
+  "Id": 158,
+  "PeriodoId": 6,
+  "PresupuestoId": 49,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1197"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e60b"
+  },
+  "Id": 159,
+  "PeriodoId": 6,
+  "PresupuestoId": 50,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e60c"
+  },
+  "Id": 160,
+  "PeriodoId": 6,
+  "PresupuestoId": 51,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "231.51"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e60d"
+  },
+  "Id": 161,
+  "PeriodoId": 6,
+  "PresupuestoId": 52,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e60e"
+  },
+  "Id": 162,
+  "PeriodoId": 6,
+  "PresupuestoId": 53,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e60f"
+  },
+  "Id": 163,
+  "PeriodoId": 6,
+  "PresupuestoId": 54,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68755437df024a52b078e610"
+  },
+  "Id": 164,
+  "PeriodoId": 6,
+  "PresupuestoId": 55,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "231.51"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed21"
+  },
+  "Id": 165,
+  "PeriodoId": 7,
+  "PresupuestoId": 35,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed22"
+  },
+  "Id": 166,
+  "PeriodoId": 7,
+  "PresupuestoId": 36,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed23"
+  },
+  "Id": 167,
+  "PeriodoId": 7,
+  "PresupuestoId": 37,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed24"
+  },
+  "Id": 168,
+  "PeriodoId": 7,
+  "PresupuestoId": 38,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed25"
+  },
+  "Id": 169,
+  "PeriodoId": 7,
+  "PresupuestoId": 39,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed26"
+  },
+  "Id": 170,
+  "PeriodoId": 7,
+  "PresupuestoId": 40,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed27"
+  },
+  "Id": 171,
+  "PeriodoId": 7,
+  "PresupuestoId": 41,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed28"
+  },
+  "Id": 172,
+  "PeriodoId": 7,
+  "PresupuestoId": 42,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed29"
+  },
+  "Id": 173,
+  "PeriodoId": 7,
+  "PresupuestoId": 43,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed2a"
+  },
+  "Id": 174,
+  "PeriodoId": 7,
+  "PresupuestoId": 44,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed2b"
+  },
+  "Id": 175,
+  "PeriodoId": 7,
+  "PresupuestoId": 45,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed2c"
+  },
+  "Id": 176,
+  "PeriodoId": 7,
+  "PresupuestoId": 46,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed2d"
+  },
+  "Id": 177,
+  "PeriodoId": 7,
+  "PresupuestoId": 47,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed2e"
+  },
+  "Id": 178,
+  "PeriodoId": 7,
+  "PresupuestoId": 48,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed2f"
+  },
+  "Id": 179,
+  "PeriodoId": 7,
+  "PresupuestoId": 49,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9dd6b0dea0ba726ed30"
+  },
+  "Id": 180,
+  "PeriodoId": 7,
+  "PresupuestoId": 50,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9de6b0dea0ba726ed31"
+  },
+  "Id": 181,
+  "PeriodoId": 7,
+  "PresupuestoId": 51,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9de6b0dea0ba726ed32"
+  },
+  "Id": 182,
+  "PeriodoId": 7,
+  "PresupuestoId": 52,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9de6b0dea0ba726ed33"
+  },
+  "Id": 183,
+  "PeriodoId": 7,
+  "PresupuestoId": 53,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9de6b0dea0ba726ed34"
+  },
+  "Id": 184,
+  "PeriodoId": 7,
+  "PresupuestoId": 54,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ad9de6b0dea0ba726ed35"
+  },
+  "Id": 185,
+  "PeriodoId": 7,
+  "PresupuestoId": 55,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726edfc"
+  },
+  "Id": 186,
+  "PeriodoId": 8,
+  "PresupuestoId": 1,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726edfd"
+  },
+  "Id": 187,
+  "PeriodoId": 8,
+  "PresupuestoId": 2,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726edfe"
+  },
+  "Id": 188,
+  "PeriodoId": 8,
+  "PresupuestoId": 3,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 5,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726edff"
+  },
+  "Id": 189,
+  "PeriodoId": 8,
+  "PresupuestoId": 4,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1350"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726ee00"
+  },
+  "Id": 190,
+  "PeriodoId": 8,
+  "PresupuestoId": 5,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726ee01"
+  },
+  "Id": 191,
+  "PeriodoId": 8,
+  "PresupuestoId": 6,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726ee02"
+  },
+  "Id": 192,
+  "PeriodoId": 8,
+  "PresupuestoId": 7,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726ee03"
+  },
+  "Id": 193,
+  "PeriodoId": 8,
+  "PresupuestoId": 8,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726ee04"
+  },
+  "Id": 194,
+  "PeriodoId": 8,
+  "PresupuestoId": 9,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada116b0dea0ba726ee05"
+  },
+  "Id": 195,
+  "PeriodoId": 8,
+  "PresupuestoId": 10,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee06"
+  },
+  "Id": 196,
+  "PeriodoId": 8,
+  "PresupuestoId": 11,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1650"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee07"
+  },
+  "Id": 197,
+  "PeriodoId": 8,
+  "PresupuestoId": 12,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee08"
+  },
+  "Id": 198,
+  "PeriodoId": 8,
+  "PresupuestoId": 13,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee09"
+  },
+  "Id": 199,
+  "PeriodoId": 8,
+  "PresupuestoId": 14,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee0a"
+  },
+  "Id": 200,
+  "PeriodoId": 8,
+  "PresupuestoId": 15,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee0b"
+  },
+  "Id": 201,
+  "PeriodoId": 8,
+  "PresupuestoId": 16,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee0c"
+  },
+  "Id": 202,
+  "PeriodoId": 8,
+  "PresupuestoId": 17,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee0d"
+  },
+  "Id": 203,
+  "PeriodoId": 8,
+  "PresupuestoId": 18,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee0e"
+  },
+  "Id": 204,
+  "PeriodoId": 8,
+  "PresupuestoId": 19,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee0f"
+  },
+  "Id": 205,
+  "PeriodoId": 8,
+  "PresupuestoId": 20,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee10"
+  },
+  "Id": 206,
+  "PeriodoId": 8,
+  "PresupuestoId": 21,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee11"
+  },
+  "Id": 207,
+  "PeriodoId": 8,
+  "PresupuestoId": 22,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee12"
+  },
+  "Id": 208,
+  "PeriodoId": 8,
+  "PresupuestoId": 23,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "50"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee13"
+  },
+  "Id": 209,
+  "PeriodoId": 8,
+  "PresupuestoId": 24,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee14"
+  },
+  "Id": 210,
+  "PeriodoId": 8,
+  "PresupuestoId": 25,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "900"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada126b0dea0ba726ee15"
+  },
+  "Id": 211,
+  "PeriodoId": 8,
+  "PresupuestoId": 26,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee16"
+  },
+  "Id": 212,
+  "PeriodoId": 8,
+  "PresupuestoId": 27,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee17"
+  },
+  "Id": 213,
+  "PeriodoId": 8,
+  "PresupuestoId": 28,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee18"
+  },
+  "Id": 214,
+  "PeriodoId": 8,
+  "PresupuestoId": 29,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee19"
+  },
+  "Id": 215,
+  "PeriodoId": 8,
+  "PresupuestoId": 30,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee1a"
+  },
+  "Id": 216,
+  "PeriodoId": 8,
+  "PresupuestoId": 31,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee1b"
+  },
+  "Id": 217,
+  "PeriodoId": 8,
+  "PresupuestoId": 32,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee1c"
+  },
+  "Id": 218,
+  "PeriodoId": 8,
+  "PresupuestoId": 33,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688ada136b0dea0ba726ee1d"
+  },
+  "Id": 219,
+  "PeriodoId": 8,
+  "PresupuestoId": 34,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93c093f9d94cbc2ce2d"
+  },
+  "Id": 220,
+  "PeriodoId": 9,
+  "PresupuestoId": 35,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "248.84"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93c093f9d94cbc2ce2e"
+  },
+  "Id": 221,
+  "PeriodoId": 9,
+  "PresupuestoId": 36,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "150"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93c093f9d94cbc2ce2f"
+  },
+  "Id": 222,
+  "PeriodoId": 9,
+  "PresupuestoId": 37,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93c093f9d94cbc2ce30"
+  },
+  "Id": 223,
+  "PeriodoId": 9,
+  "PresupuestoId": 38,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93d093f9d94cbc2ce31"
+  },
+  "Id": 224,
+  "PeriodoId": 9,
+  "PresupuestoId": 39,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93d093f9d94cbc2ce32"
+  },
+  "Id": 225,
+  "PeriodoId": 9,
+  "PresupuestoId": 40,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93d093f9d94cbc2ce33"
+  },
+  "Id": 226,
+  "PeriodoId": 9,
+  "PresupuestoId": 41,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93d093f9d94cbc2ce34"
+  },
+  "Id": 227,
+  "PeriodoId": 9,
+  "PresupuestoId": 42,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93d093f9d94cbc2ce35"
+  },
+  "Id": 228,
+  "PeriodoId": 9,
+  "PresupuestoId": 43,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93e093f9d94cbc2ce36"
+  },
+  "Id": 229,
+  "PeriodoId": 9,
+  "PresupuestoId": 44,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "536"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93e093f9d94cbc2ce37"
+  },
+  "Id": 230,
+  "PeriodoId": 9,
+  "PresupuestoId": 45,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "3235.49"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93e093f9d94cbc2ce38"
+  },
+  "Id": 231,
+  "PeriodoId": 9,
+  "PresupuestoId": 46,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "145.15"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93e093f9d94cbc2ce39"
+  },
+  "Id": 232,
+  "PeriodoId": 9,
+  "PresupuestoId": 47,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93e093f9d94cbc2ce3a"
+  },
+  "Id": 233,
+  "PeriodoId": 9,
+  "PresupuestoId": 48,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93f093f9d94cbc2ce3b"
+  },
+  "Id": 234,
+  "PeriodoId": 9,
+  "PresupuestoId": 49,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93f093f9d94cbc2ce3c"
+  },
+  "Id": 235,
+  "PeriodoId": 9,
+  "PresupuestoId": 50,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93f093f9d94cbc2ce3d"
+  },
+  "Id": 236,
+  "PeriodoId": 9,
+  "PresupuestoId": 51,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "232.14"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93f093f9d94cbc2ce3e"
+  },
+  "Id": 237,
+  "PeriodoId": 9,
+  "PresupuestoId": 52,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb93f093f9d94cbc2ce3f"
+  },
+  "Id": 238,
+  "PeriodoId": 9,
+  "PresupuestoId": 53,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb940093f9d94cbc2ce40"
+  },
+  "Id": 239,
+  "PeriodoId": 9,
+  "PresupuestoId": 54,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "688bb940093f9d94cbc2ce41"
+  },
+  "Id": 240,
+  "PeriodoId": 9,
+  "PresupuestoId": 55,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "232"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814a421f8114442a0e97"
+  },
+  "Id": 241,
+  "PeriodoId": 10,
+  "PresupuestoId": 35,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814a421f8114442a0e98"
+  },
+  "Id": 242,
+  "PeriodoId": 10,
+  "PresupuestoId": 36,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "150"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814a421f8114442a0e99"
+  },
+  "Id": 243,
+  "PeriodoId": 10,
+  "PresupuestoId": 37,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0e9a"
+  },
+  "Id": 244,
+  "PeriodoId": 10,
+  "PresupuestoId": 38,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1700"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0e9b"
+  },
+  "Id": 245,
+  "PeriodoId": 10,
+  "PresupuestoId": 39,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0e9c"
+  },
+  "Id": 246,
+  "PeriodoId": 10,
+  "PresupuestoId": 40,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "100"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0e9d"
+  },
+  "Id": 247,
+  "PeriodoId": 10,
+  "PresupuestoId": 41,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0e9e"
+  },
+  "Id": 248,
+  "PeriodoId": 10,
+  "PresupuestoId": 42,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0e9f"
+  },
+  "Id": 249,
+  "PeriodoId": 10,
+  "PresupuestoId": 43,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea0"
+  },
+  "Id": 250,
+  "PeriodoId": 10,
+  "PresupuestoId": 44,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea1"
+  },
+  "Id": 251,
+  "PeriodoId": 10,
+  "PresupuestoId": 45,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3250"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "3250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea2"
+  },
+  "Id": 252,
+  "PeriodoId": 10,
+  "PresupuestoId": 46,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "150"
+  },
+  "AhorroId": 41,
+  "Gastado": {
+    "$numberDecimal": "145"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea3"
+  },
+  "Id": 253,
+  "PeriodoId": 10,
+  "PresupuestoId": 47,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea4"
+  },
+  "Id": 254,
+  "PeriodoId": 10,
+  "PresupuestoId": 48,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea5"
+  },
+  "Id": 255,
+  "PeriodoId": 10,
+  "PresupuestoId": 49,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea6"
+  },
+  "Id": 256,
+  "PeriodoId": 10,
+  "PresupuestoId": 50,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea7"
+  },
+  "Id": 257,
+  "PeriodoId": 10,
+  "PresupuestoId": 51,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "250"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814b421f8114442a0ea8"
+  },
+  "Id": 258,
+  "PeriodoId": 10,
+  "PresupuestoId": 52,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814c421f8114442a0ea9"
+  },
+  "Id": 259,
+  "PeriodoId": 10,
+  "PresupuestoId": 53,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814c421f8114442a0eaa"
+  },
+  "Id": 260,
+  "PeriodoId": 10,
+  "PresupuestoId": 54,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "542"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "689f814c421f8114442a0eab"
+  },
+  "Id": 261,
+  "PeriodoId": 10,
+  "PresupuestoId": 55,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "232"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f8d"
+  },
+  "Id": 262,
+  "PeriodoId": 11,
+  "PresupuestoId": 223,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f8e"
+  },
+  "Id": 263,
+  "PeriodoId": 11,
+  "PresupuestoId": 224,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f8f"
+  },
+  "Id": 264,
+  "PeriodoId": 11,
+  "PresupuestoId": 225,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f90"
+  },
+  "Id": 265,
+  "PeriodoId": 11,
+  "PresupuestoId": 226,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f91"
+  },
+  "Id": 266,
+  "PeriodoId": 11,
+  "PresupuestoId": 227,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f92"
+  },
+  "Id": 267,
+  "PeriodoId": 11,
+  "PresupuestoId": 228,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f93"
+  },
+  "Id": 268,
+  "PeriodoId": 11,
+  "PresupuestoId": 229,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "350"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "345"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f94"
+  },
+  "Id": 269,
+  "PeriodoId": 11,
+  "PresupuestoId": 230,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2100"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "2084"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb25a608e8e57f22f95"
+  },
+  "Id": 270,
+  "PeriodoId": 11,
+  "PresupuestoId": 231,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f96"
+  },
+  "Id": 271,
+  "PeriodoId": 11,
+  "PresupuestoId": 232,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "3000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f97"
+  },
+  "Id": 272,
+  "PeriodoId": 11,
+  "PresupuestoId": 233,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "926"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f98"
+  },
+  "Id": 273,
+  "PeriodoId": 11,
+  "PresupuestoId": 234,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "194"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f99"
+  },
+  "Id": 274,
+  "PeriodoId": 11,
+  "PresupuestoId": 235,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f9a"
+  },
+  "Id": 275,
+  "PeriodoId": 11,
+  "PresupuestoId": 236,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f9b"
+  },
+  "Id": 276,
+  "PeriodoId": 11,
+  "PresupuestoId": 237,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "544.4"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f9c"
+  },
+  "Id": 277,
+  "PeriodoId": 11,
+  "PresupuestoId": 238,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "541.92"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f9d"
+  },
+  "Id": 278,
+  "PeriodoId": 11,
+  "PresupuestoId": 239,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f9e"
+  },
+  "Id": 279,
+  "PeriodoId": 11,
+  "PresupuestoId": 240,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22f9f"
+  },
+  "Id": 280,
+  "PeriodoId": 11,
+  "PresupuestoId": 241,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "479"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22fa0"
+  },
+  "Id": 281,
+  "PeriodoId": 11,
+  "PresupuestoId": 242,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "6500"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "6586"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22fa1"
+  },
+  "Id": 282,
+  "PeriodoId": 11,
+  "PresupuestoId": 243,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22fa2"
+  },
+  "Id": 283,
+  "PeriodoId": 11,
+  "PresupuestoId": 244,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22fa3"
+  },
+  "Id": 284,
+  "PeriodoId": 11,
+  "PresupuestoId": 245,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22fa4"
+  },
+  "Id": 285,
+  "PeriodoId": 11,
+  "PresupuestoId": 246,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb35a608e8e57f22fa5"
+  },
+  "Id": 286,
+  "PeriodoId": 11,
+  "PresupuestoId": 247,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb45a608e8e57f22fa6"
+  },
+  "Id": 287,
+  "PeriodoId": 11,
+  "PresupuestoId": 248,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb45a608e8e57f22fa7"
+  },
+  "Id": 288,
+  "PeriodoId": 11,
+  "PresupuestoId": 249,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb45a608e8e57f22fa8"
+  },
+  "Id": 289,
+  "PeriodoId": 11,
+  "PresupuestoId": 250,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb45a608e8e57f22fa9"
+  },
+  "Id": 290,
+  "PeriodoId": 11,
+  "PresupuestoId": 251,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68b51bb45a608e8e57f22faa"
+  },
+  "Id": 291,
+  "PeriodoId": 11,
+  "PresupuestoId": 252,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "800"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820db1195e0c89f8b4c6"
+  },
+  "Id": 292,
+  "PeriodoId": 12,
+  "PresupuestoId": 189,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820db1195e0c89f8b4c7"
+  },
+  "Id": 293,
+  "PeriodoId": 12,
+  "PresupuestoId": 190,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820eb1195e0c89f8b4c8"
+  },
+  "Id": 294,
+  "PeriodoId": 12,
+  "PresupuestoId": 191,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "2500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820eb1195e0c89f8b4c9"
+  },
+  "Id": 295,
+  "PeriodoId": 12,
+  "PresupuestoId": 192,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "586.15"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820eb1195e0c89f8b4ca"
+  },
+  "Id": 296,
+  "PeriodoId": 12,
+  "PresupuestoId": 193,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "488.46"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820fb1195e0c89f8b4cb"
+  },
+  "Id": 297,
+  "PeriodoId": 12,
+  "PresupuestoId": 194,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "586.43"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820fb1195e0c89f8b4cc"
+  },
+  "Id": 298,
+  "PeriodoId": 12,
+  "PresupuestoId": 195,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820fb1195e0c89f8b4cd"
+  },
+  "Id": 299,
+  "PeriodoId": 12,
+  "PresupuestoId": 196,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd820fb1195e0c89f8b4ce"
+  },
+  "Id": 300,
+  "PeriodoId": 12,
+  "PresupuestoId": 197,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "3800"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8210b1195e0c89f8b4cf"
+  },
+  "Id": 301,
+  "PeriodoId": 12,
+  "PresupuestoId": 198,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2100"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "2100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8210b1195e0c89f8b4d0"
+  },
+  "Id": 302,
+  "PeriodoId": 12,
+  "PresupuestoId": 199,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8210b1195e0c89f8b4d1"
+  },
+  "Id": 303,
+  "PeriodoId": 12,
+  "PresupuestoId": 200,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "3500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8210b1195e0c89f8b4d2"
+  },
+  "Id": 304,
+  "PeriodoId": 12,
+  "PresupuestoId": 201,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1191.84"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8211b1195e0c89f8b4d3"
+  },
+  "Id": 305,
+  "PeriodoId": 12,
+  "PresupuestoId": 202,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8211b1195e0c89f8b4d4"
+  },
+  "Id": 306,
+  "PeriodoId": 12,
+  "PresupuestoId": 203,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "450"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8211b1195e0c89f8b4d5"
+  },
+  "Id": 307,
+  "PeriodoId": 12,
+  "PresupuestoId": 204,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8211b1195e0c89f8b4d6"
+  },
+  "Id": 308,
+  "PeriodoId": 12,
+  "PresupuestoId": 205,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8212b1195e0c89f8b4d7"
+  },
+  "Id": 309,
+  "PeriodoId": 12,
+  "PresupuestoId": 206,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "408"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8212b1195e0c89f8b4d8"
+  },
+  "Id": 310,
+  "PeriodoId": 12,
+  "PresupuestoId": 207,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "408"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8212b1195e0c89f8b4d9"
+  },
+  "Id": 311,
+  "PeriodoId": 12,
+  "PresupuestoId": 209,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "525"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8212b1195e0c89f8b4da"
+  },
+  "Id": 312,
+  "PeriodoId": 12,
+  "PresupuestoId": 210,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "6600"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "6649.28"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8213b1195e0c89f8b4db"
+  },
+  "Id": 313,
+  "PeriodoId": 12,
+  "PresupuestoId": 211,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8213b1195e0c89f8b4dc"
+  },
+  "Id": 314,
+  "PeriodoId": 12,
+  "PresupuestoId": 212,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 26,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8213b1195e0c89f8b4dd"
+  },
+  "Id": 315,
+  "PeriodoId": 12,
+  "PresupuestoId": 213,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "156"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8213b1195e0c89f8b4de"
+  },
+  "Id": 316,
+  "PeriodoId": 12,
+  "PresupuestoId": 214,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "75"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8214b1195e0c89f8b4df"
+  },
+  "Id": 317,
+  "PeriodoId": 12,
+  "PresupuestoId": 215,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1700"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8214b1195e0c89f8b4e0"
+  },
+  "Id": 318,
+  "PeriodoId": 12,
+  "PresupuestoId": 216,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "195.38"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8214b1195e0c89f8b4e1"
+  },
+  "Id": 319,
+  "PeriodoId": 12,
+  "PresupuestoId": 217,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "750"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8214b1195e0c89f8b4e2"
+  },
+  "Id": 320,
+  "PeriodoId": 12,
+  "PresupuestoId": 218,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "4000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "4000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8215b1195e0c89f8b4e3"
+  },
+  "Id": 321,
+  "PeriodoId": 12,
+  "PresupuestoId": 219,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "547"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8215b1195e0c89f8b4e4"
+  },
+  "Id": 322,
+  "PeriodoId": 12,
+  "PresupuestoId": 220,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8215b1195e0c89f8b4e5"
+  },
+  "Id": 323,
+  "PeriodoId": 12,
+  "PresupuestoId": 221,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "68dd8215b1195e0c89f8b4e6"
+  },
+  "Id": 324,
+  "PeriodoId": 12,
+  "PresupuestoId": 222,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 33,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500ede82fd7627167c877"
+  },
+  "Id": 325,
+  "PeriodoId": 13,
+  "PresupuestoId": 189,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "2000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500ede82fd7627167c878"
+  },
+  "Id": 326,
+  "PeriodoId": 13,
+  "PresupuestoId": 190,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500ede82fd7627167c879"
+  },
+  "Id": 327,
+  "PeriodoId": 13,
+  "PresupuestoId": 191,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "2500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500ede82fd7627167c87a"
+  },
+  "Id": 328,
+  "PeriodoId": 13,
+  "PresupuestoId": 192,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "588.69"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500ede82fd7627167c87b"
+  },
+  "Id": 329,
+  "PeriodoId": 13,
+  "PresupuestoId": 193,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "490.57"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500ede82fd7627167c87c"
+  },
+  "Id": 330,
+  "PeriodoId": 13,
+  "PresupuestoId": 194,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "588.99"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c87d"
+  },
+  "Id": 331,
+  "PeriodoId": 13,
+  "PresupuestoId": 195,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c87e"
+  },
+  "Id": 332,
+  "PeriodoId": 13,
+  "PresupuestoId": 196,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c87f"
+  },
+  "Id": 333,
+  "PeriodoId": 13,
+  "PresupuestoId": 197,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c880"
+  },
+  "Id": 334,
+  "PeriodoId": 13,
+  "PresupuestoId": 198,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2100"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "2100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c881"
+  },
+  "Id": 335,
+  "PeriodoId": 13,
+  "PresupuestoId": 199,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c882"
+  },
+  "Id": 336,
+  "PeriodoId": 13,
+  "PresupuestoId": 200,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "4000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c883"
+  },
+  "Id": 337,
+  "PeriodoId": 13,
+  "PresupuestoId": 201,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1997"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c884"
+  },
+  "Id": 338,
+  "PeriodoId": 13,
+  "PresupuestoId": 202,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c885"
+  },
+  "Id": 339,
+  "PeriodoId": 13,
+  "PresupuestoId": 203,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "450"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c886"
+  },
+  "Id": 340,
+  "PeriodoId": 13,
+  "PresupuestoId": 204,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c887"
+  },
+  "Id": 341,
+  "PeriodoId": 13,
+  "PresupuestoId": 205,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c888"
+  },
+  "Id": 342,
+  "PeriodoId": 13,
+  "PresupuestoId": 206,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c889"
+  },
+  "Id": 343,
+  "PeriodoId": 13,
+  "PresupuestoId": 207,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "399"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c88a"
+  },
+  "Id": 344,
+  "PeriodoId": 13,
+  "PresupuestoId": 209,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "525"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c88b"
+  },
+  "Id": 345,
+  "PeriodoId": 13,
+  "PresupuestoId": 210,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "6600"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "6794"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500eee82fd7627167c88c"
+  },
+  "Id": 346,
+  "PeriodoId": 13,
+  "PresupuestoId": 211,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c88d"
+  },
+  "Id": 347,
+  "PeriodoId": 13,
+  "PresupuestoId": 212,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 26,
+  "Gastado": {
+    "$numberDecimal": "490"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c88e"
+  },
+  "Id": 348,
+  "PeriodoId": 13,
+  "PresupuestoId": 213,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "392.46"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c88f"
+  },
+  "Id": 349,
+  "PeriodoId": 13,
+  "PresupuestoId": 214,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "75"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c890"
+  },
+  "Id": 350,
+  "PeriodoId": 13,
+  "PresupuestoId": 215,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c891"
+  },
+  "Id": 351,
+  "PeriodoId": 13,
+  "PresupuestoId": 216,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "196.23"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c892"
+  },
+  "Id": 352,
+  "PeriodoId": 13,
+  "PresupuestoId": 217,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "750"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c893"
+  },
+  "Id": 353,
+  "PeriodoId": 13,
+  "PresupuestoId": 218,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "4000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "2550"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c894"
+  },
+  "Id": 354,
+  "PeriodoId": 13,
+  "PresupuestoId": 219,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "550"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c895"
+  },
+  "Id": 355,
+  "PeriodoId": 13,
+  "PresupuestoId": 220,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c896"
+  },
+  "Id": 356,
+  "PeriodoId": 13,
+  "PresupuestoId": 221,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "690500efe82fd7627167c897"
+  },
+  "Id": 357,
+  "PeriodoId": 13,
+  "PresupuestoId": 222,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 33,
+  "Gastado": {
+    "$numberDecimal": "196.23"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "693226192f3974002d0dcc9a"
+  },
+  "Id": 358,
+  "PeriodoId": 14,
+  "PresupuestoId": 189,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcc9b"
+  },
+  "Id": 359,
+  "PeriodoId": 14,
+  "PresupuestoId": 190,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcc9c"
+  },
+  "Id": 360,
+  "PeriodoId": 14,
+  "PresupuestoId": 191,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcc9d"
+  },
+  "Id": 361,
+  "PeriodoId": 14,
+  "PresupuestoId": 192,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcc9e"
+  },
+  "Id": 362,
+  "PeriodoId": 14,
+  "PresupuestoId": 193,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcc9f"
+  },
+  "Id": 363,
+  "PeriodoId": 14,
+  "PresupuestoId": 194,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca0"
+  },
+  "Id": 364,
+  "PeriodoId": 14,
+  "PresupuestoId": 195,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca1"
+  },
+  "Id": 365,
+  "PeriodoId": 14,
+  "PresupuestoId": 196,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca2"
+  },
+  "Id": 366,
+  "PeriodoId": 14,
+  "PresupuestoId": 197,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca3"
+  },
+  "Id": 367,
+  "PeriodoId": 14,
+  "PresupuestoId": 198,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2100"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca4"
+  },
+  "Id": 368,
+  "PeriodoId": 14,
+  "PresupuestoId": 199,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca5"
+  },
+  "Id": 369,
+  "PeriodoId": 14,
+  "PresupuestoId": 200,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca6"
+  },
+  "Id": 370,
+  "PeriodoId": 14,
+  "PresupuestoId": 201,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca7"
+  },
+  "Id": 371,
+  "PeriodoId": 14,
+  "PresupuestoId": 202,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca8"
+  },
+  "Id": 372,
+  "PeriodoId": 14,
+  "PresupuestoId": 203,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dcca9"
+  },
+  "Id": 373,
+  "PeriodoId": 14,
+  "PresupuestoId": 204,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dccaa"
+  },
+  "Id": 374,
+  "PeriodoId": 14,
+  "PresupuestoId": 205,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261a2f3974002d0dccab"
+  },
+  "Id": 375,
+  "PeriodoId": 14,
+  "PresupuestoId": 206,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccac"
+  },
+  "Id": 376,
+  "PeriodoId": 14,
+  "PresupuestoId": 207,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccad"
+  },
+  "Id": 377,
+  "PeriodoId": 14,
+  "PresupuestoId": 209,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccae"
+  },
+  "Id": 378,
+  "PeriodoId": 14,
+  "PresupuestoId": 210,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "6600"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccaf"
+  },
+  "Id": 379,
+  "PeriodoId": 14,
+  "PresupuestoId": 211,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb0"
+  },
+  "Id": 380,
+  "PeriodoId": 14,
+  "PresupuestoId": 212,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 26,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb1"
+  },
+  "Id": 381,
+  "PeriodoId": 14,
+  "PresupuestoId": 213,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb2"
+  },
+  "Id": 382,
+  "PeriodoId": 14,
+  "PresupuestoId": 214,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "75"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb3"
+  },
+  "Id": 383,
+  "PeriodoId": 14,
+  "PresupuestoId": 215,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb4"
+  },
+  "Id": 384,
+  "PeriodoId": 14,
+  "PresupuestoId": 216,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb5"
+  },
+  "Id": 385,
+  "PeriodoId": 14,
+  "PresupuestoId": 217,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb6"
+  },
+  "Id": 386,
+  "PeriodoId": 14,
+  "PresupuestoId": 218,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "4000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb7"
+  },
+  "Id": 387,
+  "PeriodoId": 14,
+  "PresupuestoId": 219,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb8"
+  },
+  "Id": 388,
+  "PeriodoId": 14,
+  "PresupuestoId": 220,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccb9"
+  },
+  "Id": 389,
+  "PeriodoId": 14,
+  "PresupuestoId": 221,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "6932261b2f3974002d0dccba"
+  },
+  "Id": 390,
+  "PeriodoId": 14,
+  "PresupuestoId": 222,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 33,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330752855b481814f222ae"
+  },
+  "Id": 391,
+  "PeriodoId": 15,
+  "PresupuestoId": 189,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330752855b481814f222af"
+  },
+  "Id": 392,
+  "PeriodoId": 15,
+  "PresupuestoId": 190,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330752855b481814f222b0"
+  },
+  "Id": 393,
+  "PeriodoId": 15,
+  "PresupuestoId": 191,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330752855b481814f222b1"
+  },
+  "Id": 394,
+  "PeriodoId": 15,
+  "PresupuestoId": 192,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b2"
+  },
+  "Id": 395,
+  "PeriodoId": 15,
+  "PresupuestoId": 193,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b3"
+  },
+  "Id": 396,
+  "PeriodoId": 15,
+  "PresupuestoId": 194,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b4"
+  },
+  "Id": 397,
+  "PeriodoId": 15,
+  "PresupuestoId": 195,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b5"
+  },
+  "Id": 398,
+  "PeriodoId": 15,
+  "PresupuestoId": 196,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b6"
+  },
+  "Id": 399,
+  "PeriodoId": 15,
+  "PresupuestoId": 197,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b7"
+  },
+  "Id": 400,
+  "PeriodoId": 15,
+  "PresupuestoId": 198,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b8"
+  },
+  "Id": 401,
+  "PeriodoId": 15,
+  "PresupuestoId": 199,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222b9"
+  },
+  "Id": 402,
+  "PeriodoId": 15,
+  "PresupuestoId": 200,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222ba"
+  },
+  "Id": 403,
+  "PeriodoId": 15,
+  "PresupuestoId": 201,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222bb"
+  },
+  "Id": 404,
+  "PeriodoId": 15,
+  "PresupuestoId": 202,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222bc"
+  },
+  "Id": 405,
+  "PeriodoId": 15,
+  "PresupuestoId": 203,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222bd"
+  },
+  "Id": 406,
+  "PeriodoId": 15,
+  "PresupuestoId": 204,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222be"
+  },
+  "Id": 407,
+  "PeriodoId": 15,
+  "PresupuestoId": 205,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222bf"
+  },
+  "Id": 408,
+  "PeriodoId": 15,
+  "PresupuestoId": 206,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c0"
+  },
+  "Id": 409,
+  "PeriodoId": 15,
+  "PresupuestoId": 207,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c1"
+  },
+  "Id": 410,
+  "PeriodoId": 15,
+  "PresupuestoId": 209,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c2"
+  },
+  "Id": 411,
+  "PeriodoId": 15,
+  "PresupuestoId": 210,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "6600"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c3"
+  },
+  "Id": 412,
+  "PeriodoId": 15,
+  "PresupuestoId": 211,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c4"
+  },
+  "Id": 413,
+  "PeriodoId": 15,
+  "PresupuestoId": 212,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 26,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c5"
+  },
+  "Id": 414,
+  "PeriodoId": 15,
+  "PresupuestoId": 213,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c6"
+  },
+  "Id": 415,
+  "PeriodoId": 15,
+  "PresupuestoId": 214,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "75"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c7"
+  },
+  "Id": 416,
+  "PeriodoId": 15,
+  "PresupuestoId": 215,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c8"
+  },
+  "Id": 417,
+  "PeriodoId": 15,
+  "PresupuestoId": 216,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222c9"
+  },
+  "Id": 418,
+  "PeriodoId": 15,
+  "PresupuestoId": 217,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222ca"
+  },
+  "Id": 419,
+  "PeriodoId": 15,
+  "PresupuestoId": 218,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "4000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330753855b481814f222cb"
+  },
+  "Id": 420,
+  "PeriodoId": 15,
+  "PresupuestoId": 219,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330754855b481814f222cc"
+  },
+  "Id": 421,
+  "PeriodoId": 15,
+  "PresupuestoId": 220,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330754855b481814f222cd"
+  },
+  "Id": 422,
+  "PeriodoId": 15,
+  "PresupuestoId": 221,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69330754855b481814f222ce"
+  },
+  "Id": 423,
+  "PeriodoId": 15,
+  "PresupuestoId": 222,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 33,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf7f"
+  },
+  "Id": 424,
+  "PeriodoId": 16,
+  "PresupuestoId": 189,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2000"
+  },
+  "AhorroId": 1,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf80"
+  },
+  "Id": 425,
+  "PeriodoId": 16,
+  "PresupuestoId": 190,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf81"
+  },
+  "Id": 426,
+  "PeriodoId": 16,
+  "PresupuestoId": 191,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "2500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "1000"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf82"
+  },
+  "Id": 427,
+  "PeriodoId": 16,
+  "PresupuestoId": 192,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1000"
+  },
+  "AhorroId": 20,
+  "Gastado": {
+    "$numberDecimal": "986.11"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf83"
+  },
+  "Id": 428,
+  "PeriodoId": 16,
+  "PresupuestoId": 193,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 8,
+  "Gastado": {
+    "$numberDecimal": "493"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf84"
+  },
+  "Id": 429,
+  "PeriodoId": 16,
+  "PresupuestoId": 194,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "600"
+  },
+  "AhorroId": 40,
+  "Gastado": {
+    "$numberDecimal": "591"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf85"
+  },
+  "Id": 430,
+  "PeriodoId": 16,
+  "PresupuestoId": 195,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "300"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "300"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf86"
+  },
+  "Id": 431,
+  "PeriodoId": 16,
+  "PresupuestoId": 196,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 13,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf87"
+  },
+  "Id": 432,
+  "PeriodoId": 16,
+  "PresupuestoId": 197,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "250"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf88"
+  },
+  "Id": 433,
+  "PeriodoId": 16,
+  "PresupuestoId": 199,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "400"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf89"
+  },
+  "Id": 434,
+  "PeriodoId": 16,
+  "PresupuestoId": 200,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf8a"
+  },
+  "Id": 435,
+  "PeriodoId": 16,
+  "PresupuestoId": 201,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf8b"
+  },
+  "Id": 436,
+  "PeriodoId": 16,
+  "PresupuestoId": 202,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 15,
+  "Gastado": {
+    "$numberDecimal": "200"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf8c"
+  },
+  "Id": 437,
+  "PeriodoId": 16,
+  "PresupuestoId": 203,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "450"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "100"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331340b5587404748ddf8d"
+  },
+  "Id": 438,
+  "PeriodoId": 16,
+  "PresupuestoId": 204,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "1200"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf8e"
+  },
+  "Id": 439,
+  "PeriodoId": 16,
+  "PresupuestoId": 205,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf8f"
+  },
+  "Id": 440,
+  "PeriodoId": 16,
+  "PresupuestoId": 206,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 37,
+  "Gastado": {
+    "$numberDecimal": "401"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf90"
+  },
+  "Id": 441,
+  "PeriodoId": 16,
+  "PresupuestoId": 207,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 21,
+  "Gastado": {
+    "$numberDecimal": "401"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf91"
+  },
+  "Id": 442,
+  "PeriodoId": 16,
+  "PresupuestoId": 209,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "525"
+  },
+  "AhorroId": 23,
+  "Gastado": {
+    "$numberDecimal": "525"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf92"
+  },
+  "Id": 443,
+  "PeriodoId": 16,
+  "PresupuestoId": 210,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "6600"
+  },
+  "AhorroId": 24,
+  "Gastado": {
+    "$numberDecimal": "6617"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf93"
+  },
+  "Id": 444,
+  "PeriodoId": 16,
+  "PresupuestoId": 211,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 25,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf94"
+  },
+  "Id": 445,
+  "PeriodoId": 16,
+  "PresupuestoId": 212,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": 26,
+  "Gastado": {
+    "$numberDecimal": "493"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf95"
+  },
+  "Id": 446,
+  "PeriodoId": 16,
+  "PresupuestoId": 213,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": 11,
+  "Gastado": {
+    "$numberDecimal": "394"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf96"
+  },
+  "Id": 447,
+  "PeriodoId": 16,
+  "PresupuestoId": 214,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "75"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf97"
+  },
+  "Id": 448,
+  "PeriodoId": 16,
+  "PresupuestoId": 215,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "3000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf98"
+  },
+  "Id": 449,
+  "PeriodoId": 16,
+  "PresupuestoId": 216,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 7,
+  "Gastado": {
+    "$numberDecimal": "197"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf99"
+  },
+  "Id": 450,
+  "PeriodoId": 16,
+  "PresupuestoId": 217,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "750"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf9a"
+  },
+  "Id": 451,
+  "PeriodoId": 16,
+  "PresupuestoId": 218,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "4000"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf9b"
+  },
+  "Id": 452,
+  "PeriodoId": 16,
+  "PresupuestoId": 219,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "550"
+  },
+  "AhorroId": 30,
+  "Gastado": {
+    "$numberDecimal": "532"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf9c"
+  },
+  "Id": 453,
+  "PeriodoId": 16,
+  "PresupuestoId": 220,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "500"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "500"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf9d"
+  },
+  "Id": 454,
+  "PeriodoId": 16,
+  "PresupuestoId": 221,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "400"
+  },
+  "AhorroId": null,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+},
+{
+  "_id": {
+    "$oid": "69331341b5587404748ddf9e"
+  },
+  "Id": 455,
+  "PeriodoId": 16,
+  "PresupuestoId": 222,
+  "CategoriaNombre": null,
+  "Cantidad": {
+    "$numberDecimal": "200"
+  },
+  "AhorroId": 33,
+  "Gastado": {
+    "$numberDecimal": "0"
+  },
+  "EstaActivo": true
+}]
