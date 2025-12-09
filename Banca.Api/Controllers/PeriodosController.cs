@@ -52,11 +52,21 @@ namespace Banca.Api.Controllers
             return Created(string.Empty, id);
         }
 
+        [HttpGet("{periodoId}/Transacciones")]
+        public async Task<IActionResult> AgregarTransaccion(int periodoId)
+        {
+            List<TransaccionDto> lista;
+
+             lista= await _unitOfWork.Transaccion.ObtenerTodosAsync(periodoId);
+
+            return Ok( lista);
+        }
+
         [HttpPost("{periodoId}/Transacciones")]
-        public async Task<IActionResult> AgregarTransaccion(int periodoId, TransaccionDtoIn movimiento)
-        {            
+        public async Task<IActionResult> ObtenerTodasTransacciones(int periodoId, TransaccionDtoIn movimiento)
+        {
             AhorroDto ahorro;
-                     
+
             ahorro = await _unitOfWork.Ahorro.ObtenerAsync(ahorroEje);
             if (ahorro.Balance < movimiento.Cantidad)
             {

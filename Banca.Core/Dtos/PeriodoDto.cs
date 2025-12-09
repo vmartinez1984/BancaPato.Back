@@ -48,6 +48,7 @@ namespace Banca.Core.Dtos
         public int PresupuestoId { get; set; }
 
         [Required]
+        [Range(1, 10000)]
         public decimal Monto { get; set; }
               
         public string Concepto { get; set; }

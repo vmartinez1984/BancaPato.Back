@@ -13,7 +13,7 @@
         public string Guid { get; set; }
 
         public int VersionId { get; set; }
-
+        public string AhorroTipoNombre { get; set; }
     }
 
     public class PresupuestoDtoIn

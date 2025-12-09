@@ -25,5 +25,5 @@ public class Transaccion
     public string RetiroEncodedKey { get; set; }
 
     public string DepositoEncodedKey { get; set; }
-
+    public string Nota { get; set; }
 }

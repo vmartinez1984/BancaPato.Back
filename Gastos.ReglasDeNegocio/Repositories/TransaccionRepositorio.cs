@@ -5,7 +5,7 @@ using MongoDB.Driver;
 
 namespace Gastos.ReglasDeNegocio.Repositories
 {
-    public class TransaccionRepositorio: BaseRepositorio
+    public class TransaccionRepositorio : BaseRepositorio
     {
         private readonly IMongoCollection<Transaccion> _collection;
 
@@ -39,7 +39,11 @@ namespace Gastos.ReglasDeNegocio.Repositories
         }
 
         internal async Task<List<Transaccion>> ObtenerAsync(int periodoId, int presupuestoId)
-        =>  await _collection.Find(x => x.PeriodoId == periodoId && x.PresupuestoId == presupuestoId).ToListAsync();
-        
+        => await _collection.Find(x => x.PeriodoId == periodoId && x.PresupuestoId == presupuestoId).ToListAsync();
+
+        internal async Task<List<Transaccion>> ObtenerTodosAsync(int periodoId)
+        {
+            return await _collection.Find(x => x.PeriodoId == periodoId).ToListAsync();
+        }
     }
 }

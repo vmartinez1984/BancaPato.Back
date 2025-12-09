@@ -94,7 +94,7 @@ namespace Gastos.ReglasDeNegocio.Helpers
         internal static PresupuestoDto ToDto(this Presupuesto entity) => entity is null ? null : new PresupuestoDto
         {
             AhorroId = entity.AhorroId,
-            //AhorroTipo = entity.AhorroTipo,
+            AhorroTipoNombre = entity.AhorroTipo,
             Cantidad = entity.Cantidad,
             Guid = entity.Guid,
             Id = entity.Id,
@@ -197,5 +197,18 @@ namespace Gastos.ReglasDeNegocio.Helpers
         };
 
         internal static List<PagoTdcDto> ToDtos(this List<PagoTarjetaDeCredito> entities) => entities.Select(x => x.ToDto()).ToList();
+
+        internal static TransaccionDto ToDto(this Transaccion entity) => new TransaccionDto
+        {
+            Cantidad = entity.Monto,
+            EncodedKey  = entity.Encodedkey,
+            Id = entity.Id,
+            Nota = entity.Nota,
+            PresupuestoId = entity.PresupuestoId,
+            SaldoInicial = entity.SaldoInicial,
+            SaldoFinal = entity.SaldoFinal
+        };
+
+        internal static List<TransaccionDto> ToDtos(this List <Transaccion> entities) => entities.Select(x => x.ToDto()).ToList ();
     }
 }

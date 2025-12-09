@@ -1,5 +1,6 @@
 ﻿using Banca.Core.Dtos;
 using Gastos.ReglasDeNegocio.Entities;
+using Gastos.ReglasDeNegocio.Helpers;
 using Gastos.ReglasDeNegocio.Repositories;
 using Microsoft.Extensions.Configuration;
 
@@ -70,6 +71,15 @@ namespace Gastos.ReglasDeNegocio.Bl
                 FechaDeRegistro = DateTime.Now,
                 Guid = movimiento.EncodedKey,
             };
+        }
+
+        public async Task<List<TransaccionDto>> ObtenerTodosAsync(int periodoId)
+        {
+            List<Transaccion> lista;
+                        
+            lista = await _repositorio.Transaccion.ObtenerTodosAsync(periodoId);
+
+            return lista.ToDtos();
         }
     }
 }
