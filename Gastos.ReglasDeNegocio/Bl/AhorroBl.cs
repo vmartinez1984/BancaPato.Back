@@ -39,8 +39,8 @@ namespace Gastos.ReglasDeNegocio.Bl
 
             tipos = await _repositorio.TipoDeAhorro.ObtenerTodosAsync();
             otros.Add("Nota", cuenta.Nota);
-            otros.Add("FechaInicial", cuenta.FechaInicial is null ? null : ((DateTime)cuenta.FechaInicial).ToString("d"));
-            otros.Add("FechaFinal", cuenta.FechaFinal is null ? null : ((DateTime)cuenta.FechaFinal).ToString("d"));
+            otros.Add("FechaInicial", cuenta.FechaInicial is null ? null : ((DateOnly)cuenta.FechaInicial).ToString("d"));
+            otros.Add("FechaFinal", cuenta.FechaFinal is null ? null : ((DateOnly)cuenta.FechaFinal).ToString("d"));
             otros.Add("TipoDeCuentaId", cuenta.TipoDeAhorroId.ToString());
             ahorro = new Ahorro
             {
@@ -112,13 +112,13 @@ namespace Gastos.ReglasDeNegocio.Bl
             return data.Value;
         }
 
-        private DateTime? ObtenerFecha(Dictionary<string, string> otros, string key)
+        private DateOnly? ObtenerFecha(Dictionary<string, string> otros, string key)
         {
             var data = otros.Where(x => x.Key == key).FirstOrDefault();
             if (data.Value == null)
                 return null;
             string fechaEnCadena = data.Value.Replace(" 12:00:00 a. m.", string.Empty);
-            DateTime fecha = DateTime.ParseExact(fechaEnCadena, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            DateOnly fecha = DateOnly.ParseExact(fechaEnCadena, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             return fecha;
         }
 
@@ -126,10 +126,13 @@ namespace Gastos.ReglasDeNegocio.Bl
         {
             Ahorro ahorro1 = await _repositorio.Ahorro.ObtenerPorIdAsync(ahorroId);
             ahorro1.Nombre = ahorro.Nombre;
-            if (ahorro1.Otros.ContainsKey(FechaFinal))
-                ahorro1.Otros[FechaFinal] = ahorro.FechaFinal is null ? null : ahorro.FechaFinal.ToString();
-            if (ahorro1.Otros.ContainsKey(FechaInicial))
-                ahorro1.Otros[FechaInicial] = ahorro.FechaInicial is null ? null : ahorro.FechaInicial.ToString();
+            ahorro1.FechaFinal = ahorro.FechaFinal;
+            ahorro1.FechaInicial = ahorro.FechaInicial;
+            ahorro1.TipoDeAhorroId = ahorro.TipoDeAhorroId;
+            //if (ahorro1.Otros.ContainsKey(FechaFinal))
+            //    ahorro1.Otros[FechaFinal] = ahorro.FechaFinal is null ? null : ahorro.FechaFinal.ToString();
+            //if (ahorro1.Otros.ContainsKey(FechaInicial))
+            //    ahorro1.Otros[FechaInicial] = ahorro.FechaInicial is null ? null : ahorro.FechaInicial.ToString();
 
             await _repositorio.Ahorro.ActualizarAsync(ahorro1);
         }

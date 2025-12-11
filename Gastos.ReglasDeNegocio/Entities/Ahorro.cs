@@ -32,5 +32,11 @@ namespace Gastos.ReglasDeNegocio.Entities
         public object Depositos { get; set; }
 
         public object Retiros { get; set; }
+
+        public int? TipoDeAhorroId { get; set; }
+
+        public DateOnly? FechaInicial { get; set; }
+
+        public DateOnly? FechaFinal { get; set; }
     }
 }

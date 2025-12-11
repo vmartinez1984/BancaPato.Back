@@ -33,8 +33,8 @@ namespace Banca.Core.Dtos
 
         public decimal Interes { get; set; } = 0;
 
-        public DateTime? FechaInicial { get; set; }
-        public DateTime? FechaFinal { get; set; }
+        public DateOnly? FechaInicial { get; set; }
+        public DateOnly? FechaFinal { get; set; }
 
         public int? TipoDeAhorroId { get; set; }
     }
